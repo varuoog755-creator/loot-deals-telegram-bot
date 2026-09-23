@@ -120,4 +120,23 @@ def get_recent_deals(limit: int = 5, category: str = None):
             cursor.execute("SELECT * FROM deals ORDER BY id DESC LIMIT ?", (limit,))
         return [dict(row) for row in cursor.fetchall()]
 
+def search_deals(query: str, limit: int = 5):
+    with get_conn() as conn:
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM deals WHERE title LIKE ? ORDER BY id DESC LIMIT ?", (f"%{query}%", limit))
+        return [dict(row) for row in cursor.fetchall()]
+
+def get_referral_leaderboard(limit: int = 10):
+    with get_conn() as conn:
+        cursor = conn.cursor()
+        cursor.execute("""
+            SELECT u.user_id, u.first_name, u.username, COUNT(r.user_id) as ref_count
+            FROM users u
+            JOIN users r ON r.referred_by = u.user_id
+            GROUP BY u.user_id
+            ORDER BY ref_count DESC
+            LIMIT ?
+        """, (limit,))
+        return [dict(row) for row in cursor.fetchall()]
+
 init_db()

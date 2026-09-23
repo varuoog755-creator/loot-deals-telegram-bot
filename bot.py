@@ -11,7 +11,8 @@ from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
     ReplyKeyboardMarkup,
-    KeyboardButton
+    KeyboardButton,
+    WebAppInfo
 )
 from telegram.constants import ParseMode, ChatMemberStatus
 from telegram.ext import (
@@ -86,7 +87,8 @@ logger = logging.getLogger(__name__)
 # Keyboards
 MAIN_KEYBOARD = [
     [KeyboardButton("🛍️ Today's Top Loots"), KeyboardButton("⚡ Under ₹99 Store")],
-    [KeyboardButton("🎁 Refer & Earn (Free Gifts)"), KeyboardButton("👤 My Profile")],
+    [KeyboardButton("🎁 Refer & Earn (Free Gifts)"), KeyboardButton("🏆 Referral Leaderboard")],
+    [KeyboardButton("🔍 Search Deals"), KeyboardButton("👤 My Profile")],
     [KeyboardButton("💰 Earn Money Online (EarnKaro)"), KeyboardButton("❓ Help & Support")]
 ]
 
@@ -177,7 +179,11 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "💰 **Daily Free Cashback Tricks & Coupons**\n\n"
         "Niche diye gaye buttons se apni pasandida deals dekhein 👇"
     )
+    inline_nav = InlineKeyboardMarkup([
+        [InlineKeyboardButton("🛍️ Open Interactive Deals Store (Mini App)", web_app=WebAppInfo(url="https://loot-deals-telegram-bot.onrender.com/"))]
+    ])
     await update.message.reply_text(welcome_text, reply_markup=get_main_markup(), parse_mode=ParseMode.MARKDOWN)
+    await update.message.reply_text("⚡ **Quick Access:** Direct full-screen store open karne ke liye niche button dabayein 👇", reply_markup=inline_nav, parse_mode=ParseMode.MARKDOWN)
 
 async def check_subscription_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
@@ -260,17 +266,23 @@ async def refer_and_earn(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     text = (
         "🎁 **VIRAL REFER & EARN PROGRAM** 🎁\n\n"
-        "Apne dosto aur family groups mein apna referral link share karein aur special rewards payen!\n\n"
+        "Apne dosto aur WhatsApp groups mein apna referral link share karein aur special rewards payen!\n\n"
         f"👥 Aapke Total Invites: **{ref_count} Members**\n\n"
         "🎯 **Milestone Rewards:**\n"
-        "• **3 Invites:** VIP Secret Deals Access\n"
-        "• **10 Invites:** Monthly ₹500 Amazon Gift Card Entry\n\n"
+        "• **3 Invites:** 🌟 Gold VIP Secret Deals Access\n"
+        "• **5 Invites:** ⚡ ₹50 Instant Cashback Voucher\n"
+        "• **10 Invites:** 🏆 Monthly ₹500 Amazon Gift Card Entry\n\n"
         "🔗 **Aapka Personal Invite Link:**\n"
         f"`{ref_link}`\n\n"
-        "*(Upar diye gaye link ko copy karke WhatsApp aur Telegram par forward karein!)*"
+        "*(Direct WhatsApp ya Telegram par share karne ke liye niche button dabayein 👇)*"
     )
-    share_url = f"https://t.me/share/url?url={ref_link}&text={urllib_quote('🔥 Join Loot Deals Hub for ₹1 to ₹99 deals and 90% discounts!')}"
-    buttons = [[InlineKeyboardButton("📲 Share on Telegram", url=share_url)]]
+    share_text = f"🔥 Best Telegram Loot Deals & 90% Discounts Bot! Join with my link: {ref_link}"
+    tg_share = f"https://t.me/share/url?url={ref_link}&text={urllib_quote('🔥 Join Loot Deals Hub for ₹1 to ₹99 deals and 90% discounts!')}"
+    wa_share = f"https://api.whatsapp.com/send?text={urllib_quote(share_text)}"
+    buttons = [
+        [InlineKeyboardButton("🟢 Share on WhatsApp", url=wa_share)],
+        [InlineKeyboardButton("📲 Share on Telegram", url=tg_share)]
+    ]
     await update.message.reply_text(text, reply_markup=InlineKeyboardMarkup(buttons), parse_mode=ParseMode.MARKDOWN)
 
 def urllib_quote(text: str):
@@ -317,6 +329,66 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "Admin help ke liye @BotFather ya bot support se sampark karein."
     )
     await update.message.reply_text(text, parse_mode=ParseMode.MARKDOWN)
+
+async def leaderboard_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    leaders = database.get_referral_leaderboard(10)
+    if not leaders:
+        text = (
+            "🏆 **TOP REFERRAL LEADERBOARD** 🏆\n\n"
+            "Abhi tak leaderboard par koi data nahi hai.\n"
+            "Aap sabse pehle apne dosto ko invite karke #1 Rank ban sakte hain! 🚀\n\n"
+            "👉 Menu se **'🎁 Refer & Earn'** par click karein aur invite link payen!"
+        )
+    else:
+        text = "🏆 **TOP 10 REFERRAL CHAMPIONS** 🏆\n\n"
+        medals = ["🥇", "🥈", "🥉", "4️⃣", "5️⃣", "6️⃣", "7️⃣", "8️⃣", "9️⃣", "🔟"]
+        for idx, row in enumerate(leaders):
+            badge = medals[idx] if idx < len(medals) else f"#{idx+1}"
+            name = row.get("first_name") or "User"
+            uname = f"(@{row['username']})" if row.get("username") else ""
+            cnt = row.get("ref_count", 0)
+            text += f"{badge} **{name}** {uname} — **{cnt} Invites**\n"
+        text += "\n🔥 **Rules:** Har week ke Top 3 referrers ko exclusive ₹500 Amazon Gift Vouchers diye jaate hain! Apna link share karein aur rank up karein!"
+
+    await update.message.reply_text(text, parse_mode=ParseMode.MARKDOWN)
+
+async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = " ".join(context.args) if context.args else ""
+    if not query:
+        await update.message.reply_text(
+            "🔍 **Deal Search Kaise Karein:**\n\n"
+            "Kisi bhi item ko search karne ke liye command ke baad naam likhein. Example:\n"
+            "`/search shoes`\n"
+            "`/search tshirt`\n"
+            "`/search earphone`",
+            parse_mode=ParseMode.MARKDOWN
+        )
+        return
+
+    deals = database.search_deals(query, limit=5)
+    if not deals:
+        await update.message.reply_text(
+            f"❌ `{query}` ke liye koi deals nahi mili. Hamare Deals Channel me daily live flash deals aate hain, wahan check karein!",
+            parse_mode=ParseMode.MARKDOWN
+        )
+        return
+
+    await update.message.reply_text(f"🔍 **Search Results for '{query}':**", parse_mode=ParseMode.MARKDOWN)
+    for d in deals:
+        title = d.get('title', 'Deal')
+        price = d.get('price', '')
+        mrp = d.get('mrp', '')
+        discount = d.get('discount', '')
+        link = d.get('link', '')
+        clean_link = shorten_url(link) if link else '#'
+        deal_msg = (
+            f"🔥 **{title}**\n"
+            f"💰 **Loot Price:** {price} (MRP: ~{mrp}~)\n"
+            f"⚡ **Discount:** {discount}\n\n"
+            f"👉 [Click Here to Buy Now]({clean_link})"
+        )
+        buttons = [[InlineKeyboardButton("🛍️ Buy Now", url=clean_link)]]
+        await update.message.reply_text(deal_msg, reply_markup=InlineKeyboardMarkup(buttons), parse_mode=ParseMode.MARKDOWN)
 
 # Admin Commands
 async def admin_stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -428,6 +500,10 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await under_99_loots(update, context)
     elif text == "🎁 Refer & Earn (Free Gifts)":
         await refer_and_earn(update, context)
+    elif text == "🏆 Referral Leaderboard":
+        await leaderboard_command(update, context)
+    elif text == "🔍 Search Deals":
+        await update.message.reply_text("🔍 Kisi bhi product ko search karne ke liye type karein: `/search <naam>`\nExample: `/search tshirt` ya `/search shoes`", parse_mode=ParseMode.MARKDOWN)
     elif text == "👤 My Profile":
         await user_profile(update, context)
     elif text == "💰 Earn Money Online (EarnKaro)":
@@ -496,6 +572,8 @@ def main():
 
             app.add_handler(CommandHandler("start", start_command))
             app.add_handler(CommandHandler("help", help_command))
+            app.add_handler(CommandHandler("leaderboard", leaderboard_command))
+            app.add_handler(CommandHandler("search", search_command))
             app.add_handler(CommandHandler("stats", admin_stats))
             app.add_handler(CommandHandler("setchannel", admin_set_channel))
             app.add_handler(CommandHandler("broadcast", admin_broadcast))
