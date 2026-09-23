@@ -4,3 +4,4 @@ __pycache__/
 *.db
 telegram_bot_token.txt
 bot_output.log
+new_bot_env.txt

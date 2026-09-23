@@ -129,6 +129,34 @@
       "url": "https://paste.rs/fdKe8",
       "status": "LIVE_INDEXED",
       "notes": "Permanent raw backlink node"
+    },
+    {
+      "platform": "Telejoiner (Under99 Bot)",
+      "type": "Public Telegram Directory",
+      "url": "https://telejoiner.com/invite/under99lootdeals_bot",
+      "status": "LIVE_INDEXED",
+      "notes": "Directory listing for @Under99LootDeals_bot"
+    },
+    {
+      "platform": "Rentry Under99 Bot SEO Hub",
+      "type": "Permanent Crawlable Backlink",
+      "url": "https://rentry.co/8tp4g62a",
+      "status": "LIVE_INDEXED",
+      "notes": "Dedicated crawlable SEO page for @Under99LootDeals_bot"
+    },
+    {
+      "platform": "dPaste Under99 Bot Node",
+      "type": "365-Day Search Indexed Paste",
+      "url": "https://dpaste.com/GMSMRJ6AN",
+      "status": "LIVE_INDEXED",
+      "notes": "Public search-indexed node for @Under99LootDeals_bot"
+    },
+    {
+      "platform": "Paste.rs Under99 Bot Node",
+      "type": "Raw Text Backlink",
+      "url": "https://paste.rs/wmpgJ",
+      "status": "LIVE_INDEXED",
+      "notes": "Permanent raw backlink node for @Under99LootDeals_bot"
     }
   ]
 }
