@@ -50,3 +50,17 @@
 - **Telegram Bot:** [@Roxk755_bot](https://t.me/Roxk755_bot)
 - **Telegram Channel:** [Loot Deals & Cashback Hub](https://t.me/+vnry55FncIUxMDVl)
 - **Live Showcase:** [https://loot-deals-telegram-bot.onrender.com](https://loot-deals-telegram-bot.onrender.com)
+
+---
+
+## 🌍 Verified Directory Listings & Backlinks
+
+| Platform / Directory | Type | Listing Link |
+| :--- | :--- | :--- |
+| **Telejoiner** | Public Channel / Bot Directory | [telejoiner.com/invite/roxk755_bot](https://telejoiner.com/invite/roxk755_bot) |
+| **TopTGLinks** | Global Telegram Index | [toptglinks.com](https://toptglinks.com/) |
+| **TelegramChannels** | Curated Telegram Index | [telegramchannels.link](https://telegramchannels.link/) |
+| **TGStat India** | Telegram Analytics & Catalog | [in.tgstat.com](https://in.tgstat.com/) |
+| **Telegraph (Official)** | High-Authority Dofollow Guide | [telegra.ph/Best-Telegram-Loot-Deals--Cashback-Bot-2026-09-23](https://telegra.ph/Best-Telegram-Loot-Deals--Cashback-Bot-2026-09-23) |
+| **Rentry Hub** | Markdown SEO Documentation | [rentry.co/k94sdi33](https://rentry.co/k94sdi33) |
+
