@@ -387,6 +387,18 @@ def start_health_server():
     server = HTTPServer(("0.0.0.0", port), HealthHandler)
     server.serve_forever()
 
+def keep_alive():
+    import time, urllib.request
+    time.sleep(60)
+    url = os.environ.get("RENDER_EXTERNAL_URL", "https://loot-deals-telegram-bot.onrender.com")
+    while True:
+        try:
+            with urllib.request.urlopen(url, timeout=10) as _:
+                pass
+        except Exception:
+            pass
+        time.sleep(600)
+
 def main():
     if not BOT_TOKEN:
         print("Error: BOT_TOKEN not found!")
@@ -394,6 +406,7 @@ def main():
 
     # Start lightweight health server for cloud platforms (Render, Koyeb, Railway)
     threading.Thread(target=start_health_server, daemon=True).start()
+    threading.Thread(target=keep_alive, daemon=True).start()
 
     while True:
         try:
