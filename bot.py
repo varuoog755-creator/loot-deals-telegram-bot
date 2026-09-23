@@ -395,20 +395,26 @@ def main():
     # Start lightweight health server for cloud platforms (Render, Koyeb, Railway)
     threading.Thread(target=start_health_server, daemon=True).start()
 
-    app = ApplicationBuilder().token(BOT_TOKEN).build()
+    while True:
+        try:
+            app = ApplicationBuilder().token(BOT_TOKEN).build()
 
-    app.add_handler(CommandHandler("start", start_command))
-    app.add_handler(CommandHandler("help", help_command))
-    app.add_handler(CommandHandler("stats", admin_stats))
-    app.add_handler(CommandHandler("setchannel", admin_set_channel))
-    app.add_handler(CommandHandler("broadcast", admin_broadcast))
-    app.add_handler(CommandHandler("adddeal", admin_add_deal))
+            app.add_handler(CommandHandler("start", start_command))
+            app.add_handler(CommandHandler("help", help_command))
+            app.add_handler(CommandHandler("stats", admin_stats))
+            app.add_handler(CommandHandler("setchannel", admin_set_channel))
+            app.add_handler(CommandHandler("broadcast", admin_broadcast))
+            app.add_handler(CommandHandler("adddeal", admin_add_deal))
 
-    app.add_handler(CallbackQueryHandler(check_subscription_callback, pattern="^check_subscription$"))
-    app.add_handler(MessageHandler(filters.TEXT & (~filters.COMMAND), handle_message))
+            app.add_handler(CallbackQueryHandler(check_subscription_callback, pattern="^check_subscription$"))
+            app.add_handler(MessageHandler(filters.TEXT & (~filters.COMMAND), handle_message))
 
-    print("🚀 Loot Deals Bot is running...")
-    app.run_polling()
+            print("🚀 Loot Deals Bot is running...")
+            app.run_polling(drop_pending_updates=True)
+        except Exception as e:
+            print(f"Polling crashed: {e}. Auto-restarting in 5 seconds...")
+            import time
+            time.sleep(5)
 
 if __name__ == "__main__":
     main()
