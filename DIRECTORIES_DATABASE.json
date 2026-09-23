@@ -87,6 +87,48 @@
       "url": "https://rentry.co/yh5eyvgg",
       "status": "LIVE_INDEXED",
       "notes": "Under 99 and Amazon Flipkart sale directory indexed on search"
+    },
+    {
+      "platform": "GitHub Official Gist Hub",
+      "type": "High Authority Gist (DA 96)",
+      "url": "https://gist.github.com/varuoog755-creator/41155c98dd48862a1a1391b26e7a597e",
+      "status": "LIVE_INDEXED",
+      "notes": "Public Google-indexed Gist with comprehensive deals bot guide"
+    },
+    {
+      "platform": "Write.as Publication",
+      "type": "Clean Markdown Publication",
+      "url": "https://write.as/cc4ivbixksp88",
+      "status": "LIVE_INDEXED",
+      "notes": "Minimalist blog backlink on Write.as platform"
+    },
+    {
+      "platform": "Rentry Cashback Hub",
+      "type": "Permanent Crawlable Backlink",
+      "url": "https://rentry.co/fypv96bc",
+      "status": "LIVE_INDEXED",
+      "notes": "Targeting Flipkart & Amazon India cashback and deals"
+    },
+    {
+      "platform": "Rentry Under 99 Flash Hub",
+      "type": "Permanent Crawlable Backlink",
+      "url": "https://rentry.co/h5keyb9t",
+      "status": "LIVE_INDEXED",
+      "notes": "Targeting Under Rs 99 impulse shopping traffic"
+    },
+    {
+      "platform": "dPaste Markdown Hub",
+      "type": "365-Day Search Indexed Paste",
+      "url": "https://dpaste.com/BHGHCHVNX",
+      "status": "LIVE_INDEXED",
+      "notes": "Public paste with bot and channel backlinks"
+    },
+    {
+      "platform": "Paste.rs Raw Backlink",
+      "type": "Raw Text Backlink",
+      "url": "https://paste.rs/fdKe8",
+      "status": "LIVE_INDEXED",
+      "notes": "Permanent raw backlink node"
     }
   ]
 }
