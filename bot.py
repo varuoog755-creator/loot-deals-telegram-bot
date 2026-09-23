@@ -36,7 +36,46 @@ INITIAL_CHANNEL = os.getenv("CHANNEL_USERNAME", "").strip()
 if INITIAL_CHANNEL and not database.get_setting("channel"):
     database.set_setting("channel", INITIAL_CHANNEL)
 
-EARNKARO_REF = os.getenv("EARNKARO_REFERRAL", "https://earnkaro.com")
+EARNKARO_REF_ID = os.getenv("EARNKARO_REF_ID", "1962062")
+EARNKARO_REF = os.getenv("EARNKARO_REFERRAL", f"https://earnkaro.com?r={EARNKARO_REF_ID}")
+
+_URL_CACHE = {}
+
+def shorten_url(url: str) -> str:
+    """Shortens any URL using TinyURL/Clck so that affiliate networks and tracking parameters are completely hidden."""
+    if not url:
+        return url
+    if url in _URL_CACHE:
+        return _URL_CACHE[url]
+    
+    # 1. TinyURL
+    try:
+        import urllib.request, urllib.parse
+        api_url = "https://tinyurl.com/api-create.php?" + urllib.parse.urlencode({"url": url})
+        req = urllib.request.Request(api_url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=4) as resp:
+            short = resp.read().decode("utf-8").strip()
+            if short.startswith("http"):
+                _URL_CACHE[url] = short
+                return short
+    except Exception:
+        pass
+        
+    # 2. Clck.ru fallback
+    try:
+        import urllib.request, urllib.parse
+        api_url = "https://clck.ru/--?url=" + urllib.parse.quote(url)
+        req = urllib.request.Request(api_url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=4) as resp:
+            short = resp.read().decode("utf-8").strip()
+            if short.startswith("http"):
+                _URL_CACHE[url] = short
+                return short
+    except Exception:
+        pass
+
+    _URL_CACHE[url] = url
+    return url
 
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
@@ -171,12 +210,13 @@ async def top_loots(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = "🔥 **TODAY'S TOP LOOT DEALS (Limited Time)** 🔥\n\n"
     buttons = []
     for idx, d in enumerate(deals, 1):
+        clean_link = shorten_url(d['link'])
         text += (
             f"**{idx}. {d['title']}**\n"
             f"💰 Loot Price: **{d['price']}** ~({d['mrp']})~ 🔥 **{d['discount']}**\n"
-            f"🔗 [Buy / Grab Deal Now]({d['link']})\n\n"
+            f"🔗 [Buy / Grab Deal Now]({clean_link})\n\n"
         )
-        buttons.append([InlineKeyboardButton(f"👉 Grab Deal #{idx} ({d['price']})", url=d['link'])])
+        buttons.append([InlineKeyboardButton(f"👉 Grab Deal #{idx} ({d['price']})", url=clean_link)])
 
     text += "⚡ *Deals kabhi bhi out of stock ho sakti hain! Jaldi grab karein.*"
     markup = InlineKeyboardMarkup(buttons)
@@ -195,12 +235,13 @@ async def under_99_loots(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = "⚡ **UNDER ₹99 MEGA STORE (Steal Deals)** ⚡\n\n"
     buttons = []
     for idx, d in enumerate(deals, 1):
+        clean_link = shorten_url(d['link'])
         text += (
             f"**{idx}. {d['title']}**\n"
             f"💰 Steal Price: **{d['price']}** ~({d['mrp']})~\n"
-            f"🔗 [Claim Under ₹99 Now]({d['link']})\n\n"
+            f"🔗 [Claim Under ₹99 Now]({clean_link})\n\n"
         )
-        buttons.append([InlineKeyboardButton(f"⚡ Buy #{idx} at {d['price']}", url=d['link'])])
+        buttons.append([InlineKeyboardButton(f"⚡ Buy #{idx} at {d['price']}", url=clean_link)])
 
     text += "💥 *Free delivery tricks & limited quantity available!*"
     markup = InlineKeyboardMarkup(buttons)
@@ -254,15 +295,16 @@ async def user_profile(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def earnkaro_info(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = (
-        "💰 **Ghar Baithe Paise Kamayein (EarnKaro Affiliate)** 💰\n\n"
+        "💰 **Ghar Baithe Paise Kamayein (Cashback & Affiliate)** 💰\n\n"
         "Kya aap bhi daily online shopping links share karke mahine ke ₹10,000–₹30,000 kamana chahte hain?\n\n"
-        "1️⃣ **EarnKaro App Download karein**\n"
+        "1️⃣ **Cashback App Download karein**\n"
         "2️⃣ Amazon, Flipkart, Myntra ka koi bhi product link convert karein\n"
         "3️⃣ WhatsApp & Telegram groups mein share karein\n"
         "4️⃣ Jab koi buy karega, seedha aapke bank account mein commission aayega!\n\n"
         "👉 **Free Account Banane Ke Liye Niche Button Par Click Karein:**"
     )
-    buttons = [[InlineKeyboardButton("🚀 Download & Register Free on EarnKaro", url=EARNKARO_REF)]]
+    clean_ref = shorten_url(EARNKARO_REF)
+    buttons = [[InlineKeyboardButton("🚀 Download & Register Free on Cashback App", url=clean_ref)]]
     await update.message.reply_text(text, reply_markup=InlineKeyboardMarkup(buttons), parse_mode=ParseMode.MARKDOWN)
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -357,7 +399,29 @@ async def admin_add_deal(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # Text router
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    if not update.message or not update.message.text:
+        return
     text = update.message.text
+
+    # Check if message contains a product link to convert
+    import re, urllib.parse
+    url_match = re.search(r'(https?://[^\s]+)', text)
+    if url_match:
+        raw_url = url_match.group(1)
+        affiliate_target = f"https://earnkaro.com/deal?r={EARNKARO_REF_ID}&url={urllib.parse.quote(raw_url)}"
+        clean_short_url = shorten_url(affiliate_target)
+
+        reply = (
+            "🎉 **CASHBACK DEAL LINK GENERATED!** 🎉\n\n"
+            "Aapka shopping link discount & cashback tracking ke sath ready hai:\n"
+            f"👉 **Order Link:** {clean_short_url}\n\n"
+            "💡 *Is link se shopping karne par aapko exclusive discount aur direct cashback track hoga!*\n\n"
+            "*(Ise dosto aur family groups mein share karke bhi earning kar sakte hain!)*"
+        )
+        markup = InlineKeyboardMarkup([[InlineKeyboardButton("🛒 Buy Now & Grab Cashback", url=clean_short_url)]])
+        await update.message.reply_text(reply, reply_markup=markup, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
+        return
+
     if text == "🛍️ Today's Top Loots":
         await top_loots(update, context)
     elif text == "⚡ Under ₹99 Store":
@@ -375,10 +439,28 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 class HealthHandler(BaseHTTPRequestHandler):
     def do_GET(self):
-        self.send_response(200)
-        self.send_header('Content-type', 'text/plain')
-        self.end_headers()
-        self.wfile.write(b"Loot Deals Telegram Bot is running 24/7!")
+        if self.path in ["/healthz", "/ping"]:
+            self.send_response(200)
+            self.send_header('Content-type', 'text/plain')
+            self.end_headers()
+            self.wfile.write(b"OK")
+            return
+
+        landing_path = os.path.join(os.path.dirname(__file__), "landing.html")
+        if os.path.exists(landing_path):
+            with open(landing_path, "rb") as f:
+                content = f.read()
+            self.send_response(200)
+            self.send_header('Content-type', 'text/html; charset=utf-8')
+            self.send_header('Content-length', str(len(content)))
+            self.end_headers()
+            self.wfile.write(content)
+        else:
+            self.send_response(200)
+            self.send_header('Content-type', 'text/plain')
+            self.end_headers()
+            self.wfile.write(b"Loot Deals Telegram Bot is running 24/7!")
+
     def log_message(self, format, *args):
         pass
 

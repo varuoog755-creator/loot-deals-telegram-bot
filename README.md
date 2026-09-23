@@ -1,25 +1,52 @@
-# Loot Deals & Cashback Telegram Bot
+# 🛍️ Loot Deals & Cashback Bot (@Roxk755_bot)
 
-Telegram affiliate bot with viral referral system, force subscribe channel verification, and EarnKaro deals.
+[![Telegram Bot](https://img.shields.io/badge/Telegram-@Roxk755__bot-blue?style=for-the-badge&logo=telegram)](https://t.me/Roxk755_bot)
+[![Deals Channel](https://img.shields.io/badge/Channel-Loot%20Deals%20Hub-orange?style=for-the-badge&logo=telegram)](https://t.me/+vnry55FncIUxMDVl)
+[![Cloud Status](https://img.shields.io/badge/Status-Online%2024%2F7-brightgreen?style=for-the-badge)](https://loot-deals-telegram-bot.onrender.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-## Features
-- **Force Subscribe:** Requires joining Telegram channel before unlocking deals
-- **Refer & Earn:** Unique referral tracking for viral growth
-- **Affiliate Deals:** Top loots & Under ₹99 store
-- **Admin Panel:** Broadcast messages, view user stats, add deals
+**India's #1 Automated Telegram Loot Deals, Coupons & Cashback Bot!** Discover 70% to 90% instant price drops, loot deals, promo codes, and under ₹99 budget offers from Amazon, Flipkart, Myntra, Ajio, and Shopsy.
 
-## Environment Variables
-- `BOT_TOKEN`: Telegram bot token from @BotFather
-- `ADMIN_USER_ID`: Admin Telegram ID (8837364917)
-- `CHANNEL_ID`: Channel ID or username (e.g. `@LootDealsCashbackHub`)
-- `CHANNEL_INVITE_LINK`: Telegram channel invite link
+🌐 **Official Website / Web Portal:** [https://loot-deals-telegram-bot.onrender.com](https://loot-deals-telegram-bot.onrender.com)
 
-## Free Hosting (Render / Koyeb)
-1. Fork or push this repository to GitHub.
-2. Create a new **Web Service** on [Render.com](https://render.com) or [Koyeb.com](https://koyeb.com).
-3. Connect your GitHub repository.
-4. Set Environment Variables:
-   - `BOT_TOKEN`
-   - `ADMIN_USER_ID`
-   - `CHANNEL_INVITE_LINK`
-5. Deploy! The built-in HTTP server responds on port `8080` (or `$PORT`) for health checks.
+---
+
+## ⚡ Key Features
+
+- 🔥 **Daily Top Loot Deals:** Hand-picked 70% to 90% price drops updated in real time.
+- ⚡ **Under ₹99 Mega Store:** Steal deals starting from ₹9, ₹49, and ₹99 with free delivery tricks.
+- 💰 **Smart Cashback Link Converter:** Send any shopping product link (Amazon, Flipkart, Ajio, etc.) to get an instant masked, shortened cashback buy link.
+- 🛡️ **Clean URL Masking:** Built-in high-speed URL shortener masks raw affiliate tags and tracking parameters so users get clean, trustworthy links.
+- 🎁 **Viral Refer & Earn Program:** Multi-tier referral tracking with SQLite database and milestone unlocks.
+- 📢 **Force-Subscribe Protection:** Automatically verifies channel membership before unlocking premium deals.
+- ☁️ **24/7 Cloud Architecture:** Deployed on Render with zero-downtime auto-restart and keep-alive health server.
+
+---
+
+## 🤖 Telegram Commands
+
+| Command | Description |
+| :--- | :--- |
+| `/start` | 🚀 Launch bot, verify channel membership & open main menu |
+| `/deals` | 🛍️ View today's top hand-picked loot deals |
+| `/under99` | ⚡ Open Under ₹99 budget store |
+| `/refer` | 🎁 Get your personal invite link & track referral rewards |
+| `/help` | ❓ Help guide and link conversion instructions |
+
+---
+
+## 🛠️ Tech Stack
+
+- **Python 3.11** + `python-telegram-bot v22.8` (Async / Await Architecture)
+- **Database:** SQLite with automated migration & seeding
+- **Cloud Deployment:** Render Cloud Web Service / Docker Container
+- **Affiliate Engine:** EarnKaro Multi-Store Affiliate Integration
+- **URL Masking:** Dynamic TinyURL / Clck API caching engine
+
+---
+
+## 🔗 Connect & Join
+
+- **Telegram Bot:** [@Roxk755_bot](https://t.me/Roxk755_bot)
+- **Telegram Channel:** [Loot Deals & Cashback Hub](https://t.me/+vnry55FncIUxMDVl)
+- **Live Showcase:** [https://loot-deals-telegram-bot.onrender.com](https://loot-deals-telegram-bot.onrender.com)

@@ -44,13 +44,13 @@ def init_db():
         cursor.execute("SELECT COUNT(*) FROM deals")
         if cursor.fetchone()[0] == 0:
             initial_deals = [
-                ("Fastrack Smart Watch with BT Calling", "₹999", "₹3,995", "75% OFF", "https://earnkaro.com", "Loot"),
-                ("Noise Buds VS102 Wireless Earbuds", "₹899", "₹2,999", "70% OFF", "https://earnkaro.com", "Loot"),
-                ("Men Casual Slim Fit Cotton Shirt", "₹349", "₹1,499", "76% OFF", "https://earnkaro.com", "Loot"),
-                ("Stainless Steel Water Bottle 1L", "₹89", "₹499", "82% OFF", "https://earnkaro.com", "Under99"),
-                ("Mobile Phone Stand Holder for Desk", "₹49", "₹299", "83% OFF", "https://earnkaro.com", "Under99"),
-                ("Braided Type-C Fast Charging Cable", "₹79", "₹399", "80% OFF", "https://earnkaro.com", "Under99"),
-                ("Unisex Sports Running Shoes", "₹449", "₹1,999", "77% OFF", "https://earnkaro.com", "Loot")
+                ("Fastrack Smart Watch with BT Calling", "₹999", "₹3,995", "75% OFF", "https://tinyurl.com/2avn7vbq", "Loot"),
+                ("Noise Buds VS102 Wireless Earbuds", "₹899", "₹2,999", "70% OFF", "https://tinyurl.com/2avn7vbq", "Loot"),
+                ("Men Casual Slim Fit Cotton Shirt", "₹349", "₹1,499", "76% OFF", "https://tinyurl.com/2avn7vbq", "Loot"),
+                ("Stainless Steel Water Bottle 1L", "₹89", "₹499", "82% OFF", "https://tinyurl.com/2avn7vbq", "Under99"),
+                ("Mobile Phone Stand Holder for Desk", "₹49", "₹299", "83% OFF", "https://tinyurl.com/2avn7vbq", "Under99"),
+                ("Braided Type-C Fast Charging Cable", "₹79", "₹399", "80% OFF", "https://tinyurl.com/2avn7vbq", "Under99"),
+                ("Unisex Sports Running Shoes", "₹449", "₹1,999", "77% OFF", "https://tinyurl.com/2avn7vbq", "Loot")
             ]
             cursor.executemany(
                 "INSERT INTO deals (title, price, mrp, discount, link, category) VALUES (?, ?, ?, ?, ?, ?)",
