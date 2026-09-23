@@ -3,6 +3,7 @@ import sys
 import logging
 import asyncio
 import threading
+import urllib.parse
 from http.server import HTTPServer, BaseHTTPRequestHandler
 from dotenv import load_dotenv
 
@@ -89,37 +90,61 @@ MAIN_KEYBOARD = [
     [KeyboardButton("🛍️ Today's Top Loots"), KeyboardButton("⚡ Under ₹99 Store")],
     [KeyboardButton("🎁 Refer & Earn (Free Gifts)"), KeyboardButton("🏆 Referral Leaderboard")],
     [KeyboardButton("🔍 Search Deals"), KeyboardButton("👤 My Profile")],
-    [KeyboardButton("💰 Earn Money Online (EarnKaro)"), KeyboardButton("❓ Help & Support")]
+    [KeyboardButton("💰 Daily Cashback & Earning App"), KeyboardButton("❓ Help & Support")]
 ]
 
 def get_main_markup():
     return ReplyKeyboardMarkup(MAIN_KEYBOARD, resize_keyboard=True)
 
+DEFAULT_CHANNEL_LINK = "https://t.me/+vnry55FncIUxMDVl"
+VERIFIED_USERS = set([ADMIN_ID])
+
+def is_verified_locally(user_id: int) -> bool:
+    if user_id in VERIFIED_USERS:
+        return True
+    val = database.get_setting(f"verified_{user_id}")
+    if val == "1":
+        VERIFIED_USERS.add(user_id)
+        return True
+    return False
+
+def mark_user_verified(user_id: int):
+    VERIFIED_USERS.add(user_id)
+    database.set_setting(f"verified_{user_id}", "1")
+
 async def is_user_subscribed(user_id: int, context: ContextTypes.DEFAULT_TYPE) -> bool:
+    if user_id == ADMIN_ID or is_verified_locally(user_id):
+        return True
     channel = database.get_setting("channel")
     if not channel:
-        return True # No channel configured, allow through
+        return False
     
     # Ensure @ prefix
     ch = channel if channel.startswith("@") or channel.startswith("-100") else f"@{channel}"
     try:
         member = await context.bot.get_chat_member(chat_id=ch, user_id=user_id)
         if member.status in [ChatMemberStatus.MEMBER, ChatMemberStatus.ADMINISTRATOR, ChatMemberStatus.OWNER]:
+            mark_user_verified(user_id)
             return True
         return False
     except Exception as e:
         logger.warning(f"Could not check subscription for user {user_id} in {ch}: {e}")
-        # If bot is not admin in channel, let user proceed so bot doesn't crash
-        return True
+        return is_verified_locally(user_id)
 
 async def send_force_sub_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     channel = database.get_setting("channel")
-    ch_clean = channel.replace("@", "") if channel else ""
-    channel_url = f"https://t.me/{ch_clean}" if ch_clean else "https://t.me"
+    if channel:
+        if channel.startswith("http"):
+            channel_url = channel
+        else:
+            ch_clean = channel.replace("@", "")
+            channel_url = f"https://t.me/{ch_clean}"
+    else:
+        channel_url = DEFAULT_CHANNEL_LINK
 
     text = (
-        "⚠️ **ACCESS LOCKED! Channel Join Zaroori Hai**\n\n"
-        "Hamare Loot Deals & ₹99 Offers bot ko access karne ke liye aapko hamare official Deals Channel ko join karna hoga!\n\n"
+        "⚠️ **ACCESS LOCKED! Official Channel Join Zaroori Hai**\n\n"
+        "Hamare Loot Deals & ₹99 Offers bot ko access karne ke liye aapko hamare official Deals Channel ko join karna compulsory hai!\n\n"
         "👉 **Steps:**\n"
         "1. Niche **'📢 Join Deals Channel'** button par click karein.\n"
         "2. Channel Join karein.\n"
@@ -130,9 +155,9 @@ async def send_force_sub_message(update: Update, context: ContextTypes.DEFAULT_T
         [InlineKeyboardButton("✅ Joined / Unlock Loots", callback_data="check_subscription")]
     ]
     markup = InlineKeyboardMarkup(buttons)
-    if update.callback_query:
+    if update.callback_query and update.callback_query.message:
         await update.callback_query.message.reply_text(text, reply_markup=markup, parse_mode=ParseMode.MARKDOWN)
-    else:
+    elif update.message:
         await update.message.reply_text(text, reply_markup=markup, parse_mode=ParseMode.MARKDOWN)
 
 # Handlers
@@ -187,20 +212,44 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def check_subscription_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
+    if not query:
+        return
     await query.answer()
+    if not update.effective_user:
+        return
     user_id = update.effective_user.id
+    channel = database.get_setting("channel")
 
-    subscribed = await is_user_subscribed(user_id, context)
-    if subscribed:
-        await query.message.reply_text(
-            "🎉 **Verification Successful!** Deals unlock ho chuki hain.\n\nNiche menu se offers select karein:",
-            reply_markup=get_main_markup()
-        )
+    verified = False
+    if channel and (channel.startswith("@") or channel.startswith("-100")):
+        ch = channel if channel.startswith("@") or channel.startswith("-100") else f"@{channel}"
+        try:
+            member = await context.bot.get_chat_member(chat_id=ch, user_id=user_id)
+            if member.status in [ChatMemberStatus.MEMBER, ChatMemberStatus.ADMINISTRATOR, ChatMemberStatus.OWNER]:
+                verified = True
+        except Exception:
+            verified = True
     else:
-        await query.message.reply_text(
-            "❌ Aapne abhi tak Channel join nahi kiya hai! Pehle channel join karein phir verify karein.",
+        verified = True
+
+    if verified:
+        mark_user_verified(user_id)
+        if query.message:
+            try:
+                await query.edit_message_text(
+                    "🎉 **Verification Successful! Channel Join Confirmed!**\n\nAapka access unlock ho chuka hai. Niche menu se offers select karein:",
+                    parse_mode=ParseMode.MARKDOWN
+                )
+            except Exception:
+                pass
+        await context.bot.send_message(
+            chat_id=user_id,
+            text="⚡ **Loot Deals Store Unlocked:** Browse karna shuru karein 👇",
+            reply_markup=get_main_markup(),
             parse_mode=ParseMode.MARKDOWN
         )
+    else:
+        await query.answer("❌ Aapne abhi tak Channel join nahi kiya hai! Pehle join karein phir verify karein.", show_alert=True)
 
 async def top_loots(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.effective_user.id
@@ -307,17 +356,21 @@ async def user_profile(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def earnkaro_info(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = (
-        "💰 **Ghar Baithe Paise Kamayein (Cashback & Affiliate)** 💰\n\n"
-        "Kya aap bhi daily online shopping links share karke mahine ke ₹10,000–₹30,000 kamana chahte hain?\n\n"
-        "1️⃣ **Cashback App Download karein**\n"
+        "💰 <b>Ghar Baithe Paise Kamayein (Cashback & Earning App)</b> 💰\n\n"
+        "Kya aap bhi daily online shopping offers & deals share karke mahine ke ₹10,000–₹30,000 kamana chahte hain?\n\n"
+        "1️⃣ <b>Cashback App Free Me Join Karein</b>\n"
         "2️⃣ Amazon, Flipkart, Myntra ka koi bhi product link convert karein\n"
         "3️⃣ WhatsApp & Telegram groups mein share karein\n"
-        "4️⃣ Jab koi buy karega, seedha aapke bank account mein commission aayega!\n\n"
-        "👉 **Free Account Banane Ke Liye Niche Button Par Click Karein:**"
+        "4️⃣ Jab koi buy karega, seedha aapke bank account mein commission / cashback aayega!\n\n"
+        "🎁 <b>Special Offer:</b> Abhi free register karne par <b>₹50 Welcome Bonus</b> milta hai!\n\n"
+        "👉 <b>Free Account Banane Ke Liye Niche Button Par Click Karein:</b>"
     )
-    clean_ref = shorten_url(EARNKARO_REF)
-    buttons = [[InlineKeyboardButton("🚀 Download & Register Free on Cashback App", url=clean_ref)]]
-    await update.message.reply_text(text, reply_markup=InlineKeyboardMarkup(buttons), parse_mode=ParseMode.MARKDOWN)
+    clean_ref = "https://tinyurl.com/26gtkvfm"
+    buttons = [
+        [InlineKeyboardButton("🚀 Activate Free Cashback Account (₹50 Bonus)", url=clean_ref)],
+        [InlineKeyboardButton("🟢 Share with Friends on WhatsApp", url=f"https://api.whatsapp.com/send?text={urllib.parse.quote('Ghar baithe shopping aur deals share karke extra cashback kamayein: ' + clean_ref)}")]
+    ]
+    await update.message.reply_text(text, reply_markup=InlineKeyboardMarkup(buttons), parse_mode=ParseMode.HTML)
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = (
@@ -506,7 +559,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("🔍 Kisi bhi product ko search karne ke liye type karein: `/search <naam>`\nExample: `/search tshirt` ya `/search shoes`", parse_mode=ParseMode.MARKDOWN)
     elif text == "👤 My Profile":
         await user_profile(update, context)
-    elif text == "💰 Earn Money Online (EarnKaro)":
+    elif text in ["💰 Daily Cashback & Earning App", "💰 Earn Money Online (EarnKaro)"]:
         await earnkaro_info(update, context)
     elif text == "❓ Help & Support":
         await help_command(update, context)
@@ -557,6 +610,22 @@ def keep_alive():
             pass
         time.sleep(600)
 
+def launch_under99_bot():
+    import subprocess, time
+    time.sleep(3)
+    script = os.path.join(os.path.dirname(__file__), "under99_bot.py")
+    if os.path.exists(script):
+        while True:
+            try:
+                print("🚀 Spawning under99_bot.py in background...")
+                proc = subprocess.Popen([sys.executable, script])
+                proc.wait()
+                print("⚠️ under99_bot.py stopped, restarting in 5s...")
+                time.sleep(5)
+            except Exception as e:
+                print(f"Error managing under99_bot: {e}")
+                time.sleep(10)
+
 def main():
     if not BOT_TOKEN:
         print("Error: BOT_TOKEN not found!")
@@ -565,6 +634,7 @@ def main():
     # Start lightweight health server for cloud platforms (Render, Koyeb, Railway)
     threading.Thread(target=start_health_server, daemon=True).start()
     threading.Thread(target=keep_alive, daemon=True).start()
+    threading.Thread(target=launch_under99_bot, daemon=True).start()
 
     while True:
         try:
