@@ -1,0 +1,6 @@
+.env
+*.pyc
+__pycache__/
+*.db
+telegram_bot_token.txt
+bot_output.log
