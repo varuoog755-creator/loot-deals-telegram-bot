@@ -13,7 +13,8 @@ from telegram import (
     InlineKeyboardMarkup,
     ReplyKeyboardMarkup,
     KeyboardButton,
-    WebAppInfo
+    WebAppInfo,
+    BotCommand
 )
 from telegram.constants import ParseMode, ChatMemberStatus
 from telegram.ext import (
@@ -88,10 +89,16 @@ logger = logging.getLogger(__name__)
 # Keyboards
 MAIN_KEYBOARD = [
     [KeyboardButton("🛍️ Today's Top Loots"), KeyboardButton("⚡ Under ₹99 Store")],
-    [KeyboardButton("🎁 Refer & Earn (Free Gifts)"), KeyboardButton("🏆 Referral Leaderboard")],
-    [KeyboardButton("🔍 Search Deals"), KeyboardButton("👤 My Profile")],
-    [KeyboardButton("💰 Daily Cashback & Earning App"), KeyboardButton("❓ Help & Support")]
+    [KeyboardButton("🌟 VIP Secret Glitch Deals"), KeyboardButton("🎁 Refer & Win Free Rewards")],
+    [KeyboardButton("🔍 Search Deals"), KeyboardButton("🏆 Referral Leaderboard")],
+    [KeyboardButton("💰 Daily Cashback & Earning App"), KeyboardButton("👤 My Profile")]
 ]
+
+def make_progress_bar(current: int, target: int = 3) -> str:
+    current = max(0, current)
+    filled = min(10, int((current / target) * 10))
+    bar = "█" * filled + "░" * (10 - filled)
+    return f"[{bar}] {current}/{target}"
 
 def get_main_markup():
     return ReplyKeyboardMarkup(MAIN_KEYBOARD, resize_keyboard=True)
@@ -183,12 +190,26 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if is_new and referrer_id:
         try:
             ref_count = database.get_referral_count(referrer_id)
-            await context.bot.send_message(
-                chat_id=referrer_id,
-                text=f"🎉 **Badhai ho!** Ek naye member ne aapke invite link se bot join kiya hai!\n\nAapke Total Referrals: **{ref_count}**"
-            )
-        except Exception:
-            pass
+            needed = max(0, 3 - ref_count)
+            if ref_count >= 3:
+                msg = (
+                    f"🎉 <b>BOOM! Naya Referral Aaya!</b> 🎉\n\n"
+                    f"Aapke friend <b>{first_name}</b> ne aapke invite link se bot join kar liya!\n\n"
+                    f"👥 Total Invites: <b>{ref_count}</b>\n"
+                    f"🌟 <b>Badhai Ho! Aapka VIP Secret Glitch Deals access UNLOCKED hai!</b>\n\n"
+                    f"Deals dekhne ke liye bot me <b>'🌟 VIP Secret Glitch Deals'</b> button dabayein!"
+                )
+            else:
+                msg = (
+                    f"🔔 <b>BOOM! Naya Referral Aaya!</b> 🎉\n\n"
+                    f"Aapke friend <b>{first_name}</b> ne aapke invite link se bot join kar liya!\n\n"
+                    f"👥 Total Invites: <b>{ref_count}</b>\n"
+                    f"🎯 VIP Glitch Deals unlock karne ke liye bas <b>{needed} invite</b> bache hain!\n\n"
+                    f"Apna link WhatsApp aur groups par aur share karein!"
+                )
+            await context.bot.send_message(chat_id=referrer_id, text=msg, parse_mode=ParseMode.HTML)
+        except Exception as e:
+            logger.warning(f"Could not notify referrer {referrer_id}: {e}")
 
     # Check channel subscription
     subscribed = await is_user_subscribed(user_id, context)
@@ -302,37 +323,117 @@ async def under_99_loots(update: Update, context: ContextTypes.DEFAULT_TYPE):
     markup = InlineKeyboardMarkup(buttons)
     await update.message.reply_text(text, reply_markup=markup, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
 
+async def vip_deals(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    if not update.effective_user or not update.message:
+        return
+    user_id = update.effective_user.id
+    if not await is_user_subscribed(user_id, context):
+        await send_force_sub_message(update, context)
+        return
+
+    ref_count = database.get_referral_count(user_id)
+    if ref_count < 3 and user_id != ADMIN_ID:
+        needed = 3 - ref_count
+        bot_uname = (await context.bot.get_me()).username or "Roxk755_bot"
+        ref_link = f"https://t.me/{bot_uname}?start=ref_{user_id}"
+        wa_text = urllib.parse.quote(f"🔥 Best Telegram Loot Deals & 90% Discounts Bot! Join with my link: {ref_link}")
+        tg_text = urllib.parse.quote(f"🔥 Join Loot Deals Bot for VIP Secret Price Errors: {ref_link}")
+        buttons = [
+            [InlineKeyboardButton("🟢 Share on WhatsApp (Unlock VIP)", url=f"https://api.whatsapp.com/send?text={wa_text}")],
+            [InlineKeyboardButton("📲 Share on Telegram", url=f"https://t.me/share/url?url={ref_link}&text={tg_text}")],
+            [InlineKeyboardButton("🔄 Refresh Status", callback_data="check_vip_status")]
+        ]
+        progress = make_progress_bar(ref_count, 3)
+        text = (
+            "🔒 <b>VIP SECRET GLITCH DEALS: ACCESS LOCKED</b>\n\n"
+            "Yeh 90-95% OFF price error glitches sirf hamare <b>VIP Members</b> ke liye hain!\n\n"
+            f"📊 <b>Aapka Progress:</b> {progress}\n"
+            f"🎯 <b>Status:</b> {ref_count}/3 Friends Invited\n"
+            f"⚡ <b>Sirf {needed} aur friend(s)</b> ko invite karein aur instantly VIP Glitch Deals unlock karein!\n\n"
+            "Niche WhatsApp button par click karke dosto ya groups me share karein 👇"
+        )
+        await update.message.reply_text(text, reply_markup=InlineKeyboardMarkup(buttons), parse_mode=ParseMode.HTML)
+        return
+
+    # User is VIP!
+    deals = database.get_recent_deals(limit=5, category="Loot")
+    if not deals:
+        deals = database.get_recent_deals(limit=5)
+    text = (
+        "🌟 <b>VIP SECRET GLITCH DEALS UNLOCKED!</b> 🌟\n\n"
+        "👑 <i>Congratulations VIP Member! Yahan hain aaj ki secret 85-95% OFF price error loot deals:</i>\n\n"
+    )
+    buttons = []
+    for idx, d in enumerate(deals, 1):
+        clean_link = shorten_url(d.get('link', ''))
+        title = d.get('title', 'Deal')
+        price = d.get('price', '')
+        mrp = d.get('mrp', '')
+        text += (
+            f"<b>{idx}. {title}</b>\n"
+            f"💰 VIP Loot: <b>{price}</b> (MRP: {mrp}) 🔥 <b>90% GLITCH OFF</b>\n"
+            f"🔗 <a href='{clean_link}'>Grab VIP Steal Now</a>\n\n"
+        )
+        buttons.append([InlineKeyboardButton(f"⚡ Grab VIP #{idx} ({price})", url=clean_link)])
+    text += "⚠️ <i>VIP deals stock jaldi khatam ho jata hai, turant claim karein!</i>"
+    await update.message.reply_text(text, reply_markup=InlineKeyboardMarkup(buttons), parse_mode=ParseMode.HTML, disable_web_page_preview=True)
+
+async def check_vip_status_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    if not query:
+        return
+    user_id = query.from_user.id
+    ref_count = database.get_referral_count(user_id)
+    if ref_count >= 3 or user_id == ADMIN_ID:
+        await query.answer("🎉 Badhai ho! Aapka VIP Access UNLOCKED hai!", show_alert=True)
+        deals = database.get_recent_deals(limit=5)
+        text = "🌟 <b>VIP SECRET GLITCH DEALS UNLOCKED!</b> 🌟\n\n"
+        buttons = []
+        for idx, d in enumerate(deals, 1):
+            clean_link = shorten_url(d.get('link', ''))
+            buttons.append([InlineKeyboardButton(f"⚡ Grab VIP #{idx} ({d.get('price', '')})", url=clean_link)])
+        if query.message:
+            await query.message.reply_text(text, reply_markup=InlineKeyboardMarkup(buttons), parse_mode=ParseMode.HTML)
+    else:
+        needed = 3 - ref_count
+        await query.answer(f"🔒 Abhi aapke {ref_count}/3 invites hain. Bas {needed} aur invite karein!", show_alert=True)
+
 async def refer_and_earn(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user = update.effective_user
+    if not user or not update.message:
+        return
     user_id = user.id
     if not await is_user_subscribed(user_id, context):
         await send_force_sub_message(update, context)
         return
 
-    bot_username = (await context.bot.get_me()).username
+    bot_username = (await context.bot.get_me()).username or "Roxk755_bot"
     ref_link = f"https://t.me/{bot_username}?start=ref_{user_id}"
     ref_count = database.get_referral_count(user_id)
+    progress_vip = make_progress_bar(ref_count, 3)
 
     text = (
-        "🎁 **VIRAL REFER & EARN PROGRAM** 🎁\n\n"
+        "🎁 <b>VIRAL REFER & EARN PROGRAM</b> 🎁\n\n"
         "Apne dosto aur WhatsApp groups mein apna referral link share karein aur special rewards payen!\n\n"
-        f"👥 Aapke Total Invites: **{ref_count} Members**\n\n"
-        "🎯 **Milestone Rewards:**\n"
-        "• **3 Invites:** 🌟 Gold VIP Secret Deals Access\n"
-        "• **5 Invites:** ⚡ ₹50 Instant Cashback Voucher\n"
-        "• **10 Invites:** 🏆 Monthly ₹500 Amazon Gift Card Entry\n\n"
-        "🔗 **Aapka Personal Invite Link:**\n"
-        f"`{ref_link}`\n\n"
-        "*(Direct WhatsApp ya Telegram par share karne ke liye niche button dabayein 👇)*"
+        f"👥 Total Invites: <b>{ref_count} Members</b>\n"
+        f"📊 VIP Progress: <b>{progress_vip}</b>\n\n"
+        "🎯 <b>Milestone Rewards:</b>\n"
+        "• <b>3 Invites:</b> 🌟 VIP Secret Glitch Deals Unlocked (95% OFF)\n"
+        "• <b>5 Invites:</b> ⚡ ₹50 Instant Cashback Voucher\n"
+        "• <b>10 Invites:</b> 🏆 Weekly ₹500 Amazon Gift Voucher Lucky Draw\n\n"
+        "🔗 <b>Aapka Personal Invite Link:</b>\n"
+        f"<code>{ref_link}</code>\n\n"
+        "👉 <i>Direct WhatsApp ya Telegram par share karne ke liye niche buttons dabayein:</i>"
     )
     share_text = f"🔥 Best Telegram Loot Deals & 90% Discounts Bot! Join with my link: {ref_link}"
     tg_share = f"https://t.me/share/url?url={ref_link}&text={urllib_quote('🔥 Join Loot Deals Hub for ₹1 to ₹99 deals and 90% discounts!')}"
     wa_share = f"https://api.whatsapp.com/send?text={urllib_quote(share_text)}"
     buttons = [
         [InlineKeyboardButton("🟢 Share on WhatsApp", url=wa_share)],
-        [InlineKeyboardButton("📲 Share on Telegram", url=tg_share)]
+        [InlineKeyboardButton("📲 Share on Telegram", url=tg_share)],
+        [InlineKeyboardButton("🌟 Check VIP Deals Status", callback_data="check_vip_status")]
     ]
-    await update.message.reply_text(text, reply_markup=InlineKeyboardMarkup(buttons), parse_mode=ParseMode.MARKDOWN)
+    await update.message.reply_text(text, reply_markup=InlineKeyboardMarkup(buttons), parse_mode=ParseMode.HTML)
 
 def urllib_quote(text: str):
     import urllib.parse
@@ -551,7 +652,9 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await top_loots(update, context)
     elif text == "⚡ Under ₹99 Store":
         await under_99_loots(update, context)
-    elif text == "🎁 Refer & Earn (Free Gifts)":
+    elif text in ["🌟 VIP Secret Glitch Deals", "🌟 VIP Secret Deals"]:
+        await vip_deals(update, context)
+    elif text in ["🎁 Refer & Win Free Rewards", "🎁 Refer & Earn (Free Gifts)", "🎁 Refer & Earn"]:
         await refer_and_earn(update, context)
     elif text == "🏆 Referral Leaderboard":
         await leaderboard_command(update, context)
@@ -626,6 +729,34 @@ def launch_under99_bot():
                 print(f"Error managing under99_bot: {e}")
                 time.sleep(10)
 
+async def setup_bot_profile(application):
+    try:
+        desc = (
+            "🔥 India's #1 Loot Deals, Cashback & Price Drop Bot!\n\n"
+            "🛍️ Get 80-90% OFF steals on Amazon, Flipkart, Myntra & Ajio.\n"
+            "⚡ ₹1 & Under ₹99 Deals, Price Errors & Daily Cashback Tricks.\n"
+            "🎁 Refer Friends & Win ₹500 Free Amazon Vouchers.\n\n"
+            "Tap START below to unlock exclusive loots! 👇"
+        )
+        short_desc = "🔥 India's Best Loot Deals, ₹1 & Under ₹99 Steals, Amazon Flipkart 90% Price Drops & Cashback!"
+        commands = [
+            BotCommand("start", "⚡ Launch Loot Deals & Offers"),
+            BotCommand("today", "🔥 Today's 80-90% OFF Top Loots"),
+            BotCommand("under99", "📦 Under ₹99 Steal Deals Store"),
+            BotCommand("vip", "🌟 VIP Secret Glitch Deals (95% OFF)"),
+            BotCommand("refer", "🎁 Refer & Win ₹500 Amazon Gift Cards"),
+            BotCommand("leaderboard", "🏆 Top 10 Referral Champions"),
+            BotCommand("search", "🔍 Search Deals (e.g. /search shirt)"),
+            BotCommand("earn", "💰 Daily Cashback & Earning App"),
+            BotCommand("help", "❓ Help & Support")
+        ]
+        await application.bot.set_my_description(desc)
+        await application.bot.set_my_short_description(short_desc)
+        await application.bot.set_my_commands(commands)
+        logger.info("✅ BotFather SEO commands, description and short description registered successfully!")
+    except Exception as e:
+        logger.warning(f"Could not auto-register bot profile in BotFather: {e}")
+
 def main():
     if not BOT_TOKEN:
         print("Error: BOT_TOKEN not found!")
@@ -638,9 +769,14 @@ def main():
 
     while True:
         try:
-            app = ApplicationBuilder().token(BOT_TOKEN).build()
+            app = ApplicationBuilder().token(BOT_TOKEN).post_init(setup_bot_profile).build()
 
             app.add_handler(CommandHandler("start", start_command))
+            app.add_handler(CommandHandler("today", top_loots))
+            app.add_handler(CommandHandler("under99", under_99_loots))
+            app.add_handler(CommandHandler("vip", vip_deals))
+            app.add_handler(CommandHandler("refer", refer_and_earn))
+            app.add_handler(CommandHandler("earn", earnkaro_info))
             app.add_handler(CommandHandler("help", help_command))
             app.add_handler(CommandHandler("leaderboard", leaderboard_command))
             app.add_handler(CommandHandler("search", search_command))
@@ -650,6 +786,7 @@ def main():
             app.add_handler(CommandHandler("adddeal", admin_add_deal))
 
             app.add_handler(CallbackQueryHandler(check_subscription_callback, pattern="^check_subscription$"))
+            app.add_handler(CallbackQueryHandler(check_vip_status_callback, pattern="^check_vip_status$"))
             app.add_handler(MessageHandler(filters.TEXT & (~filters.COMMAND), handle_message))
 
             print("🚀 Loot Deals Bot is running...")
