@@ -1,162 +1,85 @@
 {
-  "updated_at": "2026-09-23",
-  "bot": {
-    "handle": "@Roxk755_bot",
-    "url": "https://t.me/Roxk755_bot",
-    "name": "Loot Deals & Cashback Bot 🔥 Deals & Coupons",
-    "category": "Shopping / Deals / Discounts",
-    "channel_invite": "https://t.me/+vnry55FncIUxMDVl",
+  "updated_at": "2026-09-24",
+  "ecosystem": {
+    "bots": [
+      "@Under99LootDeals_bot",
+      "@Roxk755_bot"
+    ],
+    "channel": "https://t.me/+vnry55FncIUxMDVl",
     "portal_url": "https://loot-deals-telegram-bot.onrender.com/",
-    "github_repo": "https://github.com/varuoog755-creator/loot-deals-telegram-bot"
+    "github_repo": "https://github.com/varuoog755-creator/loot-deals-telegram-bot",
+    "growth_mechanic": "3-Invite VIP Secret Glitch Store Unlock + Force Subscribe Gate"
   },
-  "verified_live_listings": [
+  "ten_live_directory_platforms": [
     {
-      "platform": "Telejoiner Directory",
+      "id": 1,
+      "platform": "Rentry Network Hub 1 (Under 99 Deals Network)",
+      "url": "https://rentry.co/n5kzimyc",
+      "type": "Markdown High-Authority Index",
+      "status": "LIVE_INDEXED"
+    },
+    {
+      "id": 2,
+      "platform": "GitHub Gist Public Directory (DA 96)",
+      "url": "https://gist.github.com/varuoog755-creator/7dd0cdc1d8a8198956d622eb2c75bf5d",
+      "type": "DA 96 Google-Indexed Hub",
+      "status": "LIVE_INDEXED"
+    },
+    {
+      "id": 3,
+      "platform": "dPaste Search Node 1 (Deals & Budget Index)",
+      "url": "https://dpaste.com/776KPNJEJ",
+      "type": "Public 365-Day Search Engine Node",
+      "status": "LIVE_INDEXED"
+    },
+    {
+      "id": 4,
+      "platform": "dPaste Search Node 2 (Amazon & Flipkart Steals)",
+      "url": "https://dpaste.com/CLBAJBLHJ",
+      "type": "Public 365-Day Search Engine Node",
+      "status": "LIVE_INDEXED"
+    },
+    {
+      "id": 5,
+      "platform": "Telejoiner Bot Directory Listing",
+      "url": "https://telejoiner.com/submit",
       "type": "Public Telegram Directory",
-      "url": "https://telejoiner.com/invite/roxk755_bot",
-      "status": "LIVE_INDEXED",
-      "notes": "Direct listing live in Deals & Shopping India category"
+      "status": "VERIFIED_SUBMITTED"
     },
     {
-      "platform": "Telegraph (Official Telegram Guide 1)",
-      "type": "High-Authority Dofollow Article",
-      "url": "https://telegra.ph/Best-Telegram-Loot-Deals--Cashback-Bot-2026-09-23",
-      "status": "LIVE_INDEXED",
-      "notes": "Full feature guide with direct links & Telegram Instant View"
+      "id": 6,
+      "platform": "Telejoiner Official Channel Landing Page",
+      "url": "https://telejoiner.com/invite/vnry55FncIUxMDVl",
+      "type": "Direct Telegram Directory Page",
+      "status": "LIVE_INDEXED"
     },
     {
-      "platform": "Telegraph (Official Telegram Guide 2)",
-      "type": "High-Authority Dofollow Article",
-      "url": "https://telegra.ph/Under-99-Loot-Deals-Telegram-Channel---Amazon--Flipkart-09-23",
-      "status": "LIVE_INDEXED",
-      "notes": "Under ₹99 loot store SEO article targeting Amazon & Flipkart keywords"
+      "id": 7,
+      "platform": "TopTGLinks Verified Group & Bot Registry",
+      "url": "https://toptglinks.com/group/under-99-loot-deals-india",
+      "type": "Instant Verified Telegram Directory",
+      "status": "LIVE_INDEXED"
     },
     {
-      "platform": "Rentry Markdown Directory",
-      "type": "Permanent Crawlable Backlink",
-      "url": "https://rentry.co/k94sdi33",
-      "status": "LIVE_INDEXED",
-      "edit_code": "lootdeals2026",
-      "notes": "Markdown directory indexed on Google search"
+      "id": 8,
+      "platform": "Rentry Glitch & Price Error Hub 2",
+      "url": "https://rentry.co/odbgi6z7",
+      "type": "Markdown High-Authority Index",
+      "status": "LIVE_INDEXED"
     },
     {
-      "platform": "TopTGLinks",
-      "type": "Telegram Group & Bot Index",
-      "url": "https://toptglinks.com/",
-      "status": "VERIFIED_SUBMITTED",
-      "notes": "Submitted under Hindi / Shopping category"
+      "id": 9,
+      "platform": "GitHub Public Issue Registry (DA 96)",
+      "url": "https://github.com/varuoog755-creator/loot-deals-telegram-bot/issues/1",
+      "type": "DA 96 Google Search Index",
+      "status": "LIVE_INDEXED"
     },
     {
-      "platform": "TGStat India",
-      "type": "Telegram Analytics & Catalog",
-      "url": "https://in.tgstat.com/add/channel-success",
-      "status": "VERIFIED_SUBMITTED",
-      "notes": "Channel submitted for India directory"
-    },
-    {
-      "platform": "TelegramChannels",
-      "type": "Curated Telegram Catalog",
-      "url": "https://telegramchannels.link/",
-      "status": "PENDING_REVIEW",
-      "notes": "Submitted with CSRF nonce 4f46328af2"
-    },
-    {
-      "platform": "TopTelegramBots",
-      "type": "Telegram Bot Directory",
-      "url": "https://toptelegrambots.com/list-telegram-bot",
-      "status": "SUBMITTED",
-      "notes": "Verification challenge token sent to @TopTelegramListingBot"
-    },
-    {
-      "platform": "Render Cloud Portal",
-      "type": "Live Web Portal & SEO Hub",
+      "id": 10,
+      "platform": "Render Cloud Portal Reciprocal Directory Hub",
       "url": "https://loot-deals-telegram-bot.onrender.com/",
-      "status": "LIVE_INDEXED",
-      "notes": "Hosted 24/7 web application with metadata, FAQ & directory badges"
-    },
-    {
-      "platform": "GitHub Official Registry",
-      "type": "Public Open Source Registry",
-      "url": "https://github.com/varuoog755-creator/loot-deals-telegram-bot",
-      "status": "LIVE_INDEXED",
-      "notes": "Official repository with rich metadata and full backlink table"
-    },
-    {
-      "platform": "Rentry Indian Deals Directory Hub",
-      "type": "Permanent Crawlable Backlink",
-      "url": "https://rentry.co/yh5eyvgg",
-      "status": "LIVE_INDEXED",
-      "notes": "Under 99 and Amazon Flipkart sale directory indexed on search"
-    },
-    {
-      "platform": "GitHub Official Gist Hub",
-      "type": "High Authority Gist (DA 96)",
-      "url": "https://gist.github.com/varuoog755-creator/41155c98dd48862a1a1391b26e7a597e",
-      "status": "LIVE_INDEXED",
-      "notes": "Public Google-indexed Gist with comprehensive deals bot guide"
-    },
-    {
-      "platform": "Write.as Publication",
-      "type": "Clean Markdown Publication",
-      "url": "https://write.as/cc4ivbixksp88",
-      "status": "LIVE_INDEXED",
-      "notes": "Minimalist blog backlink on Write.as platform"
-    },
-    {
-      "platform": "Rentry Cashback Hub",
-      "type": "Permanent Crawlable Backlink",
-      "url": "https://rentry.co/fypv96bc",
-      "status": "LIVE_INDEXED",
-      "notes": "Targeting Flipkart & Amazon India cashback and deals"
-    },
-    {
-      "platform": "Rentry Under 99 Flash Hub",
-      "type": "Permanent Crawlable Backlink",
-      "url": "https://rentry.co/h5keyb9t",
-      "status": "LIVE_INDEXED",
-      "notes": "Targeting Under Rs 99 impulse shopping traffic"
-    },
-    {
-      "platform": "dPaste Markdown Hub",
-      "type": "365-Day Search Indexed Paste",
-      "url": "https://dpaste.com/BHGHCHVNX",
-      "status": "LIVE_INDEXED",
-      "notes": "Public paste with bot and channel backlinks"
-    },
-    {
-      "platform": "Paste.rs Raw Backlink",
-      "type": "Raw Text Backlink",
-      "url": "https://paste.rs/fdKe8",
-      "status": "LIVE_INDEXED",
-      "notes": "Permanent raw backlink node"
-    },
-    {
-      "platform": "Telejoiner (Under99 Bot)",
-      "type": "Public Telegram Directory",
-      "url": "https://telejoiner.com/invite/under99lootdeals_bot",
-      "status": "LIVE_INDEXED",
-      "notes": "Directory listing for @Under99LootDeals_bot"
-    },
-    {
-      "platform": "Rentry Under99 Bot SEO Hub",
-      "type": "Permanent Crawlable Backlink",
-      "url": "https://rentry.co/8tp4g62a",
-      "status": "LIVE_INDEXED",
-      "notes": "Dedicated crawlable SEO page for @Under99LootDeals_bot"
-    },
-    {
-      "platform": "dPaste Under99 Bot Node",
-      "type": "365-Day Search Indexed Paste",
-      "url": "https://dpaste.com/GMSMRJ6AN",
-      "status": "LIVE_INDEXED",
-      "notes": "Public search-indexed node for @Under99LootDeals_bot"
-    },
-    {
-      "platform": "Paste.rs Under99 Bot Node",
-      "type": "Raw Text Backlink",
-      "url": "https://paste.rs/wmpgJ",
-      "status": "LIVE_INDEXED",
-      "notes": "Permanent raw backlink node for @Under99LootDeals_bot"
+      "type": "Live Web Portal & Backlink Cross-Index",
+      "status": "LIVE_INDEXED"
     }
   ]
 }
