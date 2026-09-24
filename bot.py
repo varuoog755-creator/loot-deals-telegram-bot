@@ -27,6 +27,7 @@ from telegram.ext import (
 )
 
 import database
+from affiliate_engine import create_affiliate_deal_link, detect_store
 
 # Load environment
 env_path = os.path.join(os.path.dirname(__file__), ".env")
@@ -442,18 +443,24 @@ def urllib_quote(text: str):
 async def user_profile(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user = update.effective_user
     user_id = user.id
-    ref_count = database.get_referral_count(user_id)
-    badge = "🌟 Gold VIP Member" if ref_count >= 3 else "🥉 Regular Member"
+    wallet = database.get_user_wallet(user_id)
+    ref_count = wallet["referral_count"]
+    balance = wallet["wallet_balance"]
+    next_m = wallet["next_milestone"]
+    badge = "🌟 Gold VIP Member" if wallet["vip_unlocked"] or user_id == ADMIN_ID else "🥉 Regular Member"
 
     text = (
-        f"👤 **USER PROFILE**\n\n"
-        f"• **Name:** {user.first_name}\n"
-        f"• **User ID:** `{user_id}`\n"
-        f"• **Status:** {badge}\n"
-        f"• **Total Referred:** **{ref_count} users**\n"
-        f"• **VIP Channel Access:** {'✅ UNLOCKED' if ref_count >= 3 else '❌ Invite 3 friends to unlock'}"
+        f"👤 <b>AFFILIATE USER PROFILE & WALLET</b>\n\n"
+        f"• <b>Name:</b> {user.first_name}\n"
+        f"• <b>User ID:</b> <code>{user_id}</code>\n"
+        f"• <b>Status:</b> <b>{badge}</b>\n"
+        f"• <b>Total Referrals:</b> <b>{ref_count} users</b>\n"
+        f"• <b>Virtual Referral Wallet:</b> <b>₹{balance} Cash</b>\n"
+        f"• <b>VIP Glitch Store Access:</b> {'✅ UNLOCKED' if wallet['vip_unlocked'] or user_id == ADMIN_ID else f'❌ Locked ({ref_count}/3 Invites)'}\n"
+        f"• <b>Next Cash Milestone:</b> {next_m} Invites\n\n"
+        f"🎁 <i>Har dost ko jodne par ₹10 wallet cash judta hai!</i>"
     )
-    await update.message.reply_text(text, parse_mode=ParseMode.MARKDOWN)
+    await update.message.reply_text(text, parse_mode=ParseMode.HTML)
 
 async def earnkaro_info(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = (
@@ -634,18 +641,27 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     url_match = re.search(r'(https?://[^\s]+)', text)
     if url_match:
         raw_url = url_match.group(1)
-        affiliate_target = f"https://earnkaro.com/deal?r={EARNKARO_REF_ID}&url={urllib.parse.quote(raw_url)}"
-        clean_short_url = shorten_url(affiliate_target)
+        deal_info = create_affiliate_deal_link(raw_url)
+        clean_short_url = deal_info["affiliate_url"]
+        store = deal_info["store"]
+        icon = deal_info["icon"]
+        cashback = deal_info["cashback_rate"]
+        
+        wa_share = f"https://api.whatsapp.com/send?text={urllib.parse.quote(f'🔥 Loot Deal: Order karein direct cashback ke sath 👉 {clean_short_url}')}"
 
         reply = (
-            "🎉 **CASHBACK DEAL LINK GENERATED!** 🎉\n\n"
-            "Aapka shopping link discount & cashback tracking ke sath ready hai:\n"
-            f"👉 **Order Link:** {clean_short_url}\n\n"
-            "💡 *Is link se shopping karne par aapko exclusive discount aur direct cashback track hoga!*\n\n"
-            "*(Ise dosto aur family groups mein share karke bhi earning kar sakte hain!)*"
+            f"🎉 <b>CASHBACK DEAL LINK GENERATED!</b> 🎉\n\n"
+            f"🏬 <b>Store:</b> {icon} {store}\n"
+            f"💰 <b>Cashback Rate:</b> <b>{cashback}</b>\n\n"
+            f"👉 <b>Order Link:</b> <code>{clean_short_url}</code>\n\n"
+            f"💡 <i>Is link se shopping karne par aapko exclusive discount aur direct cashback track hoga!</i>\n\n"
+            f"<i>(Ise dosto aur family groups mein share karke bhi earning kar sakte hain!)</i>"
         )
-        markup = InlineKeyboardMarkup([[InlineKeyboardButton("🛒 Buy Now & Grab Cashback", url=clean_short_url)]])
-        await update.message.reply_text(reply, reply_markup=markup, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
+        markup = InlineKeyboardMarkup([
+            [InlineKeyboardButton(f"🛒 Buy on {store} & Grab Cashback", url=clean_short_url)],
+            [InlineKeyboardButton("📲 Share Deal on WhatsApp", url=wa_share)]
+        ])
+        await update.message.reply_text(reply, reply_markup=markup, parse_mode=ParseMode.HTML, disable_web_page_preview=True)
         return
 
     if text == "🛍️ Today's Top Loots":

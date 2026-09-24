@@ -111,13 +111,25 @@ def add_deal(title: str, price: str, mrp: str, discount: str, link: str, categor
         )
         conn.commit()
 
-def get_recent_deals(limit: int = 5, category: str = None):
+def get_user_wallet(user_id: int) -> dict:
     with get_conn() as conn:
         cursor = conn.cursor()
-        if category:
-            cursor.execute("SELECT * FROM deals WHERE category = ? ORDER BY id DESC LIMIT ?", (category, limit))
-        else:
-            cursor.execute("SELECT * FROM deals ORDER BY id DESC LIMIT ?", (limit,))
+        cursor.execute("SELECT COUNT(*) FROM users WHERE referred_by = ?", (user_id,))
+        ref_count = cursor.fetchone()[0]
+        # ₹10 per referral virtual earnings incentive
+        balance = ref_count * 10
+        vip_unlocked = ref_count >= 3
+        return {
+            "referral_count": ref_count,
+            "wallet_balance": balance,
+            "vip_unlocked": vip_unlocked,
+            "next_milestone": 3 if ref_count < 3 else (5 if ref_count < 5 else 10)
+        }
+
+def get_deals_by_category(category: str, limit: int = 10):
+    with get_conn() as conn:
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM deals WHERE category = ? ORDER BY id DESC LIMIT ?", (category, limit))
         return [dict(row) for row in cursor.fetchall()]
 
 def search_deals(query: str, limit: int = 5):

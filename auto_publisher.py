@@ -8,6 +8,7 @@ import urllib.request
 import urllib.parse
 from datetime import datetime
 from dotenv import load_dotenv
+from affiliate_engine import create_affiliate_deal_link
 
 load_dotenv()
 
@@ -59,21 +60,26 @@ def send_telegram_channel_deal(bot_token: str, chat_id: str, deal: dict):
     title = deal["title"]
     source_url = deal["url"]
     
-    # Generate masked affiliate link
-    aff_link = f"{EARNKARO_REF}&url={urllib.parse.quote(source_url)}"
-    clean_buy_link = shorten_url(aff_link)
+    # Advanced affiliate conversion engine
+    deal_info = create_affiliate_deal_link(source_url)
+    clean_buy_link = deal_info["affiliate_url"]
+    store_name = deal_info["store"]
+    store_icon = deal_info["icon"]
+    cashback_rate = deal_info["cashback_rate"]
     
-    wa_share = f"https://api.whatsapp.com/send?text={urllib.parse.quote(f'🔥 Loot Deal: {title} 👉 {clean_buy_link}')}"
+    wa_share = f"https://api.whatsapp.com/send?text={urllib.parse.quote(f'🔥 Loot Deal on {store_name}: {title} 👉 {clean_buy_link}')}"
     
     msg_html = (
         f"🔥 <b>FLASH LOOT DEAL ALERT!</b> 🔥\n\n"
         f"📦 <b>{title}</b>\n\n"
-        f"⚡ <b>Special Discounted Offer Live Now!</b>\n"
-        f"🛒 <i>Grab before price increases or stock ends!</i>\n\n"
+        f"🏬 <b>Store:</b> {store_icon} {store_name}\n"
+        f"💰 <b>Cashback Rate:</b> <b>{cashback_rate}</b>\n"
+        f"⚡ <i>Special Discounted Offer Live Now! Grab before stock ends.</i>\n\n"
         f"👉 <a href='{clean_buy_link}'><b>[TAP HERE TO BUY NOW]</b></a>\n\n"
         f"━━━━━━━━━━━━━━━━━━━\n"
         f"📲 <a href='{wa_share}'><b>[Share Deal on WhatsApp]</b></a>\n"
-        f"🤖 Bot: @Roxk755_bot | 📢 <a href='https://t.me/+vnry55FncIUxMDVl'><b>Join Channel</b></a>"
+        f"🤖 Under ₹99: @Under99LootDeals_bot | ⚡ All Deals: @Roxk755_bot\n"
+        f"📢 <a href='https://t.me/+vnry55FncIUxMDVl'><b>Join Deals Channel</b></a>"
     )
     
     url = f"https://api.telegram.org/bot{bot_token}/sendMessage"

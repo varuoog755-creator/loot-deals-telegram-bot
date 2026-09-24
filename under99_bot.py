@@ -21,6 +21,8 @@ from telegram.ext import (
     ContextTypes,
     filters
 )
+import database
+from affiliate_engine import create_affiliate_deal_link, detect_store
 
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
@@ -597,6 +599,33 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.effective_user.id
     text = update.message.text.strip()
     
+    # Check if message contains an external store link to convert
+    url_match = re.search(r'(https?://[^\s]+)', text)
+    if url_match:
+        raw_url = url_match.group(1)
+        deal_info = create_affiliate_deal_link(raw_url)
+        aff_url = deal_info["affiliate_url"]
+        store = deal_info["store"]
+        icon = deal_info["icon"]
+        cashback = deal_info["cashback_rate"]
+        
+        wa_share = f"https://api.whatsapp.com/send?text={urllib.parse.quote(f'🔥 Loot Deal: Order karein direct cashback ke sath 👉 {aff_url}')}"
+        
+        reply = (
+            f"🎉 <b>CASHBACK DEAL LINK GENERATED!</b> 🎉\n\n"
+            f"🏬 <b>Store:</b> {icon} {store}\n"
+            f"💰 <b>Cashback Rate:</b> <b>{cashback}</b>\n\n"
+            f"👉 <b>Order Link:</b> <code>{aff_url}</code>\n\n"
+            f"💡 <i>Is link se order karne par discount ke sath direct cashback track hoga!</i>\n"
+            f"<i>(Ise dosto ke sath share karke bhi earning kar sakte hain!)</i>"
+        )
+        markup = InlineKeyboardMarkup([
+            [InlineKeyboardButton(f"🛒 Buy on {store} & Grab Cashback", url=aff_url)],
+            [InlineKeyboardButton("📲 Share Deal on WhatsApp", url=wa_share)]
+        ])
+        await update.message.reply_text(reply, reply_markup=markup, parse_mode=ParseMode.HTML, disable_web_page_preview=True)
+        return
+
     # Common commands that don't need force-sub
     if text == "❓ Help & Support":
         await update.message.reply_text(
@@ -628,14 +657,21 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif text in ["🎁 Refer & Win Free Rewards", "🎁 Refer & Earn (Free Gifts)", "🎁 Refer & Earn"]:
         await refer_command(update, context)
     elif text == "👤 My Profile":
-        cnt = database.get_referral_count(user_id)
-        vip_status = "✅ UNLOCKED (Gold VIP)" if cnt >= 3 or user_id == ADMIN_ID else "❌ Locked (Need 3 Invites)"
+        wallet = database.get_user_wallet(user_id)
+        cnt = wallet["referral_count"]
+        bal = wallet["wallet_balance"]
+        vip_status = "✅ UNLOCKED (Gold VIP)" if wallet["vip_unlocked"] or user_id == ADMIN_ID else f"❌ Locked ({cnt}/3 Invites)"
+        next_m = wallet["next_milestone"]
+        
         await update.message.reply_text(
-            f"👤 <b>Aapka Profile</b>\n\n"
+            f"👤 <b>Aapka Affiliate Profile & Wallet</b>\n\n"
             f"• <b>User ID:</b> <code>{user_id}</code>\n"
             f"• <b>Total Referrals:</b> <b>{cnt} Members</b>\n"
-            f"• <b>VIP Glitch Deals:</b> {vip_status}\n\n"
-            "Dosto ko invite karne ke liye <b>'🎁 Refer & Win Free Rewards'</b> dabayein!",
+            f"• <b>Virtual Referral Wallet:</b> <b>₹{bal} Cash</b>\n"
+            f"• <b>VIP Secret Glitch Store:</b> {vip_status}\n"
+            f"• <b>Next Cash Milestone:</b> {next_m} Invites\n\n"
+            f"🎁 <i>Har dost ko jodne par ₹10 wallet bonus milta hai!</i>\n"
+            f"Dosto ko invite karne ke liye <b>'🎁 Refer & Win Free Rewards'</b> dabayein!",
             parse_mode=ParseMode.HTML
         )
     else:
