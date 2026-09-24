@@ -10,7 +10,7 @@
     "github_repo": "https://github.com/varuoog755-creator/loot-deals-telegram-bot",
     "growth_mechanic": "3-Invite VIP Secret Glitch Store Unlock + Force Subscribe Gate"
   },
-  "ten_live_directory_platforms": [
+  "twenty_live_directory_platforms": [
     {
       "id": 1,
       "platform": "Rentry Network Hub 1 (Under 99 Deals Network)",
@@ -20,7 +20,7 @@
     },
     {
       "id": 2,
-      "platform": "GitHub Gist Public Directory (DA 96)",
+      "platform": "GitHub Gist Public Directory 1 (DA 96)",
       "url": "https://gist.github.com/varuoog755-creator/7dd0cdc1d8a8198956d622eb2c75bf5d",
       "type": "DA 96 Google-Indexed Hub",
       "status": "LIVE_INDEXED"
@@ -41,7 +41,7 @@
     },
     {
       "id": 5,
-      "platform": "Telejoiner Bot Directory Listing",
+      "platform": "Telejoiner Bot Directory Listing (@Under99LootDeals_bot)",
       "url": "https://telejoiner.com/submit",
       "type": "Public Telegram Directory",
       "status": "VERIFIED_SUBMITTED"
@@ -69,7 +69,7 @@
     },
     {
       "id": 9,
-      "platform": "GitHub Public Issue Registry (DA 96)",
+      "platform": "GitHub Public Issue Registry 1 (DA 96)",
       "url": "https://github.com/varuoog755-creator/loot-deals-telegram-bot/issues/1",
       "type": "DA 96 Google Search Index",
       "status": "LIVE_INDEXED"
@@ -80,6 +80,76 @@
       "url": "https://loot-deals-telegram-bot.onrender.com/",
       "type": "Live Web Portal & Backlink Cross-Index",
       "status": "LIVE_INDEXED"
+    },
+    {
+      "id": 11,
+      "platform": "Telejoiner Verified Listing (@Roxk755_bot)",
+      "url": "https://telejoiner.com/invite/roxk755_bot",
+      "type": "Direct Telegram Directory Page",
+      "status": "LIVE_INDEXED"
+    },
+    {
+      "id": 12,
+      "platform": "GitHub Gist Public Directory 2 (DA 96)",
+      "url": "https://gist.github.com/varuoog755-creator/215f03901f284259a8581e29c273a8b2",
+      "type": "DA 96 Google-Indexed Hub",
+      "status": "LIVE_INDEXED"
+    },
+    {
+      "id": 13,
+      "platform": "GitHub Public Issue Registry 2 (DA 96)",
+      "url": "https://github.com/varuoog755-creator/loot-deals-telegram-bot/issues/2",
+      "type": "DA 96 Google Search Index",
+      "status": "LIVE_INDEXED"
+    },
+    {
+      "id": 14,
+      "platform": "Rentry Tech & Earbuds Hub 3",
+      "url": "https://rentry.co/riug86si",
+      "type": "Markdown High-Authority Index",
+      "status": "LIVE_INDEXED"
+    },
+    {
+      "id": 15,
+      "platform": "Rentry Fashion & Myntra Hub 4",
+      "url": "https://rentry.co/dnasd97w",
+      "type": "Markdown High-Authority Index",
+      "status": "LIVE_INDEXED"
+    },
+    {
+      "id": 16,
+      "platform": "Rentry Grocery & 1 Rupee Offers Hub 5",
+      "url": "https://rentry.co/7zg3wur2",
+      "type": "Markdown High-Authority Index",
+      "status": "LIVE_INDEXED"
+    },
+    {
+      "id": 17,
+      "platform": "dPaste Flash Deals & Referral Hub 3",
+      "url": "https://dpaste.com/4TJANX3XV",
+      "type": "Public 365-Day Search Engine Node",
+      "status": "LIVE_INDEXED"
+    },
+    {
+      "id": 18,
+      "platform": "dPaste Bot Command Catalog 4",
+      "url": "https://dpaste.com/9P8JMTPVB",
+      "type": "Public 365-Day Search Engine Node",
+      "status": "LIVE_INDEXED"
+    },
+    {
+      "id": 19,
+      "platform": "GitHub Architecture & API Registry 3 (DA 96)",
+      "url": "https://github.com/varuoog755-creator/loot-deals-telegram-bot/issues/3",
+      "type": "DA 96 Google Search Index",
+      "status": "LIVE_INDEXED"
+    },
+    {
+      "id": 20,
+      "platform": "BestTelegramChannels Global Directory",
+      "url": "https://besttelegramchannels.com/add-telegram-channels-groups",
+      "type": "Curated Global Telegram Directory",
+      "status": "VERIFIED_SUBMITTED"
     }
   ]
 }
