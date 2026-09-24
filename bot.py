@@ -191,22 +191,26 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if is_new and referrer_id:
         try:
             ref_count = database.get_referral_count(referrer_id)
+            wallet = database.get_user_wallet(referrer_id)
+            balance = wallet.get("wallet_balance", ref_count * 10)
             needed = max(0, 3 - ref_count)
             if ref_count >= 3:
                 msg = (
-                    f"🎉 <b>BOOM! Naya Referral Aaya!</b> 🎉\n\n"
+                    f"🎉 <b>BOOM! Naya Referral Aaya! (+₹10 Cash)</b> 🎉\n\n"
                     f"Aapke friend <b>{first_name}</b> ne aapke invite link se bot join kar liya!\n\n"
+                    f"💰 <b>Cashback Wallet: ₹{balance}</b> (+₹10 Added!)\n"
                     f"👥 Total Invites: <b>{ref_count}</b>\n"
                     f"🌟 <b>Badhai Ho! Aapka VIP Secret Glitch Deals access UNLOCKED hai!</b>\n\n"
                     f"Deals dekhne ke liye bot me <b>'🌟 VIP Secret Glitch Deals'</b> button dabayein!"
                 )
             else:
                 msg = (
-                    f"🔔 <b>BOOM! Naya Referral Aaya!</b> 🎉\n\n"
+                    f"🔔 <b>BOOM! Naya Referral Aaya! (+₹10 Cash)</b> 🎉\n\n"
                     f"Aapke friend <b>{first_name}</b> ne aapke invite link se bot join kar liya!\n\n"
+                    f"💰 <b>Cashback Wallet: ₹{balance}</b> (+₹10 Added!)\n"
                     f"👥 Total Invites: <b>{ref_count}</b>\n"
                     f"🎯 VIP Glitch Deals unlock karne ke liye bas <b>{needed} invite</b> bache hain!\n\n"
-                    f"Apna link WhatsApp aur groups par aur share karein!"
+                    f"Apna link WhatsApp aur groups par share karein aur rewards earn karein: /refer"
                 )
             await context.bot.send_message(chat_id=referrer_id, text=msg, parse_mode=ParseMode.HTML)
         except Exception as e:
@@ -656,6 +660,49 @@ async def admin_add_deal(update: Update, context: ContextTypes.DEFAULT_TYPE):
     database.add_deal(title, price, mrp, discount, link, category)
     await update.message.reply_text(f"✅ Deal added successfully:\n**{title}** ({price}) in `{category}`", parse_mode=ParseMode.MARKDOWN)
 
+async def s4s_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    user_id = update.effective_user.id
+    if user_id != ADMIN_ID:
+        await update.message.reply_text("Ye command sirf admin ke liye hai.")
+        return
+    import growth_toolkit
+    ch_link = await get_active_channel_url()
+    pitch = growth_toolkit.get_s4s_outreach_pitch(ch_link)
+    promo = growth_toolkit.get_s4s_promo_post("Roxk755_bot", ch_link)
+    reply = (
+        "🤝 <b>CROSS-PROMOTION (S4S) TOOLKIT</b> 🤝\n\n"
+        "<b>1️⃣ Channel Admin Ko Bhejne Wala Pitch:</b>\n\n"
+        f"{pitch}\n\n"
+        "━━━━━━━━━━━━━━━━━━━━\n"
+        "<b>2️⃣ Unke Channel Par Post Hone Wala Promo Message:</b>\n\n"
+        f"{promo}"
+    )
+    await update.message.reply_text(reply, parse_mode=ParseMode.HTML, disable_web_page_preview=True)
+
+async def grouppost_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    import growth_toolkit
+    deals = database.get_recent_deals(limit=1, category="Loot")
+    if not deals:
+        deals = database.get_recent_deals(limit=1)
+    if deals:
+        d = deals[0]
+        post = growth_toolkit.format_discussion_group_post(
+            d.get("title", "Loot Item"),
+            d.get("price", "Loot Price"),
+            d.get("mrp", "Market Price"),
+            d.get("link", "https://tinyurl.com/26gtkvfm"),
+            "Roxk755_bot"
+        )
+    else:
+        ch_link = await get_active_channel_url()
+        post = growth_toolkit.get_s4s_promo_post("Roxk755_bot", ch_link)
+    reply = (
+        "📢 <b>DISCUSSION GROUPS READY VALUE POST</b>\n\n"
+        "<i>(Is text ko copy karke kisi bhi shopping/discussion group me share karein bina spam ke):</i>\n\n"
+        f"{post}"
+    )
+    await update.message.reply_text(reply, parse_mode=ParseMode.HTML, disable_web_page_preview=True)
+
 # Text router
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not update.message or not update.message.text:
@@ -839,6 +886,8 @@ def main():
             app.add_handler(CommandHandler("help", help_command))
             app.add_handler(CommandHandler("leaderboard", leaderboard_command))
             app.add_handler(CommandHandler("search", search_command))
+            app.add_handler(CommandHandler("s4s", s4s_command))
+            app.add_handler(CommandHandler("grouppost", grouppost_command))
             app.add_handler(CommandHandler("stats", admin_stats))
             app.add_handler(CommandHandler("setchannel", admin_set_channel))
             app.add_handler(CommandHandler("broadcast", admin_broadcast))

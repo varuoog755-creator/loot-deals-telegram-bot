@@ -312,22 +312,26 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if is_new and ref_by:
         try:
             ref_count = database.get_referral_count(ref_by)
+            wallet = database.get_user_wallet(ref_by)
+            balance = wallet.get("wallet_balance", ref_count * 10)
             needed = max(0, 3 - ref_count)
             if ref_count >= 3:
                 msg = (
-                    f"🎉 <b>BOOM! Naya Referral Aaya!</b> 🎉\n\n"
+                    f"🎉 <b>BOOM! Naya Referral Aaya! (+₹10 Cash)</b> 🎉\n\n"
                     f"Aapke friend <b>{first_name}</b> ne aapke link se bot join kar liya hai!\n\n"
-                    f"👥 Aapke Total Invites: <b>{ref_count}</b>\n"
-                    f"🌟 <b>Badhai Ho! Aapka VIP Secret Glitch Deals access ab UNLOCKED hai!</b>\n\n"
+                    f"💰 <b>Cashback Wallet: ₹{balance}</b> (+₹10 Added!)\n"
+                    f"👥 Total Invites: <b>{ref_count}</b>\n"
+                    f"🌟 <b>Badhai Ho! Aapka VIP Secret Glitch Deals access UNLOCKED hai!</b>\n\n"
                     f"VIP Deals dekhne ke liye bot me <b>'🌟 VIP Secret Glitch Deals'</b> button dabayein!"
                 )
             else:
                 msg = (
-                    f"🔔 <b>BOOM! Naya Referral Aaya!</b> 🎉\n\n"
+                    f"🔔 <b>BOOM! Naya Referral Aaya! (+₹10 Cash)</b> 🎉\n\n"
                     f"Aapke friend <b>{first_name}</b> ne aapke link se bot join kar liya hai!\n\n"
-                    f"👥 Aapke Total Invites: <b>{ref_count}</b>\n"
+                    f"💰 <b>Cashback Wallet: ₹{balance}</b> (+₹10 Added!)\n"
+                    f"👥 Total Invites: <b>{ref_count}</b>\n"
                     f"🎯 VIP Secret Deals unlock karne ke liye bas <b>{needed} invite</b> bache hain!\n\n"
-                    f"Apna link WhatsApp aur groups par aur share karein!"
+                    f"Apna link WhatsApp aur groups par share karein aur rewards earn karein: /refer"
                 )
             await context.bot.send_message(chat_id=ref_by, text=msg, parse_mode=ParseMode.HTML)
         except Exception as e:
@@ -703,6 +707,48 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     else:
         await update.message.reply_text("Niche menu se option chunein 👇", reply_markup=get_main_markup())
 
+async def s4s_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    user_id = update.effective_user.id
+    if user_id != ADMIN_ID:
+        await update.message.reply_text("Ye command sirf admin ke liye hai.")
+        return
+    import growth_toolkit
+    ch_link = get_active_channel_url()
+    pitch = growth_toolkit.get_s4s_outreach_pitch(ch_link)
+    promo = growth_toolkit.get_s4s_promo_post("Under99LootDeals_bot", ch_link)
+    reply = (
+        "🤝 <b>CROSS-PROMOTION (S4S) TOOLKIT</b> 🤝\n\n"
+        "<b>1️⃣ Channel Admin Ko Bhejne Wala Pitch:</b>\n\n"
+        f"{pitch}\n\n"
+        "━━━━━━━━━━━━━━━━━━━━\n"
+        "<b>2️⃣ Unke Channel Par Post Hone Wala Promo Message:</b>\n\n"
+        f"{promo}"
+    )
+    await update.message.reply_text(reply, parse_mode=ParseMode.HTML, disable_web_page_preview=True)
+
+async def grouppost_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    import growth_toolkit
+    deals = database.get_recent_deals(limit=1, category="Under99")
+    if not deals:
+        deals = database.get_recent_deals(limit=1)
+    if deals:
+        d = deals[0]
+        post = growth_toolkit.format_discussion_group_post(
+            d.get("title", "Loot Item"),
+            d.get("price", "₹49"),
+            d.get("mrp", "₹499"),
+            d.get("link", "https://tinyurl.com/26gtkvfm"),
+            "Under99LootDeals_bot"
+        )
+    else:
+        post = growth_toolkit.get_s4s_promo_post("Under99LootDeals_bot", get_active_channel_url())
+    reply = (
+        "📢 <b>DISCUSSION GROUPS READY VALUE POST</b>\n\n"
+        "<i>(Is text ko copy karke kisi bhi shopping/discussion group me share karein bina spam ke):</i>\n\n"
+        f"{post}"
+    )
+    await update.message.reply_text(reply, parse_mode=ParseMode.HTML, disable_web_page_preview=True)
+
 def main():
     if not BOT_TOKEN:
         logger.error("BOT_TOKEN is missing!")
@@ -717,6 +763,8 @@ def main():
     app.add_handler(CommandHandler("leaderboard", leaderboard_command))
     app.add_handler(CommandHandler("refer", refer_command))
     app.add_handler(CommandHandler("earn", earnkaro_info))
+    app.add_handler(CommandHandler("s4s", s4s_command))
+    app.add_handler(CommandHandler("grouppost", grouppost_command))
     app.add_handler(CommandHandler("setchannel", admin_set_channel))
     app.add_handler(CallbackQueryHandler(check_subscription_callback, pattern="^verify_subscription$"))
     app.add_handler(CallbackQueryHandler(check_vip_status_callback, pattern="^check_vip_status$"))
