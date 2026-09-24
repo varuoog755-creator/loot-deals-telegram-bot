@@ -288,28 +288,45 @@ async def top_loots(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("Abhi naye deals update ho rahe hain, kripya thodi der baad check karein!")
         return
 
-    text = "🔥 **TODAY'S TOP LOOT DEALS (Limited Time)** 🔥\n\n"
-    buttons = []
     bot_uname = (await context.bot.get_me()).username or "Roxk755_bot"
     ref_link = f"https://t.me/{bot_uname}?start=ref_{user_id}"
 
+    await update.message.reply_text("🔥 <b>TODAY'S TOP LOOT DEALS</b> 🔥\n\n⚡ <i>Limited Time Offers</i>", parse_mode=ParseMode.HTML)
+
     for idx, d in enumerate(deals, 1):
         clean_link = shorten_url(d['link'])
-        text += (
-            f"**{idx}. {d['title']}**\n"
-            f"💰 Loot Price: **{d['price']}** ~({d['mrp']})~ 🔥 **{d['discount']}**\n"
-            f"🔗 [Buy / Grab Deal Now]({clean_link})\n\n"
+        
+        caption = (
+            f"🔥 <b>{d['title']}</b>\n\n"
+            f"💰 <b>Loot Price:</b> {d['price']}\n"
+            f"📉 <b>MRP:</b> <s>{d['mrp']}</s>\n"
+            f"🎯 <b>Discount:</b> {d['discount']}\n\n"
+            f"⚡ <i>Stock limited! Jaldi grab karein</i>"
         )
-        share_msg = f"🔥 {d['title']} par {d.get('discount', '80% OFF')} chal raha hai! Check: {clean_link}\n\n🤖 Aur daily loot deals ke liye bot join karein: {ref_link}"
+        
+        share_msg = f"🔥 {d['title']} par {d.get('discount', '80% OFF')} chal raha hai! {clean_link}\n\n🤖 Daily loot deals: {ref_link}"
         tg_share = f"https://t.me/share/url?url={urllib.parse.quote(ref_link)}&text={urllib.parse.quote(share_msg)}"
-        buttons.append([
-            InlineKeyboardButton(f"👉 Grab Deal #{idx} ({d['price']})", url=clean_link),
-            InlineKeyboardButton("🎁 Share & Earn ₹10", url=tg_share)
-        ])
-
-    text += "⚡ *Deals kabhi bhi out of stock ho sakti hain! Jaldi grab karein.*"
-    markup = InlineKeyboardMarkup(buttons)
-    await update.message.reply_text(text, reply_markup=markup, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
+        
+        buttons = [
+            [InlineKeyboardButton(f"🛒 Buy Now ({d['price']})", url=clean_link)],
+            [InlineKeyboardButton("📲 Share & Earn ₹10", url=tg_share)]
+        ]
+        markup = InlineKeyboardMarkup(buttons)
+        
+        # Send with photo if available
+        if d.get('image_url'):
+            try:
+                await update.message.reply_photo(
+                    photo=d['image_url'],
+                    caption=caption,
+                    reply_markup=markup,
+                    parse_mode=ParseMode.HTML
+                )
+            except Exception as e:
+                logger.warning(f"Failed to send photo for deal {idx}: {e}")
+                await update.message.reply_text(caption, reply_markup=markup, parse_mode=ParseMode.HTML)
+        else:
+            await update.message.reply_text(caption, reply_markup=markup, parse_mode=ParseMode.HTML)
 
 async def under_99_loots(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.effective_user.id
@@ -321,28 +338,43 @@ async def under_99_loots(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not deals:
         deals = database.get_recent_deals(limit=5)
 
-    text = "⚡ **UNDER ₹99 MEGA STORE (Steal Deals)** ⚡\n\n"
-    buttons = []
     bot_uname = (await context.bot.get_me()).username or "Roxk755_bot"
     ref_link = f"https://t.me/{bot_uname}?start=ref_{user_id}"
 
+    await update.message.reply_text("⚡ <b>UNDER ₹99 MEGA STORE</b> ⚡\n\n💥 <i>Steal Deals - Limited Stock</i>", parse_mode=ParseMode.HTML)
+
     for idx, d in enumerate(deals, 1):
         clean_link = shorten_url(d['link'])
-        text += (
-            f"**{idx}. {d['title']}**\n"
-            f"💰 Steal Price: **{d['price']}** ~({d['mrp']})~\n"
-            f"🔗 [Claim Under ₹99 Now]({clean_link})\n\n"
+        
+        caption = (
+            f"⚡ <b>{d['title']}</b>\n\n"
+            f"💰 <b>Steal Price:</b> {d['price']}\n"
+            f"📉 <b>MRP:</b> <s>{d['mrp']}</s>\n\n"
+            f"💥 <i>Limited quantity! Grab now</i>"
         )
-        share_msg = f"⚡ {d['title']} sirf {d['price']} me! Check: {clean_link}\n\n🤖 Aur ₹1/₹99 deals ke liye bot join karein: {ref_link}"
+        
+        share_msg = f"⚡ {d['title']} sirf {d['price']} me! {clean_link}\n\n🤖 ₹99 deals: {ref_link}"
         tg_share = f"https://t.me/share/url?url={urllib.parse.quote(ref_link)}&text={urllib.parse.quote(share_msg)}"
-        buttons.append([
-            InlineKeyboardButton(f"⚡ Buy #{idx} at {d['price']}", url=clean_link),
-            InlineKeyboardButton("🎁 Share & Earn ₹10", url=tg_share)
-        ])
-
-    text += "💥 *Free delivery tricks & limited quantity available!*"
-    markup = InlineKeyboardMarkup(buttons)
-    await update.message.reply_text(text, reply_markup=markup, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
+        
+        buttons = [
+            [InlineKeyboardButton(f"🛒 Buy at {d['price']}", url=clean_link)],
+            [InlineKeyboardButton("📲 Share & Earn ₹10", url=tg_share)]
+        ]
+        markup = InlineKeyboardMarkup(buttons)
+        
+        if d.get('image_url'):
+            try:
+                await update.message.reply_photo(
+                    photo=d['image_url'],
+                    caption=caption,
+                    reply_markup=markup,
+                    parse_mode=ParseMode.HTML
+                )
+            except Exception as e:
+                logger.warning(f"Failed to send photo for Under99 deal {idx}: {e}")
+                await update.message.reply_text(caption, reply_markup=markup, parse_mode=ParseMode.HTML)
+        else:
+            await update.message.reply_text(caption, reply_markup=markup, parse_mode=ParseMode.HTML)
 
 async def vip_deals(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not update.effective_user or not update.message:
@@ -382,32 +414,48 @@ async def vip_deals(update: Update, context: ContextTypes.DEFAULT_TYPE):
         deals = database.get_recent_deals(limit=5, category="Loot")
     if not deals:
         deals = database.get_recent_deals(limit=5)
-    text = (
-        "🌟 <b>VIP SECRET GLITCH DEALS UNLOCKED!</b> 🌟\n\n"
-        "👑 <i>Congratulations VIP Member! Yahan hain aaj ki secret 85-95% OFF price error loot deals:</i>\n\n"
-    )
-    buttons = []
+    
     bot_uname = (await context.bot.get_me()).username or "Roxk755_bot"
     ref_link = f"https://t.me/{bot_uname}?start=ref_{user_id}"
+    
+    await update.message.reply_text("🌟 <b>VIP SECRET GLITCH DEALS UNLOCKED!</b> 🌟\n\n👑 <i>Congratulations VIP Member!</i>", parse_mode=ParseMode.HTML)
 
     for idx, d in enumerate(deals, 1):
         clean_link = shorten_url(d.get('link', ''))
         title = d.get('title', 'Deal')
         price = d.get('price', '')
         mrp = d.get('mrp', '')
-        text += (
-            f"<b>{idx}. {title}</b>\n"
-            f"💰 VIP Loot: <b>{price}</b> (MRP: {mrp}) 🔥 <b>90% GLITCH OFF</b>\n"
-            f"🔗 <a href='{clean_link}'>Grab VIP Steal Now</a>\n\n"
+        
+        caption = (
+            f"🌟 <b>{title}</b>\n\n"
+            f"💰 <b>VIP Loot:</b> {price}\n"
+            f"📉 <b>MRP:</b> <s>{mrp}</s>\n"
+            f"🔥 <b>90% GLITCH OFF</b>\n\n"
+            f"⚠️ <i>VIP deals stock jaldi khatam! Turant claim karein</i>"
         )
-        share_msg = f"🔥 VIP Glitch Deal: {title} sirf {price} me! {clean_link}\n\n🤖 VIP Store access ke liye bot join karein: {ref_link}"
+        
+        share_msg = f"🔥 VIP Glitch Deal: {title} sirf {price} me! {clean_link}\n\n🤖 VIP Store: {ref_link}"
         tg_share = f"https://t.me/share/url?url={urllib.parse.quote(ref_link)}&text={urllib.parse.quote(share_msg)}"
-        buttons.append([
-            InlineKeyboardButton(f"⚡ Grab VIP #{idx} ({price})", url=clean_link),
-            InlineKeyboardButton("🎁 Share & Earn ₹10", url=tg_share)
-        ])
-    text += "⚠️ <i>VIP deals stock jaldi khatam ho jata hai, turant claim karein!</i>"
-    await update.message.reply_text(text, reply_markup=InlineKeyboardMarkup(buttons), parse_mode=ParseMode.HTML, disable_web_page_preview=True)
+        
+        buttons = [
+            [InlineKeyboardButton(f"⚡ Grab VIP ({price})", url=clean_link)],
+            [InlineKeyboardButton("📲 Share & Earn ₹10", url=tg_share)]
+        ]
+        markup = InlineKeyboardMarkup(buttons)
+        
+        if d.get('image_url'):
+            try:
+                await update.message.reply_photo(
+                    photo=d['image_url'],
+                    caption=caption,
+                    reply_markup=markup,
+                    parse_mode=ParseMode.HTML
+                )
+            except Exception as e:
+                logger.warning(f"Failed to send photo for VIP deal {idx}: {e}")
+                await update.message.reply_text(caption, reply_markup=markup, parse_mode=ParseMode.HTML)
+        else:
+            await update.message.reply_text(caption, reply_markup=markup, parse_mode=ParseMode.HTML)
 
 async def check_vip_status_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query

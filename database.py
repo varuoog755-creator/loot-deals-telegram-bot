@@ -35,6 +35,7 @@ def init_db():
             discount TEXT,
             link TEXT NOT NULL,
             category TEXT DEFAULT 'Loot',
+            image_url TEXT,
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         )
         """)

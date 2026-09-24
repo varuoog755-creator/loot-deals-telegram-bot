@@ -59,14 +59,15 @@ def save_deal_to_db(deal: dict, aff_url: str):
     try:
         title = deal["title"]
         category = "Under99" if any(w in title.lower() for w in ["99", "49", "29", "19", "under 100", "free"]) else "Loot"
+        image_url = deal.get("image_url")  # Get image if available
         with database.get_conn() as conn:
             cursor = conn.cursor()
             cursor.execute("SELECT id FROM deals WHERE title = ?", (title,))
             if cursor.fetchone():
                 return False
             cursor.execute(
-                "INSERT INTO deals (title, price, mrp, discount, link, category) VALUES (?, ?, ?, ?, ?, ?)",
-                (title, "Loot Price", "Market Price", "75% OFF", aff_url, category)
+                "INSERT INTO deals (title, price, mrp, discount, link, category, image_url) VALUES (?, ?, ?, ?, ?, ?, ?)",
+                (title, "Loot Price", "Market Price", "75% OFF", aff_url, category, image_url)
             )
             conn.commit()
             logger.info(f"Saved deal to DB: {title[:35]}... [{category}]")
@@ -78,6 +79,7 @@ def save_deal_to_db(deal: dict, aff_url: str):
 def send_telegram_channel_deal(bot_token: str, chat_id: str, deal: dict):
     title = deal["title"]
     source_url = deal["url"]
+    image_url = deal.get("image_url")  # Get image if available
     
     # Advanced affiliate conversion engine
     deal_info = create_affiliate_deal_link(source_url)
@@ -90,7 +92,7 @@ def send_telegram_channel_deal(bot_token: str, chat_id: str, deal: dict):
     
     wa_share = f"https://api.whatsapp.com/send?text={urllib.parse.quote(f'🔥 Loot Deal on {store_name}: {title} 👉 {clean_buy_link}')}"
     
-    msg_html = (
+    caption = (
         f"🔥 <b>FLASH LOOT DEAL ALERT!</b> 🔥\n\n"
         f"📦 <b>{title}</b>\n\n"
         f"🏬 <b>Store:</b> {store_icon} {store_name}\n"
@@ -103,15 +105,25 @@ def send_telegram_channel_deal(bot_token: str, chat_id: str, deal: dict):
         f"📢 <a href='https://t.me/+vnry55FncIUxMDVl'><b>Join Deals Channel</b></a>"
     )
     
-    url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
-    payload = {
-        "chat_id": chat_id,
-        "text": msg_html,
-        "parse_mode": "HTML",
-        "disable_web_page_preview": False
-    }
-    
     try:
+        # Try sending with photo first if image available
+        if image_url:
+            url = f"https://api.telegram.org/bot{bot_token}/sendPhoto"
+            payload = {
+                "chat_id": chat_id,
+                "photo": image_url,
+                "caption": caption,
+                "parse_mode": "HTML"
+            }
+        else:
+            url = f"https://api.telegram.org/bot{bot_token}/sendMessage"
+            payload = {
+                "chat_id": chat_id,
+                "text": caption,
+                "parse_mode": "HTML",
+                "disable_web_page_preview": False
+            }
+        
         data = json.dumps(payload).encode("utf-8")
         req = urllib.request.Request(url, data=data, headers={"Content-Type": "application/json"})
         with urllib.request.urlopen(req, timeout=10) as res:
