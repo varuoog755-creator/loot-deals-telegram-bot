@@ -3,12 +3,12 @@ import re
 import time
 import json
 import logging
-import asyncio
 import urllib.request
 import urllib.parse
 from datetime import datetime
 from dotenv import load_dotenv
 from affiliate_engine import create_affiliate_deal_link
+import database
 
 load_dotenv()
 
@@ -38,8 +38,7 @@ def fetch_desidime_deals():
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"})
         html = urllib.request.urlopen(req, timeout=10).read().decode('utf-8', errors='ignore')
         
-        # Extract title and link patterns
-        items = re.findall(r'href=[\'"](/deals/[^\'"]+)[\'"][^>]*>([^<]+)</a>', html)
+        items = re.findall(r'href=[\'\"](/deals/[^\'\"]+)[\'\"][^>]*>([^<]+)</a>', html)
         seen = set()
         for link, title in items:
             title = title.strip()
@@ -56,6 +55,26 @@ def fetch_desidime_deals():
         logger.error(f"Error fetching DesiDime deals: {e}")
     return deals
 
+def save_deal_to_db(deal: dict, aff_url: str):
+    try:
+        title = deal["title"]
+        category = "Under99" if any(w in title.lower() for w in ["99", "49", "29", "19", "under 100", "free"]) else "Loot"
+        with database.get_conn() as conn:
+            cursor = conn.cursor()
+            cursor.execute("SELECT id FROM deals WHERE title = ?", (title,))
+            if cursor.fetchone():
+                return False
+            cursor.execute(
+                "INSERT INTO deals (title, price, mrp, discount, link, category) VALUES (?, ?, ?, ?, ?, ?)",
+                (title, "Loot Price", "Market Price", "75% OFF", aff_url, category)
+            )
+            conn.commit()
+            logger.info(f"Saved deal to DB: {title[:35]}... [{category}]")
+            return True
+    except Exception as e:
+        logger.error(f"DB save error: {e}")
+        return False
+
 def send_telegram_channel_deal(bot_token: str, chat_id: str, deal: dict):
     title = deal["title"]
     source_url = deal["url"]
@@ -66,6 +85,8 @@ def send_telegram_channel_deal(bot_token: str, chat_id: str, deal: dict):
     store_name = deal_info["store"]
     store_icon = deal_info["icon"]
     cashback_rate = deal_info["cashback_rate"]
+    
+    save_deal_to_db(deal, clean_buy_link)
     
     wa_share = f"https://api.whatsapp.com/send?text={urllib.parse.quote(f'🔥 Loot Deal on {store_name}: {title} 👉 {clean_buy_link}')}"
     
@@ -105,12 +126,9 @@ def run_auto_publisher_cycle():
     deals = fetch_desidime_deals()
     logger.info(f"Discovered {len(deals)} candidate deals from Indian feeds.")
     
-    # If channel is set or broadcast to admin for preview
     target_chat = CHANNEL_USERNAME if CHANNEL_USERNAME else str(ADMIN_ID)
-    logger.info(f"Target destination: {target_chat}")
-    
     posted_count = 0
-    for d in deals[:3]: # Post top 3 high quality deals per cycle
+    for d in deals[:3]:
         ok = send_telegram_channel_deal(BOT_TOKEN, target_chat, d)
         if ok:
             posted_count += 1
@@ -120,5 +138,14 @@ def run_auto_publisher_cycle():
     logger.info(f"Cycle completed. Posted {posted_count} deals.")
     return posted_count
 
+def run_continuous_publisher_loop(interval_seconds: int = 1800):
+    logger.info(f"Starting continuous deals publisher loop (Interval: {interval_seconds}s)...")
+    while True:
+        try:
+            run_auto_publisher_cycle()
+        except Exception as e:
+            logger.error(f"Error in publisher cycle: {e}")
+        time.sleep(interval_seconds)
+
 if __name__ == "__main__":
-    run_auto_publisher_cycle()
+    run_continuous_publisher_loop(1800)

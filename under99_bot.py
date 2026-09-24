@@ -368,6 +368,9 @@ async def under99_deals(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
     text = "⚡ <b>UNDER ₹99 STEAL DEALS (Limited Stock)</b> ⚡\n\n"
     buttons = []
+    bot_uname = context.bot.username if context.bot and context.bot.username else "Under99LootDeals_bot"
+    ref_link = f"https://t.me/{bot_uname}?start=ref_{user_id}"
+    
     for idx, d in enumerate(deals, 1):
         clean_link = shorten_url(d.get('link', ''))
         title = d.get('title', 'Deal')
@@ -378,7 +381,12 @@ async def under99_deals(update: Update, context: ContextTypes.DEFAULT_TYPE):
             f"💰 Steal Price: <b>{price}</b> (MRP: {mrp})\n"
             f"🔗 <a href='{clean_link}'>Claim Deal Now</a>\n\n"
         )
-        buttons.append([InlineKeyboardButton(f"👉 Grab #{idx} ({price})", url=clean_link)])
+        share_msg = f"🔥 {title} sirf {price} me mil raha hai! Check deal: {clean_link}\n\n🤖 Aur daily ₹1 & Under ₹99 deals pane ke liye bot join karein: {ref_link}"
+        tg_share = f"https://t.me/share/url?url={urllib.parse.quote(ref_link)}&text={urllib.parse.quote(share_msg)}"
+        buttons.append([
+            InlineKeyboardButton(f"👉 Grab #{idx} ({price})", url=clean_link),
+            InlineKeyboardButton("🎁 Share & Earn ₹10", url=tg_share)
+        ])
     
     text += "⚠️ <i>Deals jaldi out of stock ho sakti hain!</i>"
     await update.message.reply_text(text, reply_markup=InlineKeyboardMarkup(buttons), parse_mode=ParseMode.HTML, disable_web_page_preview=True)
@@ -397,6 +405,9 @@ async def top_loots(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
     text = "🔥 <b>TODAY'S 80-90% OFF LOOT DEALS</b> 🔥\n\n"
     buttons = []
+    bot_uname = context.bot.username if context.bot and context.bot.username else "Under99LootDeals_bot"
+    ref_link = f"https://t.me/{bot_uname}?start=ref_{user_id}"
+
     for idx, d in enumerate(deals, 1):
         clean_link = shorten_url(d.get('link', ''))
         title = d.get('title', 'Deal')
@@ -408,7 +419,12 @@ async def top_loots(update: Update, context: ContextTypes.DEFAULT_TYPE):
             f"💰 Loot Price: <b>{price}</b> (MRP: {mrp}) — <b>{discount}</b>\n"
             f"🔗 <a href='{clean_link}'>Buy Now</a>\n\n"
         )
-        buttons.append([InlineKeyboardButton(f"👉 Grab Deal #{idx}", url=clean_link)])
+        share_msg = f"🔥 {title} par {discount} chal raha hai! Check deal: {clean_link}\n\n🤖 Aur daily loot offers ke liye bot join karein: {ref_link}"
+        tg_share = f"https://t.me/share/url?url={urllib.parse.quote(ref_link)}&text={urllib.parse.quote(share_msg)}"
+        buttons.append([
+            InlineKeyboardButton(f"👉 Grab #{idx} ({price})", url=clean_link),
+            InlineKeyboardButton("🎁 Share & Earn ₹10", url=tg_share)
+        ])
         
     await update.message.reply_text(text, reply_markup=InlineKeyboardMarkup(buttons), parse_mode=ParseMode.HTML, disable_web_page_preview=True)
 
@@ -484,7 +500,9 @@ async def vip_deals(update: Update, context: ContextTypes.DEFAULT_TYPE):
         return
 
     # User is VIP!
-    deals = database.get_recent_deals(limit=5, category="Loot")
+    deals = database.get_recent_deals(limit=5, category="VIP")
+    if not deals:
+        deals = database.get_recent_deals(limit=5, category="Loot")
     if not deals:
         deals = database.get_recent_deals(limit=5)
     text = (
@@ -492,6 +510,9 @@ async def vip_deals(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "👑 <i>Congratulations VIP Member! Yahan hain aaj ki secret 85-95% OFF price error loot deals:</i>\n\n"
     )
     buttons = []
+    bot_uname = context.bot.username if context.bot and context.bot.username else "Under99LootDeals_bot"
+    ref_link = f"https://t.me/{bot_uname}?start=ref_{user_id}"
+
     for idx, d in enumerate(deals, 1):
         clean_link = shorten_url(d.get('link', ''))
         title = d.get('title', 'Deal')
@@ -502,7 +523,12 @@ async def vip_deals(update: Update, context: ContextTypes.DEFAULT_TYPE):
             f"💰 VIP Loot: <b>{price}</b> (MRP: {mrp}) 🔥 <b>90% GLITCH OFF</b>\n"
             f"🔗 <a href='{clean_link}'>Grab VIP Steal Now</a>\n\n"
         )
-        buttons.append([InlineKeyboardButton(f"⚡ Grab VIP #{idx} ({price})", url=clean_link)])
+        share_msg = f"🔥 VIP Glitch Deal: {title} sirf {price} me! {clean_link}\n\n🤖 VIP Store access ke liye bot join karein: {ref_link}"
+        tg_share = f"https://t.me/share/url?url={urllib.parse.quote(ref_link)}&text={urllib.parse.quote(share_msg)}"
+        buttons.append([
+            InlineKeyboardButton(f"⚡ Grab VIP #{idx} ({price})", url=clean_link),
+            InlineKeyboardButton("🎁 Share & Earn ₹10", url=tg_share)
+        ])
     text += "⚠️ <i>VIP deals stock jaldi khatam ho jata hai, turant claim karein!</i>"
     await update.message.reply_text(text, reply_markup=InlineKeyboardMarkup(buttons), parse_mode=ParseMode.HTML, disable_web_page_preview=True)
 

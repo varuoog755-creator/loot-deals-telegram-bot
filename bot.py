@@ -286,6 +286,9 @@ async def top_loots(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     text = "🔥 **TODAY'S TOP LOOT DEALS (Limited Time)** 🔥\n\n"
     buttons = []
+    bot_uname = (await context.bot.get_me()).username or "Roxk755_bot"
+    ref_link = f"https://t.me/{bot_uname}?start=ref_{user_id}"
+
     for idx, d in enumerate(deals, 1):
         clean_link = shorten_url(d['link'])
         text += (
@@ -293,7 +296,12 @@ async def top_loots(update: Update, context: ContextTypes.DEFAULT_TYPE):
             f"💰 Loot Price: **{d['price']}** ~({d['mrp']})~ 🔥 **{d['discount']}**\n"
             f"🔗 [Buy / Grab Deal Now]({clean_link})\n\n"
         )
-        buttons.append([InlineKeyboardButton(f"👉 Grab Deal #{idx} ({d['price']})", url=clean_link)])
+        share_msg = f"🔥 {d['title']} par {d.get('discount', '80% OFF')} chal raha hai! Check: {clean_link}\n\n🤖 Aur daily loot deals ke liye bot join karein: {ref_link}"
+        tg_share = f"https://t.me/share/url?url={urllib.parse.quote(ref_link)}&text={urllib.parse.quote(share_msg)}"
+        buttons.append([
+            InlineKeyboardButton(f"👉 Grab Deal #{idx} ({d['price']})", url=clean_link),
+            InlineKeyboardButton("🎁 Share & Earn ₹10", url=tg_share)
+        ])
 
     text += "⚡ *Deals kabhi bhi out of stock ho sakti hain! Jaldi grab karein.*"
     markup = InlineKeyboardMarkup(buttons)
@@ -311,6 +319,9 @@ async def under_99_loots(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     text = "⚡ **UNDER ₹99 MEGA STORE (Steal Deals)** ⚡\n\n"
     buttons = []
+    bot_uname = (await context.bot.get_me()).username or "Roxk755_bot"
+    ref_link = f"https://t.me/{bot_uname}?start=ref_{user_id}"
+
     for idx, d in enumerate(deals, 1):
         clean_link = shorten_url(d['link'])
         text += (
@@ -318,7 +329,12 @@ async def under_99_loots(update: Update, context: ContextTypes.DEFAULT_TYPE):
             f"💰 Steal Price: **{d['price']}** ~({d['mrp']})~\n"
             f"🔗 [Claim Under ₹99 Now]({clean_link})\n\n"
         )
-        buttons.append([InlineKeyboardButton(f"⚡ Buy #{idx} at {d['price']}", url=clean_link)])
+        share_msg = f"⚡ {d['title']} sirf {d['price']} me! Check: {clean_link}\n\n🤖 Aur ₹1/₹99 deals ke liye bot join karein: {ref_link}"
+        tg_share = f"https://t.me/share/url?url={urllib.parse.quote(ref_link)}&text={urllib.parse.quote(share_msg)}"
+        buttons.append([
+            InlineKeyboardButton(f"⚡ Buy #{idx} at {d['price']}", url=clean_link),
+            InlineKeyboardButton("🎁 Share & Earn ₹10", url=tg_share)
+        ])
 
     text += "💥 *Free delivery tricks & limited quantity available!*"
     markup = InlineKeyboardMarkup(buttons)
@@ -357,7 +373,9 @@ async def vip_deals(update: Update, context: ContextTypes.DEFAULT_TYPE):
         return
 
     # User is VIP!
-    deals = database.get_recent_deals(limit=5, category="Loot")
+    deals = database.get_recent_deals(limit=5, category="VIP")
+    if not deals:
+        deals = database.get_recent_deals(limit=5, category="Loot")
     if not deals:
         deals = database.get_recent_deals(limit=5)
     text = (
@@ -365,6 +383,9 @@ async def vip_deals(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "👑 <i>Congratulations VIP Member! Yahan hain aaj ki secret 85-95% OFF price error loot deals:</i>\n\n"
     )
     buttons = []
+    bot_uname = (await context.bot.get_me()).username or "Roxk755_bot"
+    ref_link = f"https://t.me/{bot_uname}?start=ref_{user_id}"
+
     for idx, d in enumerate(deals, 1):
         clean_link = shorten_url(d.get('link', ''))
         title = d.get('title', 'Deal')
@@ -375,7 +396,12 @@ async def vip_deals(update: Update, context: ContextTypes.DEFAULT_TYPE):
             f"💰 VIP Loot: <b>{price}</b> (MRP: {mrp}) 🔥 <b>90% GLITCH OFF</b>\n"
             f"🔗 <a href='{clean_link}'>Grab VIP Steal Now</a>\n\n"
         )
-        buttons.append([InlineKeyboardButton(f"⚡ Grab VIP #{idx} ({price})", url=clean_link)])
+        share_msg = f"🔥 VIP Glitch Deal: {title} sirf {price} me! {clean_link}\n\n🤖 VIP Store access ke liye bot join karein: {ref_link}"
+        tg_share = f"https://t.me/share/url?url={urllib.parse.quote(ref_link)}&text={urllib.parse.quote(share_msg)}"
+        buttons.append([
+            InlineKeyboardButton(f"⚡ Grab VIP #{idx} ({price})", url=clean_link),
+            InlineKeyboardButton("🎁 Share & Earn ₹10", url=tg_share)
+        ])
     text += "⚠️ <i>VIP deals stock jaldi khatam ho jata hai, turant claim karein!</i>"
     await update.message.reply_text(text, reply_markup=InlineKeyboardMarkup(buttons), parse_mode=ParseMode.HTML, disable_web_page_preview=True)
 
@@ -745,6 +771,22 @@ def launch_under99_bot():
                 print(f"Error managing under99_bot: {e}")
                 time.sleep(10)
 
+def launch_auto_publisher():
+    import subprocess, time
+    time.sleep(15)
+    script = os.path.join(os.path.dirname(__file__), "auto_publisher.py")
+    if os.path.exists(script):
+        while True:
+            try:
+                print("📢 Spawning auto_publisher.py loop in background...")
+                proc = subprocess.Popen([sys.executable, script])
+                proc.wait()
+                print("⚠️ auto_publisher.py exited, restarting in 30s...")
+                time.sleep(30)
+            except Exception as e:
+                print(f"Error managing auto_publisher: {e}")
+                time.sleep(30)
+
 async def setup_bot_profile(application):
     try:
         desc = (
@@ -782,6 +824,7 @@ def main():
     threading.Thread(target=start_health_server, daemon=True).start()
     threading.Thread(target=keep_alive, daemon=True).start()
     threading.Thread(target=launch_under99_bot, daemon=True).start()
+    threading.Thread(target=launch_auto_publisher, daemon=True).start()
 
     while True:
         try:
