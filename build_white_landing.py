@@ -1,4 +1,135 @@
-<!DOCTYPE html>
+import json
+
+with open("earnkaro_live_processed.json", "r", encoding="utf-8") as f:
+    deals = json.load(f)
+
+categories = [
+    {
+        "id": "fashion",
+        "name": "Fashion & Apparel",
+        "badge": "Up to 80% OFF",
+        "count": "240+ Deals",
+        "image": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=600&auto=format&fit=crop&q=80",
+        "icon": "👗"
+    },
+    {
+        "id": "audio",
+        "name": "Audio & Headphones",
+        "badge": "Up to 75% OFF",
+        "count": "95+ Deals",
+        "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80",
+        "icon": "🎧"
+    },
+    {
+        "id": "wearables",
+        "name": "Smartwatches",
+        "badge": "Up to 86% OFF",
+        "count": "64+ Deals",
+        "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&auto=format&fit=crop&q=80",
+        "icon": "⌚"
+    },
+    {
+        "id": "footwear",
+        "name": "Sneakers & Footwear",
+        "badge": "Up to 84% OFF",
+        "count": "120+ Deals",
+        "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&auto=format&fit=crop&q=80",
+        "icon": "👟"
+    },
+    {
+        "id": "electronics",
+        "name": "Mobiles & Gadgets",
+        "badge": "Up to 70% OFF",
+        "count": "150+ Deals",
+        "image": "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=600&auto=format&fit=crop&q=80",
+        "icon": "📱"
+    },
+    {
+        "id": "under99",
+        "name": "Under ₹99 Steals",
+        "badge": "From ₹29",
+        "count": "180+ Deals",
+        "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&auto=format&fit=crop&q=80",
+        "icon": "⚡"
+    }
+]
+
+coupons = [
+    {
+        "id": "c1",
+        "store": "Amazon India",
+        "icon": "📦",
+        "discount": "₹200 OFF",
+        "desc": "Flat ₹200 OFF on Fashion & Lifestyle orders above ₹1,999",
+        "code": "AMZ200",
+        "verified": "Verified 2h ago",
+        "used": "4.8k used",
+        "expires": "30 Sep 2026",
+        "link": "https://tinyurl.com/23xyqytf"
+    },
+    {
+        "id": "c2",
+        "store": "Myntra Fashion",
+        "icon": "👗",
+        "discount": "EXTRA 40% OFF",
+        "desc": "Extra 40% discount on top streetwear, sneakers & hoodies",
+        "code": "MYNTRA40",
+        "verified": "Verified 1h ago",
+        "used": "8.2k used",
+        "expires": "30 Sep 2026",
+        "link": "https://tinyurl.com/278mx3jg"
+    },
+    {
+        "id": "c3",
+        "store": "Flipkart Big Billion",
+        "icon": "🛍️",
+        "discount": "FLAT ₹500 OFF",
+        "desc": "Flat ₹500 instant discount on electronics & smart home devices",
+        "code": "FLIP500",
+        "verified": "Verified 45m ago",
+        "used": "12.4k used",
+        "expires": "02 Oct 2026",
+        "link": "https://tinyurl.com/28q8bgfn"
+    },
+    {
+        "id": "c4",
+        "store": "boAt Lifestyle",
+        "icon": "🎧",
+        "discount": "FLAT ₹200 OFF",
+        "desc": "Flat ₹200 extra discount on Airdopes & Smartwatches",
+        "code": "BOAT200",
+        "verified": "Verified 3h ago",
+        "used": "3.1k used",
+        "expires": "05 Oct 2026",
+        "link": "https://tinyurl.com/2a88qpux"
+    },
+    {
+        "id": "c5",
+        "store": "Ajio Trends",
+        "icon": "✨",
+        "discount": "EXTRA 35% OFF",
+        "desc": "Extra 35% off on orders above ₹1,490 on international brands",
+        "code": "AJIO35",
+        "verified": "Verified 2h ago",
+        "used": "5.7k used",
+        "expires": "01 Oct 2026",
+        "link": "https://tinyurl.com/267c8yzn"
+    },
+    {
+        "id": "c6",
+        "store": "Tata CLiQ",
+        "icon": "💎",
+        "discount": "EXTRA 20% OFF",
+        "desc": "Extra 20% instant discount on luxury audio & tech accessories",
+        "code": "CLIQ20",
+        "verified": "Verified 4h ago",
+        "used": "2.9k used",
+        "expires": "30 Sep 2026",
+        "link": "https://tinyurl.com/22e6akj4"
+    }
+]
+
+html_template = f"""<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
@@ -28,7 +159,7 @@
        APPLE / NIKE PRO MINIMALIST WHITE & BLACK DESIGN SYSTEM
        Pure white backdrop, bold black typography, high-contrast accents
        ------------------------------------------------------------- */
-    :root {
+    :root {{
       --bg-base: #ffffff;
       --bg-surface: #ffffff;
       --bg-elevated: #f8fafc;
@@ -60,35 +191,35 @@
       
       --transition-fast: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
       --transition-smooth: 0.28s cubic-bezier(0.16, 1, 0.3, 1);
-    }
+    }}
 
-    * {
+    * {{
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-    }
+    }}
 
-    body {
+    body {{
       font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
       background-color: var(--bg-base);
       color: var(--text-primary);
       line-height: 1.5;
       overflow-x: hidden;
       padding-bottom: 70px;
-    }
+    }}
 
-    .container {
+    .container {{
       max-width: 1240px;
       margin: 0 auto;
       padding: 0 20px;
-    }
+    }}
 
     /* -------------------------------------------------------------
        STICKY HEADER
        ------------------------------------------------------------- */
-    header {
+    header {{
       position: sticky;
       top: 0;
       background: rgba(255, 255, 255, 0.94);
@@ -97,16 +228,16 @@
       border-bottom: 1px solid var(--border-subtle);
       z-index: 100;
       transition: all var(--transition-fast);
-    }
+    }}
 
-    .header-inner {
+    .header-inner {{
       display: flex;
       align-items: center;
       justify-content: space-between;
       height: 68px;
-    }
+    }}
 
-    .brand-logo {
+    .brand-logo {{
       display: flex;
       align-items: center;
       gap: 10px;
@@ -115,9 +246,9 @@
       font-weight: 900;
       font-size: 21px;
       letter-spacing: -0.5px;
-    }
+    }}
 
-    .logo-badge {
+    .logo-badge {{
       background: #000000;
       color: #ffffff;
       font-size: 10px;
@@ -126,34 +257,34 @@
       border-radius: var(--radius-full);
       text-transform: uppercase;
       letter-spacing: 0.8px;
-    }
+    }}
 
-    .nav-links {
+    .nav-links {{
       display: flex;
       align-items: center;
       gap: 28px;
-    }
+    }}
 
-    .nav-links a {
+    .nav-links a {{
       color: var(--text-secondary);
       text-decoration: none;
       font-size: 14px;
       font-weight: 600;
       transition: color var(--transition-fast);
-    }
+    }}
 
-    .nav-links a:hover, .nav-links a.active {
+    .nav-links a:hover, .nav-links a.active {{
       color: var(--text-primary);
       font-weight: 700;
-    }
+    }}
 
-    .header-actions {
+    .header-actions {{
       display: flex;
       align-items: center;
       gap: 12px;
-    }
+    }}
 
-    .fav-btn-header {
+    .fav-btn-header {{
       background: var(--bg-elevated);
       border: 1px solid var(--border-subtle);
       color: var(--text-primary);
@@ -166,14 +297,14 @@
       gap: 6px;
       cursor: pointer;
       transition: all var(--transition-fast);
-    }
+    }}
 
-    .fav-btn-header:hover {
+    .fav-btn-header:hover {{
       background: var(--bg-card-hover);
       border-color: var(--border-medium);
-    }
+    }}
 
-    .tg-header-btn {
+    .tg-header-btn {{
       background: #0088cc;
       color: #ffffff;
       text-decoration: none;
@@ -185,24 +316,24 @@
       align-items: center;
       gap: 6px;
       transition: transform var(--transition-fast), background var(--transition-fast);
-    }
+    }}
 
-    .tg-header-btn:hover {
+    .tg-header-btn:hover {{
       background: #0077b5;
       transform: translateY(-1px);
-    }
+    }}
 
     /* -------------------------------------------------------------
        HERO SECTION (Apple/Nike Bold Typography)
        ------------------------------------------------------------- */
-    .hero {
+    .hero {{
       padding: 56px 0 36px;
       text-align: center;
       background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
       border-bottom: 1px solid var(--border-subtle);
-    }
+    }}
 
-    .hero-pill {
+    .hero-pill {{
       display: inline-flex;
       align-items: center;
       gap: 8px;
@@ -216,9 +347,9 @@
       padding: 6px 14px;
       border-radius: var(--radius-full);
       margin-bottom: 20px;
-    }
+    }}
 
-    .hero-title {
+    .hero-title {{
       font-size: clamp(34px, 5.2vw, 56px);
       font-weight: 900;
       letter-spacing: -1.5px;
@@ -226,24 +357,24 @@
       color: var(--text-heading);
       max-width: 840px;
       margin: 0 auto 16px;
-    }
+    }}
 
-    .hero-subtitle {
+    .hero-subtitle {{
       color: var(--text-secondary);
       font-size: clamp(15px, 2vw, 18px);
       max-width: 620px;
       margin: 0 auto 32px;
       font-weight: 500;
-    }
+    }}
 
     /* Search Bar */
-    .search-wrapper {
+    .search-wrapper {{
       max-width: 640px;
       margin: 0 auto 20px;
       position: relative;
-    }
+    }}
 
-    .search-bar {
+    .search-bar {{
       width: 100%;
       height: 56px;
       background: #ffffff;
@@ -256,14 +387,14 @@
       outline: none;
       transition: all var(--transition-fast);
       box-shadow: var(--shadow-sm);
-    }
+    }}
 
-    .search-bar:focus {
+    .search-bar:focus {{
       border-color: #000000;
       box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.08), var(--shadow-md);
-    }
+    }}
 
-    .search-icon-left {
+    .search-icon-left {{
       position: absolute;
       left: 20px;
       top: 50%;
@@ -271,9 +402,9 @@
       color: var(--text-muted);
       font-size: 18px;
       pointer-events: none;
-    }
+    }}
 
-    .search-clear-btn {
+    .search-clear-btn {{
       position: absolute;
       right: 18px;
       top: 50%;
@@ -285,25 +416,25 @@
       font-size: 16px;
       display: none;
       padding: 4px;
-    }
+    }}
 
-    .popular-searches {
+    .popular-searches {{
       display: flex;
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;
       gap: 8px;
-    }
+    }}
 
-    .popular-label {
+    .popular-label {{
       color: var(--text-muted);
       font-size: 12px;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.5px;
-    }
+    }}
 
-    .search-chip {
+    .search-chip {{
       background: #ffffff;
       border: 1px solid var(--border-subtle);
       color: var(--text-secondary);
@@ -314,49 +445,49 @@
       border-radius: var(--radius-full);
       transition: all var(--transition-fast);
       box-shadow: var(--shadow-sm);
-    }
+    }}
 
-    .search-chip:hover {
+    .search-chip:hover {{
       color: var(--text-primary);
       border-color: #000000;
       background: var(--bg-elevated);
-    }
+    }}
 
     /* -------------------------------------------------------------
        CATEGORIES SECTION (Image Cards)
        ------------------------------------------------------------- */
-    .section-block {
+    .section-block {{
       padding: 48px 0;
-    }
+    }}
 
-    .section-head {
+    .section-head {{
       display: flex;
       align-items: flex-end;
       justify-content: space-between;
       margin-bottom: 24px;
-    }
+    }}
 
-    .section-title {
+    .section-title {{
       font-size: clamp(22px, 3.5vw, 30px);
       font-weight: 900;
       letter-spacing: -0.8px;
       color: var(--text-heading);
-    }
+    }}
 
-    .section-subtitle {
+    .section-subtitle {{
       color: var(--text-secondary);
       font-size: 14px;
       margin-top: 4px;
       font-weight: 500;
-    }
+    }}
 
-    .categories-grid {
+    .categories-grid {{
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 16px;
-    }
+    }}
 
-    .category-card {
+    .category-card {{
       position: relative;
       border-radius: var(--radius-md);
       overflow: hidden;
@@ -371,14 +502,14 @@
       justify-content: flex-end;
       padding: 18px;
       transition: all var(--transition-smooth);
-    }
+    }}
 
-    .category-card:hover {
+    .category-card:hover {{
       transform: translateY(-3px);
       box-shadow: var(--shadow-lg);
-    }
+    }}
 
-    .category-bg-img {
+    .category-bg-img {{
       position: absolute;
       top: 0;
       left: 0;
@@ -387,28 +518,28 @@
       object-fit: cover;
       opacity: 0.6;
       transition: transform var(--transition-smooth), opacity var(--transition-smooth);
-    }
+    }}
 
-    .category-card:hover .category-bg-img {
+    .category-card:hover .category-bg-img {{
       transform: scale(1.06);
       opacity: 0.75;
-    }
+    }}
 
-    .category-overlay {
+    .category-overlay {{
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.85) 90%);
-    }
+    }}
 
-    .category-content {
+    .category-content {{
       position: relative;
       z-index: 2;
-    }
+    }}
 
-    .category-badge-chip {
+    .category-badge-chip {{
       display: inline-block;
       background: var(--accent-green);
       color: #ffffff;
@@ -418,24 +549,24 @@
       border-radius: var(--radius-full);
       margin-bottom: 6px;
       text-transform: uppercase;
-    }
+    }}
 
-    .category-name {
+    .category-name {{
       font-size: 17px;
       font-weight: 900;
       letter-spacing: -0.3px;
-    }
+    }}
 
-    .category-count {
+    .category-count {{
       font-size: 12px;
       color: #e2e8f0;
       font-weight: 600;
-    }
+    }}
 
     /* -------------------------------------------------------------
        FILTER BAR & TABS
        ------------------------------------------------------------- */
-    .filter-sticky-wrap {
+    .filter-sticky-wrap {{
       display: flex;
       align-items: center;
       gap: 10px;
@@ -443,10 +574,10 @@
       padding: 12px 0 20px;
       margin-bottom: 12px;
       scrollbar-width: none;
-    }
-    .filter-sticky-wrap::-webkit-scrollbar { display: none; }
+    }}
+    .filter-sticky-wrap::-webkit-scrollbar {{ display: none; }}
 
-    .filter-pill {
+    .filter-pill {{
       background: #ffffff;
       border: 1px solid var(--border-subtle);
       color: var(--text-secondary);
@@ -461,30 +592,30 @@
       align-items: center;
       gap: 6px;
       box-shadow: var(--shadow-sm);
-    }
+    }}
 
-    .filter-pill:hover {
+    .filter-pill:hover {{
       color: var(--text-primary);
       border-color: #000000;
-    }
+    }}
 
-    .filter-pill.active {
+    .filter-pill.active {{
       background: #000000;
       color: #ffffff;
       border-color: #000000;
       font-weight: 800;
-    }
+    }}
 
     /* -------------------------------------------------------------
        DEALS GRID (Apple White Card Aesthetics)
        ------------------------------------------------------------- */
-    .deals-grid {
+    .deals-grid {{
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 20px;
-    }
+    }}
 
-    .deal-card {
+    .deal-card {{
       background: #ffffff;
       border: 1.5px solid var(--border-subtle);
       border-radius: var(--radius-md);
@@ -494,34 +625,34 @@
       transition: all var(--transition-smooth);
       position: relative;
       box-shadow: var(--shadow-sm);
-    }
+    }}
 
-    .deal-card:hover {
+    .deal-card:hover {{
       transform: translateY(-4px);
       border-color: #000000;
       box-shadow: var(--shadow-lg);
-    }
+    }}
 
-    .card-img-wrap {
+    .card-img-wrap {{
       position: relative;
       width: 100%;
       height: 220px;
       background: #f8fafc;
       overflow: hidden;
-    }
+    }}
 
-    .card-product-img {
+    .card-product-img {{
       width: 100%;
       height: 100%;
       object-fit: cover;
       transition: transform var(--transition-smooth);
-    }
+    }}
 
-    .deal-card:hover .card-product-img {
+    .deal-card:hover .card-product-img {{
       transform: scale(1.05);
-    }
+    }}
 
-    .card-tag-pill {
+    .card-tag-pill {{
       position: absolute;
       top: 12px;
       left: 12px;
@@ -533,9 +664,9 @@
       padding: 4px 10px;
       border-radius: var(--radius-full);
       letter-spacing: 0.5px;
-    }
+    }}
 
-    .card-discount-badge {
+    .card-discount-badge {{
       position: absolute;
       top: 12px;
       right: 12px;
@@ -547,9 +678,9 @@
       border-radius: var(--radius-full);
       letter-spacing: 0.5px;
       box-shadow: 0 4px 12px rgba(239, 68, 68, 0.35);
-    }
+    }}
 
-    .card-fav-btn {
+    .card-fav-btn {{
       position: absolute;
       bottom: 12px;
       right: 12px;
@@ -567,47 +698,47 @@
       transition: transform var(--transition-fast), background var(--transition-fast);
       z-index: 2;
       box-shadow: var(--shadow-sm);
-    }
+    }}
 
-    .card-fav-btn:hover {
+    .card-fav-btn:hover {{
       transform: scale(1.1);
       background: #ffffff;
       box-shadow: var(--shadow-md);
-    }
+    }}
 
-    .card-body {
+    .card-body {{
       padding: 18px;
       display: flex;
       flex-direction: column;
       flex-grow: 1;
-    }
+    }}
 
-    .card-store-row {
+    .card-store-row {{
       display: flex;
       align-items: center;
       justify-content: space-between;
       margin-bottom: 8px;
-    }
+    }}
 
-    .store-label {
+    .store-label {{
       display: inline-flex;
       align-items: center;
       gap: 6px;
       font-size: 12px;
       color: var(--text-secondary);
       font-weight: 700;
-    }
+    }}
 
-    .verified-micro {
+    .verified-micro {{
       color: var(--accent-green);
       font-size: 11px;
       font-weight: 800;
       display: flex;
       align-items: center;
       gap: 3px;
-    }
+    }}
 
-    .deal-card-title {
+    .deal-card-title {{
       font-size: 15px;
       font-weight: 800;
       line-height: 1.35;
@@ -618,9 +749,9 @@
       -webkit-box-orient: vertical;
       overflow: hidden;
       min-height: 40px;
-    }
+    }}
 
-    .cashback-profit-tag {
+    .cashback-profit-tag {{
       display: inline-flex;
       align-items: center;
       gap: 4px;
@@ -632,31 +763,31 @@
       border-radius: 6px;
       margin-bottom: 14px;
       align-self: flex-start;
-    }
+    }}
 
-    .card-price-row {
+    .card-price-row {{
       display: flex;
       align-items: baseline;
       gap: 10px;
       margin-top: auto;
       margin-bottom: 16px;
-    }
+    }}
 
-    .price-loot {
+    .price-loot {{
       font-size: 24px;
       font-weight: 900;
       color: var(--text-heading);
       letter-spacing: -0.5px;
-    }
+    }}
 
-    .price-mrp {
+    .price-mrp {{
       font-size: 14px;
       color: var(--text-muted);
       text-decoration: line-through;
       font-weight: 600;
-    }
+    }}
 
-    .buy-btn-primary {
+    .buy-btn-primary {{
       display: flex;
       align-items: center;
       justify-content: center;
@@ -671,24 +802,24 @@
       border-radius: var(--radius-sm);
       transition: all var(--transition-fast);
       box-shadow: var(--shadow-sm);
-    }
+    }}
 
-    .buy-btn-primary:hover {
+    .buy-btn-primary:hover {{
       background: var(--accent-green);
       color: #ffffff;
       box-shadow: 0 4px 20px rgba(5, 150, 105, 0.35);
-    }
+    }}
 
     /* -------------------------------------------------------------
        COUPONS SECTION
        ------------------------------------------------------------- */
-    .coupons-grid {
+    .coupons-grid {{
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
       gap: 18px;
-    }
+    }}
 
-    .coupon-card {
+    .coupon-card {{
       background: #ffffff;
       border: 1.5px solid var(--border-subtle);
       border-radius: var(--radius-md);
@@ -698,28 +829,28 @@
       justify-content: space-between;
       transition: all var(--transition-smooth);
       box-shadow: var(--shadow-sm);
-    }
+    }}
 
-    .coupon-card:hover {
+    .coupon-card:hover {{
       border-color: #000000;
       transform: translateY(-2px);
       box-shadow: var(--shadow-md);
-    }
+    }}
 
-    .coupon-top {
+    .coupon-top {{
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
       margin-bottom: 12px;
-    }
+    }}
 
-    .coupon-store-info {
+    .coupon-store-info {{
       display: flex;
       align-items: center;
       gap: 10px;
-    }
+    }}
 
-    .store-icon-box {
+    .store-icon-box {{
       width: 44px;
       height: 44px;
       background: var(--bg-elevated);
@@ -729,15 +860,15 @@
       align-items: center;
       justify-content: center;
       font-size: 22px;
-    }
+    }}
 
-    .coupon-store-name {
+    .coupon-store-name {{
       font-size: 16px;
       font-weight: 900;
       color: var(--text-heading);
-    }
+    }}
 
-    .coupon-disc-tag {
+    .coupon-disc-tag {{
       background: var(--accent-green-bg);
       color: var(--accent-green);
       font-size: 12px;
@@ -745,17 +876,17 @@
       padding: 4px 10px;
       border-radius: var(--radius-full);
       border: 1px solid #a7f3d0;
-    }
+    }}
 
-    .coupon-desc-text {
+    .coupon-desc-text {{
       font-size: 14px;
       color: var(--text-secondary);
       margin-bottom: 16px;
       line-height: 1.4;
       font-weight: 500;
-    }
+    }}
 
-    .coupon-code-box {
+    .coupon-code-box {{
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -764,17 +895,17 @@
       border-radius: var(--radius-sm);
       padding: 6px 6px 6px 14px;
       margin-bottom: 12px;
-    }
+    }}
 
-    .code-string {
+    .code-string {{
       font-family: 'SF Mono', Monaco, Consolas, monospace;
       font-size: 15px;
       font-weight: 900;
       letter-spacing: 1.5px;
       color: #000000;
-    }
+    }}
 
-    .copy-btn-action {
+    .copy-btn-action {{
       background: #000000;
       border: none;
       color: #ffffff;
@@ -784,30 +915,30 @@
       border-radius: 6px;
       cursor: pointer;
       transition: all var(--transition-fast);
-    }
+    }}
 
-    .copy-btn-action:hover {
+    .copy-btn-action:hover {{
       background: var(--accent-green);
-    }
+    }}
 
-    .copy-btn-action.copied {
+    .copy-btn-action.copied {{
       background: var(--accent-green);
       color: #ffffff;
-    }
+    }}
 
-    .coupon-footer-meta {
+    .coupon-footer-meta {{
       display: flex;
       align-items: center;
       justify-content: space-between;
       font-size: 11px;
       color: var(--text-muted);
       font-weight: 700;
-    }
+    }}
 
     /* -------------------------------------------------------------
        TELEGRAM BANNER (Clean High-Contrast CTA)
        ------------------------------------------------------------- */
-    .tg-banner {
+    .tg-banner {{
       background: #090d16;
       border-radius: var(--radius-lg);
       padding: 48px 32px;
@@ -815,32 +946,32 @@
       margin: 40px 0;
       color: #ffffff;
       box-shadow: var(--shadow-lg);
-    }
+    }}
 
-    .tg-banner h3 {
+    .tg-banner h3 {{
       font-size: clamp(24px, 3.5vw, 34px);
       font-weight: 900;
       margin-bottom: 12px;
       color: #ffffff;
-    }
+    }}
 
-    .tg-banner p {
+    .tg-banner p {{
       color: #94a3b8;
       max-width: 580px;
       margin: 0 auto 26px;
       font-size: 15px;
       font-weight: 500;
-    }
+    }}
 
-    .tg-actions-row {
+    .tg-actions-row {{
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 16px;
       flex-wrap: wrap;
-    }
+    }}
 
-    .tg-big-btn {
+    .tg-big-btn {{
       background: #0088cc;
       color: #ffffff;
       text-decoration: none;
@@ -853,14 +984,14 @@
       gap: 8px;
       transition: all var(--transition-fast);
       box-shadow: 0 8px 24px rgba(0, 136, 204, 0.4);
-    }
+    }}
 
-    .tg-big-btn:hover {
+    .tg-big-btn:hover {{
       background: #0099e6;
       transform: translateY(-2px);
-    }
+    }}
 
-    .tg-secondary-btn {
+    .tg-secondary-btn {{
       background: rgba(255, 255, 255, 0.1);
       border: 1px solid rgba(255, 255, 255, 0.2);
       color: #ffffff;
@@ -870,16 +1001,16 @@
       padding: 13px 24px;
       border-radius: var(--radius-full);
       transition: all var(--transition-fast);
-    }
+    }}
 
-    .tg-secondary-btn:hover {
+    .tg-secondary-btn:hover {{
       background: rgba(255, 255, 255, 0.2);
-    }
+    }}
 
     /* -------------------------------------------------------------
        TOAST NOTIFICATION
        ------------------------------------------------------------- */
-    #toast {
+    #toast {{
       position: fixed;
       bottom: 84px;
       left: 50%;
@@ -898,17 +1029,17 @@
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
       z-index: 1000;
       pointer-events: none;
-    }
+    }}
 
-    #toast.show {
+    #toast.show {{
       transform: translateX(-50%) translateY(0);
       opacity: 1;
-    }
+    }}
 
     /* -------------------------------------------------------------
        MOBILE BOTTOM NAVIGATION
        ------------------------------------------------------------- */
-    .mobile-bottom-nav {
+    .mobile-bottom-nav {{
       display: none;
       position: fixed;
       bottom: 0;
@@ -922,9 +1053,9 @@
       z-index: 200;
       justify-content: space-around;
       align-items: center;
-    }
+    }}
 
-    .bottom-nav-item {
+    .bottom-nav-item {{
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -937,58 +1068,58 @@
       background: transparent;
       border: none;
       cursor: pointer;
-    }
+    }}
 
-    .bottom-nav-item.active, .bottom-nav-item:hover {
+    .bottom-nav-item.active, .bottom-nav-item:hover {{
       color: #000000;
-    }
+    }}
 
-    .bottom-nav-icon {
+    .bottom-nav-icon {{
       font-size: 18px;
-    }
+    }}
 
     /* -------------------------------------------------------------
        FOOTER
        ------------------------------------------------------------- */
-    footer {
+    footer {{
       border-top: 1px solid var(--border-subtle);
       padding: 48px 0 32px;
       text-align: center;
       color: var(--text-muted);
       font-size: 13px;
       background: #f8fafc;
-    }
+    }}
 
-    footer a {
+    footer a {{
       color: var(--text-secondary);
       text-decoration: none;
       margin: 0 10px;
       font-weight: 600;
       transition: color var(--transition-fast);
-    }
+    }}
 
-    footer a:hover {
+    footer a:hover {{
       color: #000000;
-    }
+    }}
 
     /* -------------------------------------------------------------
        RESPONSIVE BREAKPOINTS
        ------------------------------------------------------------- */
-    @media (max-width: 992px) {
-      .categories-grid { grid-template-columns: repeat(2, 1fr); }
-    }
+    @media (max-width: 992px) {{
+      .categories-grid {{ grid-template-columns: repeat(2, 1fr); }}
+    }}
 
-    @media (max-width: 768px) {
-      .nav-links { display: none; }
-      .mobile-bottom-nav { display: flex; }
-      .hero { padding: 36px 0 24px; }
-      .hero-title { font-size: 32px; }
-      .categories-grid { grid-template-columns: 1fr; gap: 12px; }
-      .category-card { height: 120px; }
-      .deals-grid { grid-template-columns: 1fr; gap: 16px; }
-      .coupons-grid { grid-template-columns: 1fr; }
-      .card-img-wrap { height: 200px; }
-    }
+    @media (max-width: 768px) {{
+      .nav-links {{ display: none; }}
+      .mobile-bottom-nav {{ display: flex; }}
+      .hero {{ padding: 36px 0 24px; }}
+      .hero-title {{ font-size: 32px; }}
+      .categories-grid {{ grid-template-columns: 1fr; gap: 12px; }}
+      .category-card {{ height: 120px; }}
+      .deals-grid {{ grid-template-columns: 1fr; gap: 16px; }}
+      .coupons-grid {{ grid-template-columns: 1fr; }}
+      .card-img-wrap {{ height: 200px; }}
+    }}
   </style>
 </head>
 <body>
@@ -1073,61 +1204,21 @@
       </div>
 
       <div class="categories-grid">
-        <div class="category-card" onclick="filterCategory('fashion')">
-          <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=600&auto=format&fit=crop&q=80" alt="Fashion & Apparel" class="category-bg-img" loading="lazy">
+"""
+
+for cat in categories:
+    html_template += f"""        <div class="category-card" onclick="filterCategory('{cat['id']}')">
+          <img src="{cat['image']}" alt="{cat['name']}" class="category-bg-img" loading="lazy">
           <div class="category-overlay"></div>
           <div class="category-content">
-            <span class="category-badge-chip">Up to 80% OFF</span>
-            <div class="category-name">👗 Fashion & Apparel</div>
-            <div class="category-count">240+ Deals</div>
+            <span class="category-badge-chip">{cat['badge']}</span>
+            <div class="category-name">{cat['icon']} {cat['name']}</div>
+            <div class="category-count">{cat['count']}</div>
           </div>
         </div>
-        <div class="category-card" onclick="filterCategory('audio')">
-          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80" alt="Audio & Headphones" class="category-bg-img" loading="lazy">
-          <div class="category-overlay"></div>
-          <div class="category-content">
-            <span class="category-badge-chip">Up to 75% OFF</span>
-            <div class="category-name">🎧 Audio & Headphones</div>
-            <div class="category-count">95+ Deals</div>
-          </div>
-        </div>
-        <div class="category-card" onclick="filterCategory('wearables')">
-          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&auto=format&fit=crop&q=80" alt="Smartwatches" class="category-bg-img" loading="lazy">
-          <div class="category-overlay"></div>
-          <div class="category-content">
-            <span class="category-badge-chip">Up to 86% OFF</span>
-            <div class="category-name">⌚ Smartwatches</div>
-            <div class="category-count">64+ Deals</div>
-          </div>
-        </div>
-        <div class="category-card" onclick="filterCategory('footwear')">
-          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&auto=format&fit=crop&q=80" alt="Sneakers & Footwear" class="category-bg-img" loading="lazy">
-          <div class="category-overlay"></div>
-          <div class="category-content">
-            <span class="category-badge-chip">Up to 84% OFF</span>
-            <div class="category-name">👟 Sneakers & Footwear</div>
-            <div class="category-count">120+ Deals</div>
-          </div>
-        </div>
-        <div class="category-card" onclick="filterCategory('electronics')">
-          <img src="https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=600&auto=format&fit=crop&q=80" alt="Mobiles & Gadgets" class="category-bg-img" loading="lazy">
-          <div class="category-overlay"></div>
-          <div class="category-content">
-            <span class="category-badge-chip">Up to 70% OFF</span>
-            <div class="category-name">📱 Mobiles & Gadgets</div>
-            <div class="category-count">150+ Deals</div>
-          </div>
-        </div>
-        <div class="category-card" onclick="filterCategory('under99')">
-          <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&auto=format&fit=crop&q=80" alt="Under ₹99 Steals" class="category-bg-img" loading="lazy">
-          <div class="category-overlay"></div>
-          <div class="category-content">
-            <span class="category-badge-chip">From ₹29</span>
-            <div class="category-name">⚡ Under ₹99 Steals</div>
-            <div class="category-count">180+ Deals</div>
-          </div>
-        </div>
-      </div>
+"""
+
+html_template += f"""      </div>
     </div>
   </section>
 
@@ -1154,367 +1245,42 @@
 
       <!-- Deals Grid -->
       <div class="deals-grid" id="dealsContainer">
-        <div class="deal-card" data-category="audio" data-title="boat rockerz 255 sports wireless bluetooth neckband w/ extra bass" data-store="boat lifestyle" data-id="ek_1">
+"""
+
+for deal in deals:
+    html_template += f"""        <div class="deal-card" data-category="{deal['category']}" data-title="{deal['title'].lower()}" data-store="{deal['store'].lower()}" data-id="{deal['id']}">
           <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&auto=format&fit=crop&q=80" alt="boAt Rockerz 255 Sports Wireless Bluetooth Neckband w/ Extra Bass" class="card-product-img" loading="lazy">
-            <span class="card-tag-pill">TRENDING</span>
-            <span class="card-discount-badge">63% OFF</span>
-            <button class="card-fav-btn" onclick="toggleFavorite('ek_1', event)" title="Save deal">❤️</button>
+            <img src="{deal['image']}" alt="{deal['title']}" class="card-product-img" loading="lazy">
+            <span class="card-tag-pill">{deal.get('tag', 'VERIFIED')}</span>
+            <span class="card-discount-badge">{deal['discount']}</span>
+            <button class="card-fav-btn" onclick="toggleFavorite('{deal['id']}', event)" title="Save deal">❤️</button>
           </div>
 
           <div class="card-body">
             <div class="card-store-row">
-              <span class="store-label">🎧 boAt Lifestyle</span>
-              <span class="verified-micro">✓ Live on EarnKaro</span>
+              <span class="store-label">{deal['store_icon']} {deal['store']}</span>
+              <span class="verified-micro">✓ {deal['verified']}</span>
             </div>
 
-            <h3 class="deal-card-title">boAt Rockerz 255 Sports Wireless Bluetooth Neckband w/ Extra Bass</h3>
+            <h3 class="deal-card-title">{deal['title']}</h3>
 
             <div class="cashback-profit-tag">
-              💰 Earn ₹88 Profit
+              💰 {deal.get('profit', 'Extra Cashback')}
             </div>
 
             <div class="card-price-row">
-              <span class="price-loot">₹1,099</span>
-              <span class="price-mrp">₹2,990</span>
+              <span class="price-loot">{deal['price']}</span>
+              <span class="price-mrp">{deal['mrp']}</span>
             </div>
 
-            <a href="https://tinyurl.com/2a88qpux" target="_blank" rel="noopener noreferrer" class="buy-btn-primary">
+            <a href="{deal['affiliate_url']}" target="_blank" rel="noopener noreferrer" class="buy-btn-primary">
               Grab Deal ⚡
             </a>
           </div>
         </div>
-        <div class="deal-card" data-category="under99" data-title="ptron hbe6 high bass in-ear metal earphones (tangle free)" data-store="tata cliq" data-id="ek_2">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80" alt="pTron HBE6 High Bass in-Ear Metal Earphones (Tangle Free)" class="card-product-img" loading="lazy">
-            <span class="card-tag-pill">STEAL DEAL</span>
-            <span class="card-discount-badge">67% OFF</span>
-            <button class="card-fav-btn" onclick="toggleFavorite('ek_2', event)" title="Save deal">❤️</button>
-          </div>
+"""
 
-          <div class="card-body">
-            <div class="card-store-row">
-              <span class="store-label">💎 Tata CLiQ</span>
-              <span class="verified-micro">✓ EarnKaro Verified</span>
-            </div>
-
-            <h3 class="deal-card-title">pTron HBE6 High Bass in-Ear Metal Earphones (Tangle Free)</h3>
-
-            <div class="cashback-profit-tag">
-              💰 Earn ₹16 Profit
-            </div>
-
-            <div class="card-price-row">
-              <span class="price-loot">₹199</span>
-              <span class="price-mrp">₹600</span>
-            </div>
-
-            <a href="https://tinyurl.com/28q8bgfn" target="_blank" rel="noopener noreferrer" class="buy-btn-primary">
-              Grab Deal ⚡
-            </a>
-          </div>
-        </div>
-        <div class="deal-card" data-category="audio" data-title="boat stone 300 t 5w portable wireless bluetooth speaker (ipx7 waterproof)" data-store="tata cliq" data-id="ek_3">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?w=600&auto=format&fit=crop&q=80" alt="boAt Stone 300 T 5W Portable Wireless Bluetooth Speaker (IPX7 Waterproof)" class="card-product-img" loading="lazy">
-            <span class="card-tag-pill">71% OFF</span>
-            <span class="card-discount-badge">71% OFF</span>
-            <button class="card-fav-btn" onclick="toggleFavorite('ek_3', event)" title="Save deal">❤️</button>
-          </div>
-
-          <div class="card-body">
-            <div class="card-store-row">
-              <span class="store-label">💎 Tata CLiQ</span>
-              <span class="verified-micro">✓ EarnKaro Verified</span>
-            </div>
-
-            <h3 class="deal-card-title">boAt Stone 300 T 5W Portable Wireless Bluetooth Speaker (IPX7 Waterproof)</h3>
-
-            <div class="cashback-profit-tag">
-              💰 Earn ₹80 Profit
-            </div>
-
-            <div class="card-price-row">
-              <span class="price-loot">₹999</span>
-              <span class="price-mrp">₹3,490</span>
-            </div>
-
-            <a href="https://tinyurl.com/22e6akj4" target="_blank" rel="noopener noreferrer" class="buy-btn-primary">
-              Grab Deal ⚡
-            </a>
-          </div>
-        </div>
-        <div class="deal-card" data-category="electronics" data-title="portronics indo 10x 10000mah fast charging dual usb power bank" data-store="tata cliq" data-id="ek_4">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=600&auto=format&fit=crop&q=80" alt="Portronics Indo 10X 10000mAh Fast Charging Dual USB Power Bank" class="card-product-img" loading="lazy">
-            <span class="card-tag-pill">BESTSELLER</span>
-            <span class="card-discount-badge">66% OFF</span>
-            <button class="card-fav-btn" onclick="toggleFavorite('ek_4', event)" title="Save deal">❤️</button>
-          </div>
-
-          <div class="card-body">
-            <div class="card-store-row">
-              <span class="store-label">💎 Tata CLiQ</span>
-              <span class="verified-micro">✓ EarnKaro Verified</span>
-            </div>
-
-            <h3 class="deal-card-title">Portronics Indo 10X 10000mAh Fast Charging Dual USB Power Bank</h3>
-
-            <div class="cashback-profit-tag">
-              💰 Earn ₹55 Profit
-            </div>
-
-            <div class="card-price-row">
-              <span class="price-loot">₹689</span>
-              <span class="price-mrp">₹1,999</span>
-            </div>
-
-            <a href="https://tinyurl.com/24dblvxr" target="_blank" rel="noopener noreferrer" class="buy-btn-primary">
-              Grab Deal ⚡
-            </a>
-          </div>
-        </div>
-        <div class="deal-card" data-category="audio" data-title="boat bassheads 100 in-ear wired earphones with super extra bass" data-store="tata cliq" data-id="ek_5">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?w=600&auto=format&fit=crop&q=80" alt="boAt BassHeads 100 in-Ear Wired Earphones with Super Extra Bass" class="card-product-img" loading="lazy">
-            <span class="card-tag-pill">HOT DEAL</span>
-            <span class="card-discount-badge">60% OFF</span>
-            <button class="card-fav-btn" onclick="toggleFavorite('ek_5', event)" title="Save deal">❤️</button>
-          </div>
-
-          <div class="card-body">
-            <div class="card-store-row">
-              <span class="store-label">💎 Tata CLiQ</span>
-              <span class="verified-micro">✓ EarnKaro Verified</span>
-            </div>
-
-            <h3 class="deal-card-title">boAt BassHeads 100 in-Ear Wired Earphones with Super Extra Bass</h3>
-
-            <div class="cashback-profit-tag">
-              💰 Earn ₹32 Profit
-            </div>
-
-            <div class="card-price-row">
-              <span class="price-loot">₹399</span>
-              <span class="price-mrp">₹999</span>
-            </div>
-
-            <a href="https://tinyurl.com/2db9q8rd" target="_blank" rel="noopener noreferrer" class="buy-btn-primary">
-              Grab Deal ⚡
-            </a>
-          </div>
-        </div>
-        <div class="deal-card" data-category="fashion" data-title="dressberry women black printed fit and flare summer dress" data-store="myntra fashion" data-id="ek_6">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=600&auto=format&fit=crop&q=80" alt="DressBerry Women Black Printed Fit and Flare Summer Dress" class="card-product-img" loading="lazy">
-            <span class="card-tag-pill">75% OFF</span>
-            <span class="card-discount-badge">75% OFF</span>
-            <button class="card-fav-btn" onclick="toggleFavorite('ek_6', event)" title="Save deal">❤️</button>
-          </div>
-
-          <div class="card-body">
-            <div class="card-store-row">
-              <span class="store-label">👗 Myntra Fashion</span>
-              <span class="verified-micro">✓ EarnKaro Verified</span>
-            </div>
-
-            <h3 class="deal-card-title">DressBerry Women Black Printed Fit and Flare Summer Dress</h3>
-
-            <div class="cashback-profit-tag">
-              💰 Earn ₹36 Profit
-            </div>
-
-            <div class="card-price-row">
-              <span class="price-loot">₹449</span>
-              <span class="price-mrp">₹1,799</span>
-            </div>
-
-            <a href="https://tinyurl.com/278mx3jg" target="_blank" rel="noopener noreferrer" class="buy-btn-primary">
-              Grab Deal ⚡
-            </a>
-          </div>
-        </div>
-        <div class="deal-card" data-category="fashion" data-title="highlander men khaki brown slim fit solid pure cotton shirt" data-store="myntra fashion" data-id="ek_7">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=600&auto=format&fit=crop&q=80" alt="HIGHLANDER Men Khaki Brown Slim Fit Solid Pure Cotton Shirt" class="card-product-img" loading="lazy">
-            <span class="card-tag-pill">75% OFF</span>
-            <span class="card-discount-badge">75% OFF</span>
-            <button class="card-fav-btn" onclick="toggleFavorite('ek_7', event)" title="Save deal">❤️</button>
-          </div>
-
-          <div class="card-body">
-            <div class="card-store-row">
-              <span class="store-label">👗 Myntra Fashion</span>
-              <span class="verified-micro">✓ EarnKaro Verified</span>
-            </div>
-
-            <h3 class="deal-card-title">HIGHLANDER Men Khaki Brown Slim Fit Solid Pure Cotton Shirt</h3>
-
-            <div class="cashback-profit-tag">
-              💰 Earn ₹40 Profit
-            </div>
-
-            <div class="card-price-row">
-              <span class="price-loot">₹499</span>
-              <span class="price-mrp">₹1,999</span>
-            </div>
-
-            <a href="https://tinyurl.com/28gr3pry" target="_blank" rel="noopener noreferrer" class="buy-btn-primary">
-              Grab Deal ⚡
-            </a>
-          </div>
-        </div>
-        <div class="deal-card" data-category="fashion" data-title="locomotive men blue slim fit mid-rise clean look stretch jeans" data-store="myntra fashion" data-id="ek_8">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1542272604-780c96856592?w=600&auto=format&fit=crop&q=80" alt="LOCOMOTIVE Men Blue Slim Fit Mid-Rise Clean Look Stretch Jeans" class="card-product-img" loading="lazy">
-            <span class="card-tag-pill">70% OFF</span>
-            <span class="card-discount-badge">70% OFF</span>
-            <button class="card-fav-btn" onclick="toggleFavorite('ek_8', event)" title="Save deal">❤️</button>
-          </div>
-
-          <div class="card-body">
-            <div class="card-store-row">
-              <span class="store-label">👗 Myntra Fashion</span>
-              <span class="verified-micro">✓ EarnKaro Verified</span>
-            </div>
-
-            <h3 class="deal-card-title">LOCOMOTIVE Men Blue Slim Fit Mid-Rise Clean Look Stretch Jeans</h3>
-
-            <div class="cashback-profit-tag">
-              💰 Earn ₹59 Profit
-            </div>
-
-            <div class="card-price-row">
-              <span class="price-loot">₹734</span>
-              <span class="price-mrp">₹2,449</span>
-            </div>
-
-            <a href="https://tinyurl.com/25qlhr56" target="_blank" rel="noopener noreferrer" class="buy-btn-primary">
-              Grab Deal ⚡
-            </a>
-          </div>
-        </div>
-        <div class="deal-card" data-category="fashion" data-title="striped casual mandarin collar slim fit summer shirt" data-store="ajio trends" data-id="ek_9">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=600&auto=format&fit=crop&q=80" alt="Striped Casual Mandarin Collar Slim Fit Summer Shirt" class="card-product-img" loading="lazy">
-            <span class="card-tag-pill">70% OFF</span>
-            <span class="card-discount-badge">70% OFF</span>
-            <button class="card-fav-btn" onclick="toggleFavorite('ek_9', event)" title="Save deal">❤️</button>
-          </div>
-
-          <div class="card-body">
-            <div class="card-store-row">
-              <span class="store-label">✨ AJIO Trends</span>
-              <span class="verified-micro">✓ EarnKaro Verified</span>
-            </div>
-
-            <h3 class="deal-card-title">Striped Casual Mandarin Collar Slim Fit Summer Shirt</h3>
-
-            <div class="cashback-profit-tag">
-              💰 Earn ₹27 Profit
-            </div>
-
-            <div class="card-price-row">
-              <span class="price-loot">₹270</span>
-              <span class="price-mrp">₹899</span>
-            </div>
-
-            <a href="https://tinyurl.com/267c8yzn" target="_blank" rel="noopener noreferrer" class="buy-btn-primary">
-              Grab Deal ⚡
-            </a>
-          </div>
-        </div>
-        <div class="deal-card" data-category="footwear" data-title="red tape men retro air cushion lightweight athletic sneakers" data-store="myntra fashion" data-id="ek_10">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&auto=format&fit=crop&q=80" alt="Red Tape Men Retro Air Cushion Lightweight Athletic Sneakers" class="card-product-img" loading="lazy">
-            <span class="card-tag-pill">84% OFF</span>
-            <span class="card-discount-badge">84% OFF</span>
-            <button class="card-fav-btn" onclick="toggleFavorite('ek_10', event)" title="Save deal">❤️</button>
-          </div>
-
-          <div class="card-body">
-            <div class="card-store-row">
-              <span class="store-label">👗 Myntra Fashion</span>
-              <span class="verified-micro">✓ EarnKaro Verified</span>
-            </div>
-
-            <h3 class="deal-card-title">Red Tape Men Retro Air Cushion Lightweight Athletic Sneakers</h3>
-
-            <div class="cashback-profit-tag">
-              💰 Earn ₹72 Profit
-            </div>
-
-            <div class="card-price-row">
-              <span class="price-loot">₹899</span>
-              <span class="price-mrp">₹5,499</span>
-            </div>
-
-            <a href="https://tinyurl.com/29sdd8lf" target="_blank" rel="noopener noreferrer" class="buy-btn-primary">
-              Grab Deal ⚡
-            </a>
-          </div>
-        </div>
-        <div class="deal-card" data-category="wearables" data-title="boat wave call 2 smartwatch w/ 1.83" hd bluetooth calling & spo2" data-store="boat lifestyle" data-id="ek_11">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&auto=format&fit=crop&q=80" alt="boAt Wave Call 2 Smartwatch w/ 1.83" HD Bluetooth Calling & SpO2" class="card-product-img" loading="lazy">
-            <span class="card-tag-pill">86% OFF</span>
-            <span class="card-discount-badge">86% OFF</span>
-            <button class="card-fav-btn" onclick="toggleFavorite('ek_11', event)" title="Save deal">❤️</button>
-          </div>
-
-          <div class="card-body">
-            <div class="card-store-row">
-              <span class="store-label">🎧 boAt Lifestyle</span>
-              <span class="verified-micro">✓ EarnKaro Verified</span>
-            </div>
-
-            <h3 class="deal-card-title">boAt Wave Call 2 Smartwatch w/ 1.83" HD Bluetooth Calling & SpO2</h3>
-
-            <div class="cashback-profit-tag">
-              💰 Earn ₹80 Profit
-            </div>
-
-            <div class="card-price-row">
-              <span class="price-loot">₹999</span>
-              <span class="price-mrp">₹6,990</span>
-            </div>
-
-            <a href="https://tinyurl.com/2xuf8urt" target="_blank" rel="noopener noreferrer" class="buy-btn-primary">
-              Grab Deal ⚡
-            </a>
-          </div>
-        </div>
-        <div class="deal-card" data-category="under99" data-title="portronics 65w fast braided type-c fast charging cable (1m)" data-store="amazon india" data-id="ek_12">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&auto=format&fit=crop&q=80" alt="Portronics 65W Fast Braided Type-C Fast Charging Cable (1m)" class="card-product-img" loading="lazy">
-            <span class="card-tag-pill">UNDER ₹99</span>
-            <span class="card-discount-badge">77% OFF</span>
-            <button class="card-fav-btn" onclick="toggleFavorite('ek_12', event)" title="Save deal">❤️</button>
-          </div>
-
-          <div class="card-body">
-            <div class="card-store-row">
-              <span class="store-label">📦 Amazon India</span>
-              <span class="verified-micro">✓ EarnKaro Verified</span>
-            </div>
-
-            <h3 class="deal-card-title">Portronics 65W Fast Braided Type-C Fast Charging Cable (1m)</h3>
-
-            <div class="cashback-profit-tag">
-              💰 Earn ₹5 Profit
-            </div>
-
-            <div class="card-price-row">
-              <span class="price-loot">₹69</span>
-              <span class="price-mrp">₹299</span>
-            </div>
-
-            <a href="https://tinyurl.com/23xyqytf" target="_blank" rel="noopener noreferrer" class="buy-btn-primary">
-              Grab Deal ⚡
-            </a>
-          </div>
-        </div>
-      </div>
+html_template += f"""      </div>
     </div>
   </section>
 
@@ -1529,187 +1295,42 @@
       </div>
 
       <div class="coupons-grid">
-        <div class="coupon-card">
+"""
+
+for c in coupons:
+    html_template += f"""        <div class="coupon-card">
           <div>
             <div class="coupon-top">
               <div class="coupon-store-info">
-                <div class="store-icon-box">📦</div>
+                <div class="store-icon-box">{c['icon']}</div>
                 <div>
-                  <div class="coupon-store-name">Amazon India</div>
-                  <div class="verified-micro">✓ Verified 2h ago</div>
+                  <div class="coupon-store-name">{c['store']}</div>
+                  <div class="verified-micro">✓ {c['verified']}</div>
                 </div>
               </div>
-              <span class="coupon-disc-tag">₹200 OFF</span>
+              <span class="coupon-disc-tag">{c['discount']}</span>
             </div>
 
-            <p class="coupon-desc-text">Flat ₹200 OFF on Fashion & Lifestyle orders above ₹1,999</p>
+            <p class="coupon-desc-text">{c['desc']}</p>
           </div>
 
           <div>
             <div class="coupon-code-box">
-              <span class="code-string">AMZ200</span>
-              <button class="copy-btn-action" onclick="copyCoupon('AMZ200', 'https://tinyurl.com/23xyqytf', this)">
+              <span class="code-string">{c['code']}</span>
+              <button class="copy-btn-action" onclick="copyCoupon('{c['code']}', '{c['link']}', this)">
                 COPY CODE
               </button>
             </div>
 
             <div class="coupon-footer-meta">
-              <span>👥 4.8k used</span>
-              <span>⏳ Expires 30 Sep 2026</span>
+              <span>👥 {c['used']}</span>
+              <span>⏳ Expires {c['expires']}</span>
             </div>
           </div>
         </div>
-        <div class="coupon-card">
-          <div>
-            <div class="coupon-top">
-              <div class="coupon-store-info">
-                <div class="store-icon-box">👗</div>
-                <div>
-                  <div class="coupon-store-name">Myntra Fashion</div>
-                  <div class="verified-micro">✓ Verified 1h ago</div>
-                </div>
-              </div>
-              <span class="coupon-disc-tag">EXTRA 40% OFF</span>
-            </div>
+"""
 
-            <p class="coupon-desc-text">Extra 40% discount on top streetwear, sneakers & hoodies</p>
-          </div>
-
-          <div>
-            <div class="coupon-code-box">
-              <span class="code-string">MYNTRA40</span>
-              <button class="copy-btn-action" onclick="copyCoupon('MYNTRA40', 'https://tinyurl.com/278mx3jg', this)">
-                COPY CODE
-              </button>
-            </div>
-
-            <div class="coupon-footer-meta">
-              <span>👥 8.2k used</span>
-              <span>⏳ Expires 30 Sep 2026</span>
-            </div>
-          </div>
-        </div>
-        <div class="coupon-card">
-          <div>
-            <div class="coupon-top">
-              <div class="coupon-store-info">
-                <div class="store-icon-box">🛍️</div>
-                <div>
-                  <div class="coupon-store-name">Flipkart Big Billion</div>
-                  <div class="verified-micro">✓ Verified 45m ago</div>
-                </div>
-              </div>
-              <span class="coupon-disc-tag">FLAT ₹500 OFF</span>
-            </div>
-
-            <p class="coupon-desc-text">Flat ₹500 instant discount on electronics & smart home devices</p>
-          </div>
-
-          <div>
-            <div class="coupon-code-box">
-              <span class="code-string">FLIP500</span>
-              <button class="copy-btn-action" onclick="copyCoupon('FLIP500', 'https://tinyurl.com/28q8bgfn', this)">
-                COPY CODE
-              </button>
-            </div>
-
-            <div class="coupon-footer-meta">
-              <span>👥 12.4k used</span>
-              <span>⏳ Expires 02 Oct 2026</span>
-            </div>
-          </div>
-        </div>
-        <div class="coupon-card">
-          <div>
-            <div class="coupon-top">
-              <div class="coupon-store-info">
-                <div class="store-icon-box">🎧</div>
-                <div>
-                  <div class="coupon-store-name">boAt Lifestyle</div>
-                  <div class="verified-micro">✓ Verified 3h ago</div>
-                </div>
-              </div>
-              <span class="coupon-disc-tag">FLAT ₹200 OFF</span>
-            </div>
-
-            <p class="coupon-desc-text">Flat ₹200 extra discount on Airdopes & Smartwatches</p>
-          </div>
-
-          <div>
-            <div class="coupon-code-box">
-              <span class="code-string">BOAT200</span>
-              <button class="copy-btn-action" onclick="copyCoupon('BOAT200', 'https://tinyurl.com/2a88qpux', this)">
-                COPY CODE
-              </button>
-            </div>
-
-            <div class="coupon-footer-meta">
-              <span>👥 3.1k used</span>
-              <span>⏳ Expires 05 Oct 2026</span>
-            </div>
-          </div>
-        </div>
-        <div class="coupon-card">
-          <div>
-            <div class="coupon-top">
-              <div class="coupon-store-info">
-                <div class="store-icon-box">✨</div>
-                <div>
-                  <div class="coupon-store-name">Ajio Trends</div>
-                  <div class="verified-micro">✓ Verified 2h ago</div>
-                </div>
-              </div>
-              <span class="coupon-disc-tag">EXTRA 35% OFF</span>
-            </div>
-
-            <p class="coupon-desc-text">Extra 35% off on orders above ₹1,490 on international brands</p>
-          </div>
-
-          <div>
-            <div class="coupon-code-box">
-              <span class="code-string">AJIO35</span>
-              <button class="copy-btn-action" onclick="copyCoupon('AJIO35', 'https://tinyurl.com/267c8yzn', this)">
-                COPY CODE
-              </button>
-            </div>
-
-            <div class="coupon-footer-meta">
-              <span>👥 5.7k used</span>
-              <span>⏳ Expires 01 Oct 2026</span>
-            </div>
-          </div>
-        </div>
-        <div class="coupon-card">
-          <div>
-            <div class="coupon-top">
-              <div class="coupon-store-info">
-                <div class="store-icon-box">💎</div>
-                <div>
-                  <div class="coupon-store-name">Tata CLiQ</div>
-                  <div class="verified-micro">✓ Verified 4h ago</div>
-                </div>
-              </div>
-              <span class="coupon-disc-tag">EXTRA 20% OFF</span>
-            </div>
-
-            <p class="coupon-desc-text">Extra 20% instant discount on luxury audio & tech accessories</p>
-          </div>
-
-          <div>
-            <div class="coupon-code-box">
-              <span class="code-string">CLIQ20</span>
-              <button class="copy-btn-action" onclick="copyCoupon('CLIQ20', 'https://tinyurl.com/22e6akj4', this)">
-                COPY CODE
-              </button>
-            </div>
-
-            <div class="coupon-footer-meta">
-              <span>👥 2.9k used</span>
-              <span>⏳ Expires 30 Sep 2026</span>
-            </div>
-          </div>
-        </div>
-      </div>
+html_template += f"""      </div>
     </div>
   </section>
 
@@ -1778,130 +1399,136 @@
     let activeCategory = 'all';
     let savedFavorites = JSON.parse(localStorage.getItem('brh_favs') || '[]');
 
-    function updateFavCount() {
+    function updateFavCount() {{
       const countEl = document.getElementById('favCountHeader');
       if (countEl) countEl.innerText = savedFavorites.length;
-    }
+    }}
     updateFavCount();
 
-    function showToast(msg) {
+    function showToast(msg) {{
       const toast = document.getElementById('toast');
       const toastMsg = document.getElementById('toastMsg');
       toastMsg.innerText = msg;
       toast.classList.add('show');
-      setTimeout(() => {
+      setTimeout(() => {{
         toast.classList.remove('show');
-      }, 2600);
-    }
+      }}, 2600);
+    }}
 
-    function copyCoupon(code, link, btn) {
-      navigator.clipboard.writeText(code).then(() => {
+    function copyCoupon(code, link, btn) {{
+      navigator.clipboard.writeText(code).then(() => {{
         const oldText = btn.innerText;
         btn.innerText = 'COPIED ✓';
         btn.classList.add('copied');
         showToast('Code ' + code + ' copied! Opening merchant...');
         
-        setTimeout(() => {
+        setTimeout(() => {{
           btn.innerText = oldText;
           btn.classList.remove('copied');
-        }, 2500);
+        }}, 2500);
 
-        if (link) {
-          setTimeout(() => {
+        if (link) {{
+          setTimeout(() => {{
             window.open(link, '_blank');
-          }, 800);
-        }
-      });
-    }
+          }}, 800);
+        }}
+      }});
+    }}
 
-    function toggleFavorite(id, e) {
+    function toggleFavorite(id, e) {{
       e.stopPropagation();
       const idx = savedFavorites.indexOf(id);
-      if (idx > -1) {
+      if (idx > -1) {{
         savedFavorites.splice(idx, 1);
         showToast('Removed from Saved ❤️');
-      } else {
+      }} else {{
         savedFavorites.push(id);
         showToast('Saved to Favorites ❤️');
-      }
+      }}
       localStorage.setItem('brh_favs', JSON.stringify(savedFavorites));
       updateFavCount();
-    }
+    }}
 
-    function filterFavorites() {
+    function filterFavorites() {{
       const cards = document.querySelectorAll('.deal-card');
-      if (savedFavorites.length === 0) {
+      if (savedFavorites.length === 0) {{
         showToast('No saved deals yet! Click ❤️ on any card.');
         return;
-      }
-      cards.forEach(card => {
+      }}
+      cards.forEach(card => {{
         const id = card.getAttribute('data-id');
         card.style.display = savedFavorites.includes(id) ? 'flex' : 'none';
-      });
+      }});
       showToast('Showing your ' + savedFavorites.length + ' saved deals');
-      document.getElementById('deals').scrollIntoView({ behavior: 'smooth' });
-    }
+      document.getElementById('deals').scrollIntoView({{ behavior: 'smooth' }});
+    }}
 
-    function filterCategory(cat, btn) {
+    function filterCategory(cat, btn) {{
       activeCategory = cat;
       const pills = document.querySelectorAll('.filter-pill');
       pills.forEach(p => p.classList.remove('active'));
       if (btn) btn.classList.add('active');
 
       const cards = document.querySelectorAll('.deal-card');
-      cards.forEach(card => {
+      cards.forEach(card => {{
         const cardCat = card.getAttribute('data-category');
-        if (cat === 'all' || cardCat === cat) {
+        if (cat === 'all' || cardCat === cat) {{
           card.style.display = 'flex';
-        } else {
+        }} else {{
           card.style.display = 'none';
-        }
-      });
+        }}
+      }});
 
-      if (cat !== 'all') {
-        document.getElementById('deals').scrollIntoView({ behavior: 'smooth' });
-      }
-    }
+      if (cat !== 'all') {{
+        document.getElementById('deals').scrollIntoView({{ behavior: 'smooth' }});
+      }}
+    }}
 
     // Real-time Search
     const searchInput = document.getElementById('searchInput');
     const searchClear = document.getElementById('searchClear');
 
-    if (searchInput) {
-      searchInput.addEventListener('input', function(e) {
+    if (searchInput) {{
+      searchInput.addEventListener('input', function(e) {{
         const query = e.target.value.toLowerCase().trim();
         searchClear.style.display = query ? 'block' : 'none';
         
         const cards = document.querySelectorAll('.deal-card');
-        cards.forEach(card => {
+        cards.forEach(card => {{
           const title = card.getAttribute('data-title') || '';
           const store = card.getAttribute('data-store') || '';
           const cat = card.getAttribute('data-category') || '';
           
-          if (title.includes(query) || store.includes(query) || cat.includes(query)) {
+          if (title.includes(query) || store.includes(query) || cat.includes(query)) {{
             card.style.display = 'flex';
-          } else {
+          }} else {{
             card.style.display = 'none';
-          }
-        });
-      });
-    }
+          }}
+        }});
+      }});
+    }}
 
-    function clearSearch() {
-      if (searchInput) {
+    function clearSearch() {{
+      if (searchInput) {{
         searchInput.value = '';
         searchClear.style.display = 'none';
         filterCategory('all');
-      }
-    }
+      }}
+    }}
 
-    function quickSearch(term) {
-      if (searchInput) {
+    function quickSearch(term) {{
+      if (searchInput) {{
         searchInput.value = term;
         searchInput.dispatchEvent(new Event('input'));
-        document.getElementById('deals').scrollIntoView({ behavior: 'smooth' });
-      }
-    }
+        document.getElementById('deals').scrollIntoView({{ behavior: 'smooth' }});
+      }}
+    }}
   </script>
 </body>
 </html>
+"""
+
+with open("landing.html", "w", encoding="utf-8") as f:
+    f.write(html_template)
+
+print("✅ Successfully generated White & Black Minimalist landing.html with real EarnKaro live deals and shortlinks!")
