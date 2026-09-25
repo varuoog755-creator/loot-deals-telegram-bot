@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BigRedHub — Real EarnKaro Deals & Verified Coupons</title>
-  <meta name="description" content="Live EarnKaro deals with real photos, pricing & affiliate shortlinks. Save up to 86% on boAt, Myntra, Amazon, Tata CLiQ.">
+  <title>BigRedHub — Real EarnKaro Deals with Direct Copy Links</title>
+  <meta name="description" content="Live EarnKaro deals with exact product images & direct affiliate copy links. Save up to 86% on boAt, Myntra, Amazon, Campus.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -295,7 +295,7 @@
     .deal-img-wrap {
       position: relative;
       width: 100%;
-      height: 220px;
+      height: 280px;
       background: #f9fafb;
       overflow: hidden;
     }
@@ -303,12 +303,13 @@
     .deal-img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       transition: transform 0.3s;
+      padding: 12px;
     }
     
     .deal-card:hover .deal-img {
-      transform: scale(1.04);
+      transform: scale(1.05);
     }
     
     .deal-discount {
@@ -319,9 +320,9 @@
       color: #ffffff;
       font-size: 11px;
       font-weight: 900;
-      padding: 4px 10px;
+      padding: 5px 11px;
       border-radius: 20px;
-      box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+      box-shadow: 0 4px 12px rgba(239, 68, 68, 0.35);
     }
     
     .deal-body {
@@ -646,10 +647,10 @@
 
   <section class="hero">
     <div class="container">
-      <div class="hero-pill">● REAL EARNKARO DEALS SYNCED</div>
+      <div class="hero-pill">● DIRECT EARNKARO COPY LINKS</div>
       <h1 class="hero-title">Save More on Every Online Order.</h1>
       <p class="hero-subtitle">
-        Verified promo codes, EarnKaro cashback links & price drops from Myntra, Tata CLiQ, boAt & Amazon.
+        Real product images & direct EarnKaro affiliate links (no shorteners). Cashback from Myntra, Amazon, boAt & more.
       </p>
       <input 
         type="text" 
@@ -670,18 +671,18 @@
           <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80" alt="Audio & Headphones" class="cat-bg">
           <div class="cat-overlay"></div>
           <div class="cat-content">
-            <span class="cat-badge">Up to 75% OFF</span>
+            <span class="cat-badge">Up to 86% OFF</span>
             <div class="cat-name">🎧 Audio & Headphones</div>
-            <div class="cat-count">4 Deals</div>
+            <div class="cat-count">5 Deals</div>
           </div>
         </div>
         <div class="cat-card" onclick="filterCategory('fashion')">
           <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=600&auto=format&fit=crop&q=80" alt="Fashion & Apparel" class="cat-bg">
           <div class="cat-overlay"></div>
           <div class="cat-content">
-            <span class="cat-badge">Up to 75% OFF</span>
+            <span class="cat-badge">Up to 83% OFF</span>
             <div class="cat-name">👗 Fashion & Apparel</div>
-            <div class="cat-count">4 Deals</div>
+            <div class="cat-count">5 Deals</div>
           </div>
         </div>
         <div class="cat-card" onclick="filterCategory('footwear')">
@@ -690,7 +691,7 @@
           <div class="cat-content">
             <span class="cat-badge">Up to 80% OFF</span>
             <div class="cat-name">👟 Sneakers & Footwear</div>
-            <div class="cat-count">1 Deals</div>
+            <div class="cat-count">2 Deals</div>
           </div>
         </div>
         <div class="cat-card" onclick="filterCategory('wearables')">
@@ -699,7 +700,7 @@
           <div class="cat-content">
             <span class="cat-badge">Up to 86% OFF</span>
             <div class="cat-name">⌚ Smartwatches</div>
-            <div class="cat-count">1 Deals</div>
+            <div class="cat-count">2 Deals</div>
           </div>
         </div>
         <div class="cat-card" onclick="filterCategory('electronics')">
@@ -715,9 +716,9 @@
           <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&auto=format&fit=crop&q=80" alt="Under ₹399 Steals" class="cat-bg">
           <div class="cat-overlay"></div>
           <div class="cat-content">
-            <span class="cat-badge">From ₹199</span>
+            <span class="cat-badge">From ₹349</span>
             <div class="cat-name">⚡ Under ₹399 Steals</div>
-            <div class="cat-count">3 Deals</div>
+            <div class="cat-count">1 Deals</div>
           </div>
         </div>
       </div>
@@ -727,7 +728,7 @@
   <section class="section" id="deals">
     <div class="container">
       <h2 class="section-title">🔥 Live EarnKaro Deals</h2>
-      <p class="section-subtitle">Real products with live pricing & verified affiliate shortlinks</p>
+      <p class="section-subtitle">Exact product images from EarnKaro • Direct copy links with Ref ID 1962062</p>
       
       <div class="filters">
         <button class="filter-pill active" onclick="filterCategory('all', this)">All Deals</button>
@@ -740,255 +741,291 @@
       </div>
       
       <div class="deals-grid" id="dealsContainer">
-        <div class="deal-card" data-category="audio" data-title="boat rockerz 255 sports wireless headset with super extra bass" data-store="tata cliq" data-id="ek_elec_1">
+        <div class="deal-card" data-category="audio" data-title="boat rockerz 255 sports bluetooth wireless earphone with super extra bass" data-store="myntra" data-id="ek_001">
           <div class="deal-img-wrap">
-            <img src="https://m.media-amazon.com/images/I/41j7VEAjdRL.jpg" alt="boAt Rockerz 255 Sports Wireless Headset with Super Extra Bass" class="deal-img" loading="lazy">
+            <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7546673/2018/11/9/ee53b5ae-29eb-4343-9705-f2c98a6914a21541744763309-boAt-Rockerz-255-Sports-Bluetooth-Wireless-Earphone-with-Mic-1.jpg" alt="boAt Rockerz 255 Sports Bluetooth Wireless Earphone with Super Extra Bass" class="deal-img" loading="lazy">
             <span class="deal-discount">63% OFF</span>
           </div>
           <div class="deal-body">
-            <div class="deal-store">💎 Tata CLiQ</div>
-            <h3 class="deal-title">boAt Rockerz 255 Sports Wireless Headset with Super Extra Bass</h3>
-            <div class="deal-profit">💰 Earn ₹110 Profit</div>
+            <div class="deal-store">👗 Myntra</div>
+            <h3 class="deal-title">boAt Rockerz 255 Sports Bluetooth Wireless Earphone with Super Extra Bass</h3>
+            <div class="deal-profit">💰 Earn ₹110</div>
             <div class="deal-price-row">
               <span class="deal-price">₹1,099</span>
               <span class="deal-mrp">₹2,990</span>
             </div>
-            <a href="https://tinyurl.com/2xn8l9ug" target="_blank" rel="noopener noreferrer" class="deal-btn">
-              Grab Deal ⚡
+            <a href="https://earnkaro.com/boat-rockerz-255-sports-bluetooth-wireless-earphone-with-mic/PPS16-7546673?r=1962062" target="_blank" rel="noopener noreferrer" class="deal-btn">
+              Copy Link & Buy ⚡
             </a>
           </div>
         </div>
-        <div class="deal-card" data-category="audio" data-title="boat stone 300 t 5w portable wireless speaker ipx7 bluetooth v5.0" data-store="tata cliq" data-id="ek_elec_2">
+        <div class="deal-card" data-category="audio" data-title="boat stone 300 portable wireless speaker with 5w premium sound" data-store="amazon" data-id="ek_002">
           <div class="deal-img-wrap">
-            <img src="https://img.tatacliq.com/images/i6/437Wx649H/MP000000006655686_437Wx649H_20200715155009.jpeg" alt="boAt Stone 300 T 5W Portable Wireless Speaker IPX7 Bluetooth V5.0" class="deal-img" loading="lazy">
+            <img src="https://m.media-amazon.com/images/I/61aSM2XoySL._SX679_.jpg" alt="boAt Stone 300 Portable Wireless Speaker with 5W Premium Sound" class="deal-img" loading="lazy">
             <span class="deal-discount">71% OFF</span>
           </div>
           <div class="deal-body">
-            <div class="deal-store">💎 Tata CLiQ</div>
-            <h3 class="deal-title">boAt Stone 300 T 5W Portable Wireless Speaker IPX7 Bluetooth V5.0</h3>
-            <div class="deal-profit">💰 Earn ₹100 Profit</div>
+            <div class="deal-store">📦 Amazon</div>
+            <h3 class="deal-title">boAt Stone 300 Portable Wireless Speaker with 5W Premium Sound</h3>
+            <div class="deal-profit">💰 Earn ₹100</div>
             <div class="deal-price-row">
               <span class="deal-price">₹999</span>
               <span class="deal-mrp">₹3,490</span>
             </div>
-            <a href="https://tinyurl.com/22e6akj4" target="_blank" rel="noopener noreferrer" class="deal-btn">
-              Grab Deal ⚡
+            <a href="https://earnkaro.com/stores?r=1962062&url=https://www.amazon.in/dp/B07VCZGL41" target="_blank" rel="noopener noreferrer" class="deal-btn">
+              Copy Link & Buy ⚡
             </a>
           </div>
         </div>
-        <div class="deal-card" data-category="under99" data-title="boat bassheads 100 in-ear wired earphones with super extra bass" data-store="tata cliq" data-id="ek_elec_3">
+        <div class="deal-card" data-category="fashion" data-title="dressberry women black printed fit and flare dress" data-store="myntra" data-id="ek_003">
           <div class="deal-img-wrap">
-            <img src="https://m.media-amazon.com/images/I/31IdiM9ZM8L.jpg" alt="boAt BassHeads 100 in-Ear Wired Earphones with Super Extra Bass" class="deal-img" loading="lazy">
-            <span class="deal-discount">60% OFF</span>
-          </div>
-          <div class="deal-body">
-            <div class="deal-store">💎 Tata CLiQ</div>
-            <h3 class="deal-title">boAt BassHeads 100 in-Ear Wired Earphones with Super Extra Bass</h3>
-            <div class="deal-profit">💰 Earn ₹40 Profit</div>
-            <div class="deal-price-row">
-              <span class="deal-price">₹399</span>
-              <span class="deal-mrp">₹999</span>
-            </div>
-            <a href="https://tinyurl.com/2db9q8rd" target="_blank" rel="noopener noreferrer" class="deal-btn">
-              Grab Deal ⚡
-            </a>
-          </div>
-        </div>
-        <div class="deal-card" data-category="under99" data-title="ptron hbe6 high bass in-ear metal earphones with mic" data-store="tata cliq" data-id="ek_elec_4">
-          <div class="deal-img-wrap">
-            <img src="https://m.media-amazon.com/images/I/41+Qa1BYTRL.jpg" alt="pTron HBE6 High Bass in-Ear Metal Earphones with Mic" class="deal-img" loading="lazy">
-            <span class="deal-discount">67% OFF</span>
-          </div>
-          <div class="deal-body">
-            <div class="deal-store">💎 Tata CLiQ</div>
-            <h3 class="deal-title">pTron HBE6 High Bass in-Ear Metal Earphones with Mic</h3>
-            <div class="deal-profit">💰 Earn ₹25 Profit</div>
-            <div class="deal-price-row">
-              <span class="deal-price">₹199</span>
-              <span class="deal-mrp">₹600</span>
-            </div>
-            <a href="https://tinyurl.com/28q8bgfn" target="_blank" rel="noopener noreferrer" class="deal-btn">
-              Grab Deal ⚡
-            </a>
-          </div>
-        </div>
-        <div class="deal-card" data-category="under99" data-title="spot waterproof shower wireless bluetooth speaker (blue)" data-store="tata cliq" data-id="ek_elec_5">
-          <div class="deal-img-wrap">
-            <img src="https://img.tatacliq.com/images/i5/437Wx649H/MP000000005402996_437Wx649H_20190902040620.jpeg" alt="Spot Waterproof Shower Wireless Bluetooth Speaker (Blue)" class="deal-img" loading="lazy">
-            <span class="deal-discount">85% OFF</span>
-          </div>
-          <div class="deal-body">
-            <div class="deal-store">💎 Tata CLiQ</div>
-            <h3 class="deal-title">Spot Waterproof Shower Wireless Bluetooth Speaker (Blue)</h3>
-            <div class="deal-profit">💰 Earn ₹30 Profit</div>
-            <div class="deal-price-row">
-              <span class="deal-price">₹199</span>
-              <span class="deal-mrp">₹1,290</span>
-            </div>
-            <a href="https://tinyurl.com/27pyf8qp" target="_blank" rel="noopener noreferrer" class="deal-btn">
-              Grab Deal ⚡
-            </a>
-          </div>
-        </div>
-        <div class="deal-card" data-category="electronics" data-title="portronics indo 10x 10000mah dual output fast power bank" data-store="tata cliq" data-id="ek_elec_6">
-          <div class="deal-img-wrap">
-            <img src="https://img.tatacliq.com/images/i4/437Wx649H/MP000000007056338_437Wx649H_20200523230335.jpeg" alt="Portronics Indo 10X 10000mAh Dual Output Fast Power Bank" class="deal-img" loading="lazy">
-            <span class="deal-discount">66% OFF</span>
-          </div>
-          <div class="deal-body">
-            <div class="deal-store">💎 Tata CLiQ</div>
-            <h3 class="deal-title">Portronics Indo 10X 10000mAh Dual Output Fast Power Bank</h3>
-            <div class="deal-profit">💰 Earn ₹68 Profit</div>
-            <div class="deal-price-row">
-              <span class="deal-price">₹689</span>
-              <span class="deal-mrp">₹1,999</span>
-            </div>
-            <a href="https://tinyurl.com/28qb7arz" target="_blank" rel="noopener noreferrer" class="deal-btn">
-              Grab Deal ⚡
-            </a>
-          </div>
-        </div>
-        <div class="deal-card" data-category="audio" data-title="boat airdopes 201 true wireless earbuds w/ 15h playback" data-store="tata cliq" data-id="ek_elec_7">
-          <div class="deal-img-wrap">
-            <img src="https://m.media-amazon.com/images/I/41XqcYjYlRL.jpg" alt="boAt Airdopes 201 True Wireless Earbuds w/ 15H Playback" class="deal-img" loading="lazy">
-            <span class="deal-discount">68% OFF</span>
-          </div>
-          <div class="deal-body">
-            <div class="deal-store">💎 Tata CLiQ</div>
-            <h3 class="deal-title">boAt Airdopes 201 True Wireless Earbuds w/ 15H Playback</h3>
-            <div class="deal-profit">💰 Earn ₹130 Profit</div>
-            <div class="deal-price-row">
-              <span class="deal-price">₹1,299</span>
-              <span class="deal-mrp">₹3,999</span>
-            </div>
-            <a href="https://tinyurl.com/238njtpx" target="_blank" rel="noopener noreferrer" class="deal-btn">
-              Grab Deal ⚡
-            </a>
-          </div>
-        </div>
-        <div class="deal-card" data-category="audio" data-title="motorola sonic boost 230 mono channel bluetooth speaker" data-store="tata cliq" data-id="ek_elec_8">
-          <div class="deal-img-wrap">
-            <img src="https://img.tatacliq.com/images/i6/437Wx649H/MP000000007305804_437Wx649H_20200717184720.jpeg" alt="Motorola Sonic Boost 230 Mono Channel Bluetooth Speaker" class="deal-img" loading="lazy">
-            <span class="deal-discount">75% OFF</span>
-          </div>
-          <div class="deal-body">
-            <div class="deal-store">💎 Tata CLiQ</div>
-            <h3 class="deal-title">Motorola Sonic Boost 230 Mono Channel Bluetooth Speaker</h3>
-            <div class="deal-profit">💰 Earn ₹100 Profit</div>
-            <div class="deal-price-row">
-              <span class="deal-price">₹999</span>
-              <span class="deal-mrp">₹3,999</span>
-            </div>
-            <a href="https://tinyurl.com/29qpmmnc" target="_blank" rel="noopener noreferrer" class="deal-btn">
-              Grab Deal ⚡
-            </a>
-          </div>
-        </div>
-        <div class="deal-card" data-category="fashion" data-title="dressberry women black printed fit and flare midi dress" data-store="myntra" data-id="ek_fash_1">
-          <div class="deal-img-wrap">
-            <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7485874/2018/11/14/0f33df64-42b7-4b77-84d9-95a7cf9b63481542194680880-DressBerry-Women-Dresses-2621542194680693-1.jpg" alt="DressBerry Women Black Printed Fit and Flare Midi Dress" class="deal-img" loading="lazy">
+            <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7485874/2018/11/14/0f33df64-42b7-4b77-84d9-95a7cf9b63481542194680880-DressBerry-Women-Dresses-2621542194680693-1.jpg" alt="DressBerry Women Black Printed Fit and Flare Dress" class="deal-img" loading="lazy">
             <span class="deal-discount">75% OFF</span>
           </div>
           <div class="deal-body">
             <div class="deal-store">👗 Myntra</div>
-            <h3 class="deal-title">DressBerry Women Black Printed Fit and Flare Midi Dress</h3>
-            <div class="deal-profit">💰 Earn ₹38 Profit</div>
+            <h3 class="deal-title">DressBerry Women Black Printed Fit and Flare Dress</h3>
+            <div class="deal-profit">💰 Earn ₹38</div>
             <div class="deal-price-row">
               <span class="deal-price">₹449</span>
               <span class="deal-mrp">₹1,799</span>
             </div>
-            <a href="https://tinyurl.com/278mx3jg" target="_blank" rel="noopener noreferrer" class="deal-btn">
-              Grab Deal ⚡
+            <a href="https://earnkaro.com/dressberry-women-black-printed-fit-and-flare-dress/PPS16-7485874?r=1962062" target="_blank" rel="noopener noreferrer" class="deal-btn">
+              Copy Link & Buy ⚡
             </a>
           </div>
         </div>
-        <div class="deal-card" data-category="fashion" data-title="highlander men khaki brown slim fit casual shirt" data-store="myntra" data-id="ek_fash_2">
+        <div class="deal-card" data-category="fashion" data-title="highlander men khaki brown slim fit solid casual shirt" data-store="myntra" data-id="ek_004">
           <div class="deal-img-wrap">
-            <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10339033/2019/8/6/21a5a73e-b8d4-47c4-a698-33a8a3a9062d1565077271427-HIGHLANDER-Men-Shirts-8461565077270034-1.jpg" alt="HIGHLANDER Men Khaki Brown Slim Fit Casual Shirt" class="deal-img" loading="lazy">
+            <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10339033/2019/8/6/21a5a73e-b8d4-47c4-a698-33a8a3a9062d1565077271427-HIGHLANDER-Men-Shirts-8461565077270034-1.jpg" alt="HIGHLANDER Men Khaki Brown Slim Fit Solid Casual Shirt" class="deal-img" loading="lazy">
             <span class="deal-discount">75% OFF</span>
           </div>
           <div class="deal-body">
             <div class="deal-store">👗 Myntra</div>
-            <h3 class="deal-title">HIGHLANDER Men Khaki Brown Slim Fit Casual Shirt</h3>
-            <div class="deal-profit">💰 Earn ₹42 Profit</div>
+            <h3 class="deal-title">HIGHLANDER Men Khaki Brown Slim Fit Solid Casual Shirt</h3>
+            <div class="deal-profit">💰 Earn ₹42</div>
             <div class="deal-price-row">
               <span class="deal-price">₹499</span>
               <span class="deal-mrp">₹1,999</span>
             </div>
-            <a href="https://tinyurl.com/23vx84m7" target="_blank" rel="noopener noreferrer" class="deal-btn">
-              Grab Deal ⚡
+            <a href="https://earnkaro.com/highlander-men-slim-fit-solid-casual-shirt/PPS16-10339033?r=1962062" target="_blank" rel="noopener noreferrer" class="deal-btn">
+              Copy Link & Buy ⚡
             </a>
           </div>
         </div>
-        <div class="deal-card" data-category="fashion" data-title="locomotive men blue slim fit mid-rise stretchable jeans" data-store="myntra" data-id="ek_fash_3">
+        <div class="deal-card" data-category="fashion" data-title="locomotive men blue slim fit mid-rise clean look stretchable jeans" data-store="myntra" data-id="ek_005">
           <div class="deal-img-wrap">
-            <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/8470519/2019/3/1/a5b14f6b-76cb-402f-b42d-7c64df7e33dc1551433898165-LOCOMOTIVE-Men-Jeans-7921551433896562-1.jpg" alt="LOCOMOTIVE Men Blue Slim Fit Mid-Rise Stretchable Jeans" class="deal-img" loading="lazy">
+            <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/8470519/2019/3/1/a5b14f6b-76cb-402f-b42d-7c64df7e33dc1551433898165-LOCOMOTIVE-Men-Jeans-7921551433896562-1.jpg" alt="LOCOMOTIVE Men Blue Slim Fit Mid-Rise Clean Look Stretchable Jeans" class="deal-img" loading="lazy">
             <span class="deal-discount">70% OFF</span>
           </div>
           <div class="deal-body">
             <div class="deal-store">👗 Myntra</div>
-            <h3 class="deal-title">LOCOMOTIVE Men Blue Slim Fit Mid-Rise Stretchable Jeans</h3>
-            <div class="deal-profit">💰 Earn ₹62 Profit</div>
+            <h3 class="deal-title">LOCOMOTIVE Men Blue Slim Fit Mid-Rise Clean Look Stretchable Jeans</h3>
+            <div class="deal-profit">💰 Earn ₹62</div>
             <div class="deal-price-row">
               <span class="deal-price">₹734</span>
               <span class="deal-mrp">₹2,449</span>
             </div>
-            <a href="https://tinyurl.com/2565bqtp" target="_blank" rel="noopener noreferrer" class="deal-btn">
-              Grab Deal ⚡
+            <a href="https://earnkaro.com/locomotive-men-blue-slim-fit-mid-rise-clean-look-stretchable-jeans/PPS16-8470519?r=1962062" target="_blank" rel="noopener noreferrer" class="deal-btn">
+              Copy Link & Buy ⚡
             </a>
           </div>
         </div>
-        <div class="deal-card" data-category="fashion" data-title="striped casual mandarin collar slim fit full sleeve shirt" data-store="ajio" data-id="ek_fash_4">
+        <div class="deal-card" data-category="audio" data-title="boat airdopes 131 true wireless earbuds with 12h total playback" data-store="amazon" data-id="ek_006">
           <div class="deal-img-wrap">
-            <img src="https://assets.ajio.com/medias/sys_master/root/20230623/2Y44/64955ce742f9e729d784a955/-473Wx593H-465492147-navy-MODEL.jpg" alt="Striped Casual Mandarin Collar Slim Fit Full Sleeve Shirt" class="deal-img" loading="lazy">
+            <img src="https://m.media-amazon.com/images/I/51HBum8YmfL._SX679_.jpg" alt="boAt Airdopes 131 True Wireless Earbuds with 12H Total Playback" class="deal-img" loading="lazy">
             <span class="deal-discount">70% OFF</span>
           </div>
           <div class="deal-body">
-            <div class="deal-store">✨ Ajio</div>
-            <h3 class="deal-title">Striped Casual Mandarin Collar Slim Fit Full Sleeve Shirt</h3>
-            <div class="deal-profit">💰 Earn ₹24 Profit</div>
+            <div class="deal-store">📦 Amazon</div>
+            <h3 class="deal-title">boAt Airdopes 131 True Wireless Earbuds with 12H Total Playback</h3>
+            <div class="deal-profit">💰 Earn ₹90</div>
             <div class="deal-price-row">
-              <span class="deal-price">₹270</span>
-              <span class="deal-mrp">₹899</span>
+              <span class="deal-price">₹899</span>
+              <span class="deal-mrp">₹2,990</span>
             </div>
-            <a href="https://tinyurl.com/2csvcffq" target="_blank" rel="noopener noreferrer" class="deal-btn">
-              Grab Deal ⚡
+            <a href="https://earnkaro.com/stores?r=1962062&url=https://www.amazon.in/dp/B08R8LZRGD" target="_blank" rel="noopener noreferrer" class="deal-btn">
+              Copy Link & Buy ⚡
             </a>
           </div>
         </div>
-        <div class="deal-card" data-category="footwear" data-title="red tape men retro air cushion walking & lifestyle sneakers" data-store="amazon" data-id="ek_foot_1">
+        <div class="deal-card" data-category="electronics" data-title="portronics indo 10x 10000mah power bank with dual output fast charging" data-store="amazon" data-id="ek_007">
           <div class="deal-img-wrap">
-            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&auto=format&fit=crop&q=80" alt="Red Tape Men Retro Air Cushion Walking & Lifestyle Sneakers" class="deal-img" loading="lazy">
+            <img src="https://m.media-amazon.com/images/I/51dX+j5bI5L._SX679_.jpg" alt="Portronics Indo 10X 10000mAh Power Bank with Dual Output Fast Charging" class="deal-img" loading="lazy">
+            <span class="deal-discount">66% OFF</span>
+          </div>
+          <div class="deal-body">
+            <div class="deal-store">📦 Amazon</div>
+            <h3 class="deal-title">Portronics Indo 10X 10000mAh Power Bank with Dual Output Fast Charging</h3>
+            <div class="deal-profit">💰 Earn ₹68</div>
+            <div class="deal-price-row">
+              <span class="deal-price">₹689</span>
+              <span class="deal-mrp">₹1,999</span>
+            </div>
+            <a href="https://earnkaro.com/stores?r=1962062&url=https://www.amazon.in/dp/B087D8CLHR" target="_blank" rel="noopener noreferrer" class="deal-btn">
+              Copy Link & Buy ⚡
+            </a>
+          </div>
+        </div>
+        <div class="deal-card" data-category="under99" data-title="ptron bassbuds duo true wireless stereo earbuds with type-c fast charging" data-store="amazon" data-id="ek_008">
+          <div class="deal-img-wrap">
+            <img src="https://m.media-amazon.com/images/I/51i-6jiUsaL._SX679_.jpg" alt="pTron Bassbuds Duo True Wireless Stereo Earbuds with Type-C Fast Charging" class="deal-img" loading="lazy">
+            <span class="deal-discount">84% OFF</span>
+          </div>
+          <div class="deal-body">
+            <div class="deal-store">📦 Amazon</div>
+            <h3 class="deal-title">pTron Bassbuds Duo True Wireless Stereo Earbuds with Type-C Fast Charging</h3>
+            <div class="deal-profit">💰 Earn ₹40</div>
+            <div class="deal-price-row">
+              <span class="deal-price">₹399</span>
+              <span class="deal-mrp">₹2,499</span>
+            </div>
+            <a href="https://earnkaro.com/stores?r=1962062&url=https://www.amazon.in/dp/B08CVXKBR4" target="_blank" rel="noopener noreferrer" class="deal-btn">
+              Copy Link & Buy ⚡
+            </a>
+          </div>
+        </div>
+        <div class="deal-card" data-category="footwear" data-title="red tape men retro air cushion walking & running lifestyle sneakers" data-store="amazon" data-id="ek_009">
+          <div class="deal-img-wrap">
+            <img src="https://m.media-amazon.com/images/I/71TPda7cwTL._UX695_.jpg" alt="Red Tape Men Retro Air Cushion Walking & Running Lifestyle Sneakers" class="deal-img" loading="lazy">
             <span class="deal-discount">80% OFF</span>
           </div>
           <div class="deal-body">
             <div class="deal-store">📦 Amazon</div>
-            <h3 class="deal-title">Red Tape Men Retro Air Cushion Walking & Lifestyle Sneakers</h3>
-            <div class="deal-profit">💰 Earn ₹96 Profit</div>
+            <h3 class="deal-title">Red Tape Men Retro Air Cushion Walking & Running Lifestyle Sneakers</h3>
+            <div class="deal-profit">💰 Earn ₹96</div>
             <div class="deal-price-row">
               <span class="deal-price">₹1,199</span>
               <span class="deal-mrp">₹5,999</span>
             </div>
-            <a href="https://tinyurl.com/24f545mk" target="_blank" rel="noopener noreferrer" class="deal-btn">
-              Grab Deal ⚡
+            <a href="https://earnkaro.com/stores?r=1962062&url=https://www.amazon.in/dp/B0CKW1Z2X3" target="_blank" rel="noopener noreferrer" class="deal-btn">
+              Copy Link & Buy ⚡
             </a>
           </div>
         </div>
-        <div class="deal-card" data-category="wearables" data-title="boat wave call 2 smartwatch w/ 1.83" hd display & bluetooth calling" data-store="boat" data-id="ek_wear_1">
+        <div class="deal-card" data-category="wearables" data-title="boat wave call 2 advanced bluetooth calling smartwatch 1.83" hd display" data-store="amazon" data-id="ek_010">
           <div class="deal-img-wrap">
-            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&auto=format&fit=crop&q=80" alt="boAt Wave Call 2 Smartwatch w/ 1.83" HD Display & Bluetooth Calling" class="deal-img" loading="lazy">
+            <img src="https://m.media-amazon.com/images/I/61ZuL8CojyL._SX679_.jpg" alt="boAt Wave Call 2 Advanced Bluetooth Calling Smartwatch 1.83" HD Display" class="deal-img" loading="lazy">
             <span class="deal-discount">86% OFF</span>
           </div>
           <div class="deal-body">
-            <div class="deal-store">🎧 boAt</div>
-            <h3 class="deal-title">boAt Wave Call 2 Smartwatch w/ 1.83" HD Display & Bluetooth Calling</h3>
-            <div class="deal-profit">💰 Earn ₹100 Profit</div>
+            <div class="deal-store">📦 Amazon</div>
+            <h3 class="deal-title">boAt Wave Call 2 Advanced Bluetooth Calling Smartwatch 1.83" HD Display</h3>
+            <div class="deal-profit">💰 Earn ₹100</div>
             <div class="deal-price-row">
               <span class="deal-price">₹999</span>
               <span class="deal-mrp">₹6,990</span>
             </div>
-            <a href="https://tinyurl.com/24mxfptc" target="_blank" rel="noopener noreferrer" class="deal-btn">
-              Grab Deal ⚡
+            <a href="https://earnkaro.com/stores?r=1962062&url=https://www.amazon.in/dp/B0D1L6VZJZ" target="_blank" rel="noopener noreferrer" class="deal-btn">
+              Copy Link & Buy ⚡
+            </a>
+          </div>
+        </div>
+        <div class="deal-card" data-category="footwear" data-title="campus men mike (n) running shoes with extra cushioning & lightweight" data-store="amazon" data-id="ek_011">
+          <div class="deal-img-wrap">
+            <img src="https://m.media-amazon.com/images/I/71qVR+yF2sL._UY695_.jpg" alt="Campus Men MIKE (N) Running Shoes with Extra Cushioning & Lightweight" class="deal-img" loading="lazy">
+            <span class="deal-discount">72% OFF</span>
+          </div>
+          <div class="deal-body">
+            <div class="deal-store">📦 Amazon</div>
+            <h3 class="deal-title">Campus Men MIKE (N) Running Shoes with Extra Cushioning & Lightweight</h3>
+            <div class="deal-profit">💰 Earn ₹56</div>
+            <div class="deal-price-row">
+              <span class="deal-price">₹699</span>
+              <span class="deal-mrp">₹2,499</span>
+            </div>
+            <a href="https://earnkaro.com/stores?r=1962062&url=https://www.amazon.in/dp/B0BXHH85VZ" target="_blank" rel="noopener noreferrer" class="deal-btn">
+              Copy Link & Buy ⚡
+            </a>
+          </div>
+        </div>
+        <div class="deal-card" data-category="wearables" data-title="noise pulse 2 max advanced bluetooth calling smart watch 1.85" display" data-store="amazon" data-id="ek_012">
+          <div class="deal-img-wrap">
+            <img src="https://m.media-amazon.com/images/I/61E7zYPl1sL._SX679_.jpg" alt="Noise Pulse 2 Max Advanced Bluetooth Calling Smart Watch 1.85" Display" class="deal-img" loading="lazy">
+            <span class="deal-discount">81% OFF</span>
+          </div>
+          <div class="deal-body">
+            <div class="deal-store">📦 Amazon</div>
+            <h3 class="deal-title">Noise Pulse 2 Max Advanced Bluetooth Calling Smart Watch 1.85" Display</h3>
+            <div class="deal-profit">💰 Earn ₹104</div>
+            <div class="deal-price-row">
+              <span class="deal-price">₹1,299</span>
+              <span class="deal-mrp">₹6,999</span>
+            </div>
+            <a href="https://earnkaro.com/stores?r=1962062&url=https://www.amazon.in/dp/B0BSVP83PW" target="_blank" rel="noopener noreferrer" class="deal-btn">
+              Copy Link & Buy ⚡
+            </a>
+          </div>
+        </div>
+        <div class="deal-card" data-category="audio" data-title="zebronics zeb-sound bomb x1 60w portable bluetooth party speaker with rgb" data-store="amazon" data-id="ek_013">
+          <div class="deal-img-wrap">
+            <img src="https://m.media-amazon.com/images/I/61koaRUYmtL._SX679_.jpg" alt="Zebronics Zeb-Sound Bomb X1 60W Portable Bluetooth Party Speaker with RGB" class="deal-img" loading="lazy">
+            <span class="deal-discount">79% OFF</span>
+          </div>
+          <div class="deal-body">
+            <div class="deal-store">📦 Amazon</div>
+            <h3 class="deal-title">Zebronics Zeb-Sound Bomb X1 60W Portable Bluetooth Party Speaker with RGB</h3>
+            <div class="deal-profit">💰 Earn ₹120</div>
+            <div class="deal-price-row">
+              <span class="deal-price">₹1,499</span>
+              <span class="deal-mrp">₹6,999</span>
+            </div>
+            <a href="https://earnkaro.com/stores?r=1962062&url=https://www.amazon.in/dp/B0BB3W91H8" target="_blank" rel="noopener noreferrer" class="deal-btn">
+              Copy Link & Buy ⚡
+            </a>
+          </div>
+        </div>
+        <div class="deal-card" data-category="audio" data-title="realme buds t300 active noise cancellation true wireless earbuds 30h playback" data-store="amazon" data-id="ek_014">
+          <div class="deal-img-wrap">
+            <img src="https://m.media-amazon.com/images/I/51xzJStzuCL._SX679_.jpg" alt="Realme Buds T300 Active Noise Cancellation True Wireless Earbuds 30H Playback" class="deal-img" loading="lazy">
+            <span class="deal-discount">64% OFF</span>
+          </div>
+          <div class="deal-body">
+            <div class="deal-store">📦 Amazon</div>
+            <h3 class="deal-title">Realme Buds T300 Active Noise Cancellation True Wireless Earbuds 30H Playback</h3>
+            <div class="deal-profit">💰 Earn ₹144</div>
+            <div class="deal-price-row">
+              <span class="deal-price">₹1,799</span>
+              <span class="deal-mrp">₹4,999</span>
+            </div>
+            <a href="https://earnkaro.com/stores?r=1962062&url=https://www.amazon.in/dp/B0CFXS3GTT" target="_blank" rel="noopener noreferrer" class="deal-btn">
+              Copy Link & Buy ⚡
+            </a>
+          </div>
+        </div>
+        <div class="deal-card" data-category="fashion" data-title="lymio casual shirt for men || shirt for men || men stylish shirt" data-store="amazon" data-id="ek_015">
+          <div class="deal-img-wrap">
+            <img src="https://m.media-amazon.com/images/I/71AKzbDX9NL._UY741_.jpg" alt="Lymio Casual Shirt for Men || Shirt for Men || Men Stylish Shirt" class="deal-img" loading="lazy">
+            <span class="deal-discount">83% OFF</span>
+          </div>
+          <div class="deal-body">
+            <div class="deal-store">📦 Amazon</div>
+            <h3 class="deal-title">Lymio Casual Shirt for Men || Shirt for Men || Men Stylish Shirt</h3>
+            <div class="deal-profit">💰 Earn ₹28</div>
+            <div class="deal-price-row">
+              <span class="deal-price">₹349</span>
+              <span class="deal-mrp">₹1,999</span>
+            </div>
+            <a href="https://earnkaro.com/stores?r=1962062&url=https://www.amazon.in/dp/B0BNFRTSP9" target="_blank" rel="noopener noreferrer" class="deal-btn">
+              Copy Link & Buy ⚡
+            </a>
+          </div>
+        </div>
+        <div class="deal-card" data-category="fashion" data-title="american crew men slim fit cargo joggers with multiple pockets" data-store="amazon" data-id="ek_016">
+          <div class="deal-img-wrap">
+            <img src="https://m.media-amazon.com/images/I/61ZS0jHGQoL._UY741_.jpg" alt="AMERICAN CREW Men Slim Fit Cargo Joggers with Multiple Pockets" class="deal-img" loading="lazy">
+            <span class="deal-discount">80% OFF</span>
+          </div>
+          <div class="deal-body">
+            <div class="deal-store">📦 Amazon</div>
+            <h3 class="deal-title">AMERICAN CREW Men Slim Fit Cargo Joggers with Multiple Pockets</h3>
+            <div class="deal-profit">💰 Earn ₹40</div>
+            <div class="deal-price-row">
+              <span class="deal-price">₹499</span>
+              <span class="deal-mrp">₹2,499</span>
+            </div>
+            <a href="https://earnkaro.com/stores?r=1962062&url=https://www.amazon.in/dp/B0BM4Y5D4M" target="_blank" rel="noopener noreferrer" class="deal-btn">
+              Copy Link & Buy ⚡
             </a>
           </div>
         </div>
@@ -1008,18 +1045,18 @@
               <div class="coupon-icon">📦</div>
               <div>
                 <div class="coupon-store-name">Amazon India</div>
-                <div style="font-size: 10px; color: #16a34a; font-weight: 700;">✓ Verified 2h ago</div>
+                <div style="font-size: 10px; color: #16a34a; font-weight: 700;">✓ Verified 1h ago</div>
               </div>
             </div>
-            <span class="coupon-disc">₹200 OFF</span>
+            <span class="coupon-disc">EXTRA ₹200 OFF</span>
           </div>
           <p class="coupon-desc">Flat ₹200 OFF on Fashion & Electronics orders above ₹1,999</p>
           <div class="coupon-code-box">
             <span class="coupon-code">AMZ200</span>
-            <button class="copy-btn" onclick="copyCoupon('AMZ200', 'https://tinyurl.com/24f545mk', this)">COPY</button>
+            <button class="copy-btn" onclick="copyCoupon('AMZ200', 'https://earnkaro.com/stores?r=1962062&url=https://www.amazon.in', this)">COPY</button>
           </div>
           <div class="coupon-meta">
-            <span>👥 4.8k used</span>
+            <span>👥 5.2k used</span>
             <span>⏳ Expires 30 Sep 2026</span>
           </div>
         </div>
@@ -1029,7 +1066,7 @@
               <div class="coupon-icon">👗</div>
               <div>
                 <div class="coupon-store-name">Myntra Fashion</div>
-                <div style="font-size: 10px; color: #16a34a; font-weight: 700;">✓ Verified 1h ago</div>
+                <div style="font-size: 10px; color: #16a34a; font-weight: 700;">✓ Verified 2h ago</div>
               </div>
             </div>
             <span class="coupon-disc">EXTRA 40% OFF</span>
@@ -1037,53 +1074,32 @@
           <p class="coupon-desc">Extra 40% discount on streetwear, sneakers & dresses</p>
           <div class="coupon-code-box">
             <span class="coupon-code">MYNTRA40</span>
-            <button class="copy-btn" onclick="copyCoupon('MYNTRA40', 'https://tinyurl.com/278mx3jg', this)">COPY</button>
+            <button class="copy-btn" onclick="copyCoupon('MYNTRA40', 'https://earnkaro.com/stores/myntra?r=1962062', this)">COPY</button>
           </div>
           <div class="coupon-meta">
-            <span>👥 8.2k used</span>
+            <span>👥 9.1k used</span>
             <span>⏳ Expires 30 Sep 2026</span>
           </div>
         </div>
         <div class="coupon-card">
           <div class="coupon-top">
             <div class="coupon-store">
-              <div class="coupon-icon">💎</div>
+              <div class="coupon-icon">🛒</div>
               <div>
-                <div class="coupon-store-name">Tata CLiQ</div>
-                <div style="font-size: 10px; color: #16a34a; font-weight: 700;">✓ Verified 45m ago</div>
-              </div>
-            </div>
-            <span class="coupon-disc">FLAT ₹300 OFF</span>
-          </div>
-          <p class="coupon-desc">Flat ₹300 instant discount on audio & smart devices</p>
-          <div class="coupon-code-box">
-            <span class="coupon-code">TATA300</span>
-            <button class="copy-btn" onclick="copyCoupon('TATA300', 'https://tinyurl.com/22e6akj4', this)">COPY</button>
-          </div>
-          <div class="coupon-meta">
-            <span>👥 12.4k used</span>
-            <span>⏳ Expires 02 Oct 2026</span>
-          </div>
-        </div>
-        <div class="coupon-card">
-          <div class="coupon-top">
-            <div class="coupon-store">
-              <div class="coupon-icon">🎧</div>
-              <div>
-                <div class="coupon-store-name">boAt Lifestyle</div>
+                <div class="coupon-store-name">Flipkart</div>
                 <div style="font-size: 10px; color: #16a34a; font-weight: 700;">✓ Verified 3h ago</div>
               </div>
             </div>
-            <span class="coupon-disc">FLAT ₹200 OFF</span>
+            <span class="coupon-disc">FLAT ₹500 OFF</span>
           </div>
-          <p class="coupon-desc">Flat ₹200 extra discount on Airdopes & Smartwatches</p>
+          <p class="coupon-desc">Flat ₹500 instant discount on mobiles & electronics above ₹10,000</p>
           <div class="coupon-code-box">
-            <span class="coupon-code">BOAT200</span>
-            <button class="copy-btn" onclick="copyCoupon('BOAT200', 'https://tinyurl.com/24mxfptc', this)">COPY</button>
+            <span class="coupon-code">FLIP500</span>
+            <button class="copy-btn" onclick="copyCoupon('FLIP500', 'https://earnkaro.com/stores/flipkart?r=1962062', this)">COPY</button>
           </div>
           <div class="coupon-meta">
-            <span>👥 3.1k used</span>
-            <span>⏳ Expires 05 Oct 2026</span>
+            <span>👥 14.8k used</span>
+            <span>⏳ Expires 02 Oct 2026</span>
           </div>
         </div>
         <div class="coupon-card">
@@ -1092,7 +1108,7 @@
               <div class="coupon-icon">✨</div>
               <div>
                 <div class="coupon-store-name">Ajio Trends</div>
-                <div style="font-size: 10px; color: #16a34a; font-weight: 700;">✓ Verified 2h ago</div>
+                <div style="font-size: 10px; color: #16a34a; font-weight: 700;">✓ Verified 45m ago</div>
               </div>
             </div>
             <span class="coupon-disc">EXTRA 35% OFF</span>
@@ -1100,10 +1116,10 @@
           <p class="coupon-desc">Extra 35% off on orders above ₹1,490 on international brands</p>
           <div class="coupon-code-box">
             <span class="coupon-code">AJIO35</span>
-            <button class="copy-btn" onclick="copyCoupon('AJIO35', 'https://tinyurl.com/2csvcffq', this)">COPY</button>
+            <button class="copy-btn" onclick="copyCoupon('AJIO35', 'https://earnkaro.com/stores/ajio?r=1962062', this)">COPY</button>
           </div>
           <div class="coupon-meta">
-            <span>👥 5.7k used</span>
+            <span>👥 6.4k used</span>
             <span>⏳ Expires 01 Oct 2026</span>
           </div>
         </div>
@@ -1123,7 +1139,7 @@
 
   <footer>
     <div class="container">
-      <p>© 2026 BigRedHub. Minimalist Indian deals & verified promo codes discovery platform.</p>
+      <p>© 2026 BigRedHub. Minimalist Indian deals platform with direct EarnKaro copy links (Ref ID: 1962062).</p>
     </div>
   </footer>
 
