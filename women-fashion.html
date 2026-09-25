@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Women's Fashion Deals — BigRedHub | Up to 82% OFF</title><meta name="description" content="24 live Women's Fashion deals from EarnKaro with direct affiliate links.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-font-smoothing:antialiased}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#fff;color:#000;line-height:1.5}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid #e5e7eb;z-index:100}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-size:19px;font-weight:900;color:#000;text-decoration:none}
+.brand-badge{background:#000;color:#fff;font-size:9px;font-weight:800;padding:3px 8px;border-radius:20px;margin-left:8px}
+.header-btn{background:#000;color:#fff;text-decoration:none;font-size:12.5px;font-weight:700;padding:8px 16px;border-radius:20px;white-space:nowrap}
+nav.topnav{border-bottom:1px solid #f1f5f9;background:#fff;position:sticky;top:60px;z-index:99}
+.nav-scroll{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;padding:8px 0}
+.nav-scroll::-webkit-scrollbar{display:none}
+.nav-link{font-size:13px;font-weight:700;color:#6b7280;text-decoration:none;padding:7px 14px;border-radius:18px;white-space:nowrap}
+.nav-link.active,.nav-link:hover{background:#000;color:#fff}
+.hero{position:relative;max-width:1200px;margin:20px auto 0;padding:0 20px}
+.slider{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:16/6;background:#f9fafb}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity .6s}
+.slide.on{opacity:1}
+.slide img{width:100%;height:100%;object-fit:cover}
+.slider-dots{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);display:flex;gap:6px;z-index:5}
+.dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.6);cursor:pointer}
+.dot.on{background:#000}
+.section{padding:32px 0}
+.section-title{font-size:clamp(22px,3vw,30px);font-weight:900;letter-spacing:-.7px;margin-bottom:4px}
+.section-sub{color:#6b7280;font-size:13.5px;margin-bottom:20px;font-weight:500}
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.cat-card{position:relative;height:120px;border-radius:12px;overflow:hidden;background:#000;text-decoration:none;display:flex;flex-direction:column;justify-content:flex-end;padding:14px;border:1px solid #e5e7eb;transition:.25s}
+.cat-card:hover{transform:translateY(-3px)}
+.cat-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;padding:12px;opacity:.9;transition:.25s}
+.cat-ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.85) 0%,rgba(255,255,255,0) 55%)}
+.cat-cnt{position:relative;z-index:2}
+.cat-nm{font-size:14.5px;font-weight:900;color:#000}
+.cat-n-off{font-size:11.5px;font-weight:700;color:#16a34a}
+.store-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px}
+.store-card{background:#fff;border:1.5px solid #e5e7eb;border-radius:12px;padding:18px 10px;display:flex;flex-direction:column;align-items:center;gap:10px;text-decoration:none;transition:.25s}
+.store-card:hover{border-color:#000;transform:translateY(-3px)}
+.store-card img{max-width:100%;height:44px;object-fit:contain}
+.store-card span{font-size:12.5px;font-weight:800;color:#000}
+.tile-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.tile{border:1.5px solid #e5e7eb;border-radius:12px;overflow:hidden;text-decoration:none;display:block;transition:.25s;background:#fff}
+.tile:hover{border-color:#000;transform:translateY(-3px)}
+.tile img{width:100%;height:120px;object-fit:cover}
+.tile span{display:block;padding:10px 12px;font-size:13px;font-weight:800;color:#000}
+.deals-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+.deal-card{background:#fff;border:1.5px solid #e5e7eb;border-radius:12px;overflow:hidden;transition:.25s}
+.deal-card:hover{transform:translateY(-4px);border-color:#000;box-shadow:0 12px 24px rgba(0,0,0,.08)}
+.deal-img-wrap{position:relative;width:100%;height:220px;background:#fff;overflow:hidden}
+.deal-img{width:100%;height:100%;object-fit:contain;transition:.3s;padding:8px}
+.deal-card:hover .deal-img{transform:scale(1.05)}
+.deal-discount{position:absolute;top:10px;right:10px;background:#ef4444;color:#fff;font-size:11px;font-weight:900;padding:4px 10px;border-radius:20px}
+.deal-body{padding:14px 16px 16px}
+.deal-title{font-size:13.5px;font-weight:800;line-height:1.35;margin-bottom:8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:37px}
+.deal-profit{display:inline-flex;background:#fef3c7;color:#92400e;font-size:10.5px;font-weight:800;padding:3px 8px;border-radius:6px;margin-bottom:10px}
+.deal-price-row{display:flex;align-items:baseline;gap:10px;margin-bottom:12px}
+.deal-price{font-size:20px;font-weight:900}
+.deal-mrp{font-size:13px;color:#9ca3af;text-decoration:line-through;font-weight:600}
+.deal-btns{display:flex;flex-direction:column;gap:8px}
+.deal-btn{display:flex;align-items:center;justify-content:center;width:100%;height:40px;background:#000;color:#fff;text-decoration:none;font-size:13px;font-weight:800;border-radius:8px;transition:.2s}
+.deal-btn:hover{background:#16a34a}
+.copy-link-btn{display:flex;align-items:center;justify-content:center;width:100%;height:36px;background:#fff;color:#000;border:1.5px solid #000;font-size:12px;font-weight:800;border-radius:8px;cursor:pointer;transition:.2s;font-family:inherit}
+.copy-link-btn:hover{background:#f1f5f9}
+.copy-link-btn.copied{background:#16a34a;color:#fff;border-color:#16a34a}
+.page-banner{max-width:1200px;margin:20px auto 0;padding:0 20px}
+.page-banner img{width:100%;height:180px;object-fit:contain;background:#f9fafb;border:1px solid #e5e7eb;border-radius:14px;padding:14px}
+.tg-banner{background:#0a0e1a;border-radius:16px;padding:36px 28px;text-align:center;margin:36px 0;color:#fff}
+.tg-banner h3{font-size:clamp(20px,3vw,28px);font-weight:900;margin-bottom:10px}
+.tg-banner p{color:#9ca3af;max-width:540px;margin:0 auto 22px;font-size:14px}
+.tg-btn{display:inline-flex;background:#0088cc;color:#fff;text-decoration:none;font-size:14px;font-weight:800;padding:12px 24px;border-radius:20px}
+footer{border-top:1px solid #e5e7eb;padding:26px 0;text-align:center;color:#6b7280;font-size:13px;background:#f9fafb;margin-top:20px}
+#toast{position:fixed;bottom:30px;left:50%;transform:translateX(-50%) translateY(80px);background:#000;color:#fff;padding:12px 24px;border-radius:20px;font-size:13px;font-weight:800;opacity:0;transition:.3s;z-index:1000;pointer-events:none}
+#toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+.no-results{display:none;text-align:center;padding:40px;color:#6b7280;font-weight:700}
+.search-bar{max-width:620px;margin:0 auto;height:50px;border:2px solid #e5e7eb;border-radius:25px;padding:0 20px;font-size:15px;font-family:inherit;outline:none;width:100%;display:block}
+.search-bar:focus{border-color:#000}
+@media(max-width:768px){.deals-grid{grid-template-columns:repeat(2,1fr);gap:12px}.deal-img-wrap{height:160px}.deal-title{font-size:12px}.deal-price{font-size:16px}.deal-btn{height:36px;font-size:11.5px}.copy-link-btn{height:32px;font-size:11px}.slider{aspect-ratio:16/9}.cat-grid{grid-template-columns:repeat(2,1fr)}}
+</style></head><body>
+<header><div class="container"><div class="header-inner">
+<a href="index.html" class="brand">⚡ BigRedHub<span class="brand-badge">LIVE</span></a>
+<a href="https://t.me/Under99LootDeals_bot" target="_blank" class="header-btn">Telegram Bot</a>
+</div></div></header>
+<nav class="topnav"><div class="container"><div class="nav-scroll"><a href="index.html" class="nav-link">🏠 Home</a><a href="audio.html" class="nav-link">🎧 Audio & Headphones</a><a href="electronics.html" class="nav-link">🔌 Power Banks & Electronics</a><a href="men-fashion.html" class="nav-link">👔 Men's Fashion</a><a href="women-fashion.html" class="nav-link active">👗 Women's Fashion</a><a href="footwear.html" class="nav-link">👟 Footwear</a><a href="beauty.html" class="nav-link">💄 Beauty</a><a href="watches.html" class="nav-link">⌚ Watches & Accessories</a><a href="home-kitchen.html" class="nav-link">🏠 Home & Kitchen</a></div></div></nav>
+<div class="page-banner"><img src="https://asset21.ckassets.com/resources/image/category/myntra-super-sellers-web-3899-17902772140.png" alt="Women's Fashion" loading="eager"></div>
+<section class="section container">
+  <h2 class="section-title">👗 Women's Fashion</h2>
+  <p class="section-sub">24 live deals · sorted by biggest discount · direct EarnKaro links</p>
+  <input type="text" id="searchInput" class="search-bar" placeholder="Search in Women's Fashion..." style="margin-bottom:22px">
+  <div class="deals-grid"><div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11201872/2019/12/27/b07791a9-50c6-45e2-a365-d7bf503ef9551577441198210-Trendy-Attractive-Kanchi-Style-Banarsi-silk-Womens-Saree-620-1.jpg" alt="VASTRAD Black &amp; Gold-Toned Silk Blend Woven Design Banarasi Saree" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">82% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">VASTRAD Black &amp; Gold-Toned Silk Blend Woven Design Banarasi Saree</h3>
+    <div class="deal-profit">💰 Earn ₹377 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹827</span><span class="deal-mrp">₹4,599</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/vastrad-black-gold-toned-silk-blend-woven-design-banarasi-saree/PPS16-11201872" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/vastrad-black-gold-toned-silk-blend-woven-design-banarasi-saree/PPS16-11201872', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2019/9/10/d96866c2-6435-4f77-9cb1-678c88aa15de1568133868016-1.jpg" alt="Zastraa Women Maroon Solid Dungaree" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">80% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Zastraa Women Maroon Solid Dungaree</h3>
+    <div class="deal-profit">💰 Earn ₹320 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹799</span><span class="deal-mrp">₹3,999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/zastraa-women-maroon-solid-dungaree/PPS16-10606444" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/zastraa-women-maroon-solid-dungaree/PPS16-10606444', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2019/12/3/2c00e659-e5e0-4697-becd-242e1cdaf9601575325197880-1.jpg" alt="Berrylush Women Yellow Solid Maxi Dress" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">77% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Berrylush Women Yellow Solid Maxi Dress</h3>
+    <div class="deal-profit">💰 Earn ₹192 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹574</span><span class="deal-mrp">₹2,499</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/berrylush-women-yellow-solid-maxi-dress/PPS16-11109404" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/berrylush-women-yellow-solid-maxi-dress/PPS16-11109404', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/ajio/catalog/5f05a5bf7cdb8c721b793944/-473Wx593H-461108179-multi-MODEL.jpg" alt="Striped A-line Dress with Waist Tie-Up" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">76% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Striped A-line Dress with Waist Tie-Up</h3>
+    <div class="deal-profit">💰 Earn ₹151 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹480</span><span class="deal-mrp">₹1,999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/striped-a-line-dress-with-waist-tie-up/PPS17-461108179-multi" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/striped-a-line-dress-with-waist-tie-up/PPS17-461108179-multi', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/7485874/2019/1/22/9f74451e-9e1d-426c-b338-f1d59bbe7e921548150601079-DressBerry-Women-Black-Printed-Fit-and-Flare-Dress-188154815-1.jpg" alt="DressBerry Women Black Printed Fit and Flare Dress" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">75% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">DressBerry Women Black Printed Fit and Flare Dress</h3>
+    <div class="deal-profit">💰 Earn ₹135 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹449</span><span class="deal-mrp">₹1,799</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/dressberry-women-black-printed-fit-and-flare-dress/PPS16-7485874" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/dressberry-women-black-printed-fit-and-flare-dress/PPS16-7485874', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/4653850/2018/10/29/6f894553-c044-4f27-93a3-7ef5d7b61db11540814497439-HRX-by-Hrithik-Roshan-Women-Coral-Solid-Hooded-Sweatshirt-49-1.jpg" alt="HRX by Hrithik Roshan Women Orange Hooded Active Sweatshirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">75% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">HRX by Hrithik Roshan Women Orange Hooded Active Sweatshirt</h3>
+    <div class="deal-profit">💰 Earn ₹150 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹499</span><span class="deal-mrp">₹1,999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/hrx-by-hrithik-roshan-women-orange-hooded-active-sweatshirt/PPS16-4653850" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/hrx-by-hrithik-roshan-women-orange-hooded-active-sweatshirt/PPS16-4653850', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/7287400/2019/1/25/1a50f966-38b2-433a-bbda-500fe586e05b1548398662436-Global-Desi-Red-Printed-Gathered-Maxi-Skirt-6881548398661120-1.jpg" alt="Global Desi Red Printed Gathered Maxi Skirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">75% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Global Desi Red Printed Gathered Maxi Skirt</h3>
+    <div class="deal-profit">💰 Earn ₹150 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹499</span><span class="deal-mrp">₹1,999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/global-desi-red-printed-gathered-maxi-skirt/PPS16-7287400" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/global-desi-red-printed-gathered-maxi-skirt/PPS16-7287400', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10193941/2019/7/19/e20e0de3-4848-403e-88db-120708e877351563525576862-Global-Desi-Women-Teal-Green--Red-Printed-High-Low-Tunic-687-1.jpg" alt="Global Desi Women Teal Green &amp; Red Printed High-Low Tunic" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">75% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Global Desi Women Teal Green &amp; Red Printed High-Low Tunic</h3>
+    <div class="deal-profit">💰 Earn ₹120 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹399</span><span class="deal-mrp">₹1,599</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/global-desi-women-teal-green-red-printed-high-low-tunic/PPS16-10193941" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/global-desi-women-teal-green-red-printed-high-low-tunic/PPS16-10193941', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10877244/2019/11/15/601dccc7-8d3c-4171-a767-44b6896d647b1573808756626-DILLINGER-Women-Tshirts-4411573808755300-1.jpg" alt="DILLINGER Women Mustard Yellow Printed Round Neck T-shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">73% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">DILLINGER Women Mustard Yellow Printed Round Neck T-shirt</h3>
+    <div class="deal-profit">💰 Earn ₹87 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹323</span><span class="deal-mrp">₹1,199</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/dillinger-women-mustard-yellow-printed-round-neck-t-shirt/PPS16-10877244" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/dillinger-women-mustard-yellow-printed-round-neck-t-shirt/PPS16-10877244', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2018/12/7/0d28de4b-dd7b-4cfe-a3ee-bedb5c6599561544204132063-1.jpg" alt="plusS Women Blue Solid A-Line Dress" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">72% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">plusS Women Blue Solid A-Line Dress</h3>
+    <div class="deal-profit">💰 Earn ₹237 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹923</span><span class="deal-mrp">₹3,299</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/pluss-women-blue-solid-a-line-dress/PPS16-8126493" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/pluss-women-blue-solid-a-line-dress/PPS16-8126493', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/h07/hfa/14565431836702/-473Wx593H-441016995-white-MODEL.jpg" alt="Striped Shirt with Mandarin Collar" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">70% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Striped Shirt with Mandarin Collar</h3>
+    <div class="deal-profit">💰 Earn ₹62 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹270</span><span class="deal-mrp">₹899</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/striped-shirt-with-mandarin-collar/PPS17-441016995-white" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/striped-shirt-with-mandarin-collar/PPS17-441016995-white', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11893772/2020/6/22/1d3d1259-d797-4bc5-b179-8afd611120201592805750228-Roadster-Women-Olive-Green-Solid-Round-Neck-T-shirt-13015928-1.jpg" alt="Roadster Women Olive Green Solid Round Neck T-shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">70% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Roadster Women Olive Green Solid Round Neck T-shirt</h3>
+    <div class="deal-profit">💰 Earn ₹42 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹179</span><span class="deal-mrp">₹599</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/roadster-women-olive-green-solid-round-neck-t-shirt/PPS16-11893772-dealsunder-399" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/roadster-women-olive-green-solid-round-neck-t-shirt/PPS16-11893772-dealsunder-399', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/9403193/2019/9/26/f983f586-4d2a-478f-aae7-ace55d8806d01569489860555-DressBerry-Women-Olive-Green-Ribbed-Sweater-2361569489859225-1.jpg" alt="DressBerry Women Olive Green Ribbed Sweater" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">70% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">DressBerry Women Olive Green Ribbed Sweater</h3>
+    <div class="deal-profit">💰 Earn ₹129 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹554</span><span class="deal-mrp">₹1,849</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/dressberry-women-olive-green-ribbed-sweater/PPS16-9403193" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/dressberry-women-olive-green-ribbed-sweater/PPS16-9403193', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8429645/2019/1/14/9ee427b3-bc43-4f7b-a932-0b5ab087e1061547466433744-W-Women-Kurtas-9361547466431956-1.jpg" alt="W Women Blue &amp; White Printed Straight Kurta" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">70% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">W Women Blue &amp; White Printed Straight Kurta</h3>
+    <div class="deal-profit">💰 Earn ₹119 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹509</span><span class="deal-mrp">₹1,699</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/w-women-blue-white-printed-straight-kurta/PPS16-8429645" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/w-women-blue-white-printed-straight-kurta/PPS16-8429645', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12370322/2020/9/1/6e5e45c9-1751-488d-b3a1-aed400d9d5e71598959666780na1.jpg" alt="Innocence Beige Solid Non-Wired Non Padded Everyday Bra BBAPLIN90186_28B" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">70% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Innocence Beige Solid Non-Wired Non Padded Everyday Bra BBAPLIN90186_28B</h3>
+    <div class="deal-profit">💰 Earn ₹44 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹192</span><span class="deal-mrp">₹640</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/innocence-beige-solid-non-wired-non-padded-everyday-bra-bbaplin90186-28b/PPS16-12370322" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/innocence-beige-solid-non-wired-non-padded-everyday-bra-bbaplin90186-28b/PPS16-12370322', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/ha2/h67/14491620605982/-473Wx593H-441024109-pink-MODEL.jpg" alt="Pleat-Front Culottes with Waist Tie-Up" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">70% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Pleat-Front Culottes with Waist Tie-Up</h3>
+    <div class="deal-profit">💰 Earn ₹62 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹270</span><span class="deal-mrp">₹899</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/pleat-front-culottes-with-waist-tie-up/PPS17-441024109-pink" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/pleat-front-culottes-with-waist-tie-up/PPS17-441024109-pink', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/h8d/hcc/15506229919774/-473Wx593H-461020470-blue-MODEL.jpg" alt="Novelty  Top" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">67% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Novelty  Top</h3>
+    <div class="deal-profit">💰 Earn ₹66 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹330</span><span class="deal-mrp">₹999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/novelty-top/PPS17-461020470-blue" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/novelty-top/PPS17-461020470-blue', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/h11/h8d/16090240352286/-473Wx593H-461139781-pink-MODEL.jpg" alt="Floral Print T-shirt Bra" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">63% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Floral Print T-shirt Bra</h3>
+    <div class="deal-profit">💰 Earn ₹50 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹296</span><span class="deal-mrp">₹799</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/floral-print-t-shirt-bra/PPS17-461139781-pink" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/floral-print-t-shirt-bra/PPS17-461139781-pink', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1694433/2016/12/22/11482407451048-SASSAFRAS-Women-Jackets-141482407450781-1.jpg" alt="SASSAFRAS Mustard Yellow Peplum Jacket" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">58% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">SASSAFRAS Mustard Yellow Peplum Jacket</h3>
+    <div class="deal-profit">💰 Earn ₹98 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹713</span><span class="deal-mrp">₹1,699</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/sassafras-mustard-yellow-peplum-jacket/PPS16-1694433" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/sassafras-mustard-yellow-peplum-jacket/PPS16-1694433', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10939790/2020/2/24/a4603bbf-3a2d-46da-b929-a6fb8d3960b91582520321538-DressBerry-Pink-Solid-Non-Wired-Non-Padded-Everyday-Bra-4061-1.jpg" alt="DressBerry Pink Solid Non-Wired Non Padded Everyday Bra DB-POP-BRA-005D" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">57% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">DressBerry Pink Solid Non-Wired Non Padded Everyday Bra DB-POP-BRA-005D</h3>
+    <div class="deal-profit">💰 Earn ₹34 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹259</span><span class="deal-mrp">₹599</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/dressberry-pink-solid-non-wired-non-padded-everyday-bra-db-pop-bra-005d/PPS16-10939790" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/dressberry-pink-solid-non-wired-non-padded-everyday-bra-db-pop-bra-005d/PPS16-10939790', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11492486/2020/2/24/128352d6-2dc7-4c0b-bda8-b5dccff11dd71582545142940-ONLY-Women-Trousers-1231582545141502-1.jpg" alt="ONLY Women Olive Green Skinny Fit Solid Chinos" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">55% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">ONLY Women Olive Green Skinny Fit Solid Chinos</h3>
+    <div class="deal-profit">💰 Earn ₹137 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,124</span><span class="deal-mrp">₹2,499</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/only-women-olive-green-skinny-fit-solid-chinos/PPS16-11492486" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/only-women-olive-green-skinny-fit-solid-chinos/PPS16-11492486', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10286957/2019/8/27/b6f771ec-4e56-48f1-a137-76300aee2a221566900472792-Miss-Chase-Women-Blue-Solid-Regular-Fit-Denim-Shorts-3971566-1.jpg" alt="Miss Chase Women Blue Solid Regular Fit Denim Shorts" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">55% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Miss Chase Women Blue Solid Regular Fit Denim Shorts</h3>
+    <div class="deal-profit">💰 Earn ₹99 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹809</span><span class="deal-mrp">₹1,799</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/miss-chase-women-blue-solid-regular-fit-denim-shorts/PPS16-10286957" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/miss-chase-women-blue-solid-regular-fit-denim-shorts/PPS16-10286957', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11182520/2020/2/17/beb32ab1-07d8-41f0-b88d-032cd0c1d7ef1581944721085-DressBerry-Women-Mustard-Solid-Mandarin-Collar-T-shirt-85915-1.jpg" alt="DressBerry Women Mustard Yellow Solid Mandarin Collar T-shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">35% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">DressBerry Women Mustard Yellow Solid Mandarin Collar T-shirt</h3>
+    <div class="deal-profit">💰 Earn ₹35 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹649</span><span class="deal-mrp">₹999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/dressberry-women-mustard-yellow-solid-mandarin-collar-t-shirt/PPS16-11182520" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/dressberry-women-mustard-yellow-solid-mandarin-collar-t-shirt/PPS16-11182520', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/20200926/oAEm/5f6e42e4f997dd8c834d6af4/-473Wx593H-441108428-offwhite-MODEL.jpg" alt="Printed Crew-Neck Sweatshirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Printed Crew-Neck Sweatshirt</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹499</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/printed-crew-neck-sweatshirt/PPS17-441108428-offwhite" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/printed-crew-neck-sweatshirt/PPS17-441108428-offwhite', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div></div>
+  <div class="no-results" id="noResults">😕 No deals found.</div>
+</section>
+
+<section class="container"><div class="tg-banner"><h3>Never Miss a 90% Price Drop</h3><p>Get instant price glitch alerts & Under ₹99 steals before they sell out.</p><a href="https://t.me/Under99LootDeals_bot" target="_blank" class="tg-btn">⚡ Open @Under99LootDeals_bot</a></div></section>
+<footer><div class="container">© 2026 BigRedHub · Deals sourced live from EarnKaro · Affiliate disclosure: We earn a commission on qualifying purchases.</div></footer>
+<div id="toast"></div><script>
+function showToast(m){const t=document.getElementById('toast');t.innerText=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2200)}
+function copyLink(url,btn){navigator.clipboard.writeText(url).then(()=>{const o=btn.innerText;btn.innerText='✓ COPIED';btn.classList.add('copied');showToast('EarnKaro link copied! Paste anywhere to share');setTimeout(()=>{btn.innerText=o;btn.classList.remove('copied')},2000)})}
+function initSlider(){const slides=document.querySelectorAll('.slide');if(!slides.length)return;let i=0;slides[0].classList.add('on');const dots=document.querySelectorAll('.dot');if(dots[0])dots[0].classList.add('on');setInterval(()=>{slides[i].classList.remove('on');if(dots[i])dots[i].classList.remove('on');i=(i+1)%slides.length;slides[i].classList.add('on');if(dots[i])dots[i].classList.add('on')},3500)}
+function setupSearch(){const inp=document.getElementById('searchInput');if(!inp)return;inp.addEventListener('input',e=>{const q=e.target.value.toLowerCase().trim();let n=0;document.querySelectorAll('.deal-card').forEach(c=>{const ok=!q||(c.dataset.q||'').includes(q);c.style.display=ok?'block':'none';if(ok)n++});const nr=document.getElementById('noResults');if(nr)nr.style.display=n?'none':'block'})}
+initSlider();setupSearch();
+</script></body></html>

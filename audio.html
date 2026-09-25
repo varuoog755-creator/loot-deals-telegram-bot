@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Audio &amp; Headphones Deals — BigRedHub | Up to 85% OFF</title><meta name="description" content="40 live Audio &amp; Headphones deals from EarnKaro with direct affiliate links.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-font-smoothing:antialiased}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#fff;color:#000;line-height:1.5}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid #e5e7eb;z-index:100}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-size:19px;font-weight:900;color:#000;text-decoration:none}
+.brand-badge{background:#000;color:#fff;font-size:9px;font-weight:800;padding:3px 8px;border-radius:20px;margin-left:8px}
+.header-btn{background:#000;color:#fff;text-decoration:none;font-size:12.5px;font-weight:700;padding:8px 16px;border-radius:20px;white-space:nowrap}
+nav.topnav{border-bottom:1px solid #f1f5f9;background:#fff;position:sticky;top:60px;z-index:99}
+.nav-scroll{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;padding:8px 0}
+.nav-scroll::-webkit-scrollbar{display:none}
+.nav-link{font-size:13px;font-weight:700;color:#6b7280;text-decoration:none;padding:7px 14px;border-radius:18px;white-space:nowrap}
+.nav-link.active,.nav-link:hover{background:#000;color:#fff}
+.hero{position:relative;max-width:1200px;margin:20px auto 0;padding:0 20px}
+.slider{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:16/6;background:#f9fafb}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity .6s}
+.slide.on{opacity:1}
+.slide img{width:100%;height:100%;object-fit:cover}
+.slider-dots{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);display:flex;gap:6px;z-index:5}
+.dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.6);cursor:pointer}
+.dot.on{background:#000}
+.section{padding:32px 0}
+.section-title{font-size:clamp(22px,3vw,30px);font-weight:900;letter-spacing:-.7px;margin-bottom:4px}
+.section-sub{color:#6b7280;font-size:13.5px;margin-bottom:20px;font-weight:500}
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.cat-card{position:relative;height:120px;border-radius:12px;overflow:hidden;background:#000;text-decoration:none;display:flex;flex-direction:column;justify-content:flex-end;padding:14px;border:1px solid #e5e7eb;transition:.25s}
+.cat-card:hover{transform:translateY(-3px)}
+.cat-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;padding:12px;opacity:.9;transition:.25s}
+.cat-ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.85) 0%,rgba(255,255,255,0) 55%)}
+.cat-cnt{position:relative;z-index:2}
+.cat-nm{font-size:14.5px;font-weight:900;color:#000}
+.cat-n-off{font-size:11.5px;font-weight:700;color:#16a34a}
+.store-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px}
+.store-card{background:#fff;border:1.5px solid #e5e7eb;border-radius:12px;padding:18px 10px;display:flex;flex-direction:column;align-items:center;gap:10px;text-decoration:none;transition:.25s}
+.store-card:hover{border-color:#000;transform:translateY(-3px)}
+.store-card img{max-width:100%;height:44px;object-fit:contain}
+.store-card span{font-size:12.5px;font-weight:800;color:#000}
+.tile-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.tile{border:1.5px solid #e5e7eb;border-radius:12px;overflow:hidden;text-decoration:none;display:block;transition:.25s;background:#fff}
+.tile:hover{border-color:#000;transform:translateY(-3px)}
+.tile img{width:100%;height:120px;object-fit:cover}
+.tile span{display:block;padding:10px 12px;font-size:13px;font-weight:800;color:#000}
+.deals-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+.deal-card{background:#fff;border:1.5px solid #e5e7eb;border-radius:12px;overflow:hidden;transition:.25s}
+.deal-card:hover{transform:translateY(-4px);border-color:#000;box-shadow:0 12px 24px rgba(0,0,0,.08)}
+.deal-img-wrap{position:relative;width:100%;height:220px;background:#fff;overflow:hidden}
+.deal-img{width:100%;height:100%;object-fit:contain;transition:.3s;padding:8px}
+.deal-card:hover .deal-img{transform:scale(1.05)}
+.deal-discount{position:absolute;top:10px;right:10px;background:#ef4444;color:#fff;font-size:11px;font-weight:900;padding:4px 10px;border-radius:20px}
+.deal-body{padding:14px 16px 16px}
+.deal-title{font-size:13.5px;font-weight:800;line-height:1.35;margin-bottom:8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:37px}
+.deal-profit{display:inline-flex;background:#fef3c7;color:#92400e;font-size:10.5px;font-weight:800;padding:3px 8px;border-radius:6px;margin-bottom:10px}
+.deal-price-row{display:flex;align-items:baseline;gap:10px;margin-bottom:12px}
+.deal-price{font-size:20px;font-weight:900}
+.deal-mrp{font-size:13px;color:#9ca3af;text-decoration:line-through;font-weight:600}
+.deal-btns{display:flex;flex-direction:column;gap:8px}
+.deal-btn{display:flex;align-items:center;justify-content:center;width:100%;height:40px;background:#000;color:#fff;text-decoration:none;font-size:13px;font-weight:800;border-radius:8px;transition:.2s}
+.deal-btn:hover{background:#16a34a}
+.copy-link-btn{display:flex;align-items:center;justify-content:center;width:100%;height:36px;background:#fff;color:#000;border:1.5px solid #000;font-size:12px;font-weight:800;border-radius:8px;cursor:pointer;transition:.2s;font-family:inherit}
+.copy-link-btn:hover{background:#f1f5f9}
+.copy-link-btn.copied{background:#16a34a;color:#fff;border-color:#16a34a}
+.page-banner{max-width:1200px;margin:20px auto 0;padding:0 20px}
+.page-banner img{width:100%;height:180px;object-fit:contain;background:#f9fafb;border:1px solid #e5e7eb;border-radius:14px;padding:14px}
+.tg-banner{background:#0a0e1a;border-radius:16px;padding:36px 28px;text-align:center;margin:36px 0;color:#fff}
+.tg-banner h3{font-size:clamp(20px,3vw,28px);font-weight:900;margin-bottom:10px}
+.tg-banner p{color:#9ca3af;max-width:540px;margin:0 auto 22px;font-size:14px}
+.tg-btn{display:inline-flex;background:#0088cc;color:#fff;text-decoration:none;font-size:14px;font-weight:800;padding:12px 24px;border-radius:20px}
+footer{border-top:1px solid #e5e7eb;padding:26px 0;text-align:center;color:#6b7280;font-size:13px;background:#f9fafb;margin-top:20px}
+#toast{position:fixed;bottom:30px;left:50%;transform:translateX(-50%) translateY(80px);background:#000;color:#fff;padding:12px 24px;border-radius:20px;font-size:13px;font-weight:800;opacity:0;transition:.3s;z-index:1000;pointer-events:none}
+#toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+.no-results{display:none;text-align:center;padding:40px;color:#6b7280;font-weight:700}
+.search-bar{max-width:620px;margin:0 auto;height:50px;border:2px solid #e5e7eb;border-radius:25px;padding:0 20px;font-size:15px;font-family:inherit;outline:none;width:100%;display:block}
+.search-bar:focus{border-color:#000}
+@media(max-width:768px){.deals-grid{grid-template-columns:repeat(2,1fr);gap:12px}.deal-img-wrap{height:160px}.deal-title{font-size:12px}.deal-price{font-size:16px}.deal-btn{height:36px;font-size:11.5px}.copy-link-btn{height:32px;font-size:11px}.slider{aspect-ratio:16/9}.cat-grid{grid-template-columns:repeat(2,1fr)}}
+</style></head><body>
+<header><div class="container"><div class="header-inner">
+<a href="index.html" class="brand">⚡ BigRedHub<span class="brand-badge">LIVE</span></a>
+<a href="https://t.me/Under99LootDeals_bot" target="_blank" class="header-btn">Telegram Bot</a>
+</div></div></header>
+<nav class="topnav"><div class="container"><div class="nav-scroll"><a href="index.html" class="nav-link">🏠 Home</a><a href="audio.html" class="nav-link active">🎧 Audio & Headphones</a><a href="electronics.html" class="nav-link">🔌 Power Banks & Electronics</a><a href="men-fashion.html" class="nav-link">👔 Men's Fashion</a><a href="women-fashion.html" class="nav-link">👗 Women's Fashion</a><a href="footwear.html" class="nav-link">👟 Footwear</a><a href="beauty.html" class="nav-link">💄 Beauty</a><a href="watches.html" class="nav-link">⌚ Watches & Accessories</a><a href="home-kitchen.html" class="nav-link">🏠 Home & Kitchen</a></div></div></nav>
+<div class="page-banner"><img src="https://asset21.ckassets.com/resources/image/category/headphones-headsets-996-1607082997.png" alt="Audio & Headphones" loading="eager"></div>
+<section class="section container">
+  <h2 class="section-title">🎧 Audio &amp; Headphones</h2>
+  <p class="section-sub">40 live deals · sorted by biggest discount · direct EarnKaro links</p>
+  <input type="text" id="searchInput" class="search-bar" placeholder="Search in Audio &amp; Headphones..." style="margin-bottom:22px">
+  <div class="deals-grid"><div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://img.tatacliq.com/images/i5/437Wx649H/MP000000005402996_437Wx649H_20190902040620.jpeg" alt="Spot Waterproof Shower Bluetooth Speaker (Blue)" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">85% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Spot Waterproof Shower Bluetooth Speaker (Blue)</h3>
+    <div class="deal-profit">💰 Earn ₹109 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹199</span><span class="deal-mrp">₹1,290</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/spot-waterproof-shower-bluetooth-speaker-blue-/PPS18-Tatacliq60-speakers" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/spot-waterproof-shower-bluetooth-speaker-blue-/PPS18-Tatacliq60-speakers', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://img.tatacliq.com/images/i6/437Wx649H/MP000000007305804_437Wx649H_20200717184720.jpeg" alt="Motorola Sonic Boost 230 Mono Channel Bluetooth Speaker (Black)" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">75% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Motorola Sonic Boost 230 Mono Channel Bluetooth Speaker (Black)</h3>
+    <div class="deal-profit">💰 Earn ₹300 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹999</span><span class="deal-mrp">₹3,999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/motorola-sonic-boost-230-mono-channel-bluetooth-speaker-black-/PPS18-Tatacliq92-speakers" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/motorola-sonic-boost-230-mono-channel-bluetooth-speaker-black-/PPS18-Tatacliq92-speakers', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://img.tatacliq.com/images/i6/437Wx649H/MP000000006655686_437Wx649H_20200715155009.jpeg" alt="boAt Stone 300 T 5W Portable Wireless Speaker with IPX7 Mountable Design &amp; Bluetooth V5.0 (Black)" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">71% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">boAt Stone 300 T 5W Portable Wireless Speaker with IPX7 Mountable Design &amp; Bluetooth V5.0 (Black)</h3>
+    <div class="deal-profit">💰 Earn ₹249 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹999</span><span class="deal-mrp">₹3,490</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/boat-stone-300-t-5w-portable-wireless-speaker-with-ipx7-mountable-design-bluetooth-v5-0-black-/PPS18-Tatacliq31-speakers" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/boat-stone-300-t-5w-portable-wireless-speaker-with-ipx7-mountable-design-bluetooth-v5-0-black-/PPS18-Tatacliq31-speakers', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://m.media-amazon.com/images/I/41XqcYjYlRL.jpg" alt="boAt Airdopes 201 True Wireless Earbuds with Up to 15H Total Playback" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">68% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">boAt Airdopes 201 True Wireless Earbuds with Up to 15H Total Playback</h3>
+    <div class="deal-profit">💰 Earn ₹270 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,299</span><span class="deal-mrp">₹3,999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/boat-airdopes-201-true-wireless-earbuds-with-up-to-15h-total-playback/PPS18-Tatacliq37" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/boat-airdopes-201-true-wireless-earbuds-with-up-to-15h-total-playback/PPS18-Tatacliq37', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://m.media-amazon.com/images/I/41+Qa1BYTRL.jpg" alt="pTron HBE6 Headphone" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">67% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">pTron HBE6 Headphone</h3>
+    <div class="deal-profit">💰 Earn ₹40 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹199</span><span class="deal-mrp">₹600</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/ptron-hbe6-headphone/PPS18-Tatacliq18" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/ptron-hbe6-headphone/PPS18-Tatacliq18', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://m.media-amazon.com/images/I/41212WwiTgL.jpg" alt="boAt Rockerz 450 Wireless Bluetooth Headphone" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">67% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">boAt Rockerz 450 Wireless Bluetooth Headphone</h3>
+    <div class="deal-profit">💰 Earn ₹269 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,299</span><span class="deal-mrp">₹3,990</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/boat-rockerz-450-wireless-bluetooth-headphone/PPS18-Tatacliq21" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/boat-rockerz-450-wireless-bluetooth-headphone/PPS18-Tatacliq21', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/stone-160-black.png?v=1613744129" alt="Stone 160" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">67% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Stone 160</h3>
+    <div class="deal-profit">💰 Earn ₹200 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹999</span><span class="deal-mrp">₹2,999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/stone-160/PPS116-Boat202" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/stone-160/PPS116-Boat202', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://img.tatacliq.com/images/i6/437Wx649H/MP000000000407192_437Wx649H_20200814131444.jpeg" alt="boAt Rugby T 10W Portable Wireless Speaker with Up to 8H Playtime &amp; Sporty Ergonomics (Blue)" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">67% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">boAt Rugby T 10W Portable Wireless Speaker with Up to 8H Playtime &amp; Sporty Ergonomics (Blue)</h3>
+    <div class="deal-profit">💰 Earn ₹269 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,299</span><span class="deal-mrp">₹3,990</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/boat-rugby-t-10w-portable-wireless-speaker-with-up-to-8h-playtime-sporty-ergonomics-blue-/PPS18-Tatacliq45-speakers" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/boat-rugby-t-10w-portable-wireless-speaker-with-up-to-8h-playtime-sporty-ergonomics-blue-/PPS18-Tatacliq45-speakers', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://img.tatacliq.com/images/i6/437Wx649H/MP000000004541948_437Wx649H_20200802183910.jpeg" alt="boAt Stone Grenade T 5W Portable Wireless Speaker with Rugged IPX6 Design &amp; Up to 7H Playback" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">65% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">boAt Stone Grenade T 5W Portable Wireless Speaker with Rugged IPX6 Design &amp; Up to 7H Playback</h3>
+    <div class="deal-profit">💰 Earn ₹259 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,399</span><span class="deal-mrp">₹3,990</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/boat-stone-grenade-t-5w-portable-wireless-speaker-with-rugged-ipx6-design-up-to-7h-playback/PPS18-Tatacliq69-speakers" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/boat-stone-grenade-t-5w-portable-wireless-speaker-with-rugged-ipx6-design-up-to-7h-playback/PPS18-Tatacliq69-speakers', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://img.tatacliq.com/images/i6/437Wx649H/MP000000007335983_437Wx649H_20200726142446.jpeg" alt="Infinity (JBL) Clubz 150 Deep Bass Dual Equalizer Portable Wireless Bluetooth Speaker (Black)" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">64% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Infinity (JBL) Clubz 150 Deep Bass Dual Equalizer Portable Wireless Bluetooth Speaker (Black)</h3>
+    <div class="deal-profit">💰 Earn ₹160 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹899</span><span class="deal-mrp">₹2,499</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/infinity-jbl-clubz-150-deep-bass-dual-equalizer-portable-wireless-bluetooth-speaker-black-/PPS18-Tatacliq56-speakers" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/infinity-jbl-clubz-150-deep-bass-dual-equalizer-portable-wireless-bluetooth-speaker-black-/PPS18-Tatacliq56-speakers', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://m.media-amazon.com/images/I/41j7VEAjdRL.jpg" alt="boAt Rockerz 255 Sports Wireless Headset with Super Extra Bass" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">63% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">boAt Rockerz 255 Sports Wireless Headset with Super Extra Bass</h3>
+    <div class="deal-profit">💰 Earn ₹189 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,099</span><span class="deal-mrp">₹2,990</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/boat-rockerz-255-sports-wireless-headset-with-super-extra-bass/PPS18-Tatacliq29" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/boat-rockerz-255-sports-wireless-headset-with-super-extra-bass/PPS18-Tatacliq29', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://img.tatacliq.com/images/i5/437Wx649H/MP000000005478152_437Wx649H_20190912220909.jpeg" alt="Philips BT3901R 12W Bluetooth Speaker (Red)" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">63% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Philips BT3901R 12W Bluetooth Speaker (Red)</h3>
+    <div class="deal-profit">💰 Earn ₹249 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,495</span><span class="deal-mrp">₹3,990</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/philips-bt3901r-12w-bluetooth-speaker-red-/PPS18-Tatacliq20-speakers" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/philips-bt3901r-12w-bluetooth-speaker-red-/PPS18-Tatacliq20-speakers', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/boat-bassheads-102-red.png?v=1613457250" alt="BassHeads 102" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">61% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">BassHeads 102</h3>
+    <div class="deal-profit">💰 Earn ₹79 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹499</span><span class="deal-mrp">₹1,290</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/bassheads-102/PPS116-Boat126" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/bassheads-102/PPS116-Boat126', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://m.media-amazon.com/images/I/414COqtZRVL.jpg" alt="Motorola Escape 210 Over-Ear Bluetooth Headphones with Alexa" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">61% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Motorola Escape 210 Over-Ear Bluetooth Headphones with Alexa</h3>
+    <div class="deal-profit">💰 Earn ₹201 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,289</span><span class="deal-mrp">₹3,299</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/motorola-escape-210-over-ear-bluetooth-headphones-with-alexa/PPS18-Tatacliq23" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/motorola-escape-210-over-ear-bluetooth-headphones-with-alexa/PPS18-Tatacliq23', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://m.media-amazon.com/images/I/31IdiM9ZM8L.jpg" alt="boAt BassHeads 100 in-Ear Wired Earphones with Super Extra Bass" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">60% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">boAt BassHeads 100 in-Ear Wired Earphones with Super Extra Bass</h3>
+    <div class="deal-profit">💰 Earn ₹60 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹399</span><span class="deal-mrp">₹999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/boat-bassheads-100-in-ear-wired-earphones-with-super-extra-bass/PPS18-Tatacliq8" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/boat-bassheads-100-in-ear-wired-earphones-with-super-extra-bass/PPS18-Tatacliq8', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://img.tatacliq.com/images/i2/437Wx649H/MP000000002641259_437Wx649H_20180404021416.jpeg" alt="SoundBot SB571 2.1 Ch Portable Bluetooth Speaker (Black)" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">60% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">SoundBot SB571 2.1 Ch Portable Bluetooth Speaker (Black)</h3>
+    <div class="deal-profit">💰 Earn ₹239 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,599</span><span class="deal-mrp">₹3,990</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/soundbot-sb571-2-1-ch-portable-bluetooth-speaker-black-/PPS18-Tatacliq86-speakers" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/soundbot-sb571-2-1-ch-portable-bluetooth-speaker-black-/PPS18-Tatacliq86-speakers', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://img.tatacliq.com/images/i4/437Wx649H/MP000000004811515_437Wx649H_20190518215339.jpeg" alt="Sony SRS-XB12 10W Bluetooth Speaker (Blue)" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">60% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Sony SRS-XB12 10W Bluetooth Speaker (Blue)</h3>
+    <div class="deal-profit">💰 Earn ₹299 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,999</span><span class="deal-mrp">₹4,990</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/sony-srs-xb12-10w-bluetooth-speaker-blue-/PPS18-Tatacliq70-speakers" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/sony-srs-xb12-10w-bluetooth-speaker-blue-/PPS18-Tatacliq70-speakers', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://img.tatacliq.com/images/i6/437Wx649H/MP000000006524401_437Wx649H_20200218103204.jpeg" alt="JBL Go2 Plus 3W Bluetooth Speaker (Black)" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">58% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">JBL Go2 Plus 3W Bluetooth Speaker (Black)</h3>
+    <div class="deal-profit">💰 Earn ₹190 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,399</span><span class="deal-mrp">₹3,299</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/jbl-go2-plus-3w-bluetooth-speaker-black-/PPS18-Tatacliq8-speakers" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/jbl-go2-plus-3w-bluetooth-speaker-black-/PPS18-Tatacliq8-speakers', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-121-v2-black.png?v=1613729012" alt="BOAT Airdopes 121 v2 - Wireless Earbuds" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">57% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">BOAT Airdopes 121 v2 - Wireless Earbuds</h3>
+    <div class="deal-profit">💰 Earn ₹170 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,299</span><span class="deal-mrp">₹2,999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/boat-airdopes-121-v2-wireless-earbuds/PPS116-Boat203" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/boat-airdopes-121-v2-wireless-earbuds/PPS116-Boat203', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/rockerz-255r-red.png?v=1613731612" alt="BOAT Rockerz 255R" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">57% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">BOAT Rockerz 255R</h3>
+    <div class="deal-profit">💰 Earn ₹169 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,299</span><span class="deal-mrp">₹2,990</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/boat-rockerz-255r/PPS116-Boat151" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/boat-rockerz-255r/PPS116-Boat151', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://m.media-amazon.com/images/I/31aOma+odGL.jpg" alt="JBL Tune 120TWS True Wireless in Ear Headphones" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">55% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">JBL Tune 120TWS True Wireless in Ear Headphones</h3>
+    <div class="deal-profit">💰 Earn ₹440 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹3,599</span><span class="deal-mrp">₹7,999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/jbl-tune-120tws-true-wireless-in-ear-headphones/PPS18-Tatacliq4" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/jbl-tune-120tws-true-wireless-in-ear-headphones/PPS18-Tatacliq4', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://img.tatacliq.com/images/i6/437Wx649H/MP000000007335982_437Wx649H_20200726142449.jpeg" alt="Infinity (JBL) Clubz Mini Deep Bass Dual EQ Portable Wireless Bluetooth Speaker (Blue)" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">55% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Infinity (JBL) Clubz Mini Deep Bass Dual EQ Portable Wireless Bluetooth Speaker (Blue)</h3>
+    <div class="deal-profit">💰 Earn ₹110 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹899</span><span class="deal-mrp">₹1,999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/infinity-jbl-clubz-mini-deep-bass-dual-eq-portable-wireless-bluetooth-speaker-blue-/PPS18-Tatacliq73-speakers" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/infinity-jbl-clubz-mini-deep-bass-dual-eq-portable-wireless-bluetooth-speaker-blue-/PPS18-Tatacliq73-speakers', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://img.tatacliq.com/images/i5/437Wx649H/MP000000005934424_437Wx649H_20191117035432.jpeg" alt="Portronics Roar POR-549 24W Portable Bluetooth Speaker (Black)" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">50% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Portronics Roar POR-549 24W Portable Bluetooth Speaker (Black)</h3>
+    <div class="deal-profit">💰 Earn ₹300 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹2,999</span><span class="deal-mrp">₹5,999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/portronics-roar-por-549-24w-portable-bluetooth-speaker-black-/PPS18-Tatacliq17-speakers" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/portronics-roar-por-549-24w-portable-bluetooth-speaker-black-/PPS18-Tatacliq17-speakers', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://img.tatacliq.com/images/i3/437Wx649H/MP000000001857149_437Wx649H_20180519052911.jpeg" alt="JBL FLIP 4 16 Watts Bluetooth Speaker (Black)" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">50% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">JBL FLIP 4 16 Watts Bluetooth Speaker (Black)</h3>
+    <div class="deal-profit">💰 Earn ₹500 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹4,999</span><span class="deal-mrp">₹9,999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/jbl-flip-4-16-watts-bluetooth-speaker-black-/PPS18-Tatacliq76-speakers" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/jbl-flip-4-16-watts-bluetooth-speaker-black-/PPS18-Tatacliq76-speakers', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/aavante-bar-1160-1.png?v=1613736230" alt="Aavante Bar 1160" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">47% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Aavante Bar 1160</h3>
+    <div class="deal-profit">💰 Earn ₹469 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹5,299</span><span class="deal-mrp">₹9,990</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/aavante-bar-1160/PPS116-Boat306" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/aavante-bar-1160/PPS116-Boat306', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://img.tatacliq.com/images/i6/437Wx649H/MP000000004008612_437Wx649H_20200802113926.jpeg" alt="boAt Stone 260 T 4W Portable Wireless Speaker with Enhanced Bass, Bluetooth V5.0 &amp; IPX5 (Jungle Jam)" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">44% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">boAt Stone 260 T 4W Portable Wireless Speaker with Enhanced Bass, Bluetooth V5.0 &amp; IPX5 (Jungle Jam)</h3>
+    <div class="deal-profit">💰 Earn ₹109 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,399</span><span class="deal-mrp">₹2,490</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/boat-stone-260-t-4w-portable-wireless-speaker-with-enhanced-bass-bluetooth-v5-0-ipx5-jungle-jam-/PPS18-Tatacliq95-speakers" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/boat-stone-260-t-4w-portable-wireless-speaker-with-enhanced-bass-bluetooth-v5-0-ipx5-jungle-jam-/PPS18-Tatacliq95-speakers', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://m.media-amazon.com/images/I/41sTmamC8dL.jpg" alt="Zebronics Zeb-Thunder Wireless BT Headphone" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">42% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Zebronics Zeb-Thunder Wireless BT Headphone</h3>
+    <div class="deal-profit">💰 Earn ₹50 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹699</span><span class="deal-mrp">₹1,199</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/zebronics-zeb-thunder-wireless-bt-headphone/PPS18-Tatacliq33" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/zebronics-zeb-thunder-wireless-bt-headphone/PPS18-Tatacliq33', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://img.tatacliq.com/images/i4/437Wx649H/MP000000003759356_437Wx649H_20181005212256.jpeg" alt="JBL CLIP 3 Bluetooth Speaker (Ocean Blue)" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">42% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">JBL CLIP 3 Bluetooth Speaker (Ocean Blue)</h3>
+    <div class="deal-profit">💰 Earn ₹190 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹2,599</span><span class="deal-mrp">₹4,499</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/jbl-clip-3-bluetooth-speaker-ocean-blue-/PPS18-Tatacliq19-speakers" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/jbl-clip-3-bluetooth-speaker-ocean-blue-/PPS18-Tatacliq19-speakers', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://img.tatacliq.com/images/i3/437Wx649H/MP000000003476751_437Wx649H_20180802212823.jpeg" alt="JBL Xtreme 2 Portable Bluetooth Speaker (Ocean Blue)" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">41% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">JBL Xtreme 2 Portable Bluetooth Speaker (Ocean Blue)</h3>
+    <div class="deal-profit">💰 Earn ₹900 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹12,999</span><span class="deal-mrp">₹21,999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/jbl-xtreme-2-portable-bluetooth-speaker-ocean-blue-/PPS18-Tatacliq91-speakers" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/jbl-xtreme-2-portable-bluetooth-speaker-ocean-blue-/PPS18-Tatacliq91-speakers', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://img.tatacliq.com/images/i7/437Wx649H/MP000000008035861_437Wx649H_202010262228111.jpeg" alt="Bingo Touch lamp Light Bluetooth Speaker Portable (White)" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">40% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Bingo Touch lamp Light Bluetooth Speaker Portable (White)</h3>
+    <div class="deal-profit">💰 Earn ₹40 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹599</span><span class="deal-mrp">₹999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/bingo-touch-lamp-light-bluetooth-speaker-portable-white-/PPS18-Tatacliq12-speakers" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/bingo-touch-lamp-light-bluetooth-speaker-portable-white-/PPS18-Tatacliq12-speakers', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://img.tatacliq.com/images/i6/437Wx649H/MP000000006004029_437Wx649H_20200802131231.jpeg" alt="Portronics SoundDrum POR-547 10W Bluetooth Speaker (Blue)" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">37% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Portronics SoundDrum POR-547 10W Bluetooth Speaker (Blue)</h3>
+    <div class="deal-profit">💰 Earn ₹110 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,899</span><span class="deal-mrp">₹2,999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/portronics-sounddrum-por-547-10w-bluetooth-speaker-blue-/PPS18-Tatacliq44-speakers" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/portronics-sounddrum-por-547-10w-bluetooth-speaker-blue-/PPS18-Tatacliq44-speakers', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://img.tatacliq.com/images/i6/437Wx649H/MP000000006446830_437Wx649H_20200204212153.jpeg" alt="Google Nest Mini (Chalk)" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">36% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Google Nest Mini (Chalk)</h3>
+    <div class="deal-profit">💰 Earn ₹160 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹2,899</span><span class="deal-mrp">₹4,499</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/google-nest-mini-chalk-/PPS18-Tatacliq26-speakers" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/google-nest-mini-chalk-/PPS18-Tatacliq26-speakers', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://img.tatacliq.com/images/i6/437Wx649H/MP000000007325444_437Wx649H_20200718234841.jpeg" alt="Infinity (JBL) Octabass 210 100W Deep Bass 2.1 Channel Multimedia Bluetooth Speaker (Black)" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">34% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Infinity (JBL) Octabass 210 100W Deep Bass 2.1 Channel Multimedia Bluetooth Speaker (Black)</h3>
+    <div class="deal-profit">💰 Earn ₹240 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹4,599</span><span class="deal-mrp">₹6,999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/infinity-jbl-octabass-210-100w-deep-bass-2-1-channel-multimedia-bluetooth-speaker-black-/PPS18-Tatacliq53-speakers" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/infinity-jbl-octabass-210-100w-deep-bass-2-1-channel-multimedia-bluetooth-speaker-black-/PPS18-Tatacliq53-speakers', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://img.tatacliq.com/images/i4/437Wx649H/MP000000004817460_437Wx649H_20190521212200.jpeg" alt="F&amp;D W5 3W Portable Bluetooth Speaker (Green)" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">33% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">F&amp;D W5 3W Portable Bluetooth Speaker (Green)</h3>
+    <div class="deal-profit">💰 Earn ₹49 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹999</span><span class="deal-mrp">₹1,490</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/f-d-w5-3w-portable-bluetooth-speaker-green-/PPS18-Tatacliq90-speakers" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/f-d-w5-3w-portable-bluetooth-speaker-green-/PPS18-Tatacliq90-speakers', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://img.tatacliq.com/images/i7/437Wx649H/MP000000008470446_437Wx649H_202012301350561.jpeg" alt="Tronica Spectrum Bluetooth Speaker with FM (Black)" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">30% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Tronica Spectrum Bluetooth Speaker with FM (Black)</h3>
+    <div class="deal-profit">💰 Earn ₹30 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹699</span><span class="deal-mrp">₹1,000</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/tronica-spectrum-bluetooth-speaker-with-fm-black-/PPS18-Tatacliq89-speakers" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/tronica-spectrum-bluetooth-speaker-with-fm-black-/PPS18-Tatacliq89-speakers', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://m.media-amazon.com/images/I/41T45lOf9JL.jpg" alt="Sennheiser HD 4.40-BT On-Ear Bluetooth Headphones" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">21% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Sennheiser HD 4.40-BT On-Ear Bluetooth Headphones</h3>
+    <div class="deal-profit">💰 Earn ₹159 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹5,899</span><span class="deal-mrp">₹7,490</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/sennheiser-hd-4-40-bt-on-ear-bluetooth-headphones/PPS18-Tatacliq34" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/sennheiser-hd-4-40-bt-on-ear-bluetooth-headphones/PPS18-Tatacliq34', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://img.tatacliq.com/images/i6/437Wx649H/MP000000005551682_437Wx649H_20200802115246.jpeg" alt="SAREGAMA Carvaan Mini SCM02 Shrimad Bhagavad Gita Bluetooth Speaker (Devotional Orange)" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">19% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">SAREGAMA Carvaan Mini SCM02 Shrimad Bhagavad Gita Bluetooth Speaker (Devotional Orange)</h3>
+    <div class="deal-profit">💰 Earn ₹50 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹2,190</span><span class="deal-mrp">₹2,690</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/saregama-carvaan-mini-scm02-shrimad-bhagavad-gita-bluetooth-speaker-devotional-orange-/PPS18-Tatacliq43-speakers" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/saregama-carvaan-mini-scm02-shrimad-bhagavad-gita-bluetooth-speaker-devotional-orange-/PPS18-Tatacliq43-speakers', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://m.media-amazon.com/images/I/313TdpJEUwL.jpg" alt="Realme Buds 2 with Mic for Android Smartphones" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">18% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Realme Buds 2 with Mic for Android Smartphones</h3>
+    <div class="deal-profit">💰 Earn ₹10 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹490</span><span class="deal-mrp">₹599</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/realme-buds-2-with-mic-for-android-smartphones/PPS18-Tatacliq3" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/realme-buds-2-with-mic-for-android-smartphones/PPS18-Tatacliq3', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://m.media-amazon.com/images/I/31czFQMP0UL.jpg" alt="JBL E45BT Signature Sound Wireless On-Ear Headphones with Mic" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">14% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">JBL E45BT Signature Sound Wireless On-Ear Headphones with Mic</h3>
+    <div class="deal-profit">💰 Earn ₹90 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹5,599</span><span class="deal-mrp">₹6,499</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/jbl-e45bt-signature-sound-wireless-on-ear-headphones-with-mic/PPS18-Tatacliq6" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/jbl-e45bt-signature-sound-wireless-on-ear-headphones-with-mic/PPS18-Tatacliq6', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://m.media-amazon.com/images/I/41BO04FjDYL.jpg" alt="Sony MDR-XB550AP Wired Extra Bass On-Ear Headphones with Tangle Free Cable" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">12% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Sony MDR-XB550AP Wired Extra Bass On-Ear Headphones with Tangle Free Cable</h3>
+    <div class="deal-profit">💰 Earn ₹38 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹2,905</span><span class="deal-mrp">₹3,290</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/sony-mdr-xb550ap-wired-extra-bass-on-ear-headphones-with-tangle-free-cable/PPS18-Tatacliq25" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/sony-mdr-xb550ap-wired-extra-bass-on-ear-headphones-with-tangle-free-cable/PPS18-Tatacliq25', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div></div>
+  <div class="no-results" id="noResults">😕 No deals found.</div>
+</section>
+
+<section class="container"><div class="tg-banner"><h3>Never Miss a 90% Price Drop</h3><p>Get instant price glitch alerts & Under ₹99 steals before they sell out.</p><a href="https://t.me/Under99LootDeals_bot" target="_blank" class="tg-btn">⚡ Open @Under99LootDeals_bot</a></div></section>
+<footer><div class="container">© 2026 BigRedHub · Deals sourced live from EarnKaro · Affiliate disclosure: We earn a commission on qualifying purchases.</div></footer>
+<div id="toast"></div><script>
+function showToast(m){const t=document.getElementById('toast');t.innerText=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2200)}
+function copyLink(url,btn){navigator.clipboard.writeText(url).then(()=>{const o=btn.innerText;btn.innerText='✓ COPIED';btn.classList.add('copied');showToast('EarnKaro link copied! Paste anywhere to share');setTimeout(()=>{btn.innerText=o;btn.classList.remove('copied')},2000)})}
+function initSlider(){const slides=document.querySelectorAll('.slide');if(!slides.length)return;let i=0;slides[0].classList.add('on');const dots=document.querySelectorAll('.dot');if(dots[0])dots[0].classList.add('on');setInterval(()=>{slides[i].classList.remove('on');if(dots[i])dots[i].classList.remove('on');i=(i+1)%slides.length;slides[i].classList.add('on');if(dots[i])dots[i].classList.add('on')},3500)}
+function setupSearch(){const inp=document.getElementById('searchInput');if(!inp)return;inp.addEventListener('input',e=>{const q=e.target.value.toLowerCase().trim();let n=0;document.querySelectorAll('.deal-card').forEach(c=>{const ok=!q||(c.dataset.q||'').includes(q);c.style.display=ok?'block':'none';if(ok)n++});const nr=document.getElementById('noResults');if(nr)nr.style.display=n?'none':'block'})}
+initSlider();setupSearch();
+</script></body></html>

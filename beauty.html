@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Beauty Deals — BigRedHub | Up to 70% OFF</title><meta name="description" content="24 live Beauty deals from EarnKaro with direct affiliate links.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-font-smoothing:antialiased}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#fff;color:#000;line-height:1.5}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid #e5e7eb;z-index:100}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-size:19px;font-weight:900;color:#000;text-decoration:none}
+.brand-badge{background:#000;color:#fff;font-size:9px;font-weight:800;padding:3px 8px;border-radius:20px;margin-left:8px}
+.header-btn{background:#000;color:#fff;text-decoration:none;font-size:12.5px;font-weight:700;padding:8px 16px;border-radius:20px;white-space:nowrap}
+nav.topnav{border-bottom:1px solid #f1f5f9;background:#fff;position:sticky;top:60px;z-index:99}
+.nav-scroll{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;padding:8px 0}
+.nav-scroll::-webkit-scrollbar{display:none}
+.nav-link{font-size:13px;font-weight:700;color:#6b7280;text-decoration:none;padding:7px 14px;border-radius:18px;white-space:nowrap}
+.nav-link.active,.nav-link:hover{background:#000;color:#fff}
+.hero{position:relative;max-width:1200px;margin:20px auto 0;padding:0 20px}
+.slider{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:16/6;background:#f9fafb}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity .6s}
+.slide.on{opacity:1}
+.slide img{width:100%;height:100%;object-fit:cover}
+.slider-dots{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);display:flex;gap:6px;z-index:5}
+.dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.6);cursor:pointer}
+.dot.on{background:#000}
+.section{padding:32px 0}
+.section-title{font-size:clamp(22px,3vw,30px);font-weight:900;letter-spacing:-.7px;margin-bottom:4px}
+.section-sub{color:#6b7280;font-size:13.5px;margin-bottom:20px;font-weight:500}
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.cat-card{position:relative;height:120px;border-radius:12px;overflow:hidden;background:#000;text-decoration:none;display:flex;flex-direction:column;justify-content:flex-end;padding:14px;border:1px solid #e5e7eb;transition:.25s}
+.cat-card:hover{transform:translateY(-3px)}
+.cat-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;padding:12px;opacity:.9;transition:.25s}
+.cat-ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.85) 0%,rgba(255,255,255,0) 55%)}
+.cat-cnt{position:relative;z-index:2}
+.cat-nm{font-size:14.5px;font-weight:900;color:#000}
+.cat-n-off{font-size:11.5px;font-weight:700;color:#16a34a}
+.store-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px}
+.store-card{background:#fff;border:1.5px solid #e5e7eb;border-radius:12px;padding:18px 10px;display:flex;flex-direction:column;align-items:center;gap:10px;text-decoration:none;transition:.25s}
+.store-card:hover{border-color:#000;transform:translateY(-3px)}
+.store-card img{max-width:100%;height:44px;object-fit:contain}
+.store-card span{font-size:12.5px;font-weight:800;color:#000}
+.tile-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.tile{border:1.5px solid #e5e7eb;border-radius:12px;overflow:hidden;text-decoration:none;display:block;transition:.25s;background:#fff}
+.tile:hover{border-color:#000;transform:translateY(-3px)}
+.tile img{width:100%;height:120px;object-fit:cover}
+.tile span{display:block;padding:10px 12px;font-size:13px;font-weight:800;color:#000}
+.deals-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+.deal-card{background:#fff;border:1.5px solid #e5e7eb;border-radius:12px;overflow:hidden;transition:.25s}
+.deal-card:hover{transform:translateY(-4px);border-color:#000;box-shadow:0 12px 24px rgba(0,0,0,.08)}
+.deal-img-wrap{position:relative;width:100%;height:220px;background:#fff;overflow:hidden}
+.deal-img{width:100%;height:100%;object-fit:contain;transition:.3s;padding:8px}
+.deal-card:hover .deal-img{transform:scale(1.05)}
+.deal-discount{position:absolute;top:10px;right:10px;background:#ef4444;color:#fff;font-size:11px;font-weight:900;padding:4px 10px;border-radius:20px}
+.deal-body{padding:14px 16px 16px}
+.deal-title{font-size:13.5px;font-weight:800;line-height:1.35;margin-bottom:8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:37px}
+.deal-profit{display:inline-flex;background:#fef3c7;color:#92400e;font-size:10.5px;font-weight:800;padding:3px 8px;border-radius:6px;margin-bottom:10px}
+.deal-price-row{display:flex;align-items:baseline;gap:10px;margin-bottom:12px}
+.deal-price{font-size:20px;font-weight:900}
+.deal-mrp{font-size:13px;color:#9ca3af;text-decoration:line-through;font-weight:600}
+.deal-btns{display:flex;flex-direction:column;gap:8px}
+.deal-btn{display:flex;align-items:center;justify-content:center;width:100%;height:40px;background:#000;color:#fff;text-decoration:none;font-size:13px;font-weight:800;border-radius:8px;transition:.2s}
+.deal-btn:hover{background:#16a34a}
+.copy-link-btn{display:flex;align-items:center;justify-content:center;width:100%;height:36px;background:#fff;color:#000;border:1.5px solid #000;font-size:12px;font-weight:800;border-radius:8px;cursor:pointer;transition:.2s;font-family:inherit}
+.copy-link-btn:hover{background:#f1f5f9}
+.copy-link-btn.copied{background:#16a34a;color:#fff;border-color:#16a34a}
+.page-banner{max-width:1200px;margin:20px auto 0;padding:0 20px}
+.page-banner img{width:100%;height:180px;object-fit:contain;background:#f9fafb;border:1px solid #e5e7eb;border-radius:14px;padding:14px}
+.tg-banner{background:#0a0e1a;border-radius:16px;padding:36px 28px;text-align:center;margin:36px 0;color:#fff}
+.tg-banner h3{font-size:clamp(20px,3vw,28px);font-weight:900;margin-bottom:10px}
+.tg-banner p{color:#9ca3af;max-width:540px;margin:0 auto 22px;font-size:14px}
+.tg-btn{display:inline-flex;background:#0088cc;color:#fff;text-decoration:none;font-size:14px;font-weight:800;padding:12px 24px;border-radius:20px}
+footer{border-top:1px solid #e5e7eb;padding:26px 0;text-align:center;color:#6b7280;font-size:13px;background:#f9fafb;margin-top:20px}
+#toast{position:fixed;bottom:30px;left:50%;transform:translateX(-50%) translateY(80px);background:#000;color:#fff;padding:12px 24px;border-radius:20px;font-size:13px;font-weight:800;opacity:0;transition:.3s;z-index:1000;pointer-events:none}
+#toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+.no-results{display:none;text-align:center;padding:40px;color:#6b7280;font-weight:700}
+.search-bar{max-width:620px;margin:0 auto;height:50px;border:2px solid #e5e7eb;border-radius:25px;padding:0 20px;font-size:15px;font-family:inherit;outline:none;width:100%;display:block}
+.search-bar:focus{border-color:#000}
+@media(max-width:768px){.deals-grid{grid-template-columns:repeat(2,1fr);gap:12px}.deal-img-wrap{height:160px}.deal-title{font-size:12px}.deal-price{font-size:16px}.deal-btn{height:36px;font-size:11.5px}.copy-link-btn{height:32px;font-size:11px}.slider{aspect-ratio:16/9}.cat-grid{grid-template-columns:repeat(2,1fr)}}
+</style></head><body>
+<header><div class="container"><div class="header-inner">
+<a href="index.html" class="brand">⚡ BigRedHub<span class="brand-badge">LIVE</span></a>
+<a href="https://t.me/Under99LootDeals_bot" target="_blank" class="header-btn">Telegram Bot</a>
+</div></div></header>
+<nav class="topnav"><div class="container"><div class="nav-scroll"><a href="index.html" class="nav-link">🏠 Home</a><a href="audio.html" class="nav-link">🎧 Audio & Headphones</a><a href="electronics.html" class="nav-link">🔌 Power Banks & Electronics</a><a href="men-fashion.html" class="nav-link">👔 Men's Fashion</a><a href="women-fashion.html" class="nav-link">👗 Women's Fashion</a><a href="footwear.html" class="nav-link">👟 Footwear</a><a href="beauty.html" class="nav-link active">💄 Beauty</a><a href="watches.html" class="nav-link">⌚ Watches & Accessories</a><a href="home-kitchen.html" class="nav-link">🏠 Home & Kitchen</a></div></div></nav>
+<div class="page-banner"><img src="https://asset21.ckassets.com/resources/image/category/beauty-combo-offers-3281-1609918251.png" alt="Beauty" loading="eager"></div>
+<section class="section container">
+  <h2 class="section-title">💄 Beauty</h2>
+  <p class="section-sub">24 live deals · sorted by biggest discount · direct EarnKaro links</p>
+  <input type="text" id="searchInput" class="search-bar" placeholder="Search in Beauty..." style="margin-bottom:22px">
+  <div class="deals-grid"><div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2378362/2018/6/9/270e0a7e-365b-4640-9433-b269c60bf3061528527188563-Moda-Rapido-Men-Maroon-Printed-Round-Neck-T-shirt-3811528527-1.jpg" alt="Moda Rapido Men Maroon Printed Round Neck T-shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">70% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Moda Rapido Men Maroon Printed Round Neck T-shirt</h3>
+    <div class="deal-profit">💰 Earn ₹56 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹239</span><span class="deal-mrp">₹799</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/moda-rapido-men-maroon-printed-round-neck-t-shirt/PPS16-2378362-dealsunder-399" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/moda-rapido-men-maroon-printed-round-neck-t-shirt/PPS16-2378362-dealsunder-399', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/7030187/2018/8/17/3725554e-4ecd-4820-85f2-ed9534cb55671534491912609-NOVA-Women-Hair-Appliance-9301534491911637-1.jpg" alt="NOVA NHS 840 Pro Shine Hair Straightener Black &amp; Pink" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">69% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">NOVA NHS 840 Pro Shine Hair Straightener Black &amp; Pink</h3>
+    <div class="deal-profit">💰 Earn ₹103 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹463</span><span class="deal-mrp">₹1,495</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/nova-nhs-840-pro-shine-hair-straightener-black-pink/PPS16-7030187" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/nova-nhs-840-pro-shine-hair-straightener-black-pink/PPS16-7030187', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/6/19/42251c89-efc7-42d8-b612-6fde30fe6c831592522333189-1.jpg" alt="RAW NATURE Caramel &amp; Cedarwood Moisturizer 100 g" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">65% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">RAW NATURE Caramel &amp; Cedarwood Moisturizer 100 g</h3>
+    <div class="deal-profit">💰 Earn ₹32 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹174</span><span class="deal-mrp">₹499</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/raw-nature-caramel-cedarwood-moisturizer-100-g/PPS16-11978098" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/raw-nature-caramel-cedarwood-moisturizer-100-g/PPS16-11978098', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2019/11/14/86aebdd8-45e4-4aa2-acd5-999ae0a91b721573678904727-1.jpg" alt="Maryaj Men Wild Speed For Him Eau De Parfum 100ml" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">60% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Maryaj Men Wild Speed For Him Eau De Parfum 100ml</h3>
+    <div class="deal-profit">💰 Earn ₹80 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹535</span><span class="deal-mrp">₹1,339</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/maryaj-men-wild-speed-for-him-eau-de-parfum-100ml/PPS16-10982726" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/maryaj-men-wild-speed-for-him-eau-de-parfum-100ml/PPS16-10982726', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11046968/2019/12/30/86af0af6-33e7-42a9-b706-91b973e1a5ad1577697088422-Ajmal-Men-Shadow-Perfume-Deodorant-200ml-8611577697087608-1.jpg" alt="Ajmal Men Shadow Perfume Deodorant 200ml" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">58% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Ajmal Men Shadow Perfume Deodorant 200ml</h3>
+    <div class="deal-profit">💰 Earn ₹23 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹167</span><span class="deal-mrp">₹399</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/ajmal-men-shadow-perfume-deodorant-200ml/PPS16-11046968" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/ajmal-men-shadow-perfume-deodorant-200ml/PPS16-11046968', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/9/15/c0f5b3f4-84a6-474e-939d-0aa7a8127ff91600122109490-1.jpg" alt="Ajmal Unisex Ascend Eau De Parfum 100 ml" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">51% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Ajmal Unisex Ascend Eau De Parfum 100 ml</h3>
+    <div class="deal-profit">💰 Earn ₹76 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹735</span><span class="deal-mrp">₹1,500</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/ajmal-unisex-ascend-eau-de-parfum-100-ml/PPS16-12468662" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/ajmal-unisex-ascend-eau-de-parfum-100-ml/PPS16-12468662', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12394996/2020/9/3/7fb6f24a-493f-4c51-aed3-9bc14e9fd3af1599110595742AjmalGreen1.jpg" alt="Ajmal Adult Nightingale Deodorant 200 ml" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">50% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Ajmal Adult Nightingale Deodorant 200 ml</h3>
+    <div class="deal-profit">💰 Earn ₹15 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹149</span><span class="deal-mrp">₹299</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/ajmal-adult-nightingale-deodorant-200-ml/PPS16-12394996" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/ajmal-adult-nightingale-deodorant-200-ml/PPS16-12394996', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2019/12/24/4b2a24cb-9053-4f51-9f20-b63b71744a9c1577139525287-1.jpg" alt="MENSOME Unisex Black Seed Hair Oil" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">50% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">MENSOME Unisex Black Seed Hair Oil</h3>
+    <div class="deal-profit">💰 Earn ₹30 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹295</span><span class="deal-mrp">₹595</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/mensome-unisex-black-seed-hair-oil/PPS16-11225786" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/mensome-unisex-black-seed-hair-oil/PPS16-11225786', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/7/16/021b682b-2739-4675-ab0a-e5ade61cee271594853242537-1.jpg" alt="NutriGlow Sunscreen Fairness UV Lotion - SPF 40 PA+++ 120 ml" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">39% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">NutriGlow Sunscreen Fairness UV Lotion - SPF 40 PA+++ 120 ml</h3>
+    <div class="deal-profit">💰 Earn ₹10 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹167</span><span class="deal-mrp">₹275</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/nutriglow-sunscreen-fairness-uv-lotion-spf-40-pa-120-ml/PPS16-12088106" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/nutriglow-sunscreen-fairness-uv-lotion-spf-40-pa-120-ml/PPS16-12088106', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/65278/2018/4/17/11523955458599-Nivea-Sun-Moisturising-Sun-Lotion-SPF-30-PA--3471523955458431-1.jpg" alt="Nivea Sun Protect Moisturizing Sunscreen SPF 30 125 ml" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">38% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Nivea Sun Protect Moisturizing Sunscreen SPF 30 125 ml</h3>
+    <div class="deal-profit">💰 Earn ₹14 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹237</span><span class="deal-mrp">₹385</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/nivea-sun-protect-moisturizing-sunscreen-spf-30-125-ml/PPS16-65278" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/nivea-sun-protect-moisturizing-sunscreen-spf-30-125-ml/PPS16-65278', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/9547891/2019/6/7/f8ad4978-fb2b-4db8-b425-66ca0763afc11559896583368-FACES-CANADA-Tropical-Treat-Hi-Shine-Nail-Enamel-222-9415598-1.jpg" alt="FACES CANADA Tropical Treat Hi Shine Nail Enamel 222" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">35% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">FACES CANADA Tropical Treat Hi Shine Nail Enamel 222</h3>
+    <div class="deal-profit">💰 Earn ₹7 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹129</span><span class="deal-mrp">₹199</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/faces-canada-tropical-treat-hi-shine-nail-enamel-222/PPS16-9547891-makeup" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/faces-canada-tropical-treat-hi-shine-nail-enamel-222/PPS16-9547891-makeup', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1423152/2017/5/23/11495533875712-Kaya-Skin-Clinic-Hair-Essentials-Anti-Dandruff-Shampoo-5151495533875630-1.jpg" alt="Kaya Skin Clinic Hair Essentials Anti-Dandruff Shampoo 200 ml" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">30% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Kaya Skin Clinic Hair Essentials Anti-Dandruff Shampoo 200 ml</h3>
+    <div class="deal-profit">💰 Earn ₹10 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹245</span><span class="deal-mrp">₹350</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/kaya-skin-clinic-hair-essentials-anti-dandruff-shampoo-200-ml/PPS16-1423152" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/kaya-skin-clinic-hair-essentials-anti-dandruff-shampoo-200-ml/PPS16-1423152', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1480164/2020/4/30/da12636f-02b4-43ce-8cf4-023a8562333c1588240925065PhilipsMenSeries1000ShowerproofBodyGroomerTrimmerBG102515Bla1.jpg" alt="Philips Men Series 1000 Showerproof Body Groomer Trimmer BG1025\u002F15 Black" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">28% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Philips Men Series 1000 Showerproof Body Groomer Trimmer BG1025\u002F15 Black</h3>
+    <div class="deal-profit">💰 Earn ₹44 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,148</span><span class="deal-mrp">₹1,595</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/philips-men-series-1000-showerproof-body-groomer-trimmer-bg1025-u002f15-black/PPS16-1480164" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/philips-men-series-1000-showerproof-body-groomer-trimmer-bg1025-u002f15-black/PPS16-1480164', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/56167/2019/1/11/08984654-668c-4f50-828b-a7b7d2d3492e1547199758092-Colorbar-Precision-Waterproof-Eye-Liner-4461547199758032-1.jpg" alt="Colorbar Precision Waterproof Eye Liner - Black 2.5 ml" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">25% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Colorbar Precision Waterproof Eye Liner - Black 2.5 ml</h3>
+    <div class="deal-profit">💰 Earn ₹10 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹318</span><span class="deal-mrp">₹425</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/colorbar-precision-waterproof-eye-liner-black-2-5-ml/PPS16-56167-makeup" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/colorbar-precision-waterproof-eye-liner-black-2-5-ml/PPS16-56167-makeup', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/57677/2020/10/10/90dae682-fcf2-4436-b291-954e3c40af0e1602269668338LotusHerbalsSustainableWhiteglowSkinWhiteningBrighteningCrem1.jpg" alt="Lotus Herbals Sustainable Whiteglow Skin Whitening  Brightening Creme 60g" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">25% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Lotus Herbals Sustainable Whiteglow Skin Whitening  Brightening Creme 60g</h3>
+    <div class="deal-profit">💰 Earn ₹10 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹311</span><span class="deal-mrp">₹415</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/lotus-herbals-sustainable-whiteglow-skin-whitening-brightening-creme-60g/PPS16-57677" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/lotus-herbals-sustainable-whiteglow-skin-whitening-brightening-creme-60g/PPS16-57677', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/6816544/2020/10/10/451b8a5b-6602-4d78-8c29-1e0865116b761602271956836TheMomsCoWomenNaturalProteinShampoo200ml1.jpg" alt="The Moms Co. Women Natural Protein Shampoo 200ml" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">25% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">The Moms Co. Women Natural Protein Shampoo 200ml</h3>
+    <div class="deal-profit">💰 Earn ₹10 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹321</span><span class="deal-mrp">₹429</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/the-moms-co-women-natural-protein-shampoo-200ml/PPS16-6816544" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/the-moms-co-women-natural-protein-shampoo-200ml/PPS16-6816544', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1661468/2017/6/20/11497956219581-Biotique-Bio-Dandelion-Ageless-Lightening-Serum-5341497956219555-1.jpg" alt="Biotique Unisex Bio Dandelion Ageless Lightening Serum 35ml" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">20% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Biotique Unisex Bio Dandelion Ageless Lightening Serum 35ml</h3>
+    <div class="deal-profit">💰 Earn ₹4 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹184</span><span class="deal-mrp">₹230</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/biotique-unisex-bio-dandelion-ageless-lightening-serum-35ml/PPS16-1661468" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/biotique-unisex-bio-dandelion-ageless-lightening-serum-35ml/PPS16-1661468', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11178082/2020/1/13/22d48310-290a-429b-8534-db884cde683f1578907784720-Maybelline-New-York-Sensational-03-Flush-It-Red-Liquid-Matte-1.jpg" alt="Maybelline New York Sensational Liquid Matte Lipstick Flush It Red 03 7 ml" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">15% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Maybelline New York Sensational Liquid Matte Lipstick Flush It Red 03 7 ml</h3>
+    <div class="deal-profit">💰 Earn ₹6 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹339</span><span class="deal-mrp">₹399</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/maybelline-new-york-sensational-liquid-matte-lipstick-flush-it-red-03-7-ml/PPS16-11178082-makeup" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/maybelline-new-york-sensational-liquid-matte-lipstick-flush-it-red-03-7-ml/PPS16-11178082-makeup', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1546434/2018/7/31/220cca57-6953-4877-9d38-54f83ba92d251533035238422-Maybelline-Fit-Me-Concealer-Medium-25-68-ml-5951533035238398-1.jpg" alt="Maybelline New York Fit Me Concealer - Medium 25 6.8 ml" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">15% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Maybelline New York Fit Me Concealer - Medium 25 6.8 ml</h3>
+    <div class="deal-profit">💰 Earn ₹9 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹509</span><span class="deal-mrp">₹599</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/maybelline-new-york-fit-me-concealer-medium-25-6-8-ml/PPS16-1546434-makeup" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/maybelline-new-york-fit-me-concealer-medium-25-6-8-ml/PPS16-1546434-makeup', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2316557/2018/2/17/11518849550206-SKINN-by-Titan-Women-Sheer-Eau-De-Parfum-9061518849550104-1.jpg" alt="SKINN by Titan Women Sheer Eau De Parfum 20 ml" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">15% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">SKINN by Titan Women Sheer Eau De Parfum 20 ml</h3>
+    <div class="deal-profit">💰 Earn ₹9 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹548</span><span class="deal-mrp">₹645</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/skinn-by-titan-women-sheer-eau-de-parfum-20-ml/PPS16-2316557" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/skinn-by-titan-women-sheer-eau-de-parfum-20-ml/PPS16-2316557', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2130422/2019/6/3/b112dcad-ae59-4422-8701-5f9b5e6bfdd21559554127362-Revlon-Women-Foundation-and-Primer-4131559554127073-1.jpg" alt="Revlon Sand Mist Touch &amp; Glow Moisturising Foundation 20 ml" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">10% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Revlon Sand Mist Touch &amp; Glow Moisturising Foundation 20 ml</h3>
+    <div class="deal-profit">💰 Earn ₹3 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹314</span><span class="deal-mrp">₹349</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/revlon-sand-mist-touch-glow-moisturising-foundation-20-ml/PPS16-2130422-makeup" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/revlon-sand-mist-touch-glow-moisturising-foundation-20-ml/PPS16-2130422-makeup', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2019/12/31/277f5072-becb-4ad3-8be9-8631d2d2a4c11577745978781-1.jpg" alt="SUGAR Mettle Gabriella Satin Lipstick 07" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">10% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">SUGAR Mettle Gabriella Satin Lipstick 07</h3>
+    <div class="deal-profit">💰 Earn ₹10 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹899</span><span class="deal-mrp">₹999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/sugar-mettle-gabriella-satin-lipstick-07/PPS16-11258228" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/sugar-mettle-gabriella-satin-lipstick-07/PPS16-11258228', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/6528965/2018/9/21/5ddd90b6-406a-457b-ac9a-c6104202db511537508742601-Maybelline-Women-Lip-Care-1771537508742590-1.jpg" alt="Maybelline New York Alia Loves New York Baby Lips SPF 20 - Brooklyn Bronze" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Maybelline New York Alia Loves New York Baby Lips SPF 20 - Brooklyn Bronze</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹199</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/maybelline-new-york-alia-loves-new-york-baby-lips-spf-20-brooklyn-bronze/PPS16-6528965" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/maybelline-new-york-alia-loves-new-york-baby-lips-spf-20-brooklyn-bronze/PPS16-6528965', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2019/10/23/1a9683d3-9107-4d2e-80ba-3416e96184e11571818852753-1.jpg" alt="Spruce Shave Club Men Black Charcoal &amp; Apple Cider Vinegar Shampoo 200ml" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Spruce Shave Club Men Black Charcoal &amp; Apple Cider Vinegar Shampoo 200ml</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹499</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/spruce-shave-club-men-black-charcoal-apple-cider-vinegar-shampoo-200ml/PPS16-10861824" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/spruce-shave-club-men-black-charcoal-apple-cider-vinegar-shampoo-200ml/PPS16-10861824', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div></div>
+  <div class="no-results" id="noResults">😕 No deals found.</div>
+</section>
+
+<section class="container"><div class="tg-banner"><h3>Never Miss a 90% Price Drop</h3><p>Get instant price glitch alerts & Under ₹99 steals before they sell out.</p><a href="https://t.me/Under99LootDeals_bot" target="_blank" class="tg-btn">⚡ Open @Under99LootDeals_bot</a></div></section>
+<footer><div class="container">© 2026 BigRedHub · Deals sourced live from EarnKaro · Affiliate disclosure: We earn a commission on qualifying purchases.</div></footer>
+<div id="toast"></div><script>
+function showToast(m){const t=document.getElementById('toast');t.innerText=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2200)}
+function copyLink(url,btn){navigator.clipboard.writeText(url).then(()=>{const o=btn.innerText;btn.innerText='✓ COPIED';btn.classList.add('copied');showToast('EarnKaro link copied! Paste anywhere to share');setTimeout(()=>{btn.innerText=o;btn.classList.remove('copied')},2000)})}
+function initSlider(){const slides=document.querySelectorAll('.slide');if(!slides.length)return;let i=0;slides[0].classList.add('on');const dots=document.querySelectorAll('.dot');if(dots[0])dots[0].classList.add('on');setInterval(()=>{slides[i].classList.remove('on');if(dots[i])dots[i].classList.remove('on');i=(i+1)%slides.length;slides[i].classList.add('on');if(dots[i])dots[i].classList.add('on')},3500)}
+function setupSearch(){const inp=document.getElementById('searchInput');if(!inp)return;inp.addEventListener('input',e=>{const q=e.target.value.toLowerCase().trim();let n=0;document.querySelectorAll('.deal-card').forEach(c=>{const ok=!q||(c.dataset.q||'').includes(q);c.style.display=ok?'block':'none';if(ok)n++});const nr=document.getElementById('noResults');if(nr)nr.style.display=n?'none':'block'})}
+initSlider();setupSearch();
+</script></body></html>

@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Men's Fashion Deals — BigRedHub | Up to 75% OFF</title><meta name="description" content="63 live Men's Fashion deals from EarnKaro with direct affiliate links.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-font-smoothing:antialiased}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#fff;color:#000;line-height:1.5}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid #e5e7eb;z-index:100}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-size:19px;font-weight:900;color:#000;text-decoration:none}
+.brand-badge{background:#000;color:#fff;font-size:9px;font-weight:800;padding:3px 8px;border-radius:20px;margin-left:8px}
+.header-btn{background:#000;color:#fff;text-decoration:none;font-size:12.5px;font-weight:700;padding:8px 16px;border-radius:20px;white-space:nowrap}
+nav.topnav{border-bottom:1px solid #f1f5f9;background:#fff;position:sticky;top:60px;z-index:99}
+.nav-scroll{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;padding:8px 0}
+.nav-scroll::-webkit-scrollbar{display:none}
+.nav-link{font-size:13px;font-weight:700;color:#6b7280;text-decoration:none;padding:7px 14px;border-radius:18px;white-space:nowrap}
+.nav-link.active,.nav-link:hover{background:#000;color:#fff}
+.hero{position:relative;max-width:1200px;margin:20px auto 0;padding:0 20px}
+.slider{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:16/6;background:#f9fafb}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity .6s}
+.slide.on{opacity:1}
+.slide img{width:100%;height:100%;object-fit:cover}
+.slider-dots{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);display:flex;gap:6px;z-index:5}
+.dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.6);cursor:pointer}
+.dot.on{background:#000}
+.section{padding:32px 0}
+.section-title{font-size:clamp(22px,3vw,30px);font-weight:900;letter-spacing:-.7px;margin-bottom:4px}
+.section-sub{color:#6b7280;font-size:13.5px;margin-bottom:20px;font-weight:500}
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.cat-card{position:relative;height:120px;border-radius:12px;overflow:hidden;background:#000;text-decoration:none;display:flex;flex-direction:column;justify-content:flex-end;padding:14px;border:1px solid #e5e7eb;transition:.25s}
+.cat-card:hover{transform:translateY(-3px)}
+.cat-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;padding:12px;opacity:.9;transition:.25s}
+.cat-ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.85) 0%,rgba(255,255,255,0) 55%)}
+.cat-cnt{position:relative;z-index:2}
+.cat-nm{font-size:14.5px;font-weight:900;color:#000}
+.cat-n-off{font-size:11.5px;font-weight:700;color:#16a34a}
+.store-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px}
+.store-card{background:#fff;border:1.5px solid #e5e7eb;border-radius:12px;padding:18px 10px;display:flex;flex-direction:column;align-items:center;gap:10px;text-decoration:none;transition:.25s}
+.store-card:hover{border-color:#000;transform:translateY(-3px)}
+.store-card img{max-width:100%;height:44px;object-fit:contain}
+.store-card span{font-size:12.5px;font-weight:800;color:#000}
+.tile-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.tile{border:1.5px solid #e5e7eb;border-radius:12px;overflow:hidden;text-decoration:none;display:block;transition:.25s;background:#fff}
+.tile:hover{border-color:#000;transform:translateY(-3px)}
+.tile img{width:100%;height:120px;object-fit:cover}
+.tile span{display:block;padding:10px 12px;font-size:13px;font-weight:800;color:#000}
+.deals-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+.deal-card{background:#fff;border:1.5px solid #e5e7eb;border-radius:12px;overflow:hidden;transition:.25s}
+.deal-card:hover{transform:translateY(-4px);border-color:#000;box-shadow:0 12px 24px rgba(0,0,0,.08)}
+.deal-img-wrap{position:relative;width:100%;height:220px;background:#fff;overflow:hidden}
+.deal-img{width:100%;height:100%;object-fit:contain;transition:.3s;padding:8px}
+.deal-card:hover .deal-img{transform:scale(1.05)}
+.deal-discount{position:absolute;top:10px;right:10px;background:#ef4444;color:#fff;font-size:11px;font-weight:900;padding:4px 10px;border-radius:20px}
+.deal-body{padding:14px 16px 16px}
+.deal-title{font-size:13.5px;font-weight:800;line-height:1.35;margin-bottom:8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:37px}
+.deal-profit{display:inline-flex;background:#fef3c7;color:#92400e;font-size:10.5px;font-weight:800;padding:3px 8px;border-radius:6px;margin-bottom:10px}
+.deal-price-row{display:flex;align-items:baseline;gap:10px;margin-bottom:12px}
+.deal-price{font-size:20px;font-weight:900}
+.deal-mrp{font-size:13px;color:#9ca3af;text-decoration:line-through;font-weight:600}
+.deal-btns{display:flex;flex-direction:column;gap:8px}
+.deal-btn{display:flex;align-items:center;justify-content:center;width:100%;height:40px;background:#000;color:#fff;text-decoration:none;font-size:13px;font-weight:800;border-radius:8px;transition:.2s}
+.deal-btn:hover{background:#16a34a}
+.copy-link-btn{display:flex;align-items:center;justify-content:center;width:100%;height:36px;background:#fff;color:#000;border:1.5px solid #000;font-size:12px;font-weight:800;border-radius:8px;cursor:pointer;transition:.2s;font-family:inherit}
+.copy-link-btn:hover{background:#f1f5f9}
+.copy-link-btn.copied{background:#16a34a;color:#fff;border-color:#16a34a}
+.page-banner{max-width:1200px;margin:20px auto 0;padding:0 20px}
+.page-banner img{width:100%;height:180px;object-fit:contain;background:#f9fafb;border:1px solid #e5e7eb;border-radius:14px;padding:14px}
+.tg-banner{background:#0a0e1a;border-radius:16px;padding:36px 28px;text-align:center;margin:36px 0;color:#fff}
+.tg-banner h3{font-size:clamp(20px,3vw,28px);font-weight:900;margin-bottom:10px}
+.tg-banner p{color:#9ca3af;max-width:540px;margin:0 auto 22px;font-size:14px}
+.tg-btn{display:inline-flex;background:#0088cc;color:#fff;text-decoration:none;font-size:14px;font-weight:800;padding:12px 24px;border-radius:20px}
+footer{border-top:1px solid #e5e7eb;padding:26px 0;text-align:center;color:#6b7280;font-size:13px;background:#f9fafb;margin-top:20px}
+#toast{position:fixed;bottom:30px;left:50%;transform:translateX(-50%) translateY(80px);background:#000;color:#fff;padding:12px 24px;border-radius:20px;font-size:13px;font-weight:800;opacity:0;transition:.3s;z-index:1000;pointer-events:none}
+#toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+.no-results{display:none;text-align:center;padding:40px;color:#6b7280;font-weight:700}
+.search-bar{max-width:620px;margin:0 auto;height:50px;border:2px solid #e5e7eb;border-radius:25px;padding:0 20px;font-size:15px;font-family:inherit;outline:none;width:100%;display:block}
+.search-bar:focus{border-color:#000}
+@media(max-width:768px){.deals-grid{grid-template-columns:repeat(2,1fr);gap:12px}.deal-img-wrap{height:160px}.deal-title{font-size:12px}.deal-price{font-size:16px}.deal-btn{height:36px;font-size:11.5px}.copy-link-btn{height:32px;font-size:11px}.slider{aspect-ratio:16/9}.cat-grid{grid-template-columns:repeat(2,1fr)}}
+</style></head><body>
+<header><div class="container"><div class="header-inner">
+<a href="index.html" class="brand">⚡ BigRedHub<span class="brand-badge">LIVE</span></a>
+<a href="https://t.me/Under99LootDeals_bot" target="_blank" class="header-btn">Telegram Bot</a>
+</div></div></header>
+<nav class="topnav"><div class="container"><div class="nav-scroll"><a href="index.html" class="nav-link">🏠 Home</a><a href="audio.html" class="nav-link">🎧 Audio & Headphones</a><a href="electronics.html" class="nav-link">🔌 Power Banks & Electronics</a><a href="men-fashion.html" class="nav-link active">👔 Men's Fashion</a><a href="women-fashion.html" class="nav-link">👗 Women's Fashion</a><a href="footwear.html" class="nav-link">👟 Footwear</a><a href="beauty.html" class="nav-link">💄 Beauty</a><a href="watches.html" class="nav-link">⌚ Watches & Accessories</a><a href="home-kitchen.html" class="nav-link">🏠 Home & Kitchen</a></div></div></nav>
+<div class="page-banner"><img src="https://asset21.ckassets.com/resources/image/category/men-tshirt-2889-1607086734.png" alt="Men's Fashion" loading="eager"></div>
+<section class="section container">
+  <h2 class="section-title">👔 Men's Fashion</h2>
+  <p class="section-sub">63 live deals · sorted by biggest discount · direct EarnKaro links</p>
+  <input type="text" id="searchInput" class="search-bar" placeholder="Search in Men's Fashion..." style="margin-bottom:22px">
+  <div class="deals-grid"><div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/6/5/e895bfb4-f7c2-4fb9-a48c-07af49256c2d1591307915474-1.jpg" alt="HIGHLANDER Men Khaki Brown Slim Fit Solid Casual Shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">75% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">HIGHLANDER Men Khaki Brown Slim Fit Solid Casual Shirt</h3>
+    <div class="deal-profit">💰 Earn ₹150 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹499</span><span class="deal-mrp">₹1,999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/highlander-men-khaki-brown-slim-fit-solid-casual-shirt/PPS16-11904716" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/highlander-men-khaki-brown-slim-fit-solid-casual-shirt/PPS16-11904716', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11875162/2020/5/21/6c2d9f72-0ec5-47ac-aacf-7d304ab715451590065735537HIGHLANDERMenNavyBlueOliveGreenSlimFitPrintedCasualShirt1.jpg" alt="HIGHLANDER Men Navy Blue &amp; Olive Green Slim Fit Printed Casual Shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">75% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">HIGHLANDER Men Navy Blue &amp; Olive Green Slim Fit Printed Casual Shirt</h3>
+    <div class="deal-profit">💰 Earn ₹161 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹537</span><span class="deal-mrp">₹2,149</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/highlander-men-navy-blue-olive-green-slim-fit-printed-casual-shirt/PPS16-11875162" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/highlander-men-navy-blue-olive-green-slim-fit-printed-casual-shirt/PPS16-11875162', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11875160/2020/5/21/a44db2ce-a861-4858-83ee-f7c1507ae91b1590052866333HIGHLANDERMenNavyBlueBlueSlimFitCheckedCasualShirt1.jpg" alt="HIGHLANDER Men Navy Blue &amp; Blue Slim Fit Checked Casual Shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">75% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">HIGHLANDER Men Navy Blue &amp; Blue Slim Fit Checked Casual Shirt</h3>
+    <div class="deal-profit">💰 Earn ₹176 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹587</span><span class="deal-mrp">₹2,349</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/highlander-men-navy-blue-blue-slim-fit-checked-casual-shirt/PPS16-11875160" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/highlander-men-navy-blue-blue-slim-fit-checked-casual-shirt/PPS16-11875160', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11875168/2020/5/21/1cb0d47e-8ff2-40ee-89d7-6b03622992611590065734536HIGHLANDERMenRedNavyBlueSlimFitCheckedCasualShirt1.jpg" alt="HIGHLANDER Men Red &amp; Navy Blue Slim Fit Checked Casual Shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">75% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">HIGHLANDER Men Red &amp; Navy Blue Slim Fit Checked Casual Shirt</h3>
+    <div class="deal-profit">💰 Earn ₹176 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹587</span><span class="deal-mrp">₹2,349</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/highlander-men-red-navy-blue-slim-fit-checked-casual-shirt/PPS16-11875168" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/highlander-men-red-navy-blue-slim-fit-checked-casual-shirt/PPS16-11875168', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/6/4/6a370c60-7cbd-48be-be82-179ee1d7e18a1591220734708-1.jpg" alt="HIGHLANDER Men Blue &amp; Black Slim Fit Yarn Dyed Checked Casual Shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">75% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">HIGHLANDER Men Blue &amp; Black Slim Fit Yarn Dyed Checked Casual Shirt</h3>
+    <div class="deal-profit">💰 Earn ₹180 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹599</span><span class="deal-mrp">₹2,399</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/highlander-men-blue-black-slim-fit-yarn-dyed-checked-casual-shirt/PPS16-11904722" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/highlander-men-blue-black-slim-fit-yarn-dyed-checked-casual-shirt/PPS16-11904722', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11875176/2020/5/21/586d88e7-1da2-4dc6-949a-60a7eaf8eb401590065799121HIGHLANDERMenRedBlackSlimFitCheckedCasualShirt1.jpg" alt="HIGHLANDER Men Red &amp; Black Slim Fit Yarn Dyed Checked Casual Shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">75% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">HIGHLANDER Men Red &amp; Black Slim Fit Yarn Dyed Checked Casual Shirt</h3>
+    <div class="deal-profit">💰 Earn ₹176 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹587</span><span class="deal-mrp">₹2,349</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/highlander-men-red-black-slim-fit-yarn-dyed-checked-casual-shirt/PPS16-11875176" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/highlander-men-red-black-slim-fit-yarn-dyed-checked-casual-shirt/PPS16-11875176', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/6/5/9cc54447-e682-4530-b1ab-eac9037acff51591307477701-1.jpg" alt="HIGHLANDER Men Red &amp; Navy Blue Slim Fit Yarn Dyed Checked Casual Shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">75% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">HIGHLANDER Men Red &amp; Navy Blue Slim Fit Yarn Dyed Checked Casual Shirt</h3>
+    <div class="deal-profit">💰 Earn ₹180 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹599</span><span class="deal-mrp">₹2,399</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/highlander-men-red-navy-blue-slim-fit-yarn-dyed-checked-casual-shirt/PPS16-11904740" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/highlander-men-red-navy-blue-slim-fit-yarn-dyed-checked-casual-shirt/PPS16-11904740', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11875182/2020/5/21/07706f3b-c4de-4761-9914-1f411a52252d1590052947703HIGHLANDERMenBrownMaroonSlimFitCheckedCasualShirt1.jpg" alt="HIGHLANDER Men Black &amp; Maroon Slim Fit Checked Casual Shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">75% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">HIGHLANDER Men Black &amp; Maroon Slim Fit Checked Casual Shirt</h3>
+    <div class="deal-profit">💰 Earn ₹176 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹587</span><span class="deal-mrp">₹2,349</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/highlander-men-black-maroon-slim-fit-checked-casual-shirt/PPS16-11875182" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/highlander-men-black-maroon-slim-fit-checked-casual-shirt/PPS16-11875182', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8325349/2019/3/28/ba846dc2-c742-44b7-8962-bba267b4c1911553775563181-Mast--Harbour-Men-Blue-Printed-Polo-Collar-T-shirt-164155377-1.jpg" alt="Mast &amp; Harbour Men Blue Printed Polo Collar T-shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">70% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Mast &amp; Harbour Men Blue Printed Polo Collar T-shirt</h3>
+    <div class="deal-profit">💰 Earn ₹98 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹419</span><span class="deal-mrp">₹1,399</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/mast-harbour-men-blue-printed-polo-collar-t-shirt/PPS16-8325349" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/mast-harbour-men-blue-printed-polo-collar-t-shirt/PPS16-8325349', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2018/12/1/5d458f1a-462a-4b32-9c1d-7b11efc347801543609040268-1.jpg" alt="LOCOMOTIVE Men Blue Slim Fit Mid-Rise Clean Look Stretchable Jeans" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">70% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">LOCOMOTIVE Men Blue Slim Fit Mid-Rise Clean Look Stretchable Jeans</h3>
+    <div class="deal-profit">💰 Earn ₹171 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹734</span><span class="deal-mrp">₹2,449</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/locomotive-men-blue-slim-fit-mid-rise-clean-look-stretchable-jeans/PPS16-8064673" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/locomotive-men-blue-slim-fit-mid-rise-clean-look-stretchable-jeans/PPS16-8064673', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2018/12/5/eefc765b-6e1b-437c-8006-280d5d1c69b31544002999583-1.jpg" alt="LOCOMOTIVE Men Brown Slim Fit Mid-Rise Clean Look Stretchable Jeans" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">70% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">LOCOMOTIVE Men Brown Slim Fit Mid-Rise Clean Look Stretchable Jeans</h3>
+    <div class="deal-profit">💰 Earn ₹171 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹734</span><span class="deal-mrp">₹2,449</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/locomotive-men-brown-slim-fit-mid-rise-clean-look-stretchable-jeans/PPS16-8098485" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/locomotive-men-brown-slim-fit-mid-rise-clean-look-stretchable-jeans/PPS16-8098485', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/6558977/2018/5/29/a2a74276-6961-4358-9689-4a15fe2b890d1527590312090-Nation-Polo-Club-Mens-Slim-FitSkinny-Fit-Maroon-Color-Trouser-3371527590310952-1.jpg" alt="Nation Polo Club Men Maroon Skinny Fit Solid Chinos" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">70% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Nation Polo Club Men Maroon Skinny Fit Solid Chinos</h3>
+    <div class="deal-profit">💰 Earn ₹210 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹899</span><span class="deal-mrp">₹2,999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/nation-polo-club-men-maroon-skinny-fit-solid-chinos/PPS16-6558977" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/nation-polo-club-men-maroon-skinny-fit-solid-chinos/PPS16-6558977', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/7584922/2018/10/10/a48da549-3ec7-4f48-bbb1-5c525f9a46541539162740820-na-8021539162740607-1.jpg" alt="LOCOMOTIVE Men Grey Slim Fit Mid-Rise Clean Look Stretchable Jeans" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">70% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">LOCOMOTIVE Men Grey Slim Fit Mid-Rise Clean Look Stretchable Jeans</h3>
+    <div class="deal-profit">💰 Earn ₹175 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹749</span><span class="deal-mrp">₹2,499</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/locomotive-men-grey-slim-fit-mid-rise-clean-look-stretchable-jeans/PPS16-7584922" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/locomotive-men-grey-slim-fit-mid-rise-clean-look-stretchable-jeans/PPS16-7584922', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/1/11/ca4023c0-3e33-4911-9619-a5ef301919731578701837454-1.jpg" alt="LOCOMOTIVE Men Blue Tapered Fit Jeans" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">70% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">LOCOMOTIVE Men Blue Tapered Fit Jeans</h3>
+    <div class="deal-profit">💰 Earn ₹175 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹749</span><span class="deal-mrp">₹2,499</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/locomotive-men-blue-tapered-fit-jeans/PPS16-11315444" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/locomotive-men-blue-tapered-fit-jeans/PPS16-11315444', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10363111/2019/8/13/ec6b94ea-1b7a-47aa-954c-a787820950f01565681979207-Hubberholme-Men-Track-Pants-3541565681978244-1.jpg" alt="Hubberholme Black Slim Fit Solid Track Pants" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">65% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Hubberholme Black Slim Fit Solid Track Pants</h3>
+    <div class="deal-profit">💰 Earn ₹97 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹524</span><span class="deal-mrp">₹1,499</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/hubberholme-black-slim-fit-solid-track-pants/PPS16-10363111" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/hubberholme-black-slim-fit-solid-track-pants/PPS16-10363111', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/7797977/2018/11/19/0e102cb5-0e83-4245-8e7d-1119d027498a1542608231150-na-8861542608230953-1.jpg" alt="LOCOMOTIVE Men Green Slim Fit Mid-Rise Clean Look Stretchable Jeans" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">65% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">LOCOMOTIVE Men Green Slim Fit Mid-Rise Clean Look Stretchable Jeans</h3>
+    <div class="deal-profit">💰 Earn ₹159 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹857</span><span class="deal-mrp">₹2,449</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/locomotive-men-green-slim-fit-mid-rise-clean-look-stretchable-jeans/PPS16-7797977" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/locomotive-men-green-slim-fit-mid-rise-clean-look-stretchable-jeans/PPS16-7797977', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10943392/2020/2/13/347ce3e2-c3d0-4de7-b244-9fe678a3f50a1581569766726-Roadster-Men-Navy-Blue-Embossed-Printed-Round-Neck-T-shirt-5-1.jpg" alt="Roadster Men Navy Blue Embossed Printed Round Neck T-shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">60% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Roadster Men Navy Blue Embossed Printed Round Neck T-shirt</h3>
+    <div class="deal-profit">💰 Earn ₹48 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹319</span><span class="deal-mrp">₹799</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/roadster-men-navy-blue-embossed-printed-round-neck-t-shirt/PPS16-10943392" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/roadster-men-navy-blue-embossed-printed-round-neck-t-shirt/PPS16-10943392', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2303538/2018/3/12/11520858616978-Roadster-Men-Brown-Striped-Polo-Collar-T-shirt-9451520858616785-1.jpg" alt="Roadster Men Brown &amp; Black Striped Polo Collar T-shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">60% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Roadster Men Brown &amp; Black Striped Polo Collar T-shirt</h3>
+    <div class="deal-profit">💰 Earn ₹66 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹439</span><span class="deal-mrp">₹1,099</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/roadster-men-brown-black-striped-polo-collar-t-shirt/PPS16-2303538" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/roadster-men-brown-black-striped-polo-collar-t-shirt/PPS16-2303538', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10092105/2019/10/15/11e8597e-85a5-4dcd-a40a-dc9647e1b89a1571142731707-Roadster-Men-Jeans-5221571142730946-1.jpg" alt="Roadster Men Navy Blue Skinny Fit Mid-Rise Clean Look Stretchable Jeans" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">60% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Roadster Men Navy Blue Skinny Fit Mid-Rise Clean Look Stretchable Jeans</h3>
+    <div class="deal-profit">💰 Earn ₹102 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹679</span><span class="deal-mrp">₹1,699</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/roadster-men-navy-blue-skinny-fit-mid-rise-clean-look-stretchable-jeans/PPS16-10092105" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/roadster-men-navy-blue-skinny-fit-mid-rise-clean-look-stretchable-jeans/PPS16-10092105', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11274800/2020/7/28/3fe30488-1f02-469a-bcd2-d7e7c130face1595917087359-Roadster-GreenTurn-Men-Blue-Skinny-Fit-Mid-Rise-Mildly-Distr-1.jpg" alt="Roadster Men Blue Skinny Fit Mid-Rise Low Distressed Save Water Stretchable Jeans" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">60% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Roadster Men Blue Skinny Fit Mid-Rise Low Distressed Save Water Stretchable Jeans</h3>
+    <div class="deal-profit">💰 Earn ₹102 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹679</span><span class="deal-mrp">₹1,699</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/roadster-men-blue-skinny-fit-mid-rise-low-distressed-save-water-stretchable-jeans/PPS16-11274800" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/roadster-men-blue-skinny-fit-mid-rise-low-distressed-save-water-stretchable-jeans/PPS16-11274800', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11216424/2020/9/5/219e59d7-bd9f-4e66-9efa-3c47292ba4451599297239463-Roadster-Men-Jeans-9751599297237307-1.jpg" alt="Roadster Men Blue Jogger Fit Mid-Rise Clean Look Stretchable Jeans" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">60% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Roadster Men Blue Jogger Fit Mid-Rise Clean Look Stretchable Jeans</h3>
+    <div class="deal-profit">💰 Earn ₹144 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹959</span><span class="deal-mrp">₹2,399</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/roadster-men-blue-jogger-fit-mid-rise-clean-look-stretchable-jeans/PPS16-11216424" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/roadster-men-blue-jogger-fit-mid-rise-clean-look-stretchable-jeans/PPS16-11216424', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2018/12/1/aac34f72-622f-4b9d-9cda-d42326eb353c1543603186537-1.jpg" alt="LOCOMOTIVE Men Khaki Slim Fit Mid-Rise Clean Look Stretchable Jeans" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">60% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">LOCOMOTIVE Men Khaki Slim Fit Mid-Rise Clean Look Stretchable Jeans</h3>
+    <div class="deal-profit">💰 Earn ₹147 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹979</span><span class="deal-mrp">₹2,449</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/locomotive-men-khaki-slim-fit-mid-rise-clean-look-stretchable-jeans/PPS16-8064709" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/locomotive-men-khaki-slim-fit-mid-rise-clean-look-stretchable-jeans/PPS16-8064709', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8168953/2018/12/11/4f5fff98-3d04-4ddb-9f70-bbf15b03e6891544518325294-LOCOMOTIVE-Blue-6791544518323857-1.jpg" alt="LOCOMOTIVE Men Navy Blue Slim Fit Mid-Rise Clean Look Stretchable Jeans" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">60% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">LOCOMOTIVE Men Navy Blue Slim Fit Mid-Rise Clean Look Stretchable Jeans</h3>
+    <div class="deal-profit">💰 Earn ₹147 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹979</span><span class="deal-mrp">₹2,449</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/locomotive-men-navy-blue-slim-fit-mid-rise-clean-look-stretchable-jeans/PPS16-8168953" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/locomotive-men-navy-blue-slim-fit-mid-rise-clean-look-stretchable-jeans/PPS16-8168953', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/5669104/2018/6/12/a5bab43f-58c4-4a24-8e11-236cbcaf45f61528799134313-Roadster-Men-Jeans-171528799134149-1.jpg" alt="Roadster Men Black Skinny Fit Mid-Rise Clean Look Stretchable Cropped Jeans" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">57% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Roadster Men Black Skinny Fit Mid-Rise Clean Look Stretchable Cropped Jeans</h3>
+    <div class="deal-profit">💰 Earn ₹114 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹859</span><span class="deal-mrp">₹1,999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/roadster-men-black-skinny-fit-mid-rise-clean-look-stretchable-cropped-jeans/PPS16-5669104" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/roadster-men-black-skinny-fit-mid-rise-clean-look-stretchable-cropped-jeans/PPS16-5669104', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1801074/2017/5/9/11494312107320-Jack--Jones-Men-Tshirts-1481494312107029-1.jpg" alt="Jack &amp; Jones Men Blue Solid Henley Neck T-shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">55% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Jack &amp; Jones Men Blue Solid Henley Neck T-shirt</h3>
+    <div class="deal-profit">💰 Earn ₹71 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹584</span><span class="deal-mrp">₹1,299</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/jack-jones-men-blue-solid-henley-neck-t-shirt/PPS16-1801074" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/jack-jones-men-blue-solid-henley-neck-t-shirt/PPS16-1801074', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10424644/2020/3/21/823c3d07-57e3-4ae7-8379-0454ace343171584787189243-Roadster-Men-Tshirts-3021584787187492-1.jpg" alt="Roadster Men Navy Blue Printed Polo Collar T-shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">55% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Roadster Men Navy Blue Printed Polo Collar T-shirt</h3>
+    <div class="deal-profit">💰 Earn ₹77 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹629</span><span class="deal-mrp">₹1,399</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/roadster-men-navy-blue-printed-polo-collar-t-shirt/PPS16-10424644" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/roadster-men-navy-blue-printed-polo-collar-t-shirt/PPS16-10424644', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2330277/2018/5/18/6a529e99-cfcd-4852-b2ac-19fb63142f2f1526627506565-Roadster-Men-Black-Printed-Round-Neck-T-shirt-4971526627504099-1.jpg" alt="Roadster Men Black Printed Round Neck T-shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">50% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Roadster Men Black Printed Round Neck T-shirt</h3>
+    <div class="deal-profit">💰 Earn ₹45 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹449</span><span class="deal-mrp">₹899</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/roadster-men-black-printed-round-neck-t-shirt/PPS16-2330277" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/roadster-men-black-printed-round-neck-t-shirt/PPS16-2330277', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10046883/2019/11/21/1ab261c2-dbf9-43bd-9351-0375bec4a3c41574321453635-Roadster-Men-Jeans-3271574321451223-1.jpg" alt="Roadster Men Blue Slim Fit Mid-Rise Clean Look Stretchable Jeans" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">50% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Roadster Men Blue Slim Fit Mid-Rise Clean Look Stretchable Jeans</h3>
+    <div class="deal-profit">💰 Earn ₹65 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹649</span><span class="deal-mrp">₹1,299</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/roadster-men-blue-slim-fit-mid-rise-clean-look-stretchable-jeans/PPS16-10046883" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/roadster-men-blue-slim-fit-mid-rise-clean-look-stretchable-jeans/PPS16-10046883', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10064545/2019/8/23/5cd57815-c3d2-4009-b06b-a4d27776bc6f1566542757285-Roadster-Men-Jeans-2501566542755985-1.jpg" alt="Roadster Men Grey Slim Fit Mid-Rise Clean Look Stretchable Jeans" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">50% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Roadster Men Grey Slim Fit Mid-Rise Clean Look Stretchable Jeans</h3>
+    <div class="deal-profit">💰 Earn ₹95 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹949</span><span class="deal-mrp">₹1,899</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/roadster-men-grey-slim-fit-mid-rise-clean-look-stretchable-jeans/PPS16-10064545" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/roadster-men-grey-slim-fit-mid-rise-clean-look-stretchable-jeans/PPS16-10064545', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2425786/2018/3/22/11521710079400-Roadster-Men-Black-Skinny-Fit-Mid-Rise-Clean-Look-Stretchable-Jeans-1011521710079148-1.jpg" alt="Roadster Time Travlr Men Black Skinny Fit Mid-Rise Clean Look Stretchable Jeans" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">50% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Roadster Time Travlr Men Black Skinny Fit Mid-Rise Clean Look Stretchable Jeans</h3>
+    <div class="deal-profit">💰 Earn ₹125 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,249</span><span class="deal-mrp">₹2,499</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/roadster-time-travlr-men-black-skinny-fit-mid-rise-clean-look-stretchable-jeans/PPS16-2425786" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/roadster-time-travlr-men-black-skinny-fit-mid-rise-clean-look-stretchable-jeans/PPS16-2425786', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1997244/2017/9/6/11504686918599-Roadster-Men-Grey-Melange-Printed-Round-Neck-T-shirt-701504686918389-1.jpg" alt="Roadster Men Grey Melange All-Over-Printed T-shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">45% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Roadster Men Grey Melange All-Over-Printed T-shirt</h3>
+    <div class="deal-profit">💰 Earn ₹45 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹549</span><span class="deal-mrp">₹999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/roadster-men-grey-melange-all-over-printed-t-shirt/PPS16-1997244" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/roadster-men-grey-melange-all-over-printed-t-shirt/PPS16-1997244', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/9532865/2020/9/9/38a3f97f-0400-4ce9-a51a-7832e5be51081599626753595-US-Polo-Assn-Men-Blue-Tailored-Fit-Printed-Casual-Shirt-9201-1.jpg" alt="U.S. Polo Assn. Men Blue Tailored Fit Printed Casual Shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">45% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">U.S. Polo Assn. Men Blue Tailored Fit Printed Casual Shirt</h3>
+    <div class="deal-profit">💰 Earn ₹112 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,374</span><span class="deal-mrp">₹2,499</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/u-s-polo-assn-men-blue-tailored-fit-printed-casual-shirt/PPS16-9532865" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/u-s-polo-assn-men-blue-tailored-fit-printed-casual-shirt/PPS16-9532865', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11545036/2020/5/27/eff37738-807c-4a3e-8b37-d909f3298b1b1590563500250HRXbyHrithikRoshanMenBlackSolidRunningRapidDryAntimicrobialS1.jpg" alt="Roadster Men Blue and Black Colourblocked Round Neck T-shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">40% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Roadster Men Blue and Black Colourblocked Round Neck T-shirt</h3>
+    <div class="deal-profit">💰 Earn ₹32 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹479</span><span class="deal-mrp">₹799</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/roadster-men-blue-and-black-colourblocked-round-neck-t-shirt/PPS16-11545036" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/roadster-men-blue-and-black-colourblocked-round-neck-t-shirt/PPS16-11545036', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/9532851/2019/6/10/a377c60a-41d2-42b5-9baf-9a1c50ef05f21560148857910-US-Polo-Assn-Men-Blue-Tailored-Fit-Solid-Casual-Shirt-445156-1.jpg" alt="U.S. Polo Assn. Men Blue Tailored Fit Solid Formal Shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">40% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">U.S. Polo Assn. Men Blue Tailored Fit Solid Formal Shirt</h3>
+    <div class="deal-profit">💰 Earn ₹100 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,499</span><span class="deal-mrp">₹2,499</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/u-s-polo-assn-men-blue-tailored-fit-solid-formal-shirt/PPS16-9532851" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/u-s-polo-assn-men-blue-tailored-fit-solid-formal-shirt/PPS16-9532851', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/hb8/h05/11011017998366/-473Wx593H-460157196-white-MODEL.jpg" alt="Printed V-neck T-shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Printed V-neck T-shirt</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹1,299</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/printed-v-neck-t-shirt/PPS17-460157196-white" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/printed-v-neck-t-shirt/PPS17-460157196-white', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/h38/h4f/10610062819358/-473Wx593H-460134694-black-MODEL.jpg" alt="Numeric Print Slim Fit T-shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Numeric Print Slim Fit T-shirt</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹1,299</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/numeric-print-slim-fit-t-shirt/PPS17-460134694-black" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/numeric-print-slim-fit-t-shirt/PPS17-460134694-black', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/h1c/h74/13931763269662/-473Wx593H-460461477-grey-MODEL.jpg" alt="Striped Regular Fit Polo T-shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Striped Regular Fit Polo T-shirt</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹1,599</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/striped-regular-fit-polo-t-shirt/PPS17-460461477-grey" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/striped-regular-fit-polo-t-shirt/PPS17-460461477-grey', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/h69/h23/11839339888670/-473Wx593H-460258697-grey-MODEL.jpg" alt="Textured Crew-Neck T-shirt with Applique" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Textured Crew-Neck T-shirt with Applique</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹1,699</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/textured-crew-neck-t-shirt-with-applique/PPS17-460258697-grey" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/textured-crew-neck-t-shirt-with-applique/PPS17-460258697-grey', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2275352/2018/2/24/11519444618271-Roadster-Men-Black-Solid-Round-Neck-T-shirt-1771519444618074-1.jpg" alt="Roadster Men Black Solid Round Neck T-shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Roadster Men Black Solid Round Neck T-shirt</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹499</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/roadster-men-black-solid-round-neck-t-shirt/PPS16-2275352" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/roadster-men-black-solid-round-neck-t-shirt/PPS16-2275352', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/ajio/catalog/5f109ecef997dd433b4f11e6/-473Wx593H-460314158-black-MODEL.jpg" alt="Speckled Polo T-shirt with Vented Hemline" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Speckled Polo T-shirt with Vented Hemline</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹1,799</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/speckled-polo-t-shirt-with-vented-hemline/PPS17-460314158-black" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/speckled-polo-t-shirt-with-vented-hemline/PPS17-460314158-black', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/hb3/h4b/13251652681758/-473Wx593H-460327217-rose-MODEL.jpg" alt="Slim Fit Graphic Print Crew-Neck T-shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Slim Fit Graphic Print Crew-Neck T-shirt</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹1,699</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/slim-fit-graphic-print-crew-neck-t-shirt/PPS17-460327217-rose" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/slim-fit-graphic-print-crew-neck-t-shirt/PPS17-460327217-rose', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/h17/h28/13813945204766/-473Wx593H-460441890-multicolour-MODEL.jpg" alt="Slim Fit Striped Polo T-shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Slim Fit Striped Polo T-shirt</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹1,899</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/slim-fit-striped-polo-t-shirt/PPS17-460441890-multicolour" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/slim-fit-striped-polo-t-shirt/PPS17-460441890-multicolour', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/h01/h2d/13817717194782/-473Wx593H-460441865-red-MODEL.jpg" alt="Slim Fit Colourblock Polo T-shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Slim Fit Colourblock Polo T-shirt</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹1,899</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/slim-fit-colourblock-polo-t-shirt/PPS17-460441865-red" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/slim-fit-colourblock-polo-t-shirt/PPS17-460441865-red', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/hc6/h4d/13276610428958/-473Wx593H-460327042-blue-MODEL.jpg" alt="Slim Fit Washed Jeans" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Slim Fit Washed Jeans</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹2,699</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/slim-fit-washed-jeans/PPS17-460327042-blue" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/slim-fit-washed-jeans/PPS17-460327042-blue', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/hf9/h1a/12754043338782/-473Wx593H-460303708-blue-MODEL.jpg" alt="511 Mid-Rise Styled Slim Fit Jeans" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">511 Mid-Rise Styled Slim Fit Jeans</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹3,399</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/511-mid-rise-styled-slim-fit-jeans/PPS17-460303708-blue" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/511-mid-rise-styled-slim-fit-jeans/PPS17-460303708-blue', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/h5f/hdd/15576098045982/-473Wx593H-460564269-darkblue-MODEL.jpg" alt="Denim Skinny Jeans" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Denim Skinny Jeans</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹2,699</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/denim-skinny-jeans/PPS17-460564269-darkblue" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/denim-skinny-jeans/PPS17-460564269-darkblue', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/ajio/catalog/5f15b714aeb269317589c902/-473Wx593H-460471149-black-MODEL.jpg" alt="Low-Rise Slim Fit Jeans" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Low-Rise Slim Fit Jeans</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹2,599</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/low-rise-slim-fit-jeans/PPS17-460471149-black" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/low-rise-slim-fit-jeans/PPS17-460471149-black', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/h61/h0a/13307117076510/-473Wx593H-460238268-blue-MODEL.jpg" alt="Skinny Fit Washed Jeans" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Skinny Fit Washed Jeans</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹3,499</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/skinny-fit-washed-jeans/PPS17-460238268-blue" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/skinny-fit-washed-jeans/PPS17-460238268-blue', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/ajio/catalog/5eff7c3a7cdb8c721b779b5d/-473Wx593H-460611105-black-MODEL.jpg" alt="Low-Rise Skinny Fit Jeans" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Low-Rise Skinny Fit Jeans</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹2,899</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/low-rise-skinny-fit-jeans/PPS17-460611105-black" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/low-rise-skinny-fit-jeans/PPS17-460611105-black', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/hd4/h59/15416089477150/-473Wx593H-460545152-blue-MODEL.jpg" alt="65504 Skinny Fit Washed Jeans" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">65504 Skinny Fit Washed Jeans</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹3,899</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/65504-skinny-fit-washed-jeans/PPS17-460545152-blue" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/65504-skinny-fit-washed-jeans/PPS17-460545152-blue', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/h1c/hab/10855041990686/-473Wx593H-460155609-blue-MODEL.jpg" alt="Skuller Super Slim Lightly Washed Jeans" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Skuller Super Slim Lightly Washed Jeans</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹3,799</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/skuller-super-slim-lightly-washed-jeans/PPS17-460155609-blue" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/skuller-super-slim-lightly-washed-jeans/PPS17-460155609-blue', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/h98/h3c/14078531665950/-473Wx593H-460368918-blue-MODEL.jpg" alt="Ditsy Print Slim Fit Shirt with Patch Pocket" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Ditsy Print Slim Fit Shirt with Patch Pocket</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹1,499</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/ditsy-print-slim-fit-shirt-with-patch-pocket/PPS17-460368918-blue" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/ditsy-print-slim-fit-shirt-with-patch-pocket/PPS17-460368918-blue', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/ha8/h64/12683912937502/-473Wx593H-460323474-turquoise-MODEL.jpg" alt="Checked Slim Fit Shirt with Flap Pockets" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Checked Slim Fit Shirt with Flap Pockets</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹2,099</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/checked-slim-fit-shirt-with-flap-pockets/PPS17-460323474-turquoise" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/checked-slim-fit-shirt-with-flap-pockets/PPS17-460323474-turquoise', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/h85/h05/10169808748574/-473Wx593H-460036258-yellow-MODEL.jpg" alt="Checked Slim Fit Cotton Shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Checked Slim Fit Cotton Shirt</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹1,999</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/checked-slim-fit-cotton-shirt/PPS17-460036258-yellow" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/checked-slim-fit-cotton-shirt/PPS17-460036258-yellow', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/7017615/2019/4/29/363d52ad-3bdf-4063-a885-fb53e08b38011556517279800-US-Polo-Assn-Men-Blue-Tailored-Fit-Checked-Casual-Shirt-1411-1.jpg" alt="U.S. Polo Assn. Men Blue Tailored Fit Checked Casual Shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">U.S. Polo Assn. Men Blue Tailored Fit Checked Casual Shirt</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹2,699</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/u-s-polo-assn-men-blue-tailored-fit-checked-casual-shirt/PPS16-7017615" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/u-s-polo-assn-men-blue-tailored-fit-checked-casual-shirt/PPS16-7017615', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/h13/h02/11803233026078/-473Wx593H-460262643-blue-MODEL.jpg" alt="Slim Fit Checked Shirt with Buttoned Patch Pocket" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Slim Fit Checked Shirt with Buttoned Patch Pocket</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹1,899</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/slim-fit-checked-shirt-with-buttoned-patch-pocket/PPS17-460262643-blue" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/slim-fit-checked-shirt-with-buttoned-patch-pocket/PPS17-460262643-blue', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/h53/hc1/13297793728542/-473Wx593H-460257592-grey-MODEL.jpg" alt="Textured Slim Fit Shirt with Patch Pocket" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Textured Slim Fit Shirt with Patch Pocket</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹1,499</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/textured-slim-fit-shirt-with-patch-pocket/PPS17-460257592-grey" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/textured-slim-fit-shirt-with-patch-pocket/PPS17-460257592-grey', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/h7e/h1f/14259299188766/-473Wx593H-460493180-blue-MODEL.jpg" alt="Slim Fit Chambray Shirt" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Slim Fit Chambray Shirt</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹2,199</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/slim-fit-chambray-shirt/PPS17-460493180-blue" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/slim-fit-chambray-shirt/PPS17-460493180-blue', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/hca/h5c/14808129306654/-473Wx593H-460323514-sky-MODEL.jpg" alt="Slim Fit Shirt with Patch Pocket" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Slim Fit Shirt with Patch Pocket</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹1,999</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/slim-fit-shirt-with-patch-pocket/PPS17-460323514-sky" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/slim-fit-shirt-with-patch-pocket/PPS17-460323514-sky', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/h58/h2d/14561192116254/-473Wx593H-460425780-grey-MODEL.jpg" alt="Textured Spread-Collar Shirt with Patch Pocket" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Textured Spread-Collar Shirt with Patch Pocket</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹1,899</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/textured-spread-collar-shirt-with-patch-pocket/PPS17-460425780-grey" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/textured-spread-collar-shirt-with-patch-pocket/PPS17-460425780-grey', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/h17/h87/13976124719134/-473Wx593H-460315102-blue-MODEL.jpg" alt="Printed Shirt with Patch Pocket" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Printed Shirt with Patch Pocket</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹1,999</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/printed-shirt-with-patch-pocket/PPS17-460315102-blue" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/printed-shirt-with-patch-pocket/PPS17-460315102-blue', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/hf6/h81/13357845708830/-473Wx593H-460327030-red-MODEL.jpg" alt="Slim Fit Checked Shirt with Button Flap Pockets" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Slim Fit Checked Shirt with Button Flap Pockets</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹1,999</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/slim-fit-checked-shirt-with-button-flap-pockets/PPS17-460327030-red" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/slim-fit-checked-shirt-with-button-flap-pockets/PPS17-460327030-red', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/h10/h4b/13809152000030/-473Wx593H-460441713-white-MODEL.jpg" alt="Checked Cotton Shirt with Button-Down Collar" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Checked Cotton Shirt with Button-Down Collar</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹2,499</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/checked-cotton-shirt-with-button-down-collar/PPS17-460441713-white" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/checked-cotton-shirt-with-button-down-collar/PPS17-460441713-white', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div></div>
+  <div class="no-results" id="noResults">😕 No deals found.</div>
+</section>
+
+<section class="container"><div class="tg-banner"><h3>Never Miss a 90% Price Drop</h3><p>Get instant price glitch alerts & Under ₹99 steals before they sell out.</p><a href="https://t.me/Under99LootDeals_bot" target="_blank" class="tg-btn">⚡ Open @Under99LootDeals_bot</a></div></section>
+<footer><div class="container">© 2026 BigRedHub · Deals sourced live from EarnKaro · Affiliate disclosure: We earn a commission on qualifying purchases.</div></footer>
+<div id="toast"></div><script>
+function showToast(m){const t=document.getElementById('toast');t.innerText=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2200)}
+function copyLink(url,btn){navigator.clipboard.writeText(url).then(()=>{const o=btn.innerText;btn.innerText='✓ COPIED';btn.classList.add('copied');showToast('EarnKaro link copied! Paste anywhere to share');setTimeout(()=>{btn.innerText=o;btn.classList.remove('copied')},2000)})}
+function initSlider(){const slides=document.querySelectorAll('.slide');if(!slides.length)return;let i=0;slides[0].classList.add('on');const dots=document.querySelectorAll('.dot');if(dots[0])dots[0].classList.add('on');setInterval(()=>{slides[i].classList.remove('on');if(dots[i])dots[i].classList.remove('on');i=(i+1)%slides.length;slides[i].classList.add('on');if(dots[i])dots[i].classList.add('on')},3500)}
+function setupSearch(){const inp=document.getElementById('searchInput');if(!inp)return;inp.addEventListener('input',e=>{const q=e.target.value.toLowerCase().trim();let n=0;document.querySelectorAll('.deal-card').forEach(c=>{const ok=!q||(c.dataset.q||'').includes(q);c.style.display=ok?'block':'none';if(ok)n++});const nr=document.getElementById('noResults');if(nr)nr.style.display=n?'none':'block'})}
+initSlider();setupSearch();
+</script></body></html>

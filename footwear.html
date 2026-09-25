@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Footwear Deals — BigRedHub | Up to 81% OFF</title><meta name="description" content="48 live Footwear deals from EarnKaro with direct affiliate links.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-font-smoothing:antialiased}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#fff;color:#000;line-height:1.5}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid #e5e7eb;z-index:100}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-size:19px;font-weight:900;color:#000;text-decoration:none}
+.brand-badge{background:#000;color:#fff;font-size:9px;font-weight:800;padding:3px 8px;border-radius:20px;margin-left:8px}
+.header-btn{background:#000;color:#fff;text-decoration:none;font-size:12.5px;font-weight:700;padding:8px 16px;border-radius:20px;white-space:nowrap}
+nav.topnav{border-bottom:1px solid #f1f5f9;background:#fff;position:sticky;top:60px;z-index:99}
+.nav-scroll{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;padding:8px 0}
+.nav-scroll::-webkit-scrollbar{display:none}
+.nav-link{font-size:13px;font-weight:700;color:#6b7280;text-decoration:none;padding:7px 14px;border-radius:18px;white-space:nowrap}
+.nav-link.active,.nav-link:hover{background:#000;color:#fff}
+.hero{position:relative;max-width:1200px;margin:20px auto 0;padding:0 20px}
+.slider{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:16/6;background:#f9fafb}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity .6s}
+.slide.on{opacity:1}
+.slide img{width:100%;height:100%;object-fit:cover}
+.slider-dots{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);display:flex;gap:6px;z-index:5}
+.dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.6);cursor:pointer}
+.dot.on{background:#000}
+.section{padding:32px 0}
+.section-title{font-size:clamp(22px,3vw,30px);font-weight:900;letter-spacing:-.7px;margin-bottom:4px}
+.section-sub{color:#6b7280;font-size:13.5px;margin-bottom:20px;font-weight:500}
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.cat-card{position:relative;height:120px;border-radius:12px;overflow:hidden;background:#000;text-decoration:none;display:flex;flex-direction:column;justify-content:flex-end;padding:14px;border:1px solid #e5e7eb;transition:.25s}
+.cat-card:hover{transform:translateY(-3px)}
+.cat-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;padding:12px;opacity:.9;transition:.25s}
+.cat-ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.85) 0%,rgba(255,255,255,0) 55%)}
+.cat-cnt{position:relative;z-index:2}
+.cat-nm{font-size:14.5px;font-weight:900;color:#000}
+.cat-n-off{font-size:11.5px;font-weight:700;color:#16a34a}
+.store-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px}
+.store-card{background:#fff;border:1.5px solid #e5e7eb;border-radius:12px;padding:18px 10px;display:flex;flex-direction:column;align-items:center;gap:10px;text-decoration:none;transition:.25s}
+.store-card:hover{border-color:#000;transform:translateY(-3px)}
+.store-card img{max-width:100%;height:44px;object-fit:contain}
+.store-card span{font-size:12.5px;font-weight:800;color:#000}
+.tile-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.tile{border:1.5px solid #e5e7eb;border-radius:12px;overflow:hidden;text-decoration:none;display:block;transition:.25s;background:#fff}
+.tile:hover{border-color:#000;transform:translateY(-3px)}
+.tile img{width:100%;height:120px;object-fit:cover}
+.tile span{display:block;padding:10px 12px;font-size:13px;font-weight:800;color:#000}
+.deals-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+.deal-card{background:#fff;border:1.5px solid #e5e7eb;border-radius:12px;overflow:hidden;transition:.25s}
+.deal-card:hover{transform:translateY(-4px);border-color:#000;box-shadow:0 12px 24px rgba(0,0,0,.08)}
+.deal-img-wrap{position:relative;width:100%;height:220px;background:#fff;overflow:hidden}
+.deal-img{width:100%;height:100%;object-fit:contain;transition:.3s;padding:8px}
+.deal-card:hover .deal-img{transform:scale(1.05)}
+.deal-discount{position:absolute;top:10px;right:10px;background:#ef4444;color:#fff;font-size:11px;font-weight:900;padding:4px 10px;border-radius:20px}
+.deal-body{padding:14px 16px 16px}
+.deal-title{font-size:13.5px;font-weight:800;line-height:1.35;margin-bottom:8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:37px}
+.deal-profit{display:inline-flex;background:#fef3c7;color:#92400e;font-size:10.5px;font-weight:800;padding:3px 8px;border-radius:6px;margin-bottom:10px}
+.deal-price-row{display:flex;align-items:baseline;gap:10px;margin-bottom:12px}
+.deal-price{font-size:20px;font-weight:900}
+.deal-mrp{font-size:13px;color:#9ca3af;text-decoration:line-through;font-weight:600}
+.deal-btns{display:flex;flex-direction:column;gap:8px}
+.deal-btn{display:flex;align-items:center;justify-content:center;width:100%;height:40px;background:#000;color:#fff;text-decoration:none;font-size:13px;font-weight:800;border-radius:8px;transition:.2s}
+.deal-btn:hover{background:#16a34a}
+.copy-link-btn{display:flex;align-items:center;justify-content:center;width:100%;height:36px;background:#fff;color:#000;border:1.5px solid #000;font-size:12px;font-weight:800;border-radius:8px;cursor:pointer;transition:.2s;font-family:inherit}
+.copy-link-btn:hover{background:#f1f5f9}
+.copy-link-btn.copied{background:#16a34a;color:#fff;border-color:#16a34a}
+.page-banner{max-width:1200px;margin:20px auto 0;padding:0 20px}
+.page-banner img{width:100%;height:180px;object-fit:contain;background:#f9fafb;border:1px solid #e5e7eb;border-radius:14px;padding:14px}
+.tg-banner{background:#0a0e1a;border-radius:16px;padding:36px 28px;text-align:center;margin:36px 0;color:#fff}
+.tg-banner h3{font-size:clamp(20px,3vw,28px);font-weight:900;margin-bottom:10px}
+.tg-banner p{color:#9ca3af;max-width:540px;margin:0 auto 22px;font-size:14px}
+.tg-btn{display:inline-flex;background:#0088cc;color:#fff;text-decoration:none;font-size:14px;font-weight:800;padding:12px 24px;border-radius:20px}
+footer{border-top:1px solid #e5e7eb;padding:26px 0;text-align:center;color:#6b7280;font-size:13px;background:#f9fafb;margin-top:20px}
+#toast{position:fixed;bottom:30px;left:50%;transform:translateX(-50%) translateY(80px);background:#000;color:#fff;padding:12px 24px;border-radius:20px;font-size:13px;font-weight:800;opacity:0;transition:.3s;z-index:1000;pointer-events:none}
+#toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+.no-results{display:none;text-align:center;padding:40px;color:#6b7280;font-weight:700}
+.search-bar{max-width:620px;margin:0 auto;height:50px;border:2px solid #e5e7eb;border-radius:25px;padding:0 20px;font-size:15px;font-family:inherit;outline:none;width:100%;display:block}
+.search-bar:focus{border-color:#000}
+@media(max-width:768px){.deals-grid{grid-template-columns:repeat(2,1fr);gap:12px}.deal-img-wrap{height:160px}.deal-title{font-size:12px}.deal-price{font-size:16px}.deal-btn{height:36px;font-size:11.5px}.copy-link-btn{height:32px;font-size:11px}.slider{aspect-ratio:16/9}.cat-grid{grid-template-columns:repeat(2,1fr)}}
+</style></head><body>
+<header><div class="container"><div class="header-inner">
+<a href="index.html" class="brand">⚡ BigRedHub<span class="brand-badge">LIVE</span></a>
+<a href="https://t.me/Under99LootDeals_bot" target="_blank" class="header-btn">Telegram Bot</a>
+</div></div></header>
+<nav class="topnav"><div class="container"><div class="nav-scroll"><a href="index.html" class="nav-link">🏠 Home</a><a href="audio.html" class="nav-link">🎧 Audio & Headphones</a><a href="electronics.html" class="nav-link">🔌 Power Banks & Electronics</a><a href="men-fashion.html" class="nav-link">👔 Men's Fashion</a><a href="women-fashion.html" class="nav-link">👗 Women's Fashion</a><a href="footwear.html" class="nav-link active">👟 Footwear</a><a href="beauty.html" class="nav-link">💄 Beauty</a><a href="watches.html" class="nav-link">⌚ Watches & Accessories</a><a href="home-kitchen.html" class="nav-link">🏠 Home & Kitchen</a></div></div></nav>
+<div class="page-banner"><img src="https://asset21.ckassets.com/resources/image/category/formal-shoes-2876-1607089457.png" alt="Footwear" loading="eager"></div>
+<section class="section container">
+  <h2 class="section-title">👟 Footwear</h2>
+  <p class="section-sub">48 live deals · sorted by biggest discount · direct EarnKaro links</p>
+  <input type="text" id="searchInput" class="search-bar" placeholder="Search in Footwear..." style="margin-bottom:22px">
+  <div class="deals-grid"><div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/7/30/792047de-3e23-418b-8211-857eea8e5c731596065774067-1.jpg" alt="Prolific Men White &amp; Black Self Design Sliders" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">81% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Prolific Men White &amp; Black Self Design Sliders</h3>
+    <div class="deal-profit">💰 Earn ₹181 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹425</span><span class="deal-mrp">₹2,240</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/prolific-men-white-black-self-design-sliders/PPS16-12178482" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/prolific-men-white-black-self-design-sliders/PPS16-12178482', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/8/10/d9cdffed-9592-4edd-b18b-38cd3bd8e7af1597021014092-1.jpg" alt="Mactree Men Black Solid Formal Derbys" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">80% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Mactree Men Black Solid Formal Derbys</h3>
+    <div class="deal-profit">💰 Earn ₹315 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹788</span><span class="deal-mrp">₹3,940</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/mactree-men-black-solid-formal-derbys/PPS16-12225134" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/mactree-men-black-solid-formal-derbys/PPS16-12225134', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2019/7/22/6b6c88e1-f85c-4dfe-8437-711089eeed461563776474402-1.jpg" alt="MENGLER Men Navy Blue Colourblocked Sliders" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">80% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">MENGLER Men Navy Blue Colourblocked Sliders</h3>
+    <div class="deal-profit">💰 Earn ₹160 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹399</span><span class="deal-mrp">₹1,999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/mengler-men-navy-blue-colourblocked-sliders/PPS16-10309115" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/mengler-men-navy-blue-colourblocked-sliders/PPS16-10309115', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/9283371/2019/6/19/462f1b8c-31b7-415e-a4e7-78ef74c451181560926915454-Crew-STREET-Women-Sports-Shoes-9521560926914043-1.jpg" alt="Crew STREET Women Charcoal Grey Running Shoes" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">75% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Crew STREET Women Charcoal Grey Running Shoes</h3>
+    <div class="deal-profit">💰 Earn ₹285 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹949</span><span class="deal-mrp">₹3,799</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/crew-street-women-charcoal-grey-running-shoes/PPS16-9283371" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/crew-street-women-charcoal-grey-running-shoes/PPS16-9283371', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2019/10/1/3d4c01fd-b0b6-494d-8cd6-303c3da3e8c11569953602264-1.jpg" alt="Red Tape Men Navy Blue &amp; White Colourblocked Sneakers" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">71% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Red Tape Men Navy Blue &amp; White Colourblocked Sneakers</h3>
+    <div class="deal-profit">💰 Earn ₹404 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,651</span><span class="deal-mrp">₹5,695</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/red-tape-men-navy-blue-white-colourblocked-sneakers/PPS16-10761524" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/red-tape-men-navy-blue-white-colourblocked-sneakers/PPS16-10761524', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2019/9/16/b6e9ec7e-066f-4d79-be42-ad40937c4da31568610944855-1.jpg" alt="Sir Corbett Men Brown Textured Formal Slip-Ons" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">71% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Sir Corbett Men Brown Textured Formal Slip-Ons</h3>
+    <div class="deal-profit">💰 Earn ₹165 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹675</span><span class="deal-mrp">₹2,329</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/sir-corbett-men-brown-textured-formal-slip-ons/PPS16-10655628" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/sir-corbett-men-brown-textured-formal-slip-ons/PPS16-10655628', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1176380/2016/1/21/11453359502314-Sir-Corbett-Men-Formal-Shoes-331453359502232-1.jpg" alt="Sir Corbett Men Brown Semiformal Shoes" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">71% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Sir Corbett Men Brown Semiformal Shoes</h3>
+    <div class="deal-profit">💰 Earn ₹236 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹965</span><span class="deal-mrp">₹3,329</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/sir-corbett-men-brown-semiformal-shoes/PPS16-1176380" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/sir-corbett-men-brown-semiformal-shoes/PPS16-1176380', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/8/2/52e60082-9da8-4ebc-baa0-d4d5f61bfe171596317403382-1.jpg" alt="Red Tape Women Black Mesh Mid-Top Walking Shoes" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">71% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Red Tape Women Black Mesh Mid-Top Walking Shoes</h3>
+    <div class="deal-profit">💰 Earn ₹376 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,536</span><span class="deal-mrp">₹5,299</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/red-tape-women-black-mesh-mid-top-walking-shoes/PPS16-12164922" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/red-tape-women-black-mesh-mid-top-walking-shoes/PPS16-12164922', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1773093/2017/3/9/11489044660322-Mast--Harbour-Women-Black-Solid-Open-Toed-391489044660099-1.jpg" alt="Mast &amp; Harbour Women Black &amp; Silver-Toned Flats" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">70% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Mast &amp; Harbour Women Black &amp; Silver-Toned Flats</h3>
+    <div class="deal-profit">💰 Earn ₹119 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹509</span><span class="deal-mrp">₹1,699</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/mast-harbour-women-black-silver-toned-flats/PPS16-1773093" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/mast-harbour-women-black-silver-toned-flats/PPS16-1773093', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/20200923/HGOD/5f6b6c10aeb269d563c9226b/-473Wx593H-460526991-pink-MODEL.jpg" alt="Printed Toe-Ring Sandals" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">65% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Printed Toe-Ring Sandals</h3>
+    <div class="deal-profit">💰 Earn ₹129 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹698</span><span class="deal-mrp">₹1,995</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/printed-toe-ring-sandals/PPS17-460526991-pink" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/printed-toe-ring-sandals/PPS17-460526991-pink', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10591966/2019/9/27/71a7ccce-f8f9-44d4-9ecd-487959617e4b1569581408353-KazarMaxLadies-Sea-Green-Floral-Slipons-Walking-Sneakers-863-1.jpg" alt="KazarMax Women Green &amp; Pink Floral Print Taining Shoes" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">61% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">KazarMax Women Green &amp; Pink Floral Print Taining Shoes</h3>
+    <div class="deal-profit">💰 Earn ₹183 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,169</span><span class="deal-mrp">₹2,999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/kazarmax-women-green-pink-floral-print-taining-shoes/PPS16-10591966" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/kazarmax-women-green-pink-floral-print-taining-shoes/PPS16-10591966', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2019/8/7/f6a9b7a6-449d-4393-a5b0-e821f66a36f41565171798541-1.jpg" alt="Puma Men Black Mesh Running Shoes" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">60% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Puma Men Black Mesh Running Shoes</h3>
+    <div class="deal-profit">💰 Earn ₹258 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,719</span><span class="deal-mrp">₹4,299</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/puma-men-black-mesh-running-shoes/PPS16-10412562" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/puma-men-black-mesh-running-shoes/PPS16-10412562', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11418776/2020/5/22/9b43beb6-3c67-4dda-b431-89e57f2656ff1590153049134SportsSandalsPumaUnisexCasualShoesPumaUnisexCasualShoesPumaM1.jpg" alt="Puma Unisex Black Flare 2 Dash Shoes" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">60% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Puma Unisex Black Flare 2 Dash Shoes</h3>
+    <div class="deal-profit">💰 Earn ₹390 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹2,599</span><span class="deal-mrp">₹6,499</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/puma-unisex-black-flare-2-dash-shoes/PPS16-11418776" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/puma-unisex-black-flare-2-dash-shoes/PPS16-11418776', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2019/3/10/7b719cce-316f-45a9-af35-4ea19014640b1552178835031-1.jpg" alt="Puma Men Black Shadowshard IDP Asphalt Running Shoes" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">60% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Puma Men Black Shadowshard IDP Asphalt Running Shoes</h3>
+    <div class="deal-profit">💰 Earn ₹228 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,519</span><span class="deal-mrp">₹3,799</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/puma-men-black-shadowshard-idp-asphalt-running-shoes/PPS16-9005781" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/puma-men-black-shadowshard-idp-asphalt-running-shoes/PPS16-9005781', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/20200916/U70h/5f622bc3f997dd8c833fe8fc/-473Wx593H-460710400-beige-MODEL.jpg" alt="Embroidered Toe-Ring Flat Sandals" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">60% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Embroidered Toe-Ring Flat Sandals</h3>
+    <div class="deal-profit">💰 Earn ₹119 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹798</span><span class="deal-mrp">₹1,995</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/embroidered-toe-ring-flat-sandals/PPS17-460710400-beige" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/embroidered-toe-ring-flat-sandals/PPS17-460710400-beige', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11263316/2020/2/10/4de32d92-32d0-4834-ade2-a61293b86cdd1581325755340-DressBerry-Women-Red-Solid-Mid-Top-Open-Toe-Flats-2401581325-1.jpg" alt="DressBerry Women Red Solid Mid-Top Open Toe Flats" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">60% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">DressBerry Women Red Solid Mid-Top Open Toe Flats</h3>
+    <div class="deal-profit">💰 Earn ₹90 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹599</span><span class="deal-mrp">₹1,499</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/dressberry-women-red-solid-mid-top-open-toe-flats/PPS16-11263316" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/dressberry-women-red-solid-mid-top-open-toe-flats/PPS16-11263316', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/h9e/h38/14054968328222/-473Wx593H-460303159-green-OUTFIT.jpg" alt="Embellished Kolhapuri Sandals" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">58% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Embellished Kolhapuri Sandals</h3>
+    <div class="deal-profit">💰 Earn ₹110 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹798</span><span class="deal-mrp">₹1,899</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/embellished-kolhapuri-sandals/PPS17-460303159-green" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/embellished-kolhapuri-sandals/PPS17-460303159-green', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/hb6/h4e/14055060799518/-473Wx593H-460303152-gold-OUTFIT.jpg" alt="Embroidered Flat Sandals with Mirror-Work" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">57% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Embroidered Flat Sandals with Mirror-Work</h3>
+    <div class="deal-profit">💰 Earn ₹104 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹787</span><span class="deal-mrp">₹1,830</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/embroidered-flat-sandals-with-mirror-work/PPS17-460303152-gold" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/embroidered-flat-sandals-with-mirror-work/PPS17-460303152-gold', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11566112/2020/9/12/a8f50446-d407-4448-9caf-1fec550716941599892603350-HRX-by-Hrithik-Roshan-Women-Grey-Solid-Fly-Sneakers-55515998-1.jpg" alt="HRX by Hrithik Roshan Women Grey Solid Fly Sneakers" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">55% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">HRX by Hrithik Roshan Women Grey Solid Fly Sneakers</h3>
+    <div class="deal-profit">💰 Earn ₹264 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹2,159</span><span class="deal-mrp">₹4,799</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/hrx-by-hrithik-roshan-women-grey-solid-fly-sneakers/PPS16-11566112" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/hrx-by-hrithik-roshan-women-grey-solid-fly-sneakers/PPS16-11566112', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11335408/2020/5/22/49f24e9b-a6b6-4b10-9d12-5f403f04ff581590153082340SportsSandalsPumaUnisexCasualShoesPumaUnisexCasualShoesPumaM1.jpg" alt="Puma Men Black Mesh Propel 3D MU IDP Walking Shoes" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">50% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Puma Men Black Mesh Propel 3D MU IDP Walking Shoes</h3>
+    <div class="deal-profit">💰 Earn ₹200 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,999</span><span class="deal-mrp">₹3,999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/puma-men-black-mesh-propel-3d-mu-idp-walking-shoes/PPS16-11335408" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/puma-men-black-mesh-propel-3d-mu-idp-walking-shoes/PPS16-11335408', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2018/11/24/f43dc217-0ddd-4f0b-ab98-16861d77c0301543037779548-1.jpg" alt="Coral Sandals" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">50% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Coral Sandals</h3>
+    <div class="deal-profit">💰 Earn ₹64 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹647</span><span class="deal-mrp">₹1,295</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/coral-sandals/PPS16-7935335" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/coral-sandals/PPS16-7935335', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/ajio/catalog/5ef5d2c4aeb2693175808b22/-473Wx593H-461208038-rosegold-MODEL.jpg" alt="Embellished Criss Cross Wedges" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">50% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Embellished Criss Cross Wedges</h3>
+    <div class="deal-profit">💰 Earn ₹74 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹750</span><span class="deal-mrp">₹1,499</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/embellished-criss-cross-wedges/PPS17-461208038-rosegold" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/embellished-criss-cross-wedges/PPS17-461208038-rosegold', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/h5e/he6/13801202384926/-473Wx593H-460444139-black-MODEL.jpg" alt="Dragon Textured Lace-Up Sports Shoes" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">49% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Dragon Textured Lace-Up Sports Shoes</h3>
+    <div class="deal-profit">💰 Earn ₹122 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,274</span><span class="deal-mrp">₹2,499</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/dragon-textured-lace-up-sports-shoes/PPS17-460444139-black" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/dragon-textured-lace-up-sports-shoes/PPS17-460444139-black', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/6995119/2018/8/14/10dd2b04-248e-4480-9c3a-fb79e944e7931534240834501-Woodland-Men-Casual-Shoes-2761534240834379-1.jpg" alt="Woodland ProPlanet Men Olive Green Nubuck Leather Sneakers" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">35% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Woodland ProPlanet Men Olive Green Nubuck Leather Sneakers</h3>
+    <div class="deal-profit">💰 Earn ₹122 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹2,271</span><span class="deal-mrp">₹3,495</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/woodland-proplanet-men-olive-green-nubuck-leather-sneakers/PPS16-6995119" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/woodland-proplanet-men-olive-green-nubuck-leather-sneakers/PPS16-6995119', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11938668/2020/6/13/0d7c7d96-2471-4c29-b4ae-c3741daf04551592060453897Pumablue1.jpg" alt="Puma Men Navy Blue Supernal NU 2 IDP Running Shoes" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">35% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Puma Men Navy Blue Supernal NU 2 IDP Running Shoes</h3>
+    <div class="deal-profit">💰 Earn ₹105 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,949</span><span class="deal-mrp">₹2,999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/puma-men-navy-blue-supernal-nu-2-idp-running-shoes/PPS16-11938668" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/puma-men-navy-blue-supernal-nu-2-idp-running-shoes/PPS16-11938668', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/6995115/2018/9/7/27ecca86-a56d-4374-b558-0ed6659080441536304191235-Woodland-Men-Olive-Green-Sneakers-6431536304190014-1.jpg" alt="Woodland Men GC  Khaki Sneakers" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">30% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Woodland Men GC  Khaki Sneakers</h3>
+    <div class="deal-profit">💰 Earn ₹113 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹2,656</span><span class="deal-mrp">₹3,795</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/woodland-men-gc-khaki-sneakers/PPS16-6995115" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/woodland-men-gc-khaki-sneakers/PPS16-6995115', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/h2d/hf7/16910086373406/-473Wx593H-461193414-brown-MODEL.jpg" alt="Textured Wedges with Embellishments" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">30% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Textured Wedges with Embellishments</h3>
+    <div class="deal-profit">💰 Earn ₹30 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹699</span><span class="deal-mrp">₹999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/textured-wedges-with-embellishments/PPS17-461193414-brown" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/textured-wedges-with-embellishments/PPS17-461193414-brown', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10253247/2019/10/31/461ebb5e-ef53-40a7-9318-1f5c73a424881572516013576-Puma-Women-Urban-Graphicster-Sneakers-6871572516010915-1.jpg" alt="Puma Women Urban Graphicster Sneakers" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">30% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Puma Women Urban Graphicster Sneakers</h3>
+    <div class="deal-profit">💰 Earn ₹90 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹2,099</span><span class="deal-mrp">₹2,999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/puma-women-urban-graphicster-sneakers/PPS16-10253247" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/puma-women-urban-graphicster-sneakers/PPS16-10253247', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/h89/h8a/16938716168222/-473Wx593H-461193515-black-MODEL.jpg" alt="Textured Pumps" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">30% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Textured Pumps</h3>
+    <div class="deal-profit">💰 Earn ₹30 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹699</span><span class="deal-mrp">₹999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/textured-pumps/PPS17-461193515-black" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/textured-pumps/PPS17-461193515-black', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/8/8/689260db-3a19-4604-ae71-19eb11efcd6c1596838453206-1.jpg" alt="Puma Unisex Black Flex Renew Sneakers" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">30% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Puma Unisex Black Flex Renew Sneakers</h3>
+    <div class="deal-profit">💰 Earn ₹120 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹2,799</span><span class="deal-mrp">₹3,999</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/puma-unisex-black-flex-renew-sneakers/PPS16-12210042" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/puma-unisex-black-flex-renew-sneakers/PPS16-12210042', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/h6e/h43/15936096698398/-473Wx593H-450134223-black-MODEL.jpg" alt="Washable Slip-On Shoes" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">25% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Washable Slip-On Shoes</h3>
+    <div class="deal-profit">💰 Earn ₹20 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹599</span><span class="deal-mrp">₹799</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/washable-slip-on-shoes/PPS17-450134223-black" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/washable-slip-on-shoes/PPS17-450134223-black', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/7/1/b46c9a8c-4d59-48ba-a0c3-7a4367089baf1593554765361-1.jpg" alt="Saint G Women Navy Blue Solid Leather Formal Penny Loafers" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">20% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Saint G Women Navy Blue Solid Leather Formal Penny Loafers</h3>
+    <div class="deal-profit">💰 Earn ₹140 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹5,600</span><span class="deal-mrp">₹7,000</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/saint-g-women-navy-blue-solid-leather-formal-penny-loafers/PPS16-12018524" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/saint-g-women-navy-blue-solid-leather-formal-penny-loafers/PPS16-12018524', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2019/12/24/168cd505-3ac2-4902-bf90-736c3592e38d1577139974140-1.jpg" alt="Chumbak Women Brown &amp; White Comfort Sandals" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">20% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Chumbak Women Brown &amp; White Comfort Sandals</h3>
+    <div class="deal-profit">💰 Earn ₹33 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,356</span><span class="deal-mrp">₹1,695</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/chumbak-women-brown-white-comfort-sandals/PPS16-11226568" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/chumbak-women-brown-white-comfort-sandals/PPS16-11226568', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/ajio/catalog/5f15fe7f7cdb8c721b8065ea/-473Wx593H-461327981-navy-MODEL.jpg" alt="Sports Shoes with Lace Fastening" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Sports Shoes with Lace Fastening</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹999</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/sports-shoes-with-lace-fastening/PPS17-461327981-navy" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/sports-shoes-with-lace-fastening/PPS17-461327981-navy', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/ha9/h84/12857529729054/-473Wx593H-460312101-red-MODEL.jpg" alt="Printed Lace-Up Casual Shoes" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Printed Lace-Up Casual Shoes</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹2,699</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/printed-lace-up-casual-shoes/PPS17-460312101-red" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/printed-lace-up-casual-shoes/PPS17-460312101-red', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/h4e/hf9/13292105859102/-473Wx593H-450125212-gryblk-MODEL.jpg" alt="Thong-Strap Flip Flops" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Thong-Strap Flip Flops</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹699</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/thong-strap-flip-flops/PPS17-450125212-gryblk" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/thong-strap-flip-flops/PPS17-450125212-gryblk', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/hef/hda/13079502389278/-473Wx593H-450126744-black-OUTFIT.jpg" alt="Textured Lace-Up Formal Shoes" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Textured Lace-Up Formal Shoes</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹2,995</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/textured-lace-up-formal-shoes/PPS17-450126744-black" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/textured-lace-up-formal-shoes/PPS17-450126744-black', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/h2c/hc8/13540644552734/-473Wx593H-460410035-navyblue-MODEL.jpg" alt="Textured Low-Top Slip-Ons" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Textured Low-Top Slip-Ons</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹3,699</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/textured-low-top-slip-ons/PPS17-460410035-navyblue" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/textured-low-top-slip-ons/PPS17-460410035-navyblue', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/h44/h66/13292671303710/-473Wx593H-450125207-blkpea-OUTFIT.jpg" alt="Printed Thong-Strap Flip-Flops" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Printed Thong-Strap Flip-Flops</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹799</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/printed-thong-strap-flip-flops/PPS17-450125207-blkpea" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/printed-thong-strap-flip-flops/PPS17-450125207-blkpea', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/20200904/4uFC/5f51386b7cdb8c76629335be/-473Wx593H-450132678-teak-MODEL.jpg" alt="Textured Apron-Toe Slip-On Shoes" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Textured Apron-Toe Slip-On Shoes</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹3,595</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/textured-apron-toe-slip-on-shoes/PPS17-450132678-teak" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/textured-apron-toe-slip-on-shoes/PPS17-450132678-teak', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11790178/2020/4/9/b14d034e-7646-4a45-81b0-eaa24e7fdcd21586417818520RedTapeMenBlackFlatBoots1.jpg" alt="Red Tape Men Black Solid Leather High-Top Flat Boots" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Red Tape Men Black Solid Leather High-Top Flat Boots</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹9,199</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/red-tape-men-black-solid-leather-high-top-flat-boots/PPS16-11790178" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/red-tape-men-black-solid-leather-high-top-flat-boots/PPS16-11790178', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/20200728/DD6b/5f1f28a77cdb8c2207862a36/-473Wx593H-460570925-black-MODEL.jpg" alt="Bonn Lace-Up Sneakers with Contrast Taping" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Bonn Lace-Up Sneakers with Contrast Taping</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹2,999</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/bonn-lace-up-sneakers-with-contrast-taping/PPS17-460570925-black" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/bonn-lace-up-sneakers-with-contrast-taping/PPS17-460570925-black', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/20200725/elGK/5f1b433baeb269f5fee61cd0/-473Wx593H-461330889-black-MODEL.jpg" alt="Embellished Round Toe Mules" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Embellished Round Toe Mules</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹999</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/embellished-round-toe-mules/PPS17-461330889-black" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/embellished-round-toe-mules/PPS17-461330889-black', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2020/9/5/efec3835-1dc4-4531-b514-03ebaba11c731599257297392-1.jpg" alt="Hush Puppies Women White Sandals" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Hush Puppies Women White Sandals</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹1,999</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/hush-puppies-women-white-sandals/PPS16-12408796" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/hush-puppies-women-white-sandals/PPS16-12408796', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/h42/h34/14860300845086/-473Wx593H-460524199-lightgrey-OUTFIT.jpg" alt="Textured Lace-Up Low-Top Sports Shoes" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Textured Lace-Up Low-Top Sports Shoes</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹1,699</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/textured-lace-up-low-top-sports-shoes/PPS17-460524199-lightgrey" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/textured-lace-up-low-top-sports-shoes/PPS17-460524199-lightgrey', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/20200918/Jr1o/5f64d6e8aeb269d563c54000/-473Wx593H-460701124-camel-MODEL.jpg" alt="Pointed-Toe Slip-On Ballerinas" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Pointed-Toe Slip-On Ballerinas</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹1,299</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/pointed-toe-slip-on-ballerinas/PPS17-460701124-camel" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/pointed-toe-slip-on-ballerinas/PPS17-460701124-camel', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/hea/h31/13685753085982/-473Wx593H-450127670-blkgry-MODEL.jpg" alt="Washable Panelled Lace-Up Sports Shoes" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Washable Panelled Lace-Up Sports Shoes</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹1,499</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/washable-panelled-lace-up-sports-shoes/PPS17-450127670-blkgry" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/washable-panelled-lace-up-sports-shoes/PPS17-450127670-blkgry', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.ajio.com/medias/sys_master/root/20200922/fTrd/5f68f24df997dd8c8347df24/-473Wx593H-460705671-black-MODEL.jpg" alt="Toe-Ring Flat Sandals" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Toe-Ring Flat Sandals</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹1,695</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/toe-ring-flat-sandals/PPS17-460705671-black" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/toe-ring-flat-sandals/PPS17-460705671-black', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div></div>
+  <div class="no-results" id="noResults">😕 No deals found.</div>
+</section>
+
+<section class="container"><div class="tg-banner"><h3>Never Miss a 90% Price Drop</h3><p>Get instant price glitch alerts & Under ₹99 steals before they sell out.</p><a href="https://t.me/Under99LootDeals_bot" target="_blank" class="tg-btn">⚡ Open @Under99LootDeals_bot</a></div></section>
+<footer><div class="container">© 2026 BigRedHub · Deals sourced live from EarnKaro · Affiliate disclosure: We earn a commission on qualifying purchases.</div></footer>
+<div id="toast"></div><script>
+function showToast(m){const t=document.getElementById('toast');t.innerText=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2200)}
+function copyLink(url,btn){navigator.clipboard.writeText(url).then(()=>{const o=btn.innerText;btn.innerText='✓ COPIED';btn.classList.add('copied');showToast('EarnKaro link copied! Paste anywhere to share');setTimeout(()=>{btn.innerText=o;btn.classList.remove('copied')},2000)})}
+function initSlider(){const slides=document.querySelectorAll('.slide');if(!slides.length)return;let i=0;slides[0].classList.add('on');const dots=document.querySelectorAll('.dot');if(dots[0])dots[0].classList.add('on');setInterval(()=>{slides[i].classList.remove('on');if(dots[i])dots[i].classList.remove('on');i=(i+1)%slides.length;slides[i].classList.add('on');if(dots[i])dots[i].classList.add('on')},3500)}
+function setupSearch(){const inp=document.getElementById('searchInput');if(!inp)return;inp.addEventListener('input',e=>{const q=e.target.value.toLowerCase().trim();let n=0;document.querySelectorAll('.deal-card').forEach(c=>{const ok=!q||(c.dataset.q||'').includes(q);c.style.display=ok?'block':'none';if(ok)n++});const nr=document.getElementById('noResults');if(nr)nr.style.display=n?'none':'block'})}
+initSlider();setupSearch();
+</script></body></html>

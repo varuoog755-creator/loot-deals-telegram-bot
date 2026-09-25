@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Watches &amp; Accessories Deals — BigRedHub | Up to 67% OFF</title><meta name="description" content="21 live Watches &amp; Accessories deals from EarnKaro with direct affiliate links.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-font-smoothing:antialiased}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#fff;color:#000;line-height:1.5}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid #e5e7eb;z-index:100}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-size:19px;font-weight:900;color:#000;text-decoration:none}
+.brand-badge{background:#000;color:#fff;font-size:9px;font-weight:800;padding:3px 8px;border-radius:20px;margin-left:8px}
+.header-btn{background:#000;color:#fff;text-decoration:none;font-size:12.5px;font-weight:700;padding:8px 16px;border-radius:20px;white-space:nowrap}
+nav.topnav{border-bottom:1px solid #f1f5f9;background:#fff;position:sticky;top:60px;z-index:99}
+.nav-scroll{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;padding:8px 0}
+.nav-scroll::-webkit-scrollbar{display:none}
+.nav-link{font-size:13px;font-weight:700;color:#6b7280;text-decoration:none;padding:7px 14px;border-radius:18px;white-space:nowrap}
+.nav-link.active,.nav-link:hover{background:#000;color:#fff}
+.hero{position:relative;max-width:1200px;margin:20px auto 0;padding:0 20px}
+.slider{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:16/6;background:#f9fafb}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity .6s}
+.slide.on{opacity:1}
+.slide img{width:100%;height:100%;object-fit:cover}
+.slider-dots{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);display:flex;gap:6px;z-index:5}
+.dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.6);cursor:pointer}
+.dot.on{background:#000}
+.section{padding:32px 0}
+.section-title{font-size:clamp(22px,3vw,30px);font-weight:900;letter-spacing:-.7px;margin-bottom:4px}
+.section-sub{color:#6b7280;font-size:13.5px;margin-bottom:20px;font-weight:500}
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.cat-card{position:relative;height:120px;border-radius:12px;overflow:hidden;background:#000;text-decoration:none;display:flex;flex-direction:column;justify-content:flex-end;padding:14px;border:1px solid #e5e7eb;transition:.25s}
+.cat-card:hover{transform:translateY(-3px)}
+.cat-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;padding:12px;opacity:.9;transition:.25s}
+.cat-ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.85) 0%,rgba(255,255,255,0) 55%)}
+.cat-cnt{position:relative;z-index:2}
+.cat-nm{font-size:14.5px;font-weight:900;color:#000}
+.cat-n-off{font-size:11.5px;font-weight:700;color:#16a34a}
+.store-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:12px}
+.store-card{background:#fff;border:1.5px solid #e5e7eb;border-radius:12px;padding:18px 10px;display:flex;flex-direction:column;align-items:center;gap:10px;text-decoration:none;transition:.25s}
+.store-card:hover{border-color:#000;transform:translateY(-3px)}
+.store-card img{max-width:100%;height:44px;object-fit:contain}
+.store-card span{font-size:12.5px;font-weight:800;color:#000}
+.tile-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.tile{border:1.5px solid #e5e7eb;border-radius:12px;overflow:hidden;text-decoration:none;display:block;transition:.25s;background:#fff}
+.tile:hover{border-color:#000;transform:translateY(-3px)}
+.tile img{width:100%;height:120px;object-fit:cover}
+.tile span{display:block;padding:10px 12px;font-size:13px;font-weight:800;color:#000}
+.deals-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+.deal-card{background:#fff;border:1.5px solid #e5e7eb;border-radius:12px;overflow:hidden;transition:.25s}
+.deal-card:hover{transform:translateY(-4px);border-color:#000;box-shadow:0 12px 24px rgba(0,0,0,.08)}
+.deal-img-wrap{position:relative;width:100%;height:220px;background:#fff;overflow:hidden}
+.deal-img{width:100%;height:100%;object-fit:contain;transition:.3s;padding:8px}
+.deal-card:hover .deal-img{transform:scale(1.05)}
+.deal-discount{position:absolute;top:10px;right:10px;background:#ef4444;color:#fff;font-size:11px;font-weight:900;padding:4px 10px;border-radius:20px}
+.deal-body{padding:14px 16px 16px}
+.deal-title{font-size:13.5px;font-weight:800;line-height:1.35;margin-bottom:8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:37px}
+.deal-profit{display:inline-flex;background:#fef3c7;color:#92400e;font-size:10.5px;font-weight:800;padding:3px 8px;border-radius:6px;margin-bottom:10px}
+.deal-price-row{display:flex;align-items:baseline;gap:10px;margin-bottom:12px}
+.deal-price{font-size:20px;font-weight:900}
+.deal-mrp{font-size:13px;color:#9ca3af;text-decoration:line-through;font-weight:600}
+.deal-btns{display:flex;flex-direction:column;gap:8px}
+.deal-btn{display:flex;align-items:center;justify-content:center;width:100%;height:40px;background:#000;color:#fff;text-decoration:none;font-size:13px;font-weight:800;border-radius:8px;transition:.2s}
+.deal-btn:hover{background:#16a34a}
+.copy-link-btn{display:flex;align-items:center;justify-content:center;width:100%;height:36px;background:#fff;color:#000;border:1.5px solid #000;font-size:12px;font-weight:800;border-radius:8px;cursor:pointer;transition:.2s;font-family:inherit}
+.copy-link-btn:hover{background:#f1f5f9}
+.copy-link-btn.copied{background:#16a34a;color:#fff;border-color:#16a34a}
+.page-banner{max-width:1200px;margin:20px auto 0;padding:0 20px}
+.page-banner img{width:100%;height:180px;object-fit:contain;background:#f9fafb;border:1px solid #e5e7eb;border-radius:14px;padding:14px}
+.tg-banner{background:#0a0e1a;border-radius:16px;padding:36px 28px;text-align:center;margin:36px 0;color:#fff}
+.tg-banner h3{font-size:clamp(20px,3vw,28px);font-weight:900;margin-bottom:10px}
+.tg-banner p{color:#9ca3af;max-width:540px;margin:0 auto 22px;font-size:14px}
+.tg-btn{display:inline-flex;background:#0088cc;color:#fff;text-decoration:none;font-size:14px;font-weight:800;padding:12px 24px;border-radius:20px}
+footer{border-top:1px solid #e5e7eb;padding:26px 0;text-align:center;color:#6b7280;font-size:13px;background:#f9fafb;margin-top:20px}
+#toast{position:fixed;bottom:30px;left:50%;transform:translateX(-50%) translateY(80px);background:#000;color:#fff;padding:12px 24px;border-radius:20px;font-size:13px;font-weight:800;opacity:0;transition:.3s;z-index:1000;pointer-events:none}
+#toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+.no-results{display:none;text-align:center;padding:40px;color:#6b7280;font-weight:700}
+.search-bar{max-width:620px;margin:0 auto;height:50px;border:2px solid #e5e7eb;border-radius:25px;padding:0 20px;font-size:15px;font-family:inherit;outline:none;width:100%;display:block}
+.search-bar:focus{border-color:#000}
+@media(max-width:768px){.deals-grid{grid-template-columns:repeat(2,1fr);gap:12px}.deal-img-wrap{height:160px}.deal-title{font-size:12px}.deal-price{font-size:16px}.deal-btn{height:36px;font-size:11.5px}.copy-link-btn{height:32px;font-size:11px}.slider{aspect-ratio:16/9}.cat-grid{grid-template-columns:repeat(2,1fr)}}
+</style></head><body>
+<header><div class="container"><div class="header-inner">
+<a href="index.html" class="brand">⚡ BigRedHub<span class="brand-badge">LIVE</span></a>
+<a href="https://t.me/Under99LootDeals_bot" target="_blank" class="header-btn">Telegram Bot</a>
+</div></div></header>
+<nav class="topnav"><div class="container"><div class="nav-scroll"><a href="index.html" class="nav-link">🏠 Home</a><a href="audio.html" class="nav-link">🎧 Audio & Headphones</a><a href="electronics.html" class="nav-link">🔌 Power Banks & Electronics</a><a href="men-fashion.html" class="nav-link">👔 Men's Fashion</a><a href="women-fashion.html" class="nav-link">👗 Women's Fashion</a><a href="footwear.html" class="nav-link">👟 Footwear</a><a href="beauty.html" class="nav-link">💄 Beauty</a><a href="watches.html" class="nav-link active">⌚ Watches & Accessories</a><a href="home-kitchen.html" class="nav-link">🏠 Home & Kitchen</a></div></div></nav>
+<div class="page-banner"><img src="https://asset21.ckassets.com/resources/image/category/watches-3364-1607090111.png" alt="Watches & Accessories" loading="eager"></div>
+<section class="section container">
+  <h2 class="section-title">⌚ Watches &amp; Accessories</h2>
+  <p class="section-sub">21 live deals · sorted by biggest discount · direct EarnKaro links</p>
+  <input type="text" id="searchInput" class="search-bar" placeholder="Search in Watches &amp; Accessories..." style="margin-bottom:22px">
+  <div class="deals-grid"><div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2019/8/13/d0b409db-5c25-4798-8caa-bc211aa8db6f1565720852592-1.jpg" alt="MONTVITTON Men Black Analogue Watch MV11060" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">67% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">MONTVITTON Men Black Analogue Watch MV11060</h3>
+    <div class="deal-profit">💰 Earn ₹80 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹395</span><span class="deal-mrp">₹1,199</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/montvitton-men-black-analogue-watch-mv11060/PPS16-10454392" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/montvitton-men-black-analogue-watch-mv11060/PPS16-10454392', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2278227/2018/4/5/11522921945738-DressBerry-Women-Watches-5181522921945628-1.jpg" alt="DressBerry Women Grey Analogue Watch" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">60% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">DressBerry Women Grey Analogue Watch</h3>
+    <div class="deal-profit">💰 Earn ₹186 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,239</span><span class="deal-mrp">₹3,099</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/dressberry-women-grey-analogue-watch/PPS16-2278227" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/dressberry-women-grey-analogue-watch/PPS16-2278227', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1184986/2017/3/1/11488367811013-DressBerry-Women-Navy-Embellished-Dial-Watch-MFBTMLDBA7-5071488367810738-1.jpg" alt="DressBerry Women Navy Embellished Dial Watch MFBTMLDBA7" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">55% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">DressBerry Women Navy Embellished Dial Watch MFBTMLDBA7</h3>
+    <div class="deal-profit">💰 Earn ₹181 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹1,484</span><span class="deal-mrp">₹3,299</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/dressberry-women-navy-embellished-dial-watch-mfbtmldba7/PPS16-1184986" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/dressberry-women-navy-embellished-dial-watch-mfbtmldba7/PPS16-1184986', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/productimage/2018/11/24/24e1c28a-f3e3-4549-baba-69a1427d22411543054029218-1.jpg" alt="Black\u002FOff white Analogue Watch" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">51% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Black\u002FOff white Analogue Watch</h3>
+    <div class="deal-profit">💰 Earn ₹216 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹2,082</span><span class="deal-mrp">₹4,250</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/black-u002foff-white-analogue-watch/PPS16-7954411" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/black-u002foff-white-analogue-watch/PPS16-7954411', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2466435/2020/2/27/0b8e7b6b-f912-4f82-9536-80544b9127631582784256862-Daniel-Klein-Women-Black-Analogue-Watch-DK11421-5-1721582784-1.jpg" alt="Daniel Klein Women Black Analogue Watch DK11421-5" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">50% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Daniel Klein Women Black Analogue Watch DK11421-5</h3>
+    <div class="deal-profit">💰 Earn ₹207 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹2,075</span><span class="deal-mrp">₹4,150</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/daniel-klein-women-black-analogue-watch-dk11421-5/PPS16-2466435" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/daniel-klein-women-black-analogue-watch-dk11421-5/PPS16-2466435', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2227402/2020/2/19/90a13bd4-b6f7-48f2-b48d-f082f1f3982f1582111064316-Daniel-Klein-Women-White--Rose-Gold-Toned-Analogue-Watch-DK1-1.jpg" alt="Daniel Klein Women White &amp; Rose Gold-Toned Analogue Watch DK11540-3" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">50% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Daniel Klein Women White &amp; Rose Gold-Toned Analogue Watch DK11540-3</h3>
+    <div class="deal-profit">💰 Earn ₹295 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹2,950</span><span class="deal-mrp">₹5,900</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/daniel-klein-women-white-rose-gold-toned-analogue-watch-dk11540-3/PPS16-2227402" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/daniel-klein-women-white-rose-gold-toned-analogue-watch-dk11540-3/PPS16-2227402', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8481615/2020/1/30/7a5b4069-a5a7-4083-8207-0ec72a03133f1580384763087-French-Connection-Women-Black-Analogue-Watch-FCN0001D-157158-1.jpg" alt="French Connection Women Black Analogue Watch FCN0001D" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">50% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">French Connection Women Black Analogue Watch FCN0001D</h3>
+    <div class="deal-profit">💰 Earn ₹347 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹3,475</span><span class="deal-mrp">₹6,950</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/french-connection-women-black-analogue-watch-fcn0001d/PPS16-8481615" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/french-connection-women-black-analogue-watch-fcn0001d/PPS16-8481615', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/10317185/2019/10/11/1736a2b6-6c9b-4b8e-a64c-89a3e7dd6d1b1570775716492-French-Connection-Women-Rose-Gold-Toned-Analogue-Watch-FCN00-1.jpg" alt="French Connection Women Rose Gold-Toned Analogue Watch FCN0001F" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">50% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">French Connection Women Rose Gold-Toned Analogue Watch FCN0001F</h3>
+    <div class="deal-profit">💰 Earn ₹347 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹3,475</span><span class="deal-mrp">₹6,950</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/french-connection-women-rose-gold-toned-analogue-watch-fcn0001f/PPS16-10317185" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/french-connection-women-rose-gold-toned-analogue-watch-fcn0001f/PPS16-10317185', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/9767519/2019/6/7/fd510449-a196-4150-b789-6bcd007b1eb51559905181612-Daniel-Klein-Men-Black-Analogue-Watch-6061559905180813-1.jpg" alt="Daniel Klein Men Black Analogue Watch DK12121-2" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">45% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Daniel Klein Men Black Analogue Watch DK12121-2</h3>
+    <div class="deal-profit">💰 Earn ₹234 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹2,860</span><span class="deal-mrp">₹5,200</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/daniel-klein-men-black-analogue-watch-dk12121-2/PPS16-9767519" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/daniel-klein-men-black-analogue-watch-dk12121-2/PPS16-9767519', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8481593/2019/1/24/a82305f2-c8f9-4b82-885c-1e9d9c91a80c1548330419133-French-Connection-Women-Rose-Gold-Analogue-Watch-55515483304-1.jpg" alt="French Connection Women Rose Gold-Toned Analogue Watch FCN0001A" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">45% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">French Connection Women Rose Gold-Toned Analogue Watch FCN0001A</h3>
+    <div class="deal-profit">💰 Earn ₹281 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹3,437</span><span class="deal-mrp">₹6,250</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/french-connection-women-rose-gold-toned-analogue-watch-fcn0001a/PPS16-8481593" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/french-connection-women-rose-gold-toned-analogue-watch-fcn0001a/PPS16-8481593', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/1620103/2019/2/5/dd74b71c-88df-476a-8dca-a368f67241a91549348772977-Daniel-Klein-Premium-Women-Silver-Toned-Dial-Watch-DK11138-2-1.jpg" alt="Daniel Klein Premium Women Silver-Toned Dial Watch DK11138-2" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">45% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Daniel Klein Premium Women Silver-Toned Dial Watch DK11138-2</h3>
+    <div class="deal-profit">💰 Earn ₹274 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹3,355</span><span class="deal-mrp">₹6,100</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/daniel-klein-premium-women-silver-toned-dial-watch-dk11138-2/PPS16-1620103" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/daniel-klein-premium-women-silver-toned-dial-watch-dk11138-2/PPS16-1620103', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8481607/2019/10/11/9756b34f-5532-4806-9ec1-83b407cddff01570778058016-French-Connection-Women-Blue-Analogue-Watch-FCN0001C-5801570-1.jpg" alt="French Connection Women Blue Analogue Watch FCN0001C" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">45% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">French Connection Women Blue Analogue Watch FCN0001C</h3>
+    <div class="deal-profit">💰 Earn ₹312 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹3,822</span><span class="deal-mrp">₹6,950</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/french-connection-women-blue-analogue-watch-fcn0001c/PPS16-8481607" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/french-connection-women-blue-analogue-watch-fcn0001c/PPS16-8481607', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12360836/2020/9/8/64dec79a-5a80-4f27-9812-d6a5980745371599573312891-French-Connection-Women-Rose-Gold-Analogue-Watch-39015995733-1.jpg" alt="French Connection Women Rose Gold Analogue Watch FC150RGM" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">45% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">French Connection Women Rose Gold Analogue Watch FC150RGM</h3>
+    <div class="deal-profit">💰 Earn ₹335 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹4,097</span><span class="deal-mrp">₹7,450</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/french-connection-women-rose-gold-analogue-watch-fc150rgm/PPS16-12360836" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/french-connection-women-rose-gold-analogue-watch-fc150rgm/PPS16-12360836', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/3450317/2018/3/26/11522063067299-Daniel-Klein-Women-Silver-Toned-Analogue-Watch-DK11328-3-4151522063067176-1.jpg" alt="Daniel Klein Women Silver-Toned Analogue Watch DK11328-3" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">42% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Daniel Klein Women Silver-Toned Analogue Watch DK11328-3</h3>
+    <div class="deal-profit">💰 Earn ₹249 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹3,451</span><span class="deal-mrp">₹5,950</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/daniel-klein-women-silver-toned-analogue-watch-dk11328-3/PPS16-3450317" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/daniel-klein-women-silver-toned-analogue-watch-dk11328-3/PPS16-3450317', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2466434/2020/3/4/7b2d4962-fba0-4e7b-bc1b-08a75372f60e1583323781614-Daniel-Klein-Women-Navy-Blue-Analogue-Watch-DK11421-7-167158-1.jpg" alt="Daniel Klein Women Navy Blue Analogue Watch DK11421-7" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">40% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Daniel Klein Women Navy Blue Analogue Watch DK11421-7</h3>
+    <div class="deal-profit">💰 Earn ₹166 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹2,490</span><span class="deal-mrp">₹4,150</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/daniel-klein-women-navy-blue-analogue-watch-dk11421-7/PPS16-2466434" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/daniel-klein-women-navy-blue-analogue-watch-dk11421-7/PPS16-2466434', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8986217/2019/4/11/8f41d3a8-6ece-4bc1-8e42-307725754c1c1554986026160-Fossil-Women-Rose-Gold-Analogue-Watch-AM4483-361155498602492-1.jpg" alt="Fossil CECILE Women Rose Gold Analogue Watch AM4483" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">40% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Fossil CECILE Women Rose Gold Analogue Watch AM4483</h3>
+    <div class="deal-profit">💰 Earn ₹499 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹7,497</span><span class="deal-mrp">₹12,495</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/fossil-cecile-women-rose-gold-analogue-watch-am4483/PPS16-8986217" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/fossil-cecile-women-rose-gold-analogue-watch-am4483/PPS16-8986217', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/11059918/2020/2/12/ce4d8226-32a8-4a7d-aa99-f959f6a6f9081581496715516-Daniel-Klein-Men-Grey-Analogue-Watch-DK112349-5-121158149671-1.jpg" alt="Daniel Klein Men Grey Analogue Watch DK.1.12349-5" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">37% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Daniel Klein Men Grey Analogue Watch DK.1.12349-5</h3>
+    <div class="deal-profit">💰 Earn ₹183 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹3,118</span><span class="deal-mrp">₹4,950</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/daniel-klein-men-grey-analogue-watch-dk-1-12349-5/PPS16-11059918" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/daniel-klein-men-grey-analogue-watch-dk-1-12349-5/PPS16-11059918', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/9767351/2019/6/6/2713eb6f-9bcc-4eb6-a1df-e2fea92cb5271559823606578-Daniel-Klein-Men-Watches-2731559823606054-1.jpg" alt="Daniel Klein Premium Men Black &amp; Silver-Toned Analogue Watch 12155-2" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">36% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Daniel Klein Premium Men Black &amp; Silver-Toned Analogue Watch 12155-2</h3>
+    <div class="deal-profit">💰 Earn ₹160 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹2,848</span><span class="deal-mrp">₹4,450</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/daniel-klein-premium-men-black-silver-toned-analogue-watch-12155-2/PPS16-9767351" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/daniel-klein-premium-men-black-silver-toned-analogue-watch-12155-2/PPS16-9767351', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/12360894/2020/9/8/781783c4-bc39-4b69-81f4-5093c4e3489b1599567046997-French-Connection-Rose-Gold-Sunray-Analogue-Women-Watches----1.jpg" alt="French Connection Women Rose Gold Analogue Watch FCL0001A" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">35% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">French Connection Women Rose Gold Analogue Watch FCL0001A</h3>
+    <div class="deal-profit">💰 Earn ₹243 Profit</div>
+    <div class="deal-price-row"><span class="deal-price">₹4,517</span><span class="deal-mrp">₹6,950</span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/french-connection-women-rose-gold-analogue-watch-fcl0001a/PPS16-12360894" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/french-connection-women-rose-gold-analogue-watch-fcl0001a/PPS16-12360894', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/2259073/2017/11/28/11511846695874-Fastrack-Women-Green-Analogue-Watch-6561511846695804-1.jpg" alt="Fastrack Women Green Analogue Watch NJ6078SM01C" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Fastrack Women Green Analogue Watch NJ6078SM01C</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹2,750</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/fastrack-women-green-analogue-watch-nj6078sm01c/PPS16-2259073" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/fastrack-women-green-analogue-watch-nj6078sm01c/PPS16-2259073', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div>
+<div class="deal-card">
+  <div class="deal-img-wrap"><img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/5972235/2018/5/30/f7989ecf-a1a6-4b93-8416-345508b4dd9c1527682408152-Daniel-Klein-Women-Silver-Toned-Analogue-Watch-6401527682407982-1.jpg" alt="Daniel Klein Fiord Women Silver-Toned Analogue Watch DK11695-2" class="deal-img" loading="lazy" onerror="this.src='https://asset21.ckassets.com/resources/image/stores/no-image.jpg'"><span class="deal-discount">% OFF</span></div>
+  <div class="deal-body">
+    <h3 class="deal-title">Daniel Klein Fiord Women Silver-Toned Analogue Watch DK11695-2</h3>
+    
+    <div class="deal-price-row"><span class="deal-price">₹4,500</span><span class="deal-mrp"></span></div>
+    <div class="deal-btns">
+      <a href="https://earnkaro.com/daniel-klein-fiord-women-silver-toned-analogue-watch-dk11695-2/PPS16-5972235" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
+      <button class="copy-link-btn" onclick="copyLink('https://earnkaro.com/daniel-klein-fiord-women-silver-toned-analogue-watch-dk11695-2/PPS16-5972235', this)">📋 COPY LINK</button>
+    </div>
+  </div>
+</div></div>
+  <div class="no-results" id="noResults">😕 No deals found.</div>
+</section>
+
+<section class="container"><div class="tg-banner"><h3>Never Miss a 90% Price Drop</h3><p>Get instant price glitch alerts & Under ₹99 steals before they sell out.</p><a href="https://t.me/Under99LootDeals_bot" target="_blank" class="tg-btn">⚡ Open @Under99LootDeals_bot</a></div></section>
+<footer><div class="container">© 2026 BigRedHub · Deals sourced live from EarnKaro · Affiliate disclosure: We earn a commission on qualifying purchases.</div></footer>
+<div id="toast"></div><script>
+function showToast(m){const t=document.getElementById('toast');t.innerText=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2200)}
+function copyLink(url,btn){navigator.clipboard.writeText(url).then(()=>{const o=btn.innerText;btn.innerText='✓ COPIED';btn.classList.add('copied');showToast('EarnKaro link copied! Paste anywhere to share');setTimeout(()=>{btn.innerText=o;btn.classList.remove('copied')},2000)})}
+function initSlider(){const slides=document.querySelectorAll('.slide');if(!slides.length)return;let i=0;slides[0].classList.add('on');const dots=document.querySelectorAll('.dot');if(dots[0])dots[0].classList.add('on');setInterval(()=>{slides[i].classList.remove('on');if(dots[i])dots[i].classList.remove('on');i=(i+1)%slides.length;slides[i].classList.add('on');if(dots[i])dots[i].classList.add('on')},3500)}
+function setupSearch(){const inp=document.getElementById('searchInput');if(!inp)return;inp.addEventListener('input',e=>{const q=e.target.value.toLowerCase().trim();let n=0;document.querySelectorAll('.deal-card').forEach(c=>{const ok=!q||(c.dataset.q||'').includes(q);c.style.display=ok?'block':'none';if(ok)n++});const nr=document.getElementById('noResults');if(nr)nr.style.display=n?'none':'block'})}
+initSlider();setupSearch();
+</script></body></html>
