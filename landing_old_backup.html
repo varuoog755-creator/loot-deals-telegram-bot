@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Big Red Hub - India's #1 Loot Deals & Cashback Bot 🔥 80-90% OFF Daily</title>
+  <meta name="title" content="Big Red Hub - Loot Deals Bot | Under ₹99 Store | Amazon Flipkart 90% OFF">
+  <meta name="description" content="🔥 Daily 80-90% OFF loot deals on Amazon, Flipkart, Myntra! Under ₹99 steals, instant cashback, VIP glitch deals. Join 50,000+ smart shoppers on Telegram.">
+  <meta name="keywords" content="loot deals telegram, under 99 deals, amazon loot, flipkart discount, cashback bot india, price glitch">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bigredhub.info">
+  <meta property="og:title" content="Big Red Hub 🔥 Daily Loot Deals & 90% OFF">
+  <meta property="og:description" content="India's most trusted Telegram bot for instant discount alerts & cashback!">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1607082349566-187342175e2f?w=1200&q=80">
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    :root {
+      --primary: #ef4444;
+      --primary-gradient: linear-gradient(135deg, #ef4444 0%, #f97316 100%);
+      --accent: #fb923c;
+      --bg-dark: #090d16;
+      --bg-card: rgba(255, 255, 255, 0.03);
+      --border: rgba(255, 255, 255, 0.08);
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+    
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+    
+    /* Background Glowing Orbs */
+    .bg-glow {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    
+    .glow-1 {
+      position: absolute;
+      top: -10%;
+      left: -10%;
+      width: 50vw;
+      height: 50vw;
+      background: radial-gradient(circle, rgba(239, 68, 68, 0.15) 0%, transparent 70%);
+      filter: blur(60px);
+    }
+    
+    .glow-2 {
+      position: absolute;
+      bottom: -10%;
+      right: -10%;
+      width: 60vw;
+      height: 60vw;
+      background: radial-gradient(circle, rgba(249, 115, 22, 0.12) 0%, transparent 70%);
+      filter: blur(80px);
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    
+    /* Navbar */
+    header {
+      padding: 24px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      background: rgba(9, 13, 22, 0.7);
+      border-bottom: 1px solid var(--border);
+    }
+    
+    .nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: #fff;
+    }
+    
+    .logo-badge {
+      width: 42px;
+      height: 42px;
+      background: var(--primary-gradient);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      box-shadow: 0 8px 24px rgba(239, 68, 68, 0.35);
+    }
+    
+    .logo-text h1 {
+      font-size: 20px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      background: linear-gradient(180deg, #fff 0%, #cbd5e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .logo-text p {
+      font-size: 11px;
+      color: var(--accent);
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    
+    .nav-actions {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+    
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      cursor: pointer;
+    }
+    
+    .btn-primary {
+      background: var(--primary-gradient);
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(239, 68, 68, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(239, 68, 68, 0.6);
+    }
+    
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      color: #fff;
+      border: 1px solid var(--border);
+    }
+    
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    /* Hero Section */
+    .hero {
+      padding: 90px 0 60px;
+      text-align: center;
+    }
+    
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      background: rgba(239, 68, 68, 0.1);
+      border: 1px solid rgba(239, 68, 68, 0.25);
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #f87171;
+      margin-bottom: 24px;
+    }
+    
+    .pill-dot {
+      width: 8px;
+      height: 8px;
+      background: #ef4444;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #ef4444;
+      animation: pulse 1.5s infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(1.3); }
+    }
+    
+    .hero-title {
+      font-size: clamp(36px, 6vw, 68px);
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: -1.5px;
+      margin-bottom: 24px;
+    }
+    
+    .hero-title span {
+      background: var(--primary-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .hero-desc {
+      font-size: clamp(16px, 2vw, 19px);
+      color: var(--text-muted);
+      max-width: 680px;
+      margin: 0 auto 36px;
+      line-height: 1.6;
+    }
+    
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
+    
+    .btn-large {
+      padding: 16px 32px;
+      font-size: 16px;
+      border-radius: 14px;
+    }
+    
+    /* Stats Bar */
+    .stats-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 16px;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 24px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+    }
+    
+    .stat-box h3 {
+      font-size: 28px;
+      font-weight: 900;
+      color: #fff;
+    }
+    
+    .stat-box p {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    
+    /* Section Title */
+    .section-head {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    
+    .section-head h2 {
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+    }
+    
+    .section-head p {
+      color: var(--text-muted);
+      font-size: 16px;
+    }
+    
+    /* Bot Cards Section */
+    .bots-section {
+      padding: 80px 0;
+    }
+    
+    .bots-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+    
+    .bot-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 36px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .bot-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(239, 68, 68, 0.3);
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+    
+    .bot-card.featured {
+      border-color: rgba(239, 68, 68, 0.4);
+      background: linear-gradient(180deg, rgba(239, 68, 68, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+    }
+    
+    .bot-tag {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: var(--primary-gradient);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    .bot-icon-wrap {
+      width: 60px;
+      height: 60px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      margin-bottom: 24px;
+    }
+    
+    .bot-card h3 {
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+    
+    .bot-handle {
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+    
+    .bot-card p {
+      color: var(--text-muted);
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+    
+    /* Live Deals Preview */
+    .deals-preview {
+      padding: 80px 0;
+    }
+    
+    .deals-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    
+    .deal-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s ease;
+    }
+    
+    .deal-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(251, 146, 60, 0.4);
+    }
+    
+    .deal-img {
+      height: 160px;
+      background: rgba(255, 255, 255, 0.02);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 50px;
+      border-bottom: 1px solid var(--border);
+    }
+    
+    .deal-content {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: space-between;
+    }
+    
+    .deal-badge {
+      display: inline-block;
+      align-self: flex-start;
+      padding: 4px 8px;
+      background: rgba(239, 68, 68, 0.15);
+      color: #f87171;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    
+    .deal-title {
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 12px;
+      color: #fff;
+    }
+    
+    .price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    
+    .price-loot {
+      font-size: 22px;
+      font-weight: 900;
+      color: #fff;
+    }
+    
+    .price-mrp {
+      font-size: 14px;
+      color: #64748b;
+      text-decoration: line-through;
+    }
+    
+    .deal-btn {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 13px;
+    }
+    
+    /* How it works */
+    .how-section {
+      padding: 80px 0;
+      background: rgba(255, 255, 255, 0.01);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+    
+    .step-card {
+      padding: 28px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      text-align: center;
+    }
+    
+    .step-number {
+      width: 44px;
+      height: 44px;
+      background: var(--primary-gradient);
+      color: #fff;
+      font-weight: 900;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+      font-size: 18px;
+    }
+    
+    .step-card h3 {
+      font-size: 18px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    
+    .step-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+    
+    /* Footer */
+    footer {
+      padding: 40px 0;
+      text-align: center;
+      border-top: 1px solid var(--border);
+    }
+    
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+    
+    .footer-links a:hover {
+      color: #fff;
+    }
+    
+    .copyright {
+      font-size: 13px;
+      color: #64748b;
+    }
+    
+    @media (max-width: 640px) {
+      .hero { padding: 60px 0 40px; }
+      .nav-actions .btn-secondary { display: none; }
+      .stats-bar { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-glow">
+    <div class="glow-1"></div>
+    <div class="glow-2"></div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="/" class="logo">
+          <div class="logo-badge">🔥</div>
+          <div class="logo-text">
+            <h1>Big Red Hub</h1>
+            <p>Loot Deals & Steals</p>
+          </div>
+        </a>
+        <div class="nav-actions">
+          <a href="https://t.me/Under99LootDeals_bot" class="btn btn-secondary" target="_blank">
+            ⚡ Under ₹99 Bot
+          </a>
+          <a href="https://t.me/+vnry55FncIUxMDVl" class="btn btn-primary" target="_blank">
+            📢 Join Channel
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="pill">
+        <span class="pill-dot"></span>
+        <span>India's #1 Real-Time Loot Deals Network</span>
+      </div>
+      
+      <h2 class="hero-title">
+        Never Pay Full Price.<br>
+        <span>Save 70% to 90% Every Day!</span>
+      </h2>
+      
+      <p class="hero-desc">
+        Amazon, Flipkart aur Myntra ke price drops, ₹99 ke steal deals aur cashback alerts direct Telegram par pao. 100% Free.
+      </p>
+      
+      <div class="hero-buttons">
+        <a href="https://t.me/Roxk755_bot" class="btn btn-primary btn-large" target="_blank">
+          🛍️ Open Deals Hub Bot (@Roxk755_bot)
+        </a>
+        <a href="https://t.me/Under99LootDeals_bot" class="btn btn-secondary btn-large" target="_blank">
+          ⚡ Open Under ₹99 Bot
+        </a>
+      </div>
+
+      <div class="stats-bar">
+        <div class="stat-box">
+          <h3>50,000+</h3>
+          <p>Active Shoppers</p>
+        </div>
+        <div class="stat-box">
+          <h3>₹10L+</h3>
+          <p>Monthly Savings</p>
+        </div>
+        <div class="stat-box">
+          <h3>85%</h3>
+          <p>Avg. Discount</p>
+        </div>
+        <div class="stat-box">
+          <h3>24/7</h3>
+          <p>Live Price Errors</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bots Section -->
+  <section class="bots-section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Choose Your Loot Bot 🤖</h2>
+        <p>Ek click me Telegram par offers explore karein</p>
+      </div>
+      
+      <div class="bots-grid">
+        <!-- Bot 1 -->
+        <div class="bot-card featured">
+          <div class="bot-tag">Most Popular</div>
+          <div>
+            <div class="bot-icon-wrap">🛍️</div>
+            <h3>Main Deals Hub Bot</h3>
+            <div class="bot-handle">@Roxk755_bot</div>
+            <p>
+              Amazon, Flipkart, Myntra aur Ajio ke massive 80-90% discount deals, cashback conversion tools aur glitch price drops.
+            </p>
+          </div>
+          <a href="https://t.me/Roxk755_bot" class="btn btn-primary" target="_blank">
+            Open @Roxk755_bot ⚡
+          </a>
+        </div>
+
+        <!-- Bot 2 -->
+        <div class="bot-card">
+          <div>
+            <div class="bot-icon-wrap">⚡</div>
+            <h3>Under ₹99 Mega Store</h3>
+            <div class="bot-handle">@Under99LootDeals_bot</div>
+            <p>
+              ₹1 se ₹99 tak ke daily steal deals! Fast charging cables, phone mounts, accessories aur gadgets saste me grab karein.
+            </p>
+          </div>
+          <a href="https://t.me/Under99LootDeals_bot" class="btn btn-secondary" target="_blank">
+            Open @Under99LootDeals_bot 📦
+          </a>
+        </div>
+
+        <!-- Channel -->
+        <div class="bot-card">
+          <div>
+            <div class="bot-icon-wrap">📢</div>
+            <h3>Official Deals Channel</h3>
+            <div class="bot-handle">@vnry55FncIUxMDVl</div>
+            <p>
+              24/7 non-stop flash deals feed! Limited stock price drops jo seconds me out of stock ho jaate hain.
+            </p>
+          </div>
+          <a href="https://t.me/+vnry55FncIUxMDVl" class="btn btn-secondary" target="_blank">
+            Join Telegram Channel 🔥
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Deals Preview -->
+  <section class="deals-preview">
+    <div class="container">
+      <div class="section-head">
+        <h2>🔥 Trending Today</h2>
+        <p>Current live deals with maximum discounts</p>
+      </div>
+
+      <div class="deals-grid">
+        <!-- Deal 1 -->
+        <div class="deal-card">
+          <div class="deal-img">🔌</div>
+          <div class="deal-content">
+            <div>
+              <span class="deal-badge">86% OFF</span>
+              <h3 class="deal-title">65W Super Fast Type-C Braided Cable</h3>
+              <div class="price-row">
+                <span class="price-loot">₹49</span>
+                <span class="price-mrp">₹349</span>
+              </div>
+            </div>
+            <a href="https://t.me/Under99LootDeals_bot" class="btn btn-primary deal-btn" target="_blank">
+              Grab Deal on Bot
+            </a>
+          </div>
+        </div>
+
+        <!-- Deal 2 -->
+        <div class="deal-card">
+          <div class="deal-img">🎧</div>
+          <div class="deal-content">
+            <div>
+              <span class="deal-badge">80% OFF</span>
+              <h3 class="deal-title">Noise Wireless Buds with 50H Playtime</h3>
+              <div class="price-row">
+                <span class="price-loot">₹699</span>
+                <span class="price-mrp">₹3,499</span>
+              </div>
+            </div>
+            <a href="https://t.me/Roxk755_bot" class="btn btn-primary deal-btn" target="_blank">
+              Grab Deal on Bot
+            </a>
+          </div>
+        </div>
+
+        <!-- Deal 3 -->
+        <div class="deal-card">
+          <div class="deal-img">⌚</div>
+          <div class="deal-content">
+            <div>
+              <span class="deal-badge">75% OFF</span>
+              <h3 class="deal-title">Fastrack Smart Watch with Bluetooth Calling</h3>
+              <div class="price-row">
+                <span class="price-loot">₹999</span>
+                <span class="price-mrp">₹3,995</span>
+              </div>
+            </div>
+            <a href="https://t.me/Roxk755_bot" class="btn btn-primary deal-btn" target="_blank">
+              Grab Deal on Bot
+            </a>
+          </div>
+        </div>
+
+        <!-- Deal 4 -->
+        <div class="deal-card">
+          <div class="deal-img">📱</div>
+          <div class="deal-content">
+            <div>
+              <span class="deal-badge">92% OFF</span>
+              <h3 class="deal-title">360° Magnetic Car Phone Dashboard Mount</h3>
+              <div class="price-row">
+                <span class="price-loot">₹79</span>
+                <span class="price-mrp">₹999</span>
+              </div>
+            </div>
+            <a href="https://t.me/Under99LootDeals_bot" class="btn btn-primary deal-btn" target="_blank">
+              Grab Deal on Bot
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Kaise Kaam Karta Hai? 💡</h2>
+        <p>Simple 3 steps me hazaron rupaye bachayein</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h3>Bot Join Karein</h3>
+          <p>Telegram par @Roxk755_bot ya @Under99LootDeals_bot open karke Start dabayein.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h3>Deals Browse Karein</h3>
+          <p>Top Loots, Under ₹99 store ya search command use karke offers dekhein.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h3>Loot Price Me Buy Karein</h3>
+          <p>Direct discounted link par click karein aur extra cashback ke saath order karein!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://t.me/Roxk755_bot" target="_blank">Deals Bot</a>
+        <a href="https://t.me/Under99LootDeals_bot" target="_blank">Under ₹99 Bot</a>
+        <a href="https://t.me/+vnry55FncIUxMDVl" target="_blank">Telegram Channel</a>
+        <a href="https://bigredhub.info" target="_blank">Big Red Hub</a>
+      </div>
+      <p class="copyright">
+        © 2026 Big Red Hub. India's smartest deals engine. All brands & logos belong to their respective owners.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,2822 @@
+[
+  {
+    "src": "https://asset21.ckassets.com/wp/wp-content/themes/Cashkaro_SocialMedia/img/home_icon_active.svg",
+    "alt": "Home",
+    "cardText": "Home",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/wp/wp-content/themes/Cashkaro_SocialMedia/img/storefront_icon.svg",
+    "alt": "Our Partners",
+    "cardText": "Our Partners",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/wp/wp-content/themes/Cashkaro_SocialMedia/img/make_link_icon.png",
+    "alt": "Make Links",
+    "cardText": "Make Links",
+    "parentTag": "DIV"
+  },
+  {
+    "src": "https://asset21.ckassets.com/wp/wp-content/themes/Cashkaro_SocialMedia/img/report_dashboard_icon.svg",
+    "alt": "Reports",
+    "cardText": "Reports",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/wp/wp-content/themes/Cashkaro_SocialMedia/img/person_icon.svg",
+    "alt": "Profile",
+    "cardText": "Profile",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/wp/wp-content/themes/Cashkaro_SocialMedia/img/ek_logo.png",
+    "alt": "EarnKaro",
+    "cardText": "CATEGORY\nToday's Exclusive Offers\nRetailer Category\nElectronics\nGrocery & Essentials\nMen's Fashion\nWomen's Fashion\nMen's Footwear\nWomen's Footwear\nBeauty Products\nHealth & Personal Care\nBaby Products\nHome & Kitchen\nMy Profile\nProfit Rates\nMake Links",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/SBI%20Cahback%20Credit%20Card-Deskk-1790186693.png",
+    "alt": "Banner Image",
+    "cardText": "",
+    "parentTag": "DIV"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/deskk-1789993298.png",
+    "alt": "Banner Image",
+    "cardText": "",
+    "parentTag": "DIV"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/shein-desk-1789992728.png",
+    "alt": "Banner Image",
+    "cardText": "",
+    "parentTag": "DIV"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/desk-1790185687.png",
+    "alt": "Banner Image",
+    "cardText": "",
+    "parentTag": "DIV"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Desk-1786556000.png",
+    "alt": "Banner Image",
+    "cardText": "",
+    "parentTag": "DIV"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/ajio-desk-1790273795.png",
+    "alt": "Banner Image",
+    "cardText": "",
+    "parentTag": "DIV"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/amazon-desk-1790273914.png",
+    "alt": "Banner Image",
+    "cardText": "",
+    "parentTag": "DIV"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Deskk-1790274029.png",
+    "alt": "Banner Image",
+    "cardText": "",
+    "parentTag": "DIV"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/myntra-desk-1790273953.png",
+    "alt": "Banner Image",
+    "cardText": "",
+    "parentTag": "DIV"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/SBI%20Cahback%20Credit%20Card-Deskk-1790186693.png",
+    "alt": "Banner Image",
+    "cardText": "",
+    "parentTag": "DIV"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/deskk-1789993298.png",
+    "alt": "Banner Image",
+    "cardText": "",
+    "parentTag": "DIV"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/shein-desk-1789992728.png",
+    "alt": "Banner Image",
+    "cardText": "",
+    "parentTag": "DIV"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/desk-1790185687.png",
+    "alt": "Banner Image",
+    "cardText": "",
+    "parentTag": "DIV"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Desk-1786556000.png",
+    "alt": "Banner Image",
+    "cardText": "",
+    "parentTag": "DIV"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/ajio-desk-1790273795.png",
+    "alt": "Banner Image",
+    "cardText": "",
+    "parentTag": "DIV"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/amazon-desk-1790273914.png",
+    "alt": "Banner Image",
+    "cardText": "",
+    "parentTag": "DIV"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Deskk-1790274029.png",
+    "alt": "Banner Image",
+    "cardText": "",
+    "parentTag": "DIV"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/myntra-desk-1790273953.png",
+    "alt": "Banner Image",
+    "cardText": "",
+    "parentTag": "DIV"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/SBI%20Cahback%20Credit%20Card-Deskk-1790186693.png",
+    "alt": "Banner Image",
+    "cardText": "",
+    "parentTag": "DIV"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/deskk-1789993298.png",
+    "alt": "Banner Image",
+    "cardText": "",
+    "parentTag": "DIV"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/shein-desk-1789992728.png",
+    "alt": "Banner Image",
+    "cardText": "",
+    "parentTag": "DIV"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/best-deals-today-4221-17779858440.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/flipkart-super-sellers-2-4248-17901870620.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/myntra-super-sellers-web-3899-17902772140.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/ajio-superseller-3902-17902730170.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/all-sunglasses-3363-1607090104.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/watches-3364-1607090111.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/jewellery-3365-1607090120.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/handbags-3366-1607090128.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/headphones-headsets-996-1607082997.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/power-banks-2933-1607083221.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/best-speakers-539-1618816108.jpg",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/men-tshirt-2889-1607086734.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/men-jeans-2820-1607086744.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/men-shirts-2819-1607086751.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/men-trousers-2821-1607086759.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/shaving-waxing-beardcare-3049-1610028299.jpg",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/hair-care-styling-2861-1607087208.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/bath-shower-2858-1609918191.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/beauty-combo-offers-3281-1609918251.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/formal-shoes-2876-1607089457.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/slippers-flip-flops-2877-1607089476.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/men-sports-shoes-2891-1619540961.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/men-casual-footwear-2837-1607089509.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/kurta-kurti-2890-1607086843.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/tops-tunics-2882-1607086854.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/women-jeans-2825-1607086862.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/women-dresses-2824-1607086877.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/shirts-2886-1607086889.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/sarees-2879-1607086913.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/casual-shoes-2883-1607089544.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/flat-sandals-2884-1607089555.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/women-sports-shoes-2842-1607089578.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/women-heels-3030-1607089563.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/grocery-3618-1619174104.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/toiletries-4220-1619174715.jpg",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/fragrance-2830-1607087241.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/make-up-nails-2862-1607087227.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/home-furnishing-2871-1607089358.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/bed-and-bath-3619-1607089336.jpg",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/kitchen-storage-containers-2854-1607089372.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/dinnerwear-crockery-2927-1607089386.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/baby-cat-skin-care-3291-1607087053.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/baby-bathing-2928-1607087085.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/luggage-2925-1607089644.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/category/wallets-card-holders-2926-1607089675.png",
+    "alt": "images",
+    "cardText": "Super Sellers\nAccessories\nElectronics\nMens Fashion\nPersonal Care\nMen's Footwear\nWomen's Fashion\nWomen's Footwear\nGrocery & Essentials\nBeauty\nHome & Kitchen\nBaby Products\nBags & Luggage",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "YOU EARN\nUpto 8% Profit\n\nSHARE NOW\nCOPY LINK\nBBD - EARLY BIRD DEALS",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/amazon-store-live-1-1777975646.png",
+    "alt": "Amazon",
+    "cardText": "YOU EARN\nUpto 8.2% Profit\n\nSHARE NOW\nCOPY LINK\nGIF - EARLY DEALS",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/myntra-new-t-1777980142.png",
+    "alt": "Myntra New",
+    "cardText": "YOU EARN\nUpto 8% Profit\n\nSHARE NOW\nCOPY LINK\nBIG FASHION FESTIVAL",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/ajio-store-1606812055.png",
+    "alt": "Ajio Direct",
+    "cardText": "YOU EARN\nUpto 10% Profit\n\nSHARE NOW\nCOPY LINK\nALL STARS SALE - CURTAIN RAISER",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/dot-key-new-3-1701263368.jpg",
+    "alt": "Dot & Key Store",
+    "cardText": "YOU EARN\nUpto 15% Profit\n\nSHARE NOW\nCOPY LINK\nUPTO 20% OFF + FREE GIFTS",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/mcaffeine-store-4-1639372559.jpg",
+    "alt": "mCaffeine Store",
+    "cardText": "YOU EARN\nFlat 21% Profit\n\nSHARE NOW\nCOPY LINK\nSEPTEMBER DEALS",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/shopsy-store-1692602320.png",
+    "alt": "Shopsy Store",
+    "cardText": "YOU EARN\nUpto 8% Profit\n\nSHARE NOW\nCOPY LINK\nUPTO 90% OFF",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/themancompany-direct-newstore-1778239912.png",
+    "alt": "The Man Company Store",
+    "cardText": "YOU EARN\nFlat 14% Profit\n\nSHARE NOW\nCOPY LINK\nBIG BIRTHDAY SALE",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/nykaabeauty-1658489934.jpg",
+    "alt": "Nykaa Beauty",
+    "cardText": "YOU EARN\nUpto 4% Profit\n\nSHARE NOW\nCOPY LINK\nUPTO 50% OFF",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/axis-amex-1765450954.png",
+    "alt": "Axis Privilege Amex Credit Card",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1920 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(1)-1785816993.png",
+    "alt": "Axis Privilege Amex Credit Card - Packed with a host of attractive benefits!",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1920 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/rupayh-new-1765449145.png",
+    "alt": "HDFC RuPay Credit Card",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 1500 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Finance%20Deal%20Card-1779347170.png",
+    "alt": "HDFC RuPay Credit Card \u2013 New World of 'Credit + Convenience'",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 1500 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/myzone-cc-1770012000.png",
+    "alt": "Axis MyZone Rupay Credit Card",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 2240 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Finance%20Deal%20Card-9-1776361207.png",
+    "alt": "Axis MyZone Rupay Credit Card - Entry level card offering benefits across Shopping, Dining and Entertainment!",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 2240 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/privilege-cc-1765450971.png",
+    "alt": "Axis Privilege Credit Card",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 2080 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Finance%20Deal%20Card-16-1776361618.png",
+    "alt": "Axis Privilege Credit Card - A premium card that gives Exclusive Shopping and Travel benefits!",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 2080 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/idfc-powerplus-1783673366.png",
+    "alt": "IDFC First Power Plus Credit Card",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1050 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(3)-1783673781.png",
+    "alt": "IDFC First Power Plus Credit Card - accelerated Rewards on shopping, dining, and travel!",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1050 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/bob-eterna-credit-card-1764135980.png",
+    "alt": "BOBCARD Eterna Credit Card",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 950 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Finance%20Deal%20Card-1788240201.png",
+    "alt": "BOBCARD Eterna Credit Card - travel & lounge benefits, low forex markup!",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 950 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/idfc-first-1783673277.png",
+    "alt": "IDFC First Credit Card",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1050 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/idfcfirstcreditcard-1783687867.png",
+    "alt": "Lifetime Free Card and Earn Upto 10X Reward Points",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1050 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/sbm-zet-credit-card-1772792298.png",
+    "alt": "SBM ZET Credit Card",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 2800 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image-1778762799.png",
+    "alt": "SBM ZET Credit Card \u2013 Enjoy lifetime-free benefits with this FD-backed RuPay card!",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 2800 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/axis-neo-1765450935.png",
+    "alt": "Axis Neo Rupay Credit Card",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1920 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Finance%20Deal%20Card-6-1776361055.png",
+    "alt": "Axis Neo Rupay Credit Card - Best Card for Daily Lifestyle Expenses!",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1920 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/yes-popup-new-1788503968.png",
+    "alt": "Yes Bank Pop-Club Credit Card",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 1500 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image-1777454952.png",
+    "alt": "Yes Bank Pop-Club Credit Card \u2013 India most rewarding RuPay credit card!",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 1500 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/roarbank-rupay-credit-card-store-1776768843.png",
+    "alt": "RoarBank Rupay Credit Card",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 700 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image-1777459226.png",
+    "alt": "RoarBank Rupay Credit Card \u2013 a Savings Account, RuPay-Powered UPI Payments!",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 700 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/scapia-cc-2-1770178832.png",
+    "alt": "Scapia Co-Branded Credit Card",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 770 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Finance%20Deal%20Card%202-1790227380.png",
+    "alt": "Scapia Co-Branded Credit Card \u2013 Best Travel Card in India!",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 770 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/uni-goldx-credit-card-1778746537.png",
+    "alt": "Uni GoldX Credit Card",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 1260 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/uni%20financedealcard-1788166201.png",
+    "alt": "Uni GoldX Credit Card \u2013 Free RuPay Card With Unlimited Rewards!",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 1260 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hdfc-pixel-new-1765449126.png",
+    "alt": "HDFC Pixel Play Credit Card",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1500 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Finance%20Deal%20Card-1788759071.png",
+    "alt": "With this card, you can earn up to 5% cashback* on different brands, flexible billing, and seamless control via PayZapp",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1500 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hdfc-pixel-go-credit-card-store-1765449109.png",
+    "alt": "HDFC Pixel Go Credit Card",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1500 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Finance%20Deal%20Card-1-1788759076.png",
+    "alt": "With this card, you can earn up to 5% cashback* on different brands, flexible billing, and seamless control via PayZapp",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1500 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/kotak-league-platinum-credit-card-1774518519.png",
+    "alt": "Kotak League Platinum Credit Card",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1400 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Finance%20Deal%20Card-1-1776360740.png",
+    "alt": "Kotak League Platinum Credit Card - Premium Lifestyle Benefits with Everyday Rewards!",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1400 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hsbc-platinum-credit-card-1785499565.png",
+    "alt": "HSBC Platinum Credit Card",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 3000 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/HSBC%20Deal%20Card-1786008024.png",
+    "alt": "HSBC Platinum Credit Card - Lifetime FREE Credit Card - No Joining/Annual Fee",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 3000 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/dcb-novio-credit-card-1785482661.png",
+    "alt": "DCB Novio Credit Card",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 2730 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(3)-1787054201.png",
+    "alt": "DCB Novio Credit Card \u2013 Most Rewarding UPI Card!",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 2730 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/axis-flipkart-credit-card-1779791791.png",
+    "alt": "Axis Flipkart Credit Card",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1920 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Finance%20Deal%20Card-15-1776361556.png",
+    "alt": "Axis Flipkart Credit Card - Enjoy accelerated cashback across all your favourite categories!",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1920 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/indusind-tiger-new-1785840683.png",
+    "alt": "Indusind Tiger Credit Card",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 600 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(1)-1781085783.png",
+    "alt": "Indusind Tiger Credit Card - LIFETIME FREE | No Joining or Annual Fees",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 600 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/axis-amex-1765450954.png",
+    "alt": "Axis Privilege Amex Credit Card",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1920 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(1)-1785816993.png",
+    "alt": "Axis Privilege Amex Credit Card - Packed with a host of attractive benefits!",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1920 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/rupayh-new-1765449145.png",
+    "alt": "HDFC RuPay Credit Card",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 1500 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Finance%20Deal%20Card-1779347170.png",
+    "alt": "HDFC RuPay Credit Card \u2013 New World of 'Credit + Convenience'",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 1500 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/myzone-cc-1770012000.png",
+    "alt": "Axis MyZone Rupay Credit Card",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 2240 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Finance%20Deal%20Card-9-1776361207.png",
+    "alt": "Axis MyZone Rupay Credit Card - Entry level card offering benefits across Shopping, Dining and Entertainment!",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 2240 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/privilege-cc-1765450971.png",
+    "alt": "Axis Privilege Credit Card",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 2080 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Finance%20Deal%20Card-16-1776361618.png",
+    "alt": "Axis Privilege Credit Card - A premium card that gives Exclusive Shopping and Travel benefits!",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 2080 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/idfc-powerplus-1783673366.png",
+    "alt": "IDFC First Power Plus Credit Card",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1050 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(3)-1783673781.png",
+    "alt": "IDFC First Power Plus Credit Card - accelerated Rewards on shopping, dining, and travel!",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1050 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/bob-eterna-credit-card-1764135980.png",
+    "alt": "BOBCARD Eterna Credit Card",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 950 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Finance%20Deal%20Card-1788240201.png",
+    "alt": "BOBCARD Eterna Credit Card - travel & lounge benefits, low forex markup!",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 950 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/idfc-first-1783673277.png",
+    "alt": "IDFC First Credit Card",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1050 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/idfcfirstcreditcard-1783687867.png",
+    "alt": "Lifetime Free Card and Earn Upto 10X Reward Points",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1050 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/sbm-zet-credit-card-1772792298.png",
+    "alt": "SBM ZET Credit Card",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 2800 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image-1778762799.png",
+    "alt": "SBM ZET Credit Card \u2013 Enjoy lifetime-free benefits with this FD-backed RuPay card!",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 2800 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/axis-neo-1765450935.png",
+    "alt": "Axis Neo Rupay Credit Card",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1920 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Finance%20Deal%20Card-6-1776361055.png",
+    "alt": "Axis Neo Rupay Credit Card - Best Card for Daily Lifestyle Expenses!",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1920 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/yes-popup-new-1788503968.png",
+    "alt": "Yes Bank Pop-Club Credit Card",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 1500 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image-1777454952.png",
+    "alt": "Yes Bank Pop-Club Credit Card \u2013 India most rewarding RuPay credit card!",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 1500 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/roarbank-rupay-credit-card-store-1776768843.png",
+    "alt": "RoarBank Rupay Credit Card",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 700 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image-1777459226.png",
+    "alt": "RoarBank Rupay Credit Card \u2013 a Savings Account, RuPay-Powered UPI Payments!",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 700 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/scapia-cc-2-1770178832.png",
+    "alt": "Scapia Co-Branded Credit Card",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 770 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Finance%20Deal%20Card%202-1790227380.png",
+    "alt": "Scapia Co-Branded Credit Card \u2013 Best Travel Card in India!",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 770 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/uni-goldx-credit-card-1778746537.png",
+    "alt": "Uni GoldX Credit Card",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 1260 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/uni%20financedealcard-1788166201.png",
+    "alt": "Uni GoldX Credit Card \u2013 Free RuPay Card With Unlimited Rewards!",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 1260 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hdfc-pixel-new-1765449126.png",
+    "alt": "HDFC Pixel Play Credit Card",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1500 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Finance%20Deal%20Card-1788759071.png",
+    "alt": "With this card, you can earn up to 5% cashback* on different brands, flexible billing, and seamless control via PayZapp",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1500 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hdfc-pixel-go-credit-card-store-1765449109.png",
+    "alt": "HDFC Pixel Go Credit Card",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1500 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Finance%20Deal%20Card-1-1788759076.png",
+    "alt": "With this card, you can earn up to 5% cashback* on different brands, flexible billing, and seamless control via PayZapp",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1500 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/kotak-league-platinum-credit-card-1774518519.png",
+    "alt": "Kotak League Platinum Credit Card",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1400 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Finance%20Deal%20Card-1-1776360740.png",
+    "alt": "Kotak League Platinum Credit Card - Premium Lifestyle Benefits with Everyday Rewards!",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1400 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hsbc-platinum-credit-card-1785499565.png",
+    "alt": "HSBC Platinum Credit Card",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 3000 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/HSBC%20Deal%20Card-1786008024.png",
+    "alt": "HSBC Platinum Credit Card - Lifetime FREE Credit Card - No Joining/Annual Fee",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 3000 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/dcb-novio-credit-card-1785482661.png",
+    "alt": "DCB Novio Credit Card",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 2730 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(3)-1787054201.png",
+    "alt": "DCB Novio Credit Card \u2013 Most Rewarding UPI Card!",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 2730 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/axis-flipkart-credit-card-1779791791.png",
+    "alt": "Axis Flipkart Credit Card",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1920 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Finance%20Deal%20Card-15-1776361556.png",
+    "alt": "Axis Flipkart Credit Card - Enjoy accelerated cashback across all your favourite categories!",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1920 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/indusind-tiger-new-1785840683.png",
+    "alt": "Indusind Tiger Credit Card",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 600 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(1)-1781085783.png",
+    "alt": "Indusind Tiger Credit Card - LIFETIME FREE | No Joining or Annual Fees",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 600 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/axis-amex-1765450954.png",
+    "alt": "Axis Privilege Amex Credit Card",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1920 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(1)-1785816993.png",
+    "alt": "Axis Privilege Amex Credit Card - Packed with a host of attractive benefits!",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1920 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/rupayh-new-1765449145.png",
+    "alt": "HDFC RuPay Credit Card",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 1500 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Finance%20Deal%20Card-1779347170.png",
+    "alt": "HDFC RuPay Credit Card \u2013 New World of 'Credit + Convenience'",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 1500 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/myzone-cc-1770012000.png",
+    "alt": "Axis MyZone Rupay Credit Card",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 2240 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Finance%20Deal%20Card-9-1776361207.png",
+    "alt": "Axis MyZone Rupay Credit Card - Entry level card offering benefits across Shopping, Dining and Entertainment!",
+    "cardText": "PER SALE YOU EARN\nFlat Rs 2240 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/privilege-cc-1765450971.png",
+    "alt": "Axis Privilege Credit Card",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 2080 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Finance%20Deal%20Card-16-1776361618.png",
+    "alt": "Axis Privilege Credit Card - A premium card that gives Exclusive Shopping and Travel benefits!",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 2080 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/idfc-powerplus-1783673366.png",
+    "alt": "IDFC First Power Plus Credit Card",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1050 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(3)-1783673781.png",
+    "alt": "IDFC First Power Plus Credit Card - accelerated Rewards on shopping, dining, and travel!",
+    "cardText": "PER SALE YOU EARN\nUpto Rs 1050 Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "GADGET DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n20\n\ns\n\nSTARTING FROM\n\u20b9379\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image-1780910774.png",
+    "alt": "JBL Wired Earphone @ Rs 379 Worth Rs 699",
+    "cardText": "GADGET DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n20\n\ns\n\nSTARTING FROM\n\u20b9379\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/ageasy-store-1782213550.png",
+    "alt": "AGEasy",
+    "cardText": "NEW ON EARNKARO\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n20\n\ns\n\nSTARTING FROM\n\u20b9879\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image-1787201690.png",
+    "alt": "Compact Relief Massage Gun @ Rs 879 Worth Rs 1499",
+    "cardText": "NEW ON EARNKARO\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n20\n\ns\n\nSTARTING FROM\n\u20b9879\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/ajio-store-1606812055.png",
+    "alt": "Ajio Direct",
+    "cardText": "FLASH DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n20\n\ns\n\nSTARTING FROM\n\u20b9117\nPER SALE YOU EARN\nUpto 10% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(6)-1775036990.png",
+    "alt": "Minimum 50% Off On Marks & Spencer",
+    "cardText": "FLASH DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n20\n\ns\n\nSTARTING FROM\n\u20b9117\nPER SALE YOU EARN\nUpto 10% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/themancompany-direct-newstore-1778239912.png",
+    "alt": "The Man Company Store",
+    "cardText": "CRAZY DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n20\n\ns\n\nSTARTING FROM\n\u20b9399\nPER SALE YOU EARN\nFlat 14% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(2)-1765265841.png",
+    "alt": "Buy 5 Products at Rs 999",
+    "cardText": "CRAZY DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n20\n\ns\n\nSTARTING FROM\n\u20b9399\nPER SALE YOU EARN\nFlat 14% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n20\n\ns\n\nSTARTING FROM\n\u20b9289\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Hamara%20Mall-1789732264.png",
+    "alt": "Waterproof Laptop Backpack (35 L) @ Rs 289 Worth Rs 1599",
+    "cardText": "LOOT DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n20\n\ns\n\nSTARTING FROM\n\u20b9289\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/soulflower-store-1724674575.png",
+    "alt": "Soulflower",
+    "cardText": "GIFTING DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n20\n\ns\n\nSTARTING FROM\n\u20b9105\nPER SALE YOU EARN\nFlat 22% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/f-1790231566.png",
+    "alt": "Gifting Collection Starts at Rs 105",
+    "cardText": "GIFTING DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n20\n\ns\n\nSTARTING FROM\n\u20b9105\nPER SALE YOU EARN\nFlat 22% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/amazon-store-live-1-1777975646.png",
+    "alt": "Amazon",
+    "cardText": "GRAB DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n20\n\ns\n\nSTARTING FROM\n\u20b92,651\nPER SALE YOU EARN\nFlat 8.2% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/12-1789986330.png",
+    "alt": "Chair with Cushioned Seat @ Rs 2651 Worth Rs 8100",
+    "cardText": "GRAB DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n20\n\ns\n\nSTARTING FROM\n\u20b92,651\nPER SALE YOU EARN\nFlat 8.2% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/amazon-store-live-1-1777975646.png",
+    "alt": "Amazon",
+    "cardText": "GRAB DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n20\n\ns\n\nSTARTING FROM\n\u20b92,049\nPER SALE YOU EARN\nFlat 5.5% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/15-1790078090.png",
+    "alt": "Bluetooth Soundbar with BoomX Subwoofer @ Rs 2049 Worth Rs 11999",
+    "cardText": "GRAB DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n20\n\ns\n\nSTARTING FROM\n\u20b92,049\nPER SALE YOU EARN\nFlat 5.5% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/shein-store-1765542042.png",
+    "alt": "Shein",
+    "cardText": "DEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n20\n\ns\n\nSTARTING FROM\n\u20b9139\nPER SALE YOU EARN\nFlat 12% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/shein-1789986286.png",
+    "alt": "Min 50% Off on Trendy Women Westerwear",
+    "cardText": "DEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n20\n\ns\n\nSTARTING FROM\n\u20b9139\nPER SALE YOU EARN\nFlat 12% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/shein-store-1765542042.png",
+    "alt": "Shein",
+    "cardText": "DEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n21\n\ns\n\nSTARTING FROM\n\u20b9519\nPER SALE YOU EARN\nFlat 12% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/18-1790231516.png",
+    "alt": "Women Party Backless Mermaid Dress @ Rs 519 Worth Rs 799",
+    "cardText": "DEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n21\n\ns\n\nSTARTING FROM\n\u20b9519\nPER SALE YOU EARN\nFlat 12% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "BEST DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n22\n\ns\n\nSTARTING FROM\n\u20b9229\nPER SALE YOU EARN\nFlat 4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/14-1790078248.png",
+    "alt": "Lifelong Anti-Slip Exercise Yoga Mat @ Rs 229 Worth Rs 799",
+    "cardText": "BEST DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n22\n\ns\n\nSTARTING FROM\n\u20b9229\nPER SALE YOU EARN\nFlat 4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/ageasy-store-1782213550.png",
+    "alt": "AGEasy",
+    "cardText": "BPM KIT\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n22\n\ns\n\nSTARTING FROM\n\u20b9769\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/AGEasy%201-1788330583.png",
+    "alt": "Ageasy BGM (Kit) @ Rs 769 Worth Rs 1399",
+    "cardText": "BPM KIT\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n22\n\ns\n\nSTARTING FROM\n\u20b9769\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n22\n\ns\n\nSTARTING FROM\n\u20b91,379\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/flashdc_6-1787652064.png",
+    "alt": "Portable Mini Projector @ Rs 1379 Worth Rs 2599",
+    "cardText": "LOOT DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n22\n\ns\n\nSTARTING FROM\n\u20b91,379\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hyugalife-store-1725869177.png",
+    "alt": "Hyugalife",
+    "cardText": "SALE LIVE\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n22\n\ns\n\nSTARTING FROM\n\u20b9138\nPER SALE YOU EARN\nUpto 10.5% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(1)-1787833686.png",
+    "alt": "Upto 60% Off Across Categories",
+    "cardText": "SALE LIVE\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n22\n\ns\n\nSTARTING FROM\n\u20b9138\nPER SALE YOU EARN\nUpto 10.5% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/ageasy-store-1782213550.png",
+    "alt": "AGEasy",
+    "cardText": "NECK PILLOW\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n23\n\ns\n\nSTARTING FROM\n\u20b9769\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(3)-1787310407.png",
+    "alt": "Neck Pillow + Free Travel Pouch @ Rs 769 Worth Rs 1999",
+    "cardText": "NECK PILLOW\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n23\n\ns\n\nSTARTING FROM\n\u20b9769\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/emami-zandu-care-store-1677840107.jpg",
+    "alt": "Zandu Care",
+    "cardText": "GRAB NOW\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n24\n\ns\n\nSTARTING FROM\n\u20b9108\nPER SALE YOU EARN\nFlat 14% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/13-1790061072.png",
+    "alt": "Flat Rs 200 Off on Orders over Rs 999",
+    "cardText": "GRAB NOW\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n24\n\ns\n\nSTARTING FROM\n\u20b9108\nPER SALE YOU EARN\nFlat 14% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/tiaraa-store-1680241064.png",
+    "alt": "Tiaraa",
+    "cardText": "BIG LOOT DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n24\n\ns\n\nSTARTING FROM\n\u20b9199\nPER SALE YOU EARN\nFlat 10% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/tiaraa-1788515719.png",
+    "alt": "Get 3 Products @ Rs 249 Only",
+    "cardText": "BIG LOOT DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n24\n\ns\n\nSTARTING FROM\n\u20b9199\nPER SALE YOU EARN\nFlat 10% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "LOOT DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n24\n\ns\n\nSTARTING FROM\n\u20b9822\nPER SALE YOU EARN\nFlat 2.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/fd2-1790231594.png",
+    "alt": "Round Coffee Table @ Rs 822 Worth Rs 5,599",
+    "cardText": "LOOT DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n24\n\ns\n\nSTARTING FROM\n\u20b9822\nPER SALE YOU EARN\nFlat 2.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/myntra-new-t-1777980142.png",
+    "alt": "Myntra New",
+    "cardText": "GREAT DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n25\n\ns\n\nSTARTING FROM\n\u20b9510\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/02-1789027885.png",
+    "alt": "Neutrogena Sunscreen @ Rs 510 Worth Rs 897",
+    "cardText": "GREAT DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n25\n\ns\n\nSTARTING FROM\n\u20b9510\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/amazon-store-live-1-1777975646.png",
+    "alt": "Amazon",
+    "cardText": "LOOT DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n25\n\ns\n\nSTARTING FROM\n\u20b92,999\nPER SALE YOU EARN\nFlat 8.2% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/01%2022-1790251480.png",
+    "alt": "Safari Thorium Royale Trolley Bag @ Rs 2999 Worth Rs 15999",
+    "cardText": "LOOT DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n25\n\ns\n\nSTARTING FROM\n\u20b92,999\nPER SALE YOU EARN\nFlat 8.2% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "GADGET DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n25\n\ns\n\nSTARTING FROM\n\u20b9379\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image-1780910774.png",
+    "alt": "JBL Wired Earphone @ Rs 379 Worth Rs 699",
+    "cardText": "GADGET DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n25\n\ns\n\nSTARTING FROM\n\u20b9379\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/ageasy-store-1782213550.png",
+    "alt": "AGEasy",
+    "cardText": "NEW ON EARNKARO\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n25\n\ns\n\nSTARTING FROM\n\u20b9879\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image-1787201690.png",
+    "alt": "Compact Relief Massage Gun @ Rs 879 Worth Rs 1499",
+    "cardText": "NEW ON EARNKARO\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n25\n\ns\n\nSTARTING FROM\n\u20b9879\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/ajio-store-1606812055.png",
+    "alt": "Ajio Direct",
+    "cardText": "FLASH DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n25\n\ns\n\nSTARTING FROM\n\u20b9117\nPER SALE YOU EARN\nUpto 10% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(6)-1775036990.png",
+    "alt": "Minimum 50% Off On Marks & Spencer",
+    "cardText": "FLASH DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n25\n\ns\n\nSTARTING FROM\n\u20b9117\nPER SALE YOU EARN\nUpto 10% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/themancompany-direct-newstore-1778239912.png",
+    "alt": "The Man Company Store",
+    "cardText": "CRAZY DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n25\n\ns\n\nSTARTING FROM\n\u20b9399\nPER SALE YOU EARN\nFlat 14% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(2)-1765265841.png",
+    "alt": "Buy 5 Products at Rs 999",
+    "cardText": "CRAZY DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n25\n\ns\n\nSTARTING FROM\n\u20b9399\nPER SALE YOU EARN\nFlat 14% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n25\n\ns\n\nSTARTING FROM\n\u20b9289\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Hamara%20Mall-1789732264.png",
+    "alt": "Waterproof Laptop Backpack (35 L) @ Rs 289 Worth Rs 1599",
+    "cardText": "LOOT DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n25\n\ns\n\nSTARTING FROM\n\u20b9289\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/soulflower-store-1724674575.png",
+    "alt": "Soulflower",
+    "cardText": "GIFTING DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n25\n\ns\n\nSTARTING FROM\n\u20b9105\nPER SALE YOU EARN\nFlat 22% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/f-1790231566.png",
+    "alt": "Gifting Collection Starts at Rs 105",
+    "cardText": "GIFTING DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n25\n\ns\n\nSTARTING FROM\n\u20b9105\nPER SALE YOU EARN\nFlat 22% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/amazon-store-live-1-1777975646.png",
+    "alt": "Amazon",
+    "cardText": "GRAB DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n25\n\ns\n\nSTARTING FROM\n\u20b92,651\nPER SALE YOU EARN\nFlat 8.2% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/12-1789986330.png",
+    "alt": "Chair with Cushioned Seat @ Rs 2651 Worth Rs 8100",
+    "cardText": "GRAB DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n25\n\ns\n\nSTARTING FROM\n\u20b92,651\nPER SALE YOU EARN\nFlat 8.2% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/amazon-store-live-1-1777975646.png",
+    "alt": "Amazon",
+    "cardText": "GRAB DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n25\n\ns\n\nSTARTING FROM\n\u20b92,049\nPER SALE YOU EARN\nFlat 5.5% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/15-1790078090.png",
+    "alt": "Bluetooth Soundbar with BoomX Subwoofer @ Rs 2049 Worth Rs 11999",
+    "cardText": "GRAB DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n25\n\ns\n\nSTARTING FROM\n\u20b92,049\nPER SALE YOU EARN\nFlat 5.5% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/shein-store-1765542042.png",
+    "alt": "Shein",
+    "cardText": "DEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n26\n\ns\n\nSTARTING FROM\n\u20b9139\nPER SALE YOU EARN\nFlat 12% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/shein-1789986286.png",
+    "alt": "Min 50% Off on Trendy Women Westerwear",
+    "cardText": "DEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n26\n\ns\n\nSTARTING FROM\n\u20b9139\nPER SALE YOU EARN\nFlat 12% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/shein-store-1765542042.png",
+    "alt": "Shein",
+    "cardText": "DEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n28\n\ns\n\nSTARTING FROM\n\u20b9519\nPER SALE YOU EARN\nFlat 12% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/18-1790231516.png",
+    "alt": "Women Party Backless Mermaid Dress @ Rs 519 Worth Rs 799",
+    "cardText": "DEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n28\n\ns\n\nSTARTING FROM\n\u20b9519\nPER SALE YOU EARN\nFlat 12% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "BEST DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n28\n\ns\n\nSTARTING FROM\n\u20b9229\nPER SALE YOU EARN\nFlat 4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/14-1790078248.png",
+    "alt": "Lifelong Anti-Slip Exercise Yoga Mat @ Rs 229 Worth Rs 799",
+    "cardText": "BEST DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n28\n\ns\n\nSTARTING FROM\n\u20b9229\nPER SALE YOU EARN\nFlat 4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/ageasy-store-1782213550.png",
+    "alt": "AGEasy",
+    "cardText": "BPM KIT\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n28\n\ns\n\nSTARTING FROM\n\u20b9769\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/AGEasy%201-1788330583.png",
+    "alt": "Ageasy BGM (Kit) @ Rs 769 Worth Rs 1399",
+    "cardText": "BPM KIT\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n28\n\ns\n\nSTARTING FROM\n\u20b9769\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n28\n\ns\n\nSTARTING FROM\n\u20b91,379\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/flashdc_6-1787652064.png",
+    "alt": "Portable Mini Projector @ Rs 1379 Worth Rs 2599",
+    "cardText": "LOOT DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n28\n\ns\n\nSTARTING FROM\n\u20b91,379\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hyugalife-store-1725869177.png",
+    "alt": "Hyugalife",
+    "cardText": "SALE LIVE\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n28\n\ns\n\nSTARTING FROM\n\u20b9138\nPER SALE YOU EARN\nUpto 10.5% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(1)-1787833686.png",
+    "alt": "Upto 60% Off Across Categories",
+    "cardText": "SALE LIVE\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n28\n\ns\n\nSTARTING FROM\n\u20b9138\nPER SALE YOU EARN\nUpto 10.5% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/ageasy-store-1782213550.png",
+    "alt": "AGEasy",
+    "cardText": "NECK PILLOW\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n29\n\ns\n\nSTARTING FROM\n\u20b9769\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(3)-1787310407.png",
+    "alt": "Neck Pillow + Free Travel Pouch @ Rs 769 Worth Rs 1999",
+    "cardText": "NECK PILLOW\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n29\n\ns\n\nSTARTING FROM\n\u20b9769\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/emami-zandu-care-store-1677840107.jpg",
+    "alt": "Zandu Care",
+    "cardText": "GRAB NOW\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n30\n\ns\n\nSTARTING FROM\n\u20b9108\nPER SALE YOU EARN\nFlat 14% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/13-1790061072.png",
+    "alt": "Flat Rs 200 Off on Orders over Rs 999",
+    "cardText": "GRAB NOW\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n30\n\ns\n\nSTARTING FROM\n\u20b9108\nPER SALE YOU EARN\nFlat 14% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/tiaraa-store-1680241064.png",
+    "alt": "Tiaraa",
+    "cardText": "BIG LOOT DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n31\n\ns\n\nSTARTING FROM\n\u20b9199\nPER SALE YOU EARN\nFlat 10% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/tiaraa-1788515719.png",
+    "alt": "Get 3 Products @ Rs 249 Only",
+    "cardText": "BIG LOOT DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n31\n\ns\n\nSTARTING FROM\n\u20b9199\nPER SALE YOU EARN\nFlat 10% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "LOOT DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n33\n\ns\n\nSTARTING FROM\n\u20b9822\nPER SALE YOU EARN\nFlat 2.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/fd2-1790231594.png",
+    "alt": "Round Coffee Table @ Rs 822 Worth Rs 5,599",
+    "cardText": "LOOT DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n33\n\ns\n\nSTARTING FROM\n\u20b9822\nPER SALE YOU EARN\nFlat 2.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/myntra-new-t-1777980142.png",
+    "alt": "Myntra New",
+    "cardText": "GREAT DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n33\n\ns\n\nSTARTING FROM\n\u20b9510\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/02-1789027885.png",
+    "alt": "Neutrogena Sunscreen @ Rs 510 Worth Rs 897",
+    "cardText": "GREAT DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n33\n\ns\n\nSTARTING FROM\n\u20b9510\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/amazon-store-live-1-1777975646.png",
+    "alt": "Amazon",
+    "cardText": "LOOT DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n34\n\ns\n\nSTARTING FROM\n\u20b92,999\nPER SALE YOU EARN\nFlat 8.2% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/01%2022-1790251480.png",
+    "alt": "Safari Thorium Royale Trolley Bag @ Rs 2999 Worth Rs 15999",
+    "cardText": "LOOT DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n34\n\ns\n\nSTARTING FROM\n\u20b92,999\nPER SALE YOU EARN\nFlat 8.2% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "GADGET DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n35\n\ns\n\nSTARTING FROM\n\u20b9379\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image-1780910774.png",
+    "alt": "JBL Wired Earphone @ Rs 379 Worth Rs 699",
+    "cardText": "GADGET DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n35\n\ns\n\nSTARTING FROM\n\u20b9379\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/ageasy-store-1782213550.png",
+    "alt": "AGEasy",
+    "cardText": "NEW ON EARNKARO\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n35\n\ns\n\nSTARTING FROM\n\u20b9879\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image-1787201690.png",
+    "alt": "Compact Relief Massage Gun @ Rs 879 Worth Rs 1499",
+    "cardText": "NEW ON EARNKARO\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n35\n\ns\n\nSTARTING FROM\n\u20b9879\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/ajio-store-1606812055.png",
+    "alt": "Ajio Direct",
+    "cardText": "FLASH DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n37\n\ns\n\nSTARTING FROM\n\u20b9117\nPER SALE YOU EARN\nUpto 10% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(6)-1775036990.png",
+    "alt": "Minimum 50% Off On Marks & Spencer",
+    "cardText": "FLASH DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n37\n\ns\n\nSTARTING FROM\n\u20b9117\nPER SALE YOU EARN\nUpto 10% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/themancompany-direct-newstore-1778239912.png",
+    "alt": "The Man Company Store",
+    "cardText": "CRAZY DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n38\n\ns\n\nSTARTING FROM\n\u20b9399\nPER SALE YOU EARN\nFlat 14% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(2)-1765265841.png",
+    "alt": "Buy 5 Products at Rs 999",
+    "cardText": "CRAZY DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n38\n\ns\n\nSTARTING FROM\n\u20b9399\nPER SALE YOU EARN\nFlat 14% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n38\n\ns\n\nSTARTING FROM\n\u20b9289\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Hamara%20Mall-1789732264.png",
+    "alt": "Waterproof Laptop Backpack (35 L) @ Rs 289 Worth Rs 1599",
+    "cardText": "LOOT DEAL\nDEAL ENDS IN\n07\n\nh\n\n:\n02\n\nm\n\n:\n38\n\ns\n\nSTARTING FROM\n\u20b9289\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "STARTING FROM\n\u20b9674\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/fk%20g-7-1790247479.png",
+    "alt": "Upto 75% Off on Rare Rabbit",
+    "cardText": "STARTING FROM\n\u20b9674\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "STARTING FROM\n\u20b9379\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/fk%20g-4-1790247577.png",
+    "alt": "Min. 50% Off on Woodland",
+    "cardText": "STARTING FROM\n\u20b9379\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "STARTING FROM\n\u20b91,019\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/fk%20g-6-1790247500.png",
+    "alt": "Min 80% Off on French Connection & Lee Cooper Watches",
+    "cardText": "STARTING FROM\n\u20b91,019\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "STARTING FROM\n\u20b92,089\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/fk%20g-1790257604.png",
+    "alt": "Min 30% Off on Titan & Tommy Hilfiger Watches",
+    "cardText": "STARTING FROM\n\u20b92,089\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "STARTING FROM\n\u20b9782\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/fk%20g-3-1790247548.png",
+    "alt": "Min 60% Off on Crocs",
+    "cardText": "STARTING FROM\n\u20b9782\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "STARTING FROM\n\u20b9448\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/fk%20g-1-1790247596.png",
+    "alt": "Upto 60% Off on Adidas Apparel",
+    "cardText": "STARTING FROM\n\u20b9448\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "STARTING FROM\n\u20b9549\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/fk%20wd-1790257597.png",
+    "alt": "Puma Polo Tees @ Rs 549",
+    "cardText": "STARTING FROM\n\u20b9549\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "STARTING FROM\n\u20b9649\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/fk%20g-2-1790247617.png",
+    "alt": "Min 60% Off on The Bear House",
+    "cardText": "STARTING FROM\n\u20b9649\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "STARTING FROM\n\u20b9674\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/fk%20g-7-1790247479.png",
+    "alt": "Upto 75% Off on Rare Rabbit",
+    "cardText": "STARTING FROM\n\u20b9674\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "STARTING FROM\n\u20b9379\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/fk%20g-4-1790247577.png",
+    "alt": "Min. 50% Off on Woodland",
+    "cardText": "STARTING FROM\n\u20b9379\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "STARTING FROM\n\u20b91,019\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/fk%20g-6-1790247500.png",
+    "alt": "Min 80% Off on French Connection & Lee Cooper Watches",
+    "cardText": "STARTING FROM\n\u20b91,019\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "STARTING FROM\n\u20b92,089\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/fk%20g-1790257604.png",
+    "alt": "Min 30% Off on Titan & Tommy Hilfiger Watches",
+    "cardText": "STARTING FROM\n\u20b92,089\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "STARTING FROM\n\u20b9782\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/fk%20g-3-1790247548.png",
+    "alt": "Min 60% Off on Crocs",
+    "cardText": "STARTING FROM\n\u20b9782\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "STARTING FROM\n\u20b9448\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/fk%20g-1-1790247596.png",
+    "alt": "Upto 60% Off on Adidas Apparel",
+    "cardText": "STARTING FROM\n\u20b9448\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "STARTING FROM\n\u20b9549\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/fk%20wd-1790257597.png",
+    "alt": "Puma Polo Tees @ Rs 549",
+    "cardText": "STARTING FROM\n\u20b9549\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "STARTING FROM\n\u20b9649\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/fk%20g-2-1790247617.png",
+    "alt": "Min 60% Off on The Bear House",
+    "cardText": "STARTING FROM\n\u20b9649\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "STARTING FROM\n\u20b9674\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/fk%20g-7-1790247479.png",
+    "alt": "Upto 75% Off on Rare Rabbit",
+    "cardText": "STARTING FROM\n\u20b9674\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "STARTING FROM\n\u20b9379\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/fk%20g-4-1790247577.png",
+    "alt": "Min. 50% Off on Woodland",
+    "cardText": "STARTING FROM\n\u20b9379\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "STARTING FROM\n\u20b91,019\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/fk%20g-6-1790247500.png",
+    "alt": "Min 80% Off on French Connection & Lee Cooper Watches",
+    "cardText": "STARTING FROM\n\u20b91,019\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "STARTING FROM\n\u20b92,089\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/fk%20g-1790257604.png",
+    "alt": "Min 30% Off on Titan & Tommy Hilfiger Watches",
+    "cardText": "STARTING FROM\n\u20b92,089\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "STARTING FROM\n\u20b9782\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/fk%20g-3-1790247548.png",
+    "alt": "Min 60% Off on Crocs",
+    "cardText": "STARTING FROM\n\u20b9782\nPER SALE YOU EARN\nFlat 6.4% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/myntra-new-t-1777980142.png",
+    "alt": "Myntra New",
+    "cardText": "STARTING FROM\n\u20b9207\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(80)-1780317544.png",
+    "alt": "Men's Ethnic Wear Under Rs 999",
+    "cardText": "STARTING FROM\n\u20b9207\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "GREAT DEAL\nSTARTING FROM\n\u20b9194\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/5%205-1776431080.png",
+    "alt": "Minimum 70% OFF On Shoes & Sneakers",
+    "cardText": "GREAT DEAL\nSTARTING FROM\n\u20b9194\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "GREAT DEAL\nSTARTING FROM\n\u20b9223\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/4-1776430933.png",
+    "alt": "Linen Shirts Starting from Rs 223",
+    "cardText": "GREAT DEAL\nSTARTING FROM\n\u20b9223\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "GREAT DEAL\nSTARTING FROM\n\u20b9148\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/6%205-1776432324.png",
+    "alt": "Minimum 70% OFF On Trolley Bags",
+    "cardText": "GREAT DEAL\nSTARTING FROM\n\u20b9148\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/amazon-store-live-1-1777975646.png",
+    "alt": "Amazon",
+    "cardText": "SALE LIVE\nSTARTING FROM\n\u20b9299\nPER SALE YOU EARN\nFlat 8.2% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(79)-1780317534.png",
+    "alt": "Fashion Deals  Under Rs 499",
+    "cardText": "SALE LIVE\nSTARTING FROM\n\u20b9299\nPER SALE YOU EARN\nFlat 8.2% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/amazon-store-live-1-1777975646.png",
+    "alt": "Amazon",
+    "cardText": "STARTING FROM\n\u20b9399\nPER SALE YOU EARN\nFlat 8.2% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/21-1787573614.png",
+    "alt": "Minimum 50% Off on Ethnic Kurtas",
+    "cardText": "STARTING FROM\n\u20b9399\nPER SALE YOU EARN\nFlat 8.2% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/myntra-new-t-1777980142.png",
+    "alt": "Myntra New",
+    "cardText": "STARTING FROM\n\u20b9335\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/21-1-1787573560.png",
+    "alt": "79% Off  on Lee Clothing",
+    "cardText": "STARTING FROM\n\u20b9335\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/ajio-store-1606812055.png",
+    "alt": "Ajio Direct",
+    "cardText": "STARTING FROM\n\u20b930\nPER SALE YOU EARN\nUpto 10% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/19-1787046174.png",
+    "alt": "Fashion Under Rs 499",
+    "cardText": "STARTING FROM\n\u20b930\nPER SALE YOU EARN\nUpto 10% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/ajio-store-1606812055.png",
+    "alt": "Ajio Direct",
+    "cardText": "STARTING FROM\n\u20b9200\nPER SALE YOU EARN\nUpto 10% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/20-1787046186.png",
+    "alt": "Minimum 75% Off on Buda Jeans",
+    "cardText": "STARTING FROM\n\u20b9200\nPER SALE YOU EARN\nUpto 10% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/ajio-store-1606812055.png",
+    "alt": "Ajio Direct",
+    "cardText": "STARTING FROM\n\u20b940\nPER SALE YOU EARN\nUpto 10% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(78)-1780317524.png",
+    "alt": "Caps & Socks Under Rs 399",
+    "cardText": "STARTING FROM\n\u20b940\nPER SALE YOU EARN\nUpto 10% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/shopsy-store-1692602320.png",
+    "alt": "Shopsy Store",
+    "cardText": "STARTING FROM\n\u20b9199\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/17-1787046149.png",
+    "alt": "Party Wear Sarees From Rs 199",
+    "cardText": "STARTING FROM\n\u20b9199\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/myntra-new-t-1777980142.png",
+    "alt": "Myntra New",
+    "cardText": "STARTING FROM\n\u20b9104\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/2-1776430851.png",
+    "alt": "Minimum 70% OFF On Work Wear",
+    "cardText": "STARTING FROM\n\u20b9104\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/myntra-new-t-1777980142.png",
+    "alt": "Myntra New",
+    "cardText": "STARTING FROM\n\u20b9104\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/3-1776430898.png",
+    "alt": "Upto 80% OFF On Watches",
+    "cardText": "STARTING FROM\n\u20b9104\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/myntra-new-t-1777980142.png",
+    "alt": "Myntra New",
+    "cardText": "STARTING FROM\n\u20b9207\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(80)-1780317544.png",
+    "alt": "Men's Ethnic Wear Under Rs 999",
+    "cardText": "STARTING FROM\n\u20b9207\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "GREAT DEAL\nSTARTING FROM\n\u20b9194\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/5%205-1776431080.png",
+    "alt": "Minimum 70% OFF On Shoes & Sneakers",
+    "cardText": "GREAT DEAL\nSTARTING FROM\n\u20b9194\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "GREAT DEAL\nSTARTING FROM\n\u20b9223\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/4-1776430933.png",
+    "alt": "Linen Shirts Starting from Rs 223",
+    "cardText": "GREAT DEAL\nSTARTING FROM\n\u20b9223\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "GREAT DEAL\nSTARTING FROM\n\u20b9148\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/6%205-1776432324.png",
+    "alt": "Minimum 70% OFF On Trolley Bags",
+    "cardText": "GREAT DEAL\nSTARTING FROM\n\u20b9148\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/amazon-store-live-1-1777975646.png",
+    "alt": "Amazon",
+    "cardText": "SALE LIVE\nSTARTING FROM\n\u20b9299\nPER SALE YOU EARN\nFlat 8.2% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(79)-1780317534.png",
+    "alt": "Fashion Deals  Under Rs 499",
+    "cardText": "SALE LIVE\nSTARTING FROM\n\u20b9299\nPER SALE YOU EARN\nFlat 8.2% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/amazon-store-live-1-1777975646.png",
+    "alt": "Amazon",
+    "cardText": "STARTING FROM\n\u20b9399\nPER SALE YOU EARN\nFlat 8.2% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/21-1787573614.png",
+    "alt": "Minimum 50% Off on Ethnic Kurtas",
+    "cardText": "STARTING FROM\n\u20b9399\nPER SALE YOU EARN\nFlat 8.2% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/myntra-new-t-1777980142.png",
+    "alt": "Myntra New",
+    "cardText": "STARTING FROM\n\u20b9335\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/21-1-1787573560.png",
+    "alt": "79% Off  on Lee Clothing",
+    "cardText": "STARTING FROM\n\u20b9335\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/ajio-store-1606812055.png",
+    "alt": "Ajio Direct",
+    "cardText": "STARTING FROM\n\u20b930\nPER SALE YOU EARN\nUpto 10% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/19-1787046174.png",
+    "alt": "Fashion Under Rs 499",
+    "cardText": "STARTING FROM\n\u20b930\nPER SALE YOU EARN\nUpto 10% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/ajio-store-1606812055.png",
+    "alt": "Ajio Direct",
+    "cardText": "STARTING FROM\n\u20b9200\nPER SALE YOU EARN\nUpto 10% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/20-1787046186.png",
+    "alt": "Minimum 75% Off on Buda Jeans",
+    "cardText": "STARTING FROM\n\u20b9200\nPER SALE YOU EARN\nUpto 10% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/ajio-store-1606812055.png",
+    "alt": "Ajio Direct",
+    "cardText": "STARTING FROM\n\u20b940\nPER SALE YOU EARN\nUpto 10% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(78)-1780317524.png",
+    "alt": "Caps & Socks Under Rs 399",
+    "cardText": "STARTING FROM\n\u20b940\nPER SALE YOU EARN\nUpto 10% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/shopsy-store-1692602320.png",
+    "alt": "Shopsy Store",
+    "cardText": "STARTING FROM\n\u20b9199\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/17-1787046149.png",
+    "alt": "Party Wear Sarees From Rs 199",
+    "cardText": "STARTING FROM\n\u20b9199\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/myntra-new-t-1777980142.png",
+    "alt": "Myntra New",
+    "cardText": "STARTING FROM\n\u20b9104\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/2-1776430851.png",
+    "alt": "Minimum 70% OFF On Work Wear",
+    "cardText": "STARTING FROM\n\u20b9104\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/myntra-new-t-1777980142.png",
+    "alt": "Myntra New",
+    "cardText": "STARTING FROM\n\u20b9104\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/3-1776430898.png",
+    "alt": "Upto 80% OFF On Watches",
+    "cardText": "STARTING FROM\n\u20b9104\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/myntra-new-t-1777980142.png",
+    "alt": "Myntra New",
+    "cardText": "STARTING FROM\n\u20b9207\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(80)-1780317544.png",
+    "alt": "Men's Ethnic Wear Under Rs 999",
+    "cardText": "STARTING FROM\n\u20b9207\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "GREAT DEAL\nSTARTING FROM\n\u20b9194\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/5%205-1776431080.png",
+    "alt": "Minimum 70% OFF On Shoes & Sneakers",
+    "cardText": "GREAT DEAL\nSTARTING FROM\n\u20b9194\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "GREAT DEAL\nSTARTING FROM\n\u20b9223\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/4-1776430933.png",
+    "alt": "Linen Shirts Starting from Rs 223",
+    "cardText": "GREAT DEAL\nSTARTING FROM\n\u20b9223\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/flipkart-direct-3-1770728162.png",
+    "alt": "Flipkart store 2",
+    "cardText": "GREAT DEAL\nSTARTING FROM\n\u20b9148\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/6%205-1776432324.png",
+    "alt": "Minimum 70% OFF On Trolley Bags",
+    "cardText": "GREAT DEAL\nSTARTING FROM\n\u20b9148\nPER SALE YOU EARN\nUpto 8% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/amazon-store-live-1-1777975646.png",
+    "alt": "Amazon",
+    "cardText": "SALE LIVE\nSTARTING FROM\n\u20b9299\nPER SALE YOU EARN\nFlat 8.2% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(79)-1780317534.png",
+    "alt": "Fashion Deals  Under Rs 499",
+    "cardText": "SALE LIVE\nSTARTING FROM\n\u20b9299\nPER SALE YOU EARN\nFlat 8.2% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/sirona-store-1734343036.png",
+    "alt": "Sirona",
+    "cardText": "NEW BRAND\nSTARTING FROM\n\u20b9550\nPER SALE YOU EARN\nFlat 21% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/newonek_20-1787226519.png",
+    "alt": "Get Upto 50% Off on Combos",
+    "cardText": "NEW BRAND\nSTARTING FROM\n\u20b9550\nPER SALE YOU EARN\nFlat 21% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/milton-store-1756376955.png",
+    "alt": "Milton",
+    "cardText": "NEW BRAND\nSTARTING FROM\n\u20b9613\nPER SALE YOU EARN\nFlat 9% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/newonek_21-1787226532.png",
+    "alt": "Get Upto 20% Off on Combos",
+    "cardText": "NEW BRAND\nSTARTING FROM\n\u20b9613\nPER SALE YOU EARN\nFlat 9% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/brillare-store-1778674845.png",
+    "alt": "Brillare",
+    "cardText": "NEW BRAND\nSTARTING FROM\n\u20b9795\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(38)-1777982548.png",
+    "alt": "Get Flat 20% Off  Sitewide",
+    "cardText": "NEW BRAND\nSTARTING FROM\n\u20b9795\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/house-of-koala-store-1778239944.png",
+    "alt": "House Of Koala",
+    "cardText": "STARTING FROM\n\u20b9719\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/3-1776433677.png",
+    "alt": "Get Upto 70% Off On Selected Products",
+    "cardText": "STARTING FROM\n\u20b9719\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/true-elements-store-1671615192.jpg",
+    "alt": "True Elements Store",
+    "cardText": "TRENDING NOW\nSTARTING FROM\n\u20b9165\nPER SALE YOU EARN\nFlat 10% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/5-1776433783.png",
+    "alt": "Flat 50% Off on Select Products",
+    "cardText": "TRENDING NOW\nSTARTING FROM\n\u20b9165\nPER SALE YOU EARN\nFlat 10% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/art-of-puja-store-1779710814.png",
+    "alt": "Art of Puja",
+    "cardText": "STARTING FROM\n\u20b9753\nPER SALE YOU EARN\nFlat 20% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(34)-1777961805.png",
+    "alt": "Get Flat 10% Off on Orders over Rs 499",
+    "cardText": "STARTING FROM\n\u20b9753\nPER SALE YOU EARN\nFlat 20% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/kerala-ayurveda-store-1777981958.png",
+    "alt": "Kerala Ayurveda",
+    "cardText": "STARTING FROM\n\u20b9180\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(35)-1777961793.png",
+    "alt": "Get Flat 15% Off on First Above Rs 599",
+    "cardText": "STARTING FROM\n\u20b9180\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hummel-store-1783667893.png",
+    "alt": "Hummel",
+    "cardText": "NEW BRAND\nSTARTING FROM\n\u20b9399\nPER SALE YOU EARN\nFlat 23% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/newonek_19-1787226507.png",
+    "alt": "Get Upto 50% Off on Selected Products",
+    "cardText": "NEW BRAND\nSTARTING FROM\n\u20b9399\nPER SALE YOU EARN\nFlat 23% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/sirona-store-1734343036.png",
+    "alt": "Sirona",
+    "cardText": "NEW BRAND\nSTARTING FROM\n\u20b9550\nPER SALE YOU EARN\nFlat 21% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/newonek_20-1787226519.png",
+    "alt": "Get Upto 50% Off on Combos",
+    "cardText": "NEW BRAND\nSTARTING FROM\n\u20b9550\nPER SALE YOU EARN\nFlat 21% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/milton-store-1756376955.png",
+    "alt": "Milton",
+    "cardText": "NEW BRAND\nSTARTING FROM\n\u20b9613\nPER SALE YOU EARN\nFlat 9% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/newonek_21-1787226532.png",
+    "alt": "Get Upto 20% Off on Combos",
+    "cardText": "NEW BRAND\nSTARTING FROM\n\u20b9613\nPER SALE YOU EARN\nFlat 9% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/brillare-store-1778674845.png",
+    "alt": "Brillare",
+    "cardText": "NEW BRAND\nSTARTING FROM\n\u20b9795\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(38)-1777982548.png",
+    "alt": "Get Flat 20% Off  Sitewide",
+    "cardText": "NEW BRAND\nSTARTING FROM\n\u20b9795\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/house-of-koala-store-1778239944.png",
+    "alt": "House Of Koala",
+    "cardText": "STARTING FROM\n\u20b9719\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/3-1776433677.png",
+    "alt": "Get Upto 70% Off On Selected Products",
+    "cardText": "STARTING FROM\n\u20b9719\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/true-elements-store-1671615192.jpg",
+    "alt": "True Elements Store",
+    "cardText": "TRENDING NOW\nSTARTING FROM\n\u20b9165\nPER SALE YOU EARN\nFlat 10% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/5-1776433783.png",
+    "alt": "Flat 50% Off on Select Products",
+    "cardText": "TRENDING NOW\nSTARTING FROM\n\u20b9165\nPER SALE YOU EARN\nFlat 10% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/art-of-puja-store-1779710814.png",
+    "alt": "Art of Puja",
+    "cardText": "STARTING FROM\n\u20b9753\nPER SALE YOU EARN\nFlat 20% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(34)-1777961805.png",
+    "alt": "Get Flat 10% Off on Orders over Rs 499",
+    "cardText": "STARTING FROM\n\u20b9753\nPER SALE YOU EARN\nFlat 20% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/kerala-ayurveda-store-1777981958.png",
+    "alt": "Kerala Ayurveda",
+    "cardText": "STARTING FROM\n\u20b9180\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(35)-1777961793.png",
+    "alt": "Get Flat 15% Off on First Above Rs 599",
+    "cardText": "STARTING FROM\n\u20b9180\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hummel-store-1783667893.png",
+    "alt": "Hummel",
+    "cardText": "NEW BRAND\nSTARTING FROM\n\u20b9399\nPER SALE YOU EARN\nFlat 23% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/newonek_19-1787226507.png",
+    "alt": "Get Upto 50% Off on Selected Products",
+    "cardText": "NEW BRAND\nSTARTING FROM\n\u20b9399\nPER SALE YOU EARN\nFlat 23% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/sirona-store-1734343036.png",
+    "alt": "Sirona",
+    "cardText": "NEW BRAND\nSTARTING FROM\n\u20b9550\nPER SALE YOU EARN\nFlat 21% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/newonek_20-1787226519.png",
+    "alt": "Get Upto 50% Off on Combos",
+    "cardText": "NEW BRAND\nSTARTING FROM\n\u20b9550\nPER SALE YOU EARN\nFlat 21% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/milton-store-1756376955.png",
+    "alt": "Milton",
+    "cardText": "NEW BRAND\nSTARTING FROM\n\u20b9613\nPER SALE YOU EARN\nFlat 9% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/newonek_21-1787226532.png",
+    "alt": "Get Upto 20% Off on Combos",
+    "cardText": "NEW BRAND\nSTARTING FROM\n\u20b9613\nPER SALE YOU EARN\nFlat 9% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/brillare-store-1778674845.png",
+    "alt": "Brillare",
+    "cardText": "NEW BRAND\nSTARTING FROM\n\u20b9795\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(38)-1777982548.png",
+    "alt": "Get Flat 20% Off  Sitewide",
+    "cardText": "NEW BRAND\nSTARTING FROM\n\u20b9795\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/house-of-koala-store-1778239944.png",
+    "alt": "House Of Koala",
+    "cardText": "STARTING FROM\n\u20b9719\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/3-1776433677.png",
+    "alt": "Get Upto 70% Off On Selected Products",
+    "cardText": "STARTING FROM\n\u20b9719\nPER SALE YOU EARN\nFlat 28% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/true-elements-store-1671615192.jpg",
+    "alt": "True Elements Store",
+    "cardText": "TRENDING NOW\nSTARTING FROM\n\u20b9165\nPER SALE YOU EARN\nFlat 10% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/5-1776433783.png",
+    "alt": "Flat 50% Off on Select Products",
+    "cardText": "TRENDING NOW\nSTARTING FROM\n\u20b9165\nPER SALE YOU EARN\nFlat 10% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b929\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/HM%206-1788865127.png",
+    "alt": "Screen Cleaner Kit @ Rs 29 Worth Rs 199",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b929\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9179\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20-%202026-07-27T131903-1785138901.png",
+    "alt": "Shoe Bag for Travel & Storage @ Rs 179 Worth Rs 599",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9179\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9370\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/8-1780912512.png",
+    "alt": "Handmade Masala Khakhra @ Rs 370 Worth Rs 400",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9370\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9379\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/9-1780912523.png",
+    "alt": "JBL Wired Earphone @ Rs 379 Worth Rs 699",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9379\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b945\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/10-1780912532.png",
+    "alt": "ZOFF 1 Minute Marinade Mix @ Rs 45 Worth Rs 75",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b945\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "PROTEIN DEAL\nSTARTING FROM\n\u20b9229\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(94)-1782297597.png",
+    "alt": "10g Protein Bar Box @ Rs 229 Worth Rs 399",
+    "cardText": "PROTEIN DEAL\nSTARTING FROM\n\u20b9229\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9379\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Hamara%20Mall%20DC%E2%80%99s%20(1)-1788422115.png",
+    "alt": "Touch Lamp Bluetooth Speaker @ Rs 379 Worth Rs 1999",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9379\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9279\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Hamara%20Mall%20D-1788422242.png",
+    "alt": "Silicone Dish Drying Mat @ Rs 279 Worth Rs 1117",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9279\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9229\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(97)-1782297645.png",
+    "alt": "Reusable Hot Water Bag @ Rs 229 Worth Rs 1599",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9229\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b989\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/HM%202-1788865065.png",
+    "alt": "Denver Volt Deo @ Rs 89 Worth Rs 230",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b989\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9232\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/HM%203-1788865082.png",
+    "alt": "Pain Relief Oil @ Rs 232 Worth Rs 276",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9232\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9198\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/HM%204-1788865098.png",
+    "alt": "Biotique Anti- Ageing Night Cream @ Rs 198 Worth Rs 287",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9198\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9199\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/HM%205-1788865112.png",
+    "alt": "By NAKED Body Wash for Couples @ Rs 199 Worth Rs 549",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9199\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b929\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/HM%206-1788865127.png",
+    "alt": "Screen Cleaner Kit @ Rs 29 Worth Rs 199",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b929\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9179\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20-%202026-07-27T131903-1785138901.png",
+    "alt": "Shoe Bag for Travel & Storage @ Rs 179 Worth Rs 599",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9179\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9370\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/8-1780912512.png",
+    "alt": "Handmade Masala Khakhra @ Rs 370 Worth Rs 400",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9370\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9379\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/9-1780912523.png",
+    "alt": "JBL Wired Earphone @ Rs 379 Worth Rs 699",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9379\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b945\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/10-1780912532.png",
+    "alt": "ZOFF 1 Minute Marinade Mix @ Rs 45 Worth Rs 75",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b945\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "PROTEIN DEAL\nSTARTING FROM\n\u20b9229\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(94)-1782297597.png",
+    "alt": "10g Protein Bar Box @ Rs 229 Worth Rs 399",
+    "cardText": "PROTEIN DEAL\nSTARTING FROM\n\u20b9229\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9379\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Hamara%20Mall%20DC%E2%80%99s%20(1)-1788422115.png",
+    "alt": "Touch Lamp Bluetooth Speaker @ Rs 379 Worth Rs 1999",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9379\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9279\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Hamara%20Mall%20D-1788422242.png",
+    "alt": "Silicone Dish Drying Mat @ Rs 279 Worth Rs 1117",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9279\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9229\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20(97)-1782297645.png",
+    "alt": "Reusable Hot Water Bag @ Rs 229 Worth Rs 1599",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9229\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b989\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/HM%202-1788865065.png",
+    "alt": "Denver Volt Deo @ Rs 89 Worth Rs 230",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b989\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9232\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/HM%203-1788865082.png",
+    "alt": "Pain Relief Oil @ Rs 232 Worth Rs 276",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9232\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9198\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/HM%204-1788865098.png",
+    "alt": "Biotique Anti- Ageing Night Cream @ Rs 198 Worth Rs 287",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9198\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9199\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/HM%205-1788865112.png",
+    "alt": "By NAKED Body Wash for Couples @ Rs 199 Worth Rs 549",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9199\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b929\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/HM%206-1788865127.png",
+    "alt": "Screen Cleaner Kit @ Rs 29 Worth Rs 199",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b929\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9179\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/image%20-%202026-07-27T131903-1785138901.png",
+    "alt": "Shoe Bag for Travel & Storage @ Rs 179 Worth Rs 599",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9179\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9370\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/8-1780912512.png",
+    "alt": "Handmade Masala Khakhra @ Rs 370 Worth Rs 400",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9370\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9379\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/9-1780912523.png",
+    "alt": "JBL Wired Earphone @ Rs 379 Worth Rs 699",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b9379\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/resources/image/stores/hamara-mall-store-1777901389.png",
+    "alt": "Hamara Mall",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b945\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "SECTION"
+  },
+  {
+    "src": "https://asset22.ckassets.com/resources/image/staticpage_images/10-1780912532.png",
+    "alt": "ZOFF 1 Minute Marinade Mix @ Rs 45 Worth Rs 75",
+    "cardText": "LOOT DEAL\nSTARTING FROM\n\u20b945\nPER SALE YOU EARN\nUpto 15% Profit\nCOPY LINK\nSHARE NOW",
+    "parentTag": "A"
+  },
+  {
+    "src": "https://asset21.ckassets.com/wp/wp-content/themes/Cashkaro_SocialMedia/img/googleplay.png",
+    "alt": "Get it on Google Play",
+    "cardText": "Download App",
+    "parentTag": "A"
+  }
+]

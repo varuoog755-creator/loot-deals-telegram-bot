@@ -97,7 +97,7 @@ def card_html(p):
     <div class="deal-price-row"><span class="deal-price">{price}</span><span class="deal-mrp">{mrp}</span></div>
     <div class="deal-btns">
       <a href="{href}" target="_blank" rel="noopener" class="deal-btn">Grab Deal ⚡</a>
-      <button class="copy-link-btn" onclick="copyLink('{href}', this)">📋 COPY LINK</button>
+      <button class="copy-link-btn" onclick="copyLinkAndOpen('{href}', this)">📋 COPY LINK</button>
     </div>
   </div>
 </div>'''
@@ -181,7 +181,19 @@ footer{border-top:1px solid #e5e7eb;padding:26px 0;text-align:center;color:#6b72
 
 JS_COMMON = '''
 function showToast(m){const t=document.getElementById('toast');t.innerText=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2200)}
-function copyLink(url,btn){navigator.clipboard.writeText(url).then(()=>{const o=btn.innerText;btn.innerText='✓ COPIED';btn.classList.add('copied');showToast('EarnKaro link copied! Paste anywhere to share');setTimeout(()=>{btn.innerText=o;btn.classList.remove('copied')},2000)})}
+function copyLinkAndOpen(url, btn) {
+    navigator.clipboard.writeText(url).then(() => {
+        const oldText = btn.innerText;
+        btn.innerText = '✓ COPIED';
+        btn.classList.add('copied');
+        showToast('Link copied! Redirecting...');
+        setTimeout(() => {
+            window.location.href = url;
+        }, 400);
+    }).catch(() => {
+        window.location.href = url;
+    });
+}
 function initSlider(){const slides=document.querySelectorAll('.slide');if(!slides.length)return;let i=0;slides[0].classList.add('on');const dots=document.querySelectorAll('.dot');if(dots[0])dots[0].classList.add('on');setInterval(()=>{slides[i].classList.remove('on');if(dots[i])dots[i].classList.remove('on');i=(i+1)%slides.length;slides[i].classList.add('on');if(dots[i])dots[i].classList.add('on')},3500)}
 function setupSearch(){const inp=document.getElementById('searchInput');if(!inp)return;inp.addEventListener('input',e=>{const q=e.target.value.toLowerCase().trim();let n=0;document.querySelectorAll('.deal-card').forEach(c=>{const ok=!q||(c.dataset.q||'').includes(q);c.style.display=ok?'block':'none';if(ok)n++});const nr=document.getElementById('noResults');if(nr)nr.style.display=n?'none':'block'})}
 initSlider();setupSearch();

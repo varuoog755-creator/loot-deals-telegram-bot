@@ -1,0 +1,26 @@
+{
+  "electronics/headphones-headsets": [],
+  "men-fashion/men-tshirt": [],
+  "women-fashion": [],
+  "men-footwear": [
+    {
+      "href": "https://earnkaro.com/product/men-footwear/slippers-flip-flops",
+      "image": "https://asset21.ckassets.com/resources/image/stores/ajio-store-1606812055.png",
+      "text": "Slippers & Flip Flops"
+    }
+  ],
+  "beauty": [],
+  "home-kitchen": [
+    {
+      "href": "https://earnkaro.com/product/home-kitchen/kitchen-storage-containers",
+      "image": "https://asset21.ckassets.com/resources/image/stores/myntra-new-t-1777980142.png",
+      "text": "Kitchen Storage & Containers"
+    },
+    {
+      "href": "https://earnkaro.com/product/home-kitchen/dinnerwear-crockery",
+      "image": "https://asset21.ckassets.com/resources/image/stores/myntra-new-t-1777980142.png",
+      "text": "Dinnerware & Crockery"
+    }
+  ],
+  "accessories/watches": []
+}

@@ -1,0 +1,159 @@
+{
+  "url": "https://earnkaro.com/",
+  "banners": [
+    {
+      "href": "https://earnkaro.com/product/trending-offers/myntra-super-sellers-web",
+      "image": "https://asset21.ckassets.com/resources/image/category/myntra-super-sellers-web-3899-17902772140.png",
+      "w": 640,
+      "h": 448
+    },
+    {
+      "href": "https://earnkaro.com/product/home-kitchen/home-furnishing",
+      "image": "https://asset21.ckassets.com/resources/image/category/home-furnishing-2871-1607089358.png",
+      "w": 500,
+      "h": 301
+    }
+  ],
+  "large": [
+    {
+      "src": "https://asset22.ckassets.com/resources/image/staticpage_images/SBI%20Cahback%20Credit%20Card-Deskk-1790186693.png",
+      "w": 1923,
+      "h": 900,
+      "alt": "Banner Image",
+      "parentHref": ""
+    },
+    {
+      "src": "https://asset22.ckassets.com/resources/image/staticpage_images/deskk-1789993298.png",
+      "w": 2670,
+      "h": 1250,
+      "alt": "Banner Image",
+      "parentHref": ""
+    },
+    {
+      "src": "https://asset22.ckassets.com/resources/image/staticpage_images/shein-desk-1789992728.png",
+      "w": 2134,
+      "h": 1000,
+      "alt": "Banner Image",
+      "parentHref": ""
+    },
+    {
+      "src": "https://asset22.ckassets.com/resources/image/staticpage_images/desk-1790185687.png",
+      "w": 1602,
+      "h": 750,
+      "alt": "Banner Image",
+      "parentHref": ""
+    },
+    {
+      "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Desk-1786556000.png",
+      "w": 1068,
+      "h": 500,
+      "alt": "Banner Image",
+      "parentHref": ""
+    },
+    {
+      "src": "https://asset22.ckassets.com/resources/image/staticpage_images/ajio-desk-1790273795.png",
+      "w": 1602,
+      "h": 750,
+      "alt": "Banner Image",
+      "parentHref": ""
+    },
+    {
+      "src": "https://asset22.ckassets.com/resources/image/staticpage_images/amazon-desk-1790273914.png",
+      "w": 1602,
+      "h": 750,
+      "alt": "Banner Image",
+      "parentHref": ""
+    },
+    {
+      "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Deskk-1790274029.png",
+      "w": 962,
+      "h": 450,
+      "alt": "Banner Image",
+      "parentHref": ""
+    },
+    {
+      "src": "https://asset22.ckassets.com/resources/image/staticpage_images/myntra-desk-1790273953.png",
+      "w": 1602,
+      "h": 750,
+      "alt": "Banner Image",
+      "parentHref": ""
+    },
+    {
+      "src": "https://asset22.ckassets.com/resources/image/staticpage_images/SBI%20Cahback%20Credit%20Card-Deskk-1790186693.png",
+      "w": 1923,
+      "h": 900,
+      "alt": "Banner Image",
+      "parentHref": ""
+    },
+    {
+      "src": "https://asset22.ckassets.com/resources/image/staticpage_images/deskk-1789993298.png",
+      "w": 2670,
+      "h": 1250,
+      "alt": "Banner Image",
+      "parentHref": ""
+    },
+    {
+      "src": "https://asset22.ckassets.com/resources/image/staticpage_images/shein-desk-1789992728.png",
+      "w": 2134,
+      "h": 1000,
+      "alt": "Banner Image",
+      "parentHref": ""
+    },
+    {
+      "src": "https://asset22.ckassets.com/resources/image/staticpage_images/desk-1790185687.png",
+      "w": 1602,
+      "h": 750,
+      "alt": "Banner Image",
+      "parentHref": ""
+    },
+    {
+      "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Desk-1786556000.png",
+      "w": 1068,
+      "h": 500,
+      "alt": "Banner Image",
+      "parentHref": ""
+    },
+    {
+      "src": "https://asset22.ckassets.com/resources/image/staticpage_images/ajio-desk-1790273795.png",
+      "w": 1602,
+      "h": 750,
+      "alt": "Banner Image",
+      "parentHref": ""
+    },
+    {
+      "src": "https://asset22.ckassets.com/resources/image/staticpage_images/amazon-desk-1790273914.png",
+      "w": 1602,
+      "h": 750,
+      "alt": "Banner Image",
+      "parentHref": ""
+    },
+    {
+      "src": "https://asset22.ckassets.com/resources/image/staticpage_images/Deskk-1790274029.png",
+      "w": 962,
+      "h": 450,
+      "alt": "Banner Image",
+      "parentHref": ""
+    },
+    {
+      "src": "https://asset22.ckassets.com/resources/image/staticpage_images/myntra-desk-1790273953.png",
+      "w": 1602,
+      "h": 750,
+      "alt": "Banner Image",
+      "parentHref": ""
+    },
+    {
+      "src": "https://asset22.ckassets.com/resources/image/staticpage_images/SBI%20Cahback%20Credit%20Card-Deskk-1790186693.png",
+      "w": 1923,
+      "h": 900,
+      "alt": "Banner Image",
+      "parentHref": ""
+    },
+    {
+      "src": "https://asset22.ckassets.com/resources/image/staticpage_images/deskk-1789993298.png",
+      "w": 2670,
+      "h": 1250,
+      "alt": "Banner Image",
+      "parentHref": ""
+    }
+  ]
+}
